@@ -1,0 +1,104 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/tutorial/tutorial_guide.vcss_c" />
+	</styles>
+	<Panel class="TutorialGuideRoot" hittest="false" hittestchildren="true">
+		<Panel id="TutorialDecorationLayer" class="TutorialDecorationLayer" hittest="false" hittestchildren="false">
+			<Panel id="TutorialVisualShade" class="TutorialVisualShade" hittest="false" hittestchildren="false" />
+			<Panel id="TutorialHighlight0" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight1" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight2" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight3" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight4" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight5" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight6" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight7" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight8" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight9" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight10" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight11" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight12" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight13" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight14" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+			<Panel id="TutorialHighlight15" class="TutorialHighlight">
+				<Panel class="TutorialHighlightFocusHalo" />
+				<Panel class="TutorialHighlightArrow" />
+			</Panel>
+		</Panel>
+		<Panel id="TutorialCallout" class="TutorialCallout" hittest="false" hittestchildren="false">
+			<Label id="TutorialTitle" class="TutorialTitle" text="#tutorial_title" hittest="false" />
+			<Label id="TutorialMessage" class="TutorialMessage" text="" hittest="false" />
+		</Panel>
+		<Panel id="TutorialControls" class="TutorialControls" hittest="true" hittestchildren="true">
+			<Button id="TutorialToggle" class="TutorialControlButton TutorialToggle" hittest="true">
+				<Label id="TutorialToggleLabel" text="#tutorial_collapse" hittest="false" />
+			</Button>
+			<Button id="TutorialSkipStep" class="TutorialControlButton TutorialSkipStep" hittest="true">
+				<Label text="#tutorial_skip_step" hittest="false" />
+			</Button>
+			<Button id="TutorialDisable" class="TutorialControlButton TutorialDisable" hittest="true">
+				<Label text="#tutorial_disable" hittest="false" />
+			</Button>
+		</Panel>
+		<Panel id="TutorialDisableConfirmShade" class="TutorialDisableConfirmShade" hittest="false" hittestchildren="false" />
+		<Panel id="TutorialDisableConfirm" class="TutorialDisableConfirm" hittest="true" hittestchildren="true">
+			<Label class="TutorialDisableConfirmTitle" text="#tutorial_disable_confirm_title" hittest="false" />
+			<Label class="TutorialDisableConfirmMessage" text="#tutorial_disable_confirm_message" hittest="false" />
+			<Panel class="TutorialDisableConfirmActions">
+				<Button id="TutorialDisableCancel" class="TutorialConfirmButton TutorialCancelButton" hittest="true">
+					<Label text="#tutorial_cancel" hittest="false" />
+				</Button>
+				<Button id="TutorialDisableConfirmButton" class="TutorialConfirmButton TutorialConfirmButtonPrimary" hittest="true">
+					<Label text="#tutorial_confirm" hittest="false" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

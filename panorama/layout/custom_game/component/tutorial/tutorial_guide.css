@@ -1,0 +1,422 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.TutorialGuideRoot
+{
+	width: 100%;
+	height: 100%;
+	visibility: collapse;
+	opacity: 0;
+	z-index: 1;
+}
+
+.TutorialGuideRoot.Active
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.TutorialDecorationLayer
+{
+	width: 100%;
+	height: 100%;
+}
+
+.TutorialVisualShade
+{
+	width: 100%;
+	height: 100%;
+	background-color: #00000080;
+	visibility: collapse;
+}
+
+.TutorialGuideRoot.HasPresentation .TutorialVisualShade
+{
+	visibility: visible;
+}
+
+.TutorialGuideRoot.HasPresentation.FocusPhaseA .TutorialVisualShade
+{
+	animation-name: tutorial-shade-focus-a;
+	animation-duration: 0.46s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.TutorialGuideRoot.HasPresentation.FocusPhaseB .TutorialVisualShade
+{
+	animation-name: tutorial-shade-focus-b;
+	animation-duration: 0.46s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.TutorialHighlight
+{
+	visibility: collapse;
+	overflow: noclip;
+	border: 3px solid #ffe47aff;
+	border-radius: 10px;
+	background-color: gradient(radial, 50% 50%, 0% 0%, 55% 55%, from(#ffe47a1a), to(#ffe47a00));
+	box-shadow: #ffd45a80 0px 0px 18px 3px;
+	animation-name: tutorial-highlight-pulse;
+	animation-duration: 1.15s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.TutorialHighlight.Visible
+{
+	visibility: visible;
+}
+
+.TutorialHighlight.WorldTarget
+{
+	border-radius: 50%;
+	border-width: 4px;
+}
+
+.TutorialHighlightFocusHalo
+{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	pre-transform-scale2d: 1;
+	border: 3px solid #fff2aacc;
+	border-radius: 12px;
+	background-color: gradient(radial, 50% 50%, 0% 0%, 62% 62%, from(#fff4bd55), to(#ffe47a00));
+	box-shadow: #ffe47acc 0px 0px 34px 6px;
+}
+
+.TutorialHighlight.WorldTarget .TutorialHighlightFocusHalo
+{
+	border-radius: 50%;
+}
+
+.TutorialGuideRoot.FocusPhaseA .TutorialHighlight.Visible .TutorialHighlightFocusHalo
+{
+	animation-name: tutorial-highlight-focus-a;
+	animation-duration: 0.58s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.TutorialGuideRoot.FocusPhaseB .TutorialHighlight.Visible .TutorialHighlightFocusHalo
+{
+	animation-name: tutorial-highlight-focus-b;
+	animation-duration: 0.58s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.TutorialHighlightArrow
+{
+	width: 28px;
+	height: 22px;
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: -27px;
+	background-image: url("s2r://panorama/images/control_icons/arrow_solid_down_png.vtex");
+	background-size: 100% 100%;
+	wash-color: #ffe47aff;
+}
+
+.TutorialCallout
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 150px;
+	width: 560px;
+	min-height: 92px;
+	padding: 13px 24px 15px;
+	flow-children: down;
+	border: 1px solid #e8c960cc;
+	border-radius: 8px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#182332f5), to(#0b111cf5));
+	box-shadow: #00000099 0px 6px 24px 0px;
+	visibility: collapse;
+	opacity: 0;
+}
+
+.TutorialGuideRoot.HasMessage .TutorialCallout
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.TutorialTitle
+{
+	horizontal-align: center;
+	font-size: 20px;
+	font-weight: semi-bold;
+	color: #ffe899;
+	text-shadow: 0px 1px 3px 2 #000000cc;
+}
+
+.TutorialMessage
+{
+	horizontal-align: center;
+	margin-top: 7px;
+	max-width: 520px;
+	font-size: 18px;
+	line-height: 23px;
+	text-align: center;
+	color: #f3f6f9;
+	text-shadow: 0px 1px 3px 2 #000000cc;
+	white-space: normal;
+}
+
+.TutorialControls
+{
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 112px;
+	margin-right: 22px;
+	flow-children: right;
+	visibility: collapse;
+	opacity: 0.92;
+}
+
+.TutorialGuideRoot.HasPresentation .TutorialControls
+{
+	visibility: visible;
+}
+
+.TutorialGuideRoot.NoTarget .TutorialControls
+{
+	margin-top: 72px;
+}
+
+.TutorialControlButton
+{
+	height: 34px;
+	min-width: 92px;
+	margin-left: 8px;
+	padding: 0px 13px;
+	border: 1px solid #8c9eae88;
+	border-radius: 4px;
+	background-color: #18232eee;
+}
+
+.TutorialControlButton:hover
+{
+	brightness: 1.35;
+	border-color: #ffe47acc;
+}
+
+.TutorialControlButton:active
+{
+	brightness: 0.8;
+}
+
+.TutorialControlButton Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 15px;
+	color: #d9e2e9;
+}
+
+.TutorialDisable
+{
+	background-color: #281b20ee;
+	border-color: #a66b7188;
+}
+
+.TutorialDisableConfirmShade
+{
+	width: 100%;
+	height: 100%;
+	background-color: #00000070;
+	visibility: collapse;
+}
+
+.TutorialDisableConfirm
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 520px;
+	padding: 22px 28px 24px;
+	flow-children: down;
+	border: 1px solid #c7a85ccc;
+	border-radius: 8px;
+	background-color: #111923fa;
+	box-shadow: #000000cc 0px 8px 32px 0px;
+	visibility: collapse;
+}
+
+.TutorialGuideRoot.Confirming .TutorialDisableConfirmShade,.TutorialGuideRoot.Confirming .TutorialDisableConfirm
+{
+	visibility: visible;
+}
+
+.TutorialGuideRoot.Confirming .TutorialHighlight,.TutorialGuideRoot.Confirming .TutorialVisualShade,.TutorialGuideRoot.Confirming .TutorialCallout,.TutorialGuideRoot.Confirming .TutorialControls
+{
+	visibility: collapse;
+}
+
+.TutorialDisableConfirmTitle
+{
+	horizontal-align: center;
+	font-size: 22px;
+	font-weight: semi-bold;
+	color: #ffe899;
+}
+
+.TutorialDisableConfirmMessage
+{
+	horizontal-align: center;
+	margin-top: 12px;
+	font-size: 17px;
+	line-height: 23px;
+	text-align: center;
+	color: #e6edf2;
+	white-space: normal;
+}
+
+.TutorialDisableConfirmActions
+{
+	horizontal-align: center;
+	margin-top: 22px;
+	flow-children: right;
+}
+
+.TutorialConfirmButton
+{
+	width: 142px;
+	height: 40px;
+	margin: 0px 8px;
+	border: 1px solid #8393a3aa;
+	border-radius: 4px;
+	background-color: #263340;
+}
+
+.TutorialConfirmButton:hover
+{
+	brightness: 1.35;
+}
+
+.TutorialConfirmButton:active
+{
+	brightness: 0.8;
+}
+
+.TutorialConfirmButton Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 17px;
+	color: #edf3f6;
+}
+
+.TutorialGuideRoot.Collapsed .TutorialHighlight,.TutorialGuideRoot.Collapsed .TutorialVisualShade,.TutorialGuideRoot.Collapsed .TutorialCallout,.TutorialGuideRoot.Collapsed .TutorialSkipStep,.TutorialGuideRoot.Collapsed .TutorialDisable
+{
+	visibility: collapse;
+}
+
+.TutorialGuideRoot.Collapsed .TutorialControls
+{
+	margin-top: 72px;
+}
+
+.TutorialConfirmButtonPrimary
+{
+	border-color: #dab94bcc;
+	background-color: #67501f;
+}
+
+@keyframes 'tutorial-highlight-pulse'
+{
+	0%
+	{
+		opacity: 0.62;
+		brightness: 0.9;
+	}
+	
+	50%
+	{
+		opacity: 1;
+		brightness: 1.35;
+	}
+	
+	100%
+	{
+		opacity: 0.62;
+		brightness: 0.9;
+	}
+	
+}
+
+@keyframes 'tutorial-shade-focus-a'
+{
+	0%
+	{
+		opacity: 0.25;
+	}
+	
+	100%
+	{
+		opacity: 1;
+	}
+	
+}
+
+@keyframes 'tutorial-shade-focus-b'
+{
+	0%
+	{
+		opacity: 0.25;
+	}
+	
+	100%
+	{
+		opacity: 1;
+	}
+	
+}
+
+@keyframes 'tutorial-highlight-focus-a'
+{
+	0%
+	{
+		opacity: 0;
+		pre-transform-scale2d: 2.15;
+	}
+	
+	38%
+	{
+		opacity: 1;
+	}
+	
+	100%
+	{
+		opacity: 0;
+		pre-transform-scale2d: 1;
+	}
+	
+}
+
+@keyframes 'tutorial-highlight-focus-b'
+{
+	0%
+	{
+		opacity: 0;
+		pre-transform-scale2d: 2.15;
+	}
+	
+	38%
+	{
+		opacity: 1;
+	}
+	
+	100%
+	{
+		opacity: 0;
+		pre-transform-scale2d: 1;
+	}
+	
+}
+

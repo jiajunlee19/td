@@ -1,0 +1,452 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameSurface
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#141c22e8), color-stop(0.72, #0d141aef), to(#05080cf5));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairline), to(cHairlineLo));
+	box-shadow: cScrim60 0px 5px 12px 0px;
+	brightness: 1;
+	transition-property: background-color, border, border-brush, brightness, box-shadow, opacity, saturation, transform;
+	transition-duration: 0.12s;
+	transition-timing-function: ease;
+}
+
+.OutgameCard
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1a2229e8), color-stop(0.70, #0c1218ed), to(#05070af2));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairline), to(cHairlineLo));
+	box-shadow: cScrim60 0px 4px 10px 0px;
+}
+
+.OutgameBlock
+{
+	background-color: gradient(radial, 50% 0%, 0% 0%, 88% 150%, from(#63a4ff12), color-stop(0.45, #172229c8), to(#0b1117e8));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#8b989e2a), to(#6b798006));
+}
+
+.OutgameSurfaceSidePanel
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#101820ef), color-stop(0.62, #090f15ef), to(#05070af0));
+	border: 0px solid #00000000;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairline), to(cHairlineLo));
+}
+
+.OutgameSurfaceSidePanel.LeftEdge
+{
+	border-right: 1px solid white;
+	box-shadow: cScrim60 6px 0px 18px 0px;
+}
+
+.OutgameSurfaceSidePanel.RightEdge
+{
+	border-left: 1px solid white;
+	box-shadow: cScrim60 -6px 0px 18px 0px;
+}
+
+.OutgameSurfaceHoverable:hover
+{
+	box-shadow: cScrim60 0px 6px 14px 0px;
+}
+
+.OutgameOptionButton
+{
+	background-color: rgba(0, 0, 0, 0.6);
+	border: 1.5px solid rgba(255, 255, 255, 0.3);
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cSlate), to(#6B7980));
+	border-radius: 2px;
+	box-shadow: none;
+	brightness: 1;
+	transition-property: border, border-brush, background-color, brightness, transform, box-shadow, opacity, saturation;
+	transition-duration: 0.1s;
+	transition-timing-function: ease;
+}
+
+.OutgameOptionButton:hover
+{
+	border: 1.5px solid rgba(255, 255, 255, 1);
+}
+
+.OutgameOptionButton.Selected,.OutgameOptionButton:selected
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#49565C), to(#2D3438));
+	border: 1.5px solid rgba(255, 255, 255, 1);
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cBlue), to(#4588E4));
+	box-shadow: 0px 4px 12px -1px rgba(0, 0, 0, 0.4);
+}
+
+.OutgameOptionButton:active,.OutgameOptionButton.Selected:active,.OutgameOptionButton:selected:active
+{
+	transform: scale3d(0.98, 0.98, 1);
+	brightness: 0.6;
+}
+
+.OutgameOptionButton Label
+{
+	color: cSlate;
+	opacity: 0.9;
+	text-shadow: 0px 1px 4px #000000;
+}
+
+.OutgameOptionButton.Selected Label,.OutgameOptionButton:selected Label
+{
+	color: white;
+	opacity: 1;
+}
+
+.OutgameOptionButton .OutgameOptionButtonCount
+{
+	color: cSlate;
+}
+
+.OutgameOptionButton.Selected .OutgameOptionButtonCount,.OutgameOptionButton:selected .OutgameOptionButtonCount
+{
+	color: #cfe2f4;
+}
+
+.OutgameOptionButton.Disabled,.OutgameOptionButton:disabled
+{
+	saturation: 0;
+	opacity: 0.35;
+	brightness: 0.55;
+}
+
+.OutgameOptionButton.Disabled:hover,.OutgameOptionButton:disabled:hover
+{
+	border: 1.5px solid rgba(255, 255, 255, 0.3);
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cSlate), to(#6B7980));
+}
+
+.OutgameActionButton
+{
+	background-image: url("s2r://panorama/images/backgrounds/background_play_button_2x.png");
+	background-size: cover;
+	background-img-opacity: 0.3;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#525F65), to(#2F363A));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF08), to(#FFFFFF03));
+	border-radius: 3px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+	brightness: 1;
+	opacity: 1;
+	saturation: 1;
+	transition-property: background-color, border, brightness, opacity, transform, saturation, box-shadow;
+	transition-duration: 0.1s;
+	transition-timing-function: ease;
+}
+
+.OutgameActionButton.Primary
+{
+	background-img-opacity: 0.34;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#426474), to(#243845));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#b8e7ff24), to(#4fa6d60c));
+	box-shadow: #12334466 0px 3px 10px 0px;
+}
+
+.OutgameActionButton.Secondary
+{
+	background-img-opacity: 0.16;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#30383c), to(#171d20));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffffff0a), to(#ffffff02));
+	box-shadow: cScrim40 0px 2px 6px 0px;
+}
+
+.OutgameActionButton.Confirm
+{
+	background-img-opacity: 0.36;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#4c7b4a), color-stop(0.54, #315b34), to(#1c3322));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#d6ffd02c), to(#77d06a0c));
+	box-shadow: #173f1faa 0px 3px 10px 0px;
+}
+
+.OutgameActionButton.Cancel
+{
+	background-img-opacity: 0.26;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#813a3d), color-stop(0.54, #5c292c), to(#321718));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffd2c826), to(#b24f4908));
+	box-shadow: #3b1418aa 0px 3px 10px 0px;
+}
+
+.OutgameActionButton.Gold
+{
+	background-img-opacity: 0.42;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#8a6723), color-stop(0.52, #604417), to(#35240e));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffe39a34), to(#b47c240c));
+	box-shadow: #4a2b08aa 0px 3px 12px 0px;
+}
+
+.OutgameActionButton.Danger
+{
+	background-img-opacity: 0.30;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#9a3233), color-stop(0.52, #782325), to(#461113));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffc4b92e), to(#c53b320c));
+	box-shadow: #4a1114aa 0px 3px 11px 0px;
+}
+
+.OutgameActionButton.Tool
+{
+	background-img-opacity: 0.12;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a3236), to(#11171a));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairlineLo), to(#63a4ff06));
+	box-shadow: cScrim40 0px 1px 5px 0px;
+}
+
+.OutgameActionButton:hover
+{
+	brightness: 2;
+}
+
+.OutgameActionButton:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2F363A), to(#525F65));
+	brightness: 0.8;
+}
+
+.OutgameActionButton.Primary:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#243845), to(#426474));
+	brightness: 0.8;
+}
+
+.OutgameActionButton.Secondary:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#171d20), to(#30383c));
+	brightness: 0.78;
+}
+
+.OutgameActionButton.Confirm:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1c3322), color-stop(0.46, #315b34), to(#4c7b4a));
+	brightness: 0.8;
+}
+
+.OutgameActionButton.Cancel:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#321718), color-stop(0.46, #5c292c), to(#813a3d));
+	brightness: 0.78;
+}
+
+.OutgameActionButton.Gold:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#35240e), color-stop(0.48, #604417), to(#8a6723));
+	brightness: 0.82;
+}
+
+.OutgameActionButton.Danger:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#461113), color-stop(0.48, #782325), to(#9a3233));
+	brightness: 0.8;
+}
+
+.OutgameActionButton.Tool:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#11171a), to(#2a3236));
+	brightness: 0.78;
+}
+
+.OutgameActionButton.Disabled,.OutgameActionButton.Disabled:hover,.OutgameActionButton.Disabled:active,.OutgameActionButton:disabled,.OutgameActionButton:disabled:hover,.OutgameActionButton:disabled:active,.OutgameActionButton.Locked,.OutgameActionButton.Locked:hover,.OutgameActionButton.Locked:active,.OutgameActionButton.Claimed,.OutgameActionButton.Claimed:hover,.OutgameActionButton.Claimed:active,.OutgameActionButton.Maxed,.OutgameActionButton.Maxed:hover,.OutgameActionButton.Maxed:active
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#525F65), to(#2F363A));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF08), to(#FFFFFF03));
+	saturation: 0;
+	opacity: 0.3;
+	brightness: 0.5;
+}
+
+.OutgameActionButton.PreserveVariantDisabled.Cancel.Disabled,.OutgameActionButton.PreserveVariantDisabled.Cancel.Disabled:hover,.OutgameActionButton.PreserveVariantDisabled.Cancel.Disabled:active
+{
+	background-img-opacity: 0.26;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#813a3d), color-stop(0.54, #5c292c), to(#321718));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffd2c826), to(#b24f4908));
+	box-shadow: #3b141866 0px 2px 7px 0px;
+	saturation: 0.58;
+	opacity: 0.58;
+	brightness: 0.68;
+}
+
+.OutgameActionButtonText
+{
+	color: white;
+	opacity: 0.8;
+	text-shadow: 0px 1px 4px #000000;
+	transition-property: transform, text-shadow, opacity;
+	transition-duration: 0.05s;
+	transition-timing-function: ease;
+}
+
+.OutgameActionButton:hover .OutgameActionButtonText
+{
+	color: white;
+	opacity: 1;
+}
+
+.OutgameActionButton.Secondary .OutgameActionButtonText,.OutgameActionButton.Tool .OutgameActionButtonText
+{
+	color: cSteel;
+}
+
+.OutgameActionButton.Confirm .OutgameActionButtonText
+{
+	color: #e6ffd8;
+}
+
+.OutgameActionButton.Cancel .OutgameActionButtonText,.OutgameActionButton.Danger .OutgameActionButtonText
+{
+	color: #ffd8d0;
+}
+
+.OutgameActionButton.Gold .OutgameActionButtonText
+{
+	color: cGoldBright;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameActionButton.Disabled .OutgameActionButtonText,.OutgameActionButton:disabled .OutgameActionButtonText,.OutgameActionButton.Locked .OutgameActionButtonText,.OutgameActionButton.Claimed .OutgameActionButtonText,.OutgameActionButton.Maxed .OutgameActionButtonText
+{
+	opacity: 1;
+}
+
+.OutgameActionButton:active .OutgameActionButtonText
+{
+	transform: translateY(0.5px);
+}
+
+.OutgameActionButton.Disabled:active .OutgameActionButtonText,.OutgameActionButton:disabled:active .OutgameActionButtonText,.OutgameActionButton.Locked:active .OutgameActionButtonText,.OutgameActionButton.Claimed:active .OutgameActionButtonText
+{
+	transform: translateY(0px);
+}
+
+.OutgameIconWell
+{
+	background-color: #030609e0;
+	border: 1px solid cHairline;
+	box-shadow: cScrim60 0px 0px 7px 0px;
+}
+
+.OutgameHeaderBar,.OutgameStonePaneHeader,.OutgameRunePaneHeader,.OutgameGemPaneHeader,.OutgameGemSlotActionHeader,.OutgameEquipmentPaneHeader,.OutgameEquipmentTypePrimaryBar,.OutgameEquipmentTypeSecondaryBar,.OutgameEquipmentWarehouseSectionHeader,.OutgameEquipmentWarehouseBatchBar,.OutgameEquipmentWarehouseStatusBar,.OutgameStoneInventoryActionBar,.OutgameRuneInventoryBatchBar,.OutgameRuneResetHeader,.OutgameRoleInventoryHeader
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1a252ded), color-stop(0.70, #0e151bed), to(#05080cf0));
+}
+
+.OutgameStateChip
+{
+	background-color: cChipInk;
+	border: 1px solid cHairline;
+	border-radius: 2px;
+	color: cSteel;
+	text-align: center;
+}
+
+.OutgameStateChip.Gold
+{
+	background-color: cScrim80;
+	border: 1px solid cGoldBorder;
+	color: cCream;
+}
+
+.OutgameDialogShell,.OutgameShopPurchaseDialog,.OutgameShopPaymentDialog,.OutgameRuneResetDialog
+{
+	background-color: cPanelGlass;
+	border: 1px solid cHairline;
+	box-shadow: cScrimDeep 0px 12px 36px 0px;
+}
+
+.OutgameDialogBackdrop,.OutgameShopPurchaseOverlay,.OutgameShopPaymentOverlay,.OutgameRuneResetBackdrop
+{
+	background-color: cScrim60;
+}
+
+.OutgameEmptyState,.OutgameShopEmpty,.OutgameRoleInventoryEmpty,.OutgameRoleCourierEmpty,.OutgameBattlePassEmpty,.OutgameCodexEmpty
+{
+	color: cSteel;
+	font-size: 22px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEmptyState.Large,.OutgameEmptyPageLabel
+{
+	color: cSteel;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEmptyState.Small,.OutgameEquipmentEmpty,.OutgameMonsterArchiveEmpty,.OutgameEquipArchiveGridEmpty,.MailEmptyState Label
+{
+	color: cSlate;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEmptyState.LargeDim,.OutgameActivityOneEmpty,.OutgameActivityTwoEmpty,.OutgameSevenDayEmpty,.OutgameDailyTaskEmpty
+{
+	color: cSlate;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgamePerkRow
+{
+	flow-children: right;
+	padding: 10px 13px;
+	margin-bottom: 8px;
+	border: 1px solid cHairline;
+	border-radius: 3px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#0f151bcc), to(#0b1117cc));
+}
+
+.OutgamePerkRow.New
+{
+	border: 1px solid cGoldBorder;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1a1307c8), to(#0b1117cc));
+	box-shadow: #d9be7722 0px 0px 12px 0px;
+}
+
+.OutgamePerkMarker
+{
+	width: 10px;
+	height: 10px;
+	margin-left: 2px;
+	margin-right: 13px;
+	vertical-align: center;
+	border-radius: 5px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGoldBright), to(cGold));
+	box-shadow: cScrim60 0px 1px 3px 0px;
+}
+
+.OutgamePerkRow.New .OutgamePerkMarker
+{
+	box-shadow: cGoldGlow 0px 0px 8px 0px;
+}
+
+.OutgamePerkText
+{
+	width: fill-parent-flow(1);
+	vertical-align: center;
+	color: cSteel;
+	font-size: 17px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgamePerkRow.New .OutgamePerkText
+{
+	color: cCream;
+}
+
+.OutgamePerkNewTag
+{
+	vertical-align: center;
+	margin-left: 10px;
+	padding: 1px 7px 2px 7px;
+	color: cGoldBright;
+	font-size: 13px;
+	border: 1px solid cGoldBorder;
+	border-radius: 2px;
+	background-color: cScrim80;
+}
+

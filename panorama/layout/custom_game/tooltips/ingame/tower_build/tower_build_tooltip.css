@@ -1,0 +1,245 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+#evo_line
+{
+	width: 100%;
+	height: 2px;
+	margin-top: 12px;
+	background-color: #4a4a6a;
+}
+
+#evoTitleName
+{
+	margin-top: 8px;
+	margin-left: 10px;
+	font-size: 18px;
+	color: #FFD700;
+	font-family: tooltipTitleFont;
+	font-weight: bold;
+}
+
+#evoGrid
+{
+	width: 100%;
+	margin-top: 4px;
+	margin-left: 10px;
+	flow-children: down;
+}
+
+.evo_stage_row
+{
+	width: 100%;
+	margin-top: 4px;
+	margin-bottom: 2px;
+	flow-children: right;
+}
+
+.evo_stage_label
+{
+	font-size: 15px;
+	color: #88AAFF;
+	font-family: tooltipBodyFont;
+	min-width: 36px;
+	text-align: center;
+}
+
+.evo_branch_name
+{
+	font-size: 15px;
+	color: #FFF281;
+	font-family: tooltipBodyFont;
+}
+
+.evo_branch_sep
+{
+	font-size: 15px;
+	color: #666688;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+.evo_branch_desc
+{
+	font-size: 14px;
+	color: #AAAAAA;
+	margin-top: 1px;
+	margin-left: 36px;
+	line-height: 20px;
+}
+
+.evo_empty_hint
+{
+	font-size: 14px;
+	color: #666666;
+	margin-left: 10px;
+	margin-top: 4px;
+	font-style: italic;
+}
+
+.inline_img_attr
+{
+	width: 18px;
+	height: 18px;
+}
+
+#basicsTitleName
+{
+	visibility: visible;
+}
+
+.TowerBuildStatRow,.TowerBuildDamageMetaRow
+{
+	width: 100%;
+	height: 26px;
+	flow-children: right;
+}
+
+.TowerBuildStatIcon,.TowerBuildDamageMetaIcon
+{
+	vertical-align: center;
+	width: 20px;
+	height: 20px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TowerBuildStatIcon.Strength
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex");
+}
+
+.TowerBuildStatIcon.Agility
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex");
+}
+
+.TowerBuildStatIcon.Intelligence
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex");
+}
+
+.TowerBuildStatRow.Primary .TowerBuildStatIcon
+{
+	brightness: 1.8;
+	saturation: 1.25;
+}
+
+.TowerBuildStatRow.Primary .TowerBuildStatName,.TowerBuildStatRow.Primary .TowerBuildStatValue,.TowerBuildStatRow.Primary .TowerBuildStatGrowth
+{
+	color: #fff2bf;
+}
+
+.TowerBuildStatName,.TowerBuildDamageMetaName
+{
+	vertical-align: center;
+	margin-left: 8px;
+	width: 58px;
+	color: #9fafba;
+	font-size: 15px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.TowerBuildStatValue
+{
+	vertical-align: center;
+	width: 48px;
+	color: #efe9d8;
+	font-size: 15px;
+	text-align: right center;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.TowerBuildStatGrowth
+{
+	vertical-align: center;
+	margin-left: 8px;
+	width: 64px;
+	color: #8fb5c7;
+	font-size: 15px;
+	text-align: left center;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.TowerBuildMetaTitle
+{
+	width: 100%;
+	height: 22px;
+	margin-top: 8px;
+	font-family: tooltipTitleFont;
+	color: #d9b56d;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.TowerBuildDamageMetaValue
+{
+	vertical-align: center;
+	margin-left: 6px;
+	width: fill-parent-flow(1);
+	color: #d8d3c3;
+	font-size: 15px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TowerBuildDamageMetaIcon.Hidden
+{
+	visibility: collapse;
+}
+
+.TowerBuildDamageMetaRow.NoIcon .TowerBuildDamageMetaValue
+{
+	margin-left: 26px;
+}
+
+.TDDamageAttributeIcon.Physical
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_physical_png.vtex");
+}
+
+.TDDamageAttributeIcon.Arcane
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_arcane_png.vtex");
+}
+
+.TDDamageAttributeIcon.Fire
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_fire_png.vtex");
+}
+
+.TDDamageAttributeIcon.Cold
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_cold_png.vtex");
+}
+
+.TDDamageAttributeIcon.Lightning
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_lightning_png.vtex");
+}
+
+.TDDamageAttributeIcon.Earth
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_earth_png.vtex");
+}
+
+.TDDamageAttributeIcon.Shadow
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_shadow_png.vtex");
+}
+
+.TDDamageAttributeIcon.Poison
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_poison_png.vtex");
+}
+
+.TDDamageAttributeIcon.Holy
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_holy_png.vtex");
+}
+
+.TDDamageAttributeIcon.Void
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_void_png.vtex");
+}
+

@@ -1,0 +1,35 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/seven_day_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/seven_day_popup/seven_day_popup.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/seven_day_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/seven_day_popup/seven_day_popup.vjs_c" />
+	</scripts>
+	<Panel class="SevenDayPopupRoot fill panel-hidden" hittest="false" hittestchildren="false" onactivate="()=&gt;{}">
+		<Panel id="SevenDayPopupBackdrop" class="SevenDayPopupBackdrop" hittest="true" />
+		<Panel class="SevenDayPopupWindow" hittest="true" hittestchildren="true">
+			<Panel class="SevenDayPopupBg" hittest="true" />
+			<Label id="SevenDayPopupTitle" class="SevenDayPopupTitle" text="#outgame_activity_page_seven_day" />
+			<Button id="SevenDayPopupClose" class="SevenDayPopupClose tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#DOTA_Close&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel class="SevenDayPopupCloseIcon">
+					<Panel class="SevenDayPopupCloseLine SevenDayPopupCloseLineA" />
+					<Panel class="SevenDayPopupCloseLine SevenDayPopupCloseLineB" />
+				</Panel>
+			</Button>
+			<Panel id="SevenDayPopupBody" class="SevenDayPopupBody" />
+		</Panel>
+	</Panel>
+</root>

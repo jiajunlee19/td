@@ -1,0 +1,22 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/top_menus/top_menus.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/top_menus/top_menu_system.vjs_c" />
+	</scripts>
+	<Panel class="TopMenus TopMenusSystem" hittest="false" hittestchildren="true">
+		<Button id="MenuBack" class="MenuBtn TDMenuPrimary tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#DOTA_HUD_BackToDashboard&apos;)" onmouseout="DOTAHideTextTooltip()" onactivate="DOTAHUDShowDashboard()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_back_png.vtex" />
+		</Button>
+		<Button id="MenuSetting" class="MenuBtn TDMenuPrimary tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#DOTA_HUD_Settings&apos;)" onmouseout="DOTAHideTextTooltip()" onactivate="DOTAShowSettingsRebornPopup()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_settings_png.vtex" />
+		</Button>
+	</Panel>
+</root>

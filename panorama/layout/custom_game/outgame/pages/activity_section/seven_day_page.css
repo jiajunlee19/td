@@ -1,0 +1,124 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameSevenDayPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	background-color: #05080c99;
+	overflow: clip;
+}
+
+.OutgameSevenDayScroll
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 24px 16px;
+	overflow: squish scroll;
+}
+
+.OutgameSevenDayGrid
+{
+	width: 100%;
+	flow-children: right-wrap;
+	horizontal-align: center;
+}
+
+.OutgameSevenDayCell
+{
+	width: 150px;
+	height: 210px;
+	margin: 8px;
+	padding: 12px 8px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1d2a33ef), to(#071013ee));
+	border: 1px solid cHairline;
+	border-radius: 6px;
+}
+
+.OutgameSevenDayCell.Claimable
+{
+	border: 1px solid #ffd86b80;
+	box-shadow: 0px 0px 12px 2px cGoldGlow;
+}
+
+.OutgameSevenDayCell.Claimed
+{
+	saturation: 0.25;
+	opacity: 0.6;
+}
+
+.OutgameSevenDayCell.Locked
+{
+	saturation: 0.4;
+	opacity: 0.85;
+}
+
+.OutgameSevenDayDay
+{
+	width: 100%;
+	color: #e7eef2;
+	font-size: 20px;
+	text-align: center;
+	horizontal-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameSevenDayReward
+{
+	width: 80px;
+	height: 80px;
+	margin-top: 14px;
+	horizontal-align: center;
+}
+
+.OutgameSevenDayReward.Empty
+{
+	visibility: collapse;
+}
+
+.OutgameSevenDayClaim
+{
+	width: 110px;
+	height: 34px;
+	margin-top: 16px;
+	horizontal-align: center;
+	background-color: #2a3b46cc;
+	border: 1px solid cHairline;
+	border-radius: 4px;
+}
+
+.OutgameSevenDayCell.Claimable .OutgameSevenDayClaim
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#f0c15a), to(#c9892f));
+	border: 1px solid #ffe9a8;
+}
+
+.OutgameSevenDayClaimText
+{
+	width: 100%;
+	color: cSteel;
+	font-size: 18px;
+	text-align: center;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.OutgameSevenDayCell.Claimable .OutgameSevenDayClaimText
+{
+	color: #2a1a06;
+}
+
+.OutgameSevenDayEmpty
+{
+	visibility: collapse;
+	width: 100%;
+	margin-top: 80px;
+	horizontal-align: center;
+}
+
+.OutgameSevenDayEmpty.Visible
+{
+	visibility: visible;
+}
+

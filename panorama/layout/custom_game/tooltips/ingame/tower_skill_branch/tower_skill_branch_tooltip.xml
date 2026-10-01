@@ -1,0 +1,34 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tower_skill_tooltip_modules.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/tower_skill_branch/tower_skill_branch_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/hero_ability_feature_view.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/tower_evolution_state.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/tower_skill_tooltip_modules.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/tower_skill_branch/tower_skill_branch_tooltip.vjs_c" />
+	</scripts>
+	<Panel class="tips_new tower_skill_branch_tooltip">
+		<Panel id="main_frame">
+			<Panel id="title_block">
+				<Panel id="branchIconFrame">
+					<Image id="branchIcon" />
+				</Panel>
+				<Panel id="branchTitleTextBlock">
+					<Label id="branchName" />
+					<Label id="branchSubtitle" />
+				</Panel>
+				<Label id="branchStatus" />
+			</Panel>
+			<Panel id="branchBody">
+				<Panel id="branchModules" />
+				<Label id="branchDesc" />
+				<Panel id="branchMeta" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

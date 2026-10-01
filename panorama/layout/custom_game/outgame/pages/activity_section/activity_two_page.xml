@@ -1,0 +1,389 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/hoard_visuals.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/activity_two_page.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="HoardFinalReward">
+			<Panel class="OutgameActivityTwoFinalPreviewCell" hittest="false" hittestchildren="true">
+				<Panel id="RewardIcon" class="OutgameActivityTwoFinalPreviewIcon" hittest="true" hittestchildren="true" />
+				<Label id="RewardName" class="OutgameActivityTwoFinalPreviewName" hittest="false" hittestchildren="false" text="" />
+				<Label id="RewardCount" class="OutgameActivityTwoFinalPreviewCount" hittest="false" hittestchildren="false" text="" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="OutgameActivityTwoPage HoardPage" hittest="true" hittestchildren="true">
+		<Panel class="HoardDim" hittest="false" hittestchildren="false" />
+		<Panel class="HoardHeading" hittest="false" hittestchildren="false">
+			<Label class="HoardKicker" hittest="false" hittestchildren="false" text="#outgame_hoard_kicker" />
+			<Label class="HoardTitle" hittest="false" hittestchildren="false" text="#outgame_activity_xiangong_trial_title" />
+			<Label class="HoardDesc" hittest="false" hittestchildren="false" text="#outgame_hoard_two_desc" />
+			<Panel id="OutgameActivityTwoSummary" class="HoardSummary" hittest="false" hittestchildren="false">
+				<Panel class="HoardMetric" hittest="false" hittestchildren="false">
+					<Label class="HoardMetricLabel" hittest="false" hittestchildren="false" text="#outgame_activity_trial_claimed" />
+					<Label id="OutgameActivityTwoMetric0" class="HoardMetricValue" hittest="false" hittestchildren="false" text="" />
+				</Panel>
+				<Panel class="HoardMetric" hittest="false" hittestchildren="false">
+					<Label class="HoardMetricLabel" hittest="false" hittestchildren="false" text="#outgame_activity_trial_claimable" />
+					<Label id="OutgameActivityTwoMetric1" class="HoardMetricValue" hittest="false" hittestchildren="false" text="" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="OutgameActivityTwoBody" class="OutgameActivityTwoBody" hittest="false" hittestchildren="true">
+			<Panel id="OutgameActivityTwoPuzzle" class="OutgameActivityTwoPuzzle" hittest="false" hittestchildren="false">
+				<Label class="HoardPuzzleCaption" hittest="false" hittestchildren="false" text="#outgame_hoard_complete_title" />
+			</Panel>
+			<Panel id="OutgameActivityTwoMatrix" class="OutgameActivityTwoMatrix" hittest="false" hittestchildren="true">
+				<Panel class="OutgameActivityTwoRow Row1" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityTwoTask_101" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_101Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_101Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_101Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_101Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_102" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_102Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_102Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_102Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_102Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_103" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_103Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_103Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_103Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_103Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_104" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_104Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_104Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_104Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_104Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_105" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_105Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_105Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_105Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_105Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoReward_106" class="OutgameActivityTwoReward Row" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_106Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_106State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+				<Panel class="OutgameActivityTwoRow Row2" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityTwoTask_201" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_201Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_201Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_201Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_201Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_202" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_202Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_202Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_202Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_202Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_203" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_203Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_203Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_203Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_203Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_204" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_204Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_204Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_204Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_204Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_205" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_205Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_205Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_205Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_205Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoReward_206" class="OutgameActivityTwoReward Row" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_206Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_206State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+				<Panel class="OutgameActivityTwoRow Row3" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityTwoTask_301" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_301Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_301Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_301Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_301Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_302" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_302Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_302Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_302Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_302Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_303" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_303Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_303Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_303Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_303Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_304" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_304Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_304Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_304Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_304Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoTask_305" class="OutgameActivityTwoTask" hittest="true" hittestchildren="false">
+						<Panel class="HoardTaskCompletionGlow" hittest="false" hittestchildren="false" />
+						<Panel class="HoardTaskFace" hittest="false" hittestchildren="false">
+							<Image id="OutgameActivityTwoTask_305Icon" class="OutgameActivityTwoTaskTypeIcon" hittest="false" hittestchildren="false" />
+							<Label id="OutgameActivityTwoTask_305Name" class="OutgameActivityTwoTaskName" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_305Progress" class="OutgameActivityTwoTaskProgress" hittest="false" hittestchildren="false" text="" />
+							<Label id="OutgameActivityTwoTask_305Mark" class="OutgameActivityTwoTaskMark" hittest="false" hittestchildren="false" text="" />
+							<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+						</Panel>
+					</Panel>
+					<Panel id="OutgameActivityTwoReward_306" class="OutgameActivityTwoReward Row" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_306Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_306State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+				<Panel class="OutgameActivityTwoColumnRewards" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityTwoReward_401" class="OutgameActivityTwoReward Column" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_401Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_401State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityTwoReward_402" class="OutgameActivityTwoReward Column" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_402Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_402State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityTwoReward_403" class="OutgameActivityTwoReward Column" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_403Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_403State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityTwoReward_404" class="OutgameActivityTwoReward Column" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_404Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_404State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityTwoReward_405" class="OutgameActivityTwoReward Column" hittest="true" hittestchildren="false">
+						<Panel class="HoardChestStill" hittest="false" hittestchildren="false" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Label id="OutgameActivityTwoReward_405Title" class="OutgameActivityTwoRewardTitle" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityTwoReward_405State" class="OutgameActivityTwoRewardState" hittest="false" hittestchildren="false" text="" />
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel class="HoardBoardRim" hittest="false" hittestchildren="false">
+				<Panel class="HoardBoardRimInner" hittest="false" hittestchildren="false" />
+			</Panel>
+			<Panel id="OutgameActivityTwoFinalLink" class="OutgameActivityTwoFinalLink" hittest="true" hittestchildren="false">
+				<Label class="HoardFinalArrow" hittest="false" hittestchildren="false" text="→" />
+			</Panel>
+			<Panel id="OutgameActivityTwoFinalPanel" class="OutgameActivityTwoFinalPanel" hittest="true" hittestchildren="true">
+				<Label class="OutgameActivityTwoFinalTitle" hittest="false" hittestchildren="false" text="#outgame_activity_trial_final_reward" />
+				<Panel class="HoardChestStill Final" hittest="false" hittestchildren="false" />
+				<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+					<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+					<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+				</Panel>
+				<Label class="OutgameActivityTwoFinalHint" hittest="false" hittestchildren="false" text="#outgame_activity_trial_final_desc" />
+				<Panel id="OutgameActivityTwoFinalPreviewList" class="OutgameActivityTwoFinalPreviewList" hittest="false" hittestchildren="true" />
+				<Label id="OutgameActivityTwoFinalState" class="OutgameActivityTwoFinalState" hittest="false" hittestchildren="false" text="" />
+				<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+			</Panel>
+		</Panel>
+		<Label id="OutgameActivityTwoEmpty" class="HoardEmpty" hittest="false" hittestchildren="false" text="" />
+	</Panel>
+</root>

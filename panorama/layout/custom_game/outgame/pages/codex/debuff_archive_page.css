@@ -1,0 +1,133 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameDebuffArchiveBody
+{
+	width: 100%;
+	height: 100%;
+	padding: 16px 18px;
+	flow-children: down;
+	background-color: cScrimBody;
+}
+
+.OutgameDebuffArchiveSummary
+{
+	width: 100%;
+	height: 72px;
+	padding: 12px 16px;
+	flow-children: down;
+}
+
+.OutgameDebuffArchiveSummaryTitle
+{
+	width: 100%;
+	height: 25px;
+	color: cCream;
+	font-size: 20px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameDebuffArchiveSummaryText
+{
+	width: 100%;
+	height: 22px;
+	margin-top: 4px;
+	color: #aeb9be;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameDebuffArchiveGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 14px;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.OutgameDebuffCard
+{
+	width: 324px;
+	height: 258px;
+	margin: 0px 12px 12px 0px;
+	padding: 10px;
+	flow-children: down;
+}
+
+.OutgameDebuffCardHeader
+{
+	width: 100%;
+	height: 74px;
+	flow-children: right;
+}
+
+.OutgameDebuffIconFrame
+{
+	width: 72px;
+	height: 72px;
+	vertical-align: center;
+}
+
+.OutgameDebuffIcon
+{
+	width: 64px;
+	height: 64px;
+	align: center center;
+}
+
+.OutgameDebuffTitleBlock
+{
+	width: fill-parent-flow(1);
+	height: 72px;
+	margin-left: 9px;
+	flow-children: down;
+}
+
+.OutgameDebuffName
+{
+	width: 100%;
+	height: 72px;
+	color: cCream;
+	font-size: 20px;
+	vertical-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameDebuffRuleList
+{
+	width: 100%;
+	height: 40px;
+	margin-top: 6px;
+	flow-children: right-wrap;
+	overflow: clip;
+}
+
+.OutgameDebuffRule
+{
+	height: 18px;
+	margin: 0px 4px 4px 0px;
+	padding: 1px 6px 0px 6px;
+	color: cSteel;
+	font-size: 13px;
+	text-align: center;
+	background-color: #121b21dc;
+	border: 1px solid cHairline;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameDebuffEffectText
+{
+	width: 100%;
+	height: 96px;
+	margin-top: 8px;
+	padding-top: 7px;
+	color: cSteel;
+	font-size: 15px;
+	line-height: 19px;
+	border-top: 1px solid cCyanWellHair;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+

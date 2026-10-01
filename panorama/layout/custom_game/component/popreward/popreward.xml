@@ -1,0 +1,38 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/component/popreward/popreward.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/popreward/popreward.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="rewardItem">
+			<Panel class="rewardItem" hittest="true">
+				<Image id="Bg" />
+				<Image id="Type" />
+				<Image id="Quality" />
+				<Image id="Icon" />
+				<Label id="ItemNumber" text="1" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="PopRewardRootPanel fill Hidden" hittest="true">
+		<Panel id="poprewardFillBg" />
+		<Panel class="poprewardRoot">
+			<Panel id="poprewardBg" hittest="true" />
+			<Panel id="poprewardListMain">
+				<Panel id="poprewardListGird" />
+			</Panel>
+			<Panel id="CloseBtn2" />
+		</Panel>
+		<Panel id="poprewardTitle" />
+	</Panel>
+</root>

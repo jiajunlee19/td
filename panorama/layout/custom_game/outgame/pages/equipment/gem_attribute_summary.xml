@@ -1,0 +1,29 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/equipment_section_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_surfaces.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/gem_attribute_summary.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="GemSummaryRow">
+			<Panel class="GemSummaryRow" hittest="false" hittestchildren="false">
+				<Label id="GemSummaryRowText" class="OutgameEquipmentWearSummaryAttr" html="true" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="GemAttributeSummary OutgameEquipmentWearSummary Visible Hidden" hittest="true" hittestchildren="true">
+		<Panel class="GemSummaryHeader" hittest="false" hittestchildren="true">
+			<Label class="OutgameEquipmentWearSummaryTitle" text="#outgame_equipment_attr_summary_button" hittest="false" />
+			<Button id="GemSummaryClose" class="OutgameActionButton Cancel" hittest="true" hittestchildren="false">
+				<Label text="#outgame_gem_close_panel" class="OutgameActionButtonText" hittest="false" />
+			</Button>
+		</Panel>
+		<Panel id="GemSummaryList" class="OutgameEquipmentWearSummaryList">
+			<Label id="GemSummaryEmpty" class="OutgameEquipmentWearSummaryEmpty" text="#outgame_equipment_attr_empty" hittest="false" />
+		</Panel>
+	</Panel>
+</root>

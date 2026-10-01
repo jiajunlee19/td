@@ -1,0 +1,56 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/arena_root/arena_root.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/lib/qrcode.vjs_c" />
+		<include src="s2r://panorama/lib/panorama_qrcode.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/kv.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/relic_data.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/config_store.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan_data.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/utils/platform.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/effect_tooltip_utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/rune_slot_tooltip_utils.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/utils/update.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/utils/event.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_command_manager.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_data_store.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/startup_readiness.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/round_advance_request.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/redtipmanager/redtipmanager.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/user/game.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/user/data.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/setting/key_binding.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/setting/dota2_handle.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/setting/config.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/server/netblocker.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/arena_root/arena_root.vjs_c" />
+	</scripts>
+	<Panel class="ArenaRoot fill" hittest="false" hittestchildren="true">
+		<Panel id="ArenaRootHudLayer" class="ArenaRootLayer" hittest="false" hittestchildren="true" />
+		<Panel id="ArenaRootOutgameLayer" class="ArenaRootLayer" hittest="false" hittestchildren="true" />
+		<Panel id="ArenaRootTopMenusLayer" class="ArenaRootLayer" hittest="false" hittestchildren="true" />
+		<Panel id="ArenaRootPopupLayer" class="ArenaRootLayer" hittest="false" hittestchildren="true" />
+		<Panel id="ArenaRootTopMenuSystemLayer" class="ArenaRootLayer" hittest="false" hittestchildren="true" />
+		<Panel id="ArenaRootNotificationLayer" class="ArenaRootLayer" hittest="false" hittestchildren="true" />
+		<Panel id="ArenaRootStartupBlocker" class="ArenaRootStartupBlocker" hittest="true" hittestchildren="true">
+			<Panel class="ArenaRootLoadingBox">
+				<Label id="ArenaRootLoadingTitle" class="ArenaRootLoadingTitle" text="#ChooseDifficult_LoadingConfig" />
+				<Label id="ArenaRootLoadingDetail" class="ArenaRootLoadingDetail" text="#ChooseDifficult_LoadingPlayerData" />
+				<Button id="ArenaRootStartupExitButton" class="ArenaRootStartupExitButton Hidden" hittest="true">
+					<Label class="ArenaRootStartupExitLabel" text="#login_loading_exit_button" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

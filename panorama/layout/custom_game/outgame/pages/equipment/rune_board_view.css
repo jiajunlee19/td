@@ -1,0 +1,820 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameRuneBoard .OutgameRuneSlotCell.DropHint
+{
+	border: 1px solid #f0d48daa;
+	box-shadow: cGoldGlow 0px 0px 9px 0px;
+	animation-name: OutgameEquipmentSlotDropHint;
+	animation-duration: 1.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.OutgameRuneBoard .OutgameRuneSlotCell.DropCompatible
+{
+	border: 1px solid cGreen;
+	box-shadow: cGreen 0px 0px 13px 0px;
+	animation-name: none;
+}
+
+.OutgameRuneBoard .OutgameRuneSlotCell.DropBlocked
+{
+	border: 1px solid cRed;
+	box-shadow: cRed 0px 0px 13px 0px;
+	animation-name: none;
+}
+
+.OutgameRuneDragDisplay
+{
+	width: 48px;
+	height: 48px;
+}
+
+.OutgameRuneBoard
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	background-color: cScrim40;
+}
+
+.OutgameRuneWorkPane
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	padding: 0px;
+	overflow: clip;
+}
+
+.OutgameRuneInventoryPane
+{
+	width: 680px;
+	height: 100%;
+	horizontal-align: right;
+	flow-children: down;
+	background-color: cPanelFill;
+	border-left: 1px solid #34404a99;
+}
+
+.OutgameRunePaneHeader
+{
+	width: 100%;
+	height: 52px;
+	padding: 13px 16px 0px 18px;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameRunePaneTitle
+{
+	color: #f0dfba;
+	font-size: 21px;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRuneWorkBody
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.OutgameRuneSection
+{
+	width: 100%;
+	flow-children: down;
+	margin-bottom: 18px;
+}
+
+.OutgameRuneSectionTitle
+{
+	color: #e5d9ac;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.OutgameRuneBoardHint
+{
+	width: 100%;
+	color: #9aa3b2;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.OutgameRuneIconHost
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRuneSlotsPage
+{
+	width: 100%;
+	height: 100%;
+	overflow: clip;
+}
+
+.OutgameRuneSlotsStage
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRuneSlotsBoard
+{
+	width: 800px;
+	height: 760px;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.OutgameRuneSlotsLayer
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRuneSlotFrame
+{
+	width: 106px;
+	height: 130px;
+	flow-children: down;
+	overflow: noclip;
+}
+
+.OutgameRuneSlotCell
+{
+	width: 106px;
+	height: 106px;
+	padding: 4px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#111b23f0), color-stop(0.55, #081018ec), to(#03070cea));
+	border: 1px solid #334250bb;
+	box-shadow: #000000b0 0px 0px 10px 0px;
+	overflow: noclip;
+}
+
+.OutgameRuneSlotCell.Filled
+{
+	border: 1px solid #b5965dcc;
+	box-shadow: #b5965d33 0px 0px 10px 0px;
+}
+
+.OutgameRuneSlotCell.CanInlay:hover
+{
+	border: 1px solid #f0d48ddd;
+	box-shadow: #d4aa5f66 0px 0px 9px 0px;
+	brightness: 1.16;
+}
+
+.OutgameRuneSlotCell.MissingSlot
+{
+	saturation: 0.65;
+	brightness: 0.72;
+}
+
+.OutgameRuneSlotCell.MissingSlot:hover
+{
+	brightness: 0.82;
+}
+
+.OutgameRuneSlotCell.MissingSlot .OutgameEquipmentWearSlotIcon
+{
+	width: 50px;
+	height: 50px;
+	horizontal-align: center;
+}
+
+.OutgameRuneSlotHead
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 18px;
+	z-index: 4;
+}
+
+.OutgameRuneSlotActiveBadge
+{
+	horizontal-align: right;
+	color: #7CFC7C;
+	font-size: 10px;
+	margin-right: 3px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameRuneSlotIcons
+{
+	ignore-parent-flow: true;
+	width: 96px;
+	height: 76px;
+	horizontal-align: center;
+	vertical-align: center;
+	overflow: noclip;
+	z-index: 2;
+}
+
+.OutgameRuneSlotIconCell
+{
+	width: 24px;
+	height: 24px;
+	ignore-parent-flow: true;
+	overflow: noclip;
+}
+
+.OutgameRuneSlotIcons.Count_1 .OutgameRuneSlotIconCell.Index_0
+{
+	position: 36px 26px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_2 .OutgameRuneSlotIconCell.Index_0
+{
+	position: 36px 12px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_2 .OutgameRuneSlotIconCell.Index_1
+{
+	position: 36px 40px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_3 .OutgameRuneSlotIconCell.Index_0
+{
+	position: 36px 0px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_3 .OutgameRuneSlotIconCell.Index_1
+{
+	position: 36px 26px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_3 .OutgameRuneSlotIconCell.Index_2
+{
+	position: 36px 52px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_4 .OutgameRuneSlotIconCell.Index_0
+{
+	position: 22px 12px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_4 .OutgameRuneSlotIconCell.Index_1
+{
+	position: 50px 12px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_4 .OutgameRuneSlotIconCell.Index_2
+{
+	position: 22px 40px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_4 .OutgameRuneSlotIconCell.Index_3
+{
+	position: 50px 40px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_5 .OutgameRuneSlotIconCell.Index_0
+{
+	position: 22px 0px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_5 .OutgameRuneSlotIconCell.Index_1
+{
+	position: 50px 0px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_5 .OutgameRuneSlotIconCell.Index_2
+{
+	position: 36px 26px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_5 .OutgameRuneSlotIconCell.Index_3
+{
+	position: 22px 52px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_5 .OutgameRuneSlotIconCell.Index_4
+{
+	position: 50px 52px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_6 .OutgameRuneSlotIconCell.Index_0
+{
+	position: 22px 0px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_6 .OutgameRuneSlotIconCell.Index_1
+{
+	position: 50px 0px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_6 .OutgameRuneSlotIconCell.Index_2
+{
+	position: 22px 26px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_6 .OutgameRuneSlotIconCell.Index_3
+{
+	position: 50px 26px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_6 .OutgameRuneSlotIconCell.Index_4
+{
+	position: 22px 52px 0px;
+}
+
+.OutgameRuneSlotIcons.Count_6 .OutgameRuneSlotIconCell.Index_5
+{
+	position: 50px 52px 0px;
+}
+
+.OutgameRuneSlotIconCell.Empty
+{
+	background-color: cScrim40;
+	border: 1px solid #d7c69730;
+	border-radius: 12px;
+}
+
+.OutgameRuneSlotIconCell.Empty.CanInlay:hover
+{
+	border: 1px solid cGoldBright;
+	box-shadow: #d4aa5f55 0px 0px 7px 0px;
+}
+
+.OutgameRuneSlotEmptyMark
+{
+	horizontal-align: center;
+	vertical-align: center;
+	color: #6c7787;
+	font-size: 17px;
+	margin-top: -1px;
+}
+
+.OutgameRuneSlotFooter
+{
+	width: 106px;
+	height: 22px;
+	horizontal-align: center;
+	margin-top: 2px;
+	z-index: 3;
+}
+
+.OutgameRuneResetBtn
+{
+	horizontal-align: center;
+	vertical-align: center;
+	min-width: 44px;
+	height: 18px;
+	padding: 1px 7px 0px 7px;
+	background-color: #4a2525dd;
+	border: 1px solid #8f595055;
+}
+
+.OutgameRuneResetBtn:hover
+{
+	background-color: #783a3a;
+}
+
+.OutgameRuneResetBtn.Disabled
+{
+	background-color: #333333;
+}
+
+.OutgameRuneResetBtnText
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 100%;
+	color: #ffcccc;
+	font-size: 10px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameRuneResetBtn.Disabled .OutgameRuneResetBtnText
+{
+	color: #777777;
+}
+
+.OutgameRuneComposeRow
+{
+	width: 100%;
+	flow-children: right;
+	margin: 8px 0px;
+}
+
+.OutgameRuneComposeMaterials
+{
+	flow-children: right;
+	vertical-align: center;
+}
+
+.OutgameRuneComposeMatCell
+{
+	width: 80px;
+	height: 80px;
+	margin: 4px;
+	overflow: noclip;
+}
+
+.OutgameRuneComposeMatCell.Empty
+{
+	background-color: #00000055;
+	border: 1px dashed #ffffff33;
+	border-radius: 6px;
+}
+
+.OutgameRuneComposeStonePlus
+{
+	color: #aeb8c8;
+	font-size: 24px;
+	margin: 0px 6px;
+	vertical-align: center;
+}
+
+.OutgameRuneComposeStoneCost
+{
+	width: 80px;
+	height: 80px;
+	margin: 4px;
+	overflow: noclip;
+	border: 1px solid #8fd0ffaa;
+	box-shadow: fill #78b8ff1c 0px 0px 8px 0px;
+}
+
+.OutgameRuneComposeStoneCost.Missing
+{
+	saturation: 0.35;
+	brightness: 0.65;
+	border: 1px solid #ff6464cc;
+	box-shadow: fill #ff4c4c25 0px 0px 8px 0px;
+}
+
+.OutgameRuneComposeStoneCount
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 3px;
+	margin-bottom: 2px;
+	padding: 0px 4px;
+	color: #e8f7ff;
+	font-size: 13px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	background-color: #000000aa;
+}
+
+.OutgameRuneComposeStoneCost.Missing .OutgameRuneComposeStoneCount
+{
+	color: #ffb4b4;
+}
+
+.OutgameRuneComposeArrow
+{
+	color: #e5d9ac;
+	font-size: 30px;
+	margin: 0px 14px;
+	vertical-align: center;
+}
+
+.OutgameRuneComposeResultCell
+{
+	width: 80px;
+	height: 80px;
+	margin: 4px;
+	vertical-align: center;
+	overflow: noclip;
+}
+
+.OutgameRuneComposeResultCell.Empty
+{
+	background-color: #00000055;
+	border: 1px solid cHairlineHi;
+	border-radius: 6px;
+}
+
+.OutgameRuneComposeBtn
+{
+	horizontal-align: left;
+	margin-top: 10px;
+	padding: 8px 28px;
+	border-radius: 4px;
+	background-color: #2f6a39;
+	border: 1px solid #4f9a5a;
+}
+
+.OutgameRuneComposeBtn:hover
+{
+	background-color: #3a824a;
+}
+
+.OutgameRuneComposeBtn.Disabled
+{
+	background-color: #333333;
+	border: 1px solid #444444;
+}
+
+.OutgameRuneComposeBtnText
+{
+	color: #eafff0;
+	font-size: 17px;
+}
+
+.OutgameRuneComposeBtn.Disabled .OutgameRuneComposeBtnText
+{
+	color: #777777;
+}
+
+.OutgameRuneResetOverlay
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+	z-index: 20;
+}
+
+.OutgameRuneResetBackdrop
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRuneResetDialog
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 560px;
+	height: 430px;
+	flow-children: down;
+}
+
+.OutgameRuneResetHeader
+{
+	width: 100%;
+	height: 56px;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameRuneResetTitle
+{
+	vertical-align: center;
+	margin-left: 18px;
+	color: cCream;
+	font-size: 22px;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameRuneResetClose
+{
+	width: 34px;
+	height: 34px;
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 12px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a3945), to(#101821));
+	border: 1px solid cHairline;
+}
+
+.OutgameRuneResetClose:hover
+{
+	brightness: 1.16;
+	border: 1px solid #c7d9e3c8;
+}
+
+.OutgameRuneResetClose:active
+{
+	transform: translateY(1px);
+	brightness: 0.82;
+}
+
+.OutgameRuneResetCloseText
+{
+	horizontal-align: center;
+	vertical-align: center;
+	color: cSteel;
+	font-size: 18px;
+	text-align: center;
+}
+
+.OutgameRuneResetBody
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	padding: 16px 24px 12px 24px;
+}
+
+.OutgameRuneResetHint
+{
+	width: 100%;
+	color: #b9c7ca;
+	font-size: 17px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameRuneResetMaterialGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 14px;
+	flow-children: right-wrap;
+	horizontal-align: center;
+	overflow: squish scroll;
+}
+
+.OutgameRuneResetMaterialCard
+{
+	width: 80px;
+	height: 80px;
+	margin: 0px 6px 8px 6px;
+	padding: 4px;
+	background-color: #0b1219cc;
+	border: 1px solid #2c3944aa;
+}
+
+.OutgameRuneResetMaterialCard:hover
+{
+	brightness: 1.25;
+	border: 1px solid #c8e9ff80;
+}
+
+.OutgameRuneResetMaterialCard.Selected
+{
+	border: 1px solid cGoldBright;
+	box-shadow: #ffd98a55 0px 0px 10px 0px;
+}
+
+.OutgameRuneResetMaterialIcon
+{
+	width: 72px;
+	height: 72px;
+	horizontal-align: center;
+	vertical-align: center;
+	overflow: noclip;
+}
+
+.OutgameRuneResetActions
+{
+	width: 100%;
+	height: 68px;
+	flow-children: right;
+	padding: 10px 24px 14px 24px;
+	border-top: 1px solid cHairlineLo;
+}
+
+.OutgameRuneResetActionButton
+{
+	width: fill-parent-flow(1);
+	height: 44px;
+	margin-left: 10px;
+}
+
+#OutgameRuneResetConfirm
+{
+	margin-left: 0px;
+}
+
+.OutgameRuneResetActionText
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 210px;
+	font-size: 20px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameRuneInventoryBatchBar
+{
+	width: 100%;
+	height: 54px;
+	padding: 7px 12px 0px 14px;
+	flow-children: right-wrap;
+	border-top: 1px solid cHairlineSteel;
+}
+
+.OutgameRuneInventoryToolButton
+{
+	min-width: 118px;
+	height: 38px;
+	margin-right: 8px;
+	padding: 3px 12px 0px 12px;
+	flow-children: down;
+}
+
+.OutgameRuneInventoryToolLabel
+{
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameRuneInventoryToolCount
+{
+	width: 100%;
+	margin-top: -2px;
+	color: cSlate;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRuneInventoryGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: right-wrap;
+	padding: 12px;
+	overflow: squish scroll;
+}
+
+.OutgameRuneCard
+{
+	width: 104px;
+	height: 104px;
+	margin: 2px;
+	padding: 4px;
+	overflow: noclip;
+}
+
+.OutgameRuneCard.Selected
+{
+	box-shadow: 0px 0px 8px 2px cGoldBright;
+}
+
+.OutgameRuneCard.BatchMode
+{
+	saturation: 0.75;
+}
+
+.OutgameRuneCard.BatchSelectable
+{
+	saturation: 1;
+}
+
+.OutgameRuneCard.BatchDisabled
+{
+	saturation: 0.25;
+	brightness: 0.65;
+}
+
+.OutgameRuneCard.BatchDisabled:hover
+{
+	saturation: 0.25;
+	brightness: 0.65;
+}
+
+.OutgameRuneCard.BatchSelected
+{
+	brightness: 1.1;
+}
+
+.OutgameRuneCard.BatchSelected .OutgameRuneCardIcon
+{
+	box-shadow: #d7b96c88 0px 0px 8px 0px;
+}
+
+.OutgameRuneCardSelectMark
+{
+	ignore-parent-flow: true;
+	width: 18px;
+	height: 18px;
+	margin: 5px 5px 0px 0px;
+	horizontal-align: right;
+	background-color: #05080bcc;
+	border: 1px solid #6d7d88aa;
+	opacity: 0;
+}
+
+.OutgameRuneCard.BatchMode .OutgameRuneCardSelectMark
+{
+	opacity: 1;
+}
+
+.OutgameRuneCard.BatchSelected .OutgameRuneCardSelectMark
+{
+	background-color: #d8b86bcc;
+	border: 1px solid #ffe1a0dd;
+}
+
+.OutgameRuneCard.Used
+{
+	wash-color: #555555ff;
+}
+
+.OutgameRuneCardIcon
+{
+	width: 96px;
+	height: 96px;
+	horizontal-align: center;
+	vertical-align: center;
+	overflow: noclip;
+}
+
+.OutgameRuneEmpty
+{
+	color: #888888;
+	font-size: 16px;
+	margin: 12px;
+}
+

@@ -1,0 +1,45 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/confirm_dialog/confirm_dialog.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/confirm_dialog/confirm_dialog.vjs_c" />
+	</scripts>
+	<Panel class="ConfirmDialogRoot fill Hidden" hittest="true" hittestchildren="true">
+		<Panel id="ConfirmDialogContent" class="ConfirmDialogContent" hittest="true">
+			<Panel id="ConfirmDialogBackdrop" />
+			<Panel id="ConfirmDialogPanel" class="ConfirmDialogPanel">
+				<Panel id="ConfirmDialogHeader">
+					<Label id="ConfirmDialogTitle" text="#ConfirmDialogTitle" />
+					<Panel id="ConfirmDialogCloseButton">
+						<Label id="ConfirmDialogCloseLabel" text="X" />
+					</Panel>
+				</Panel>
+				<Panel id="ConfirmDialogBody">
+					<Label id="ConfirmDialogDesc" text="" html="true" />
+					<Panel id="ConfirmDialogSkip">
+						<Panel id="ConfirmDialogSkipCheckbox">
+							<Panel id="ConfirmDialogSkipCheck" />
+						</Panel>
+						<Label id="ConfirmDialogSkipLabel" text="#ConfirmDialogTips_01" />
+					</Panel>
+				</Panel>
+				<Panel id="ConfirmDialogActions">
+					<Panel id="ConfirmDialogConfirmButton" class="ConfirmDialogButton Confirm">
+						<Label class="ConfirmDialogButtonText" text="#ConfirmDialogOk" />
+					</Panel>
+					<Panel id="ConfirmDialogCancelButton" class="ConfirmDialogButton Cancel">
+						<Label class="ConfirmDialogButtonText" text="#ConfirmDialogCancel" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

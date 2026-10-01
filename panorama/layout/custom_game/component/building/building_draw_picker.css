@@ -1,0 +1,1266 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.BuildingDrawPickerRoot
+{
+	width: 100%;
+	height: 100%;
+	z-index: 130;
+	visibility: collapse;
+	opacity: 0;
+}
+
+.BuildingDrawPickerRoot.BuildingDrawVisible
+{
+	visibility: visible;
+	opacity: 1;
+	animation-name: building-draw-root-fade-in;
+	animation-duration: 0.16s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawPickerRoot.BuildingDrawVisible.BuildingDrawClosing
+{
+	visibility: visible;
+	animation-name: building-draw-root-fade-out;
+	animation-duration: 0.24s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawShade
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(4, 7, 11, 0.82);
+}
+
+.BuildingDrawPanel
+{
+	width: 100%;
+	height: 100%;
+	overflow: noclip;
+}
+
+.BuildingDrawContent
+{
+	width: 100%;
+	height: 100%;
+	align: center center;
+	overflow: noclip;
+	z-index: 3;
+}
+
+.BuildingDrawHeader
+{
+	width: 100%;
+	height: 54px;
+	margin-top: 118px;
+}
+
+.BuildingDrawTitle
+{
+	horizontal-align: center;
+	vertical-align: top;
+	font-size: 30px;
+	font-weight: semi-bold;
+	color: #f5e6b0;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.BuildingDrawSubtitle
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	font-size: 16px;
+	color: #b9c5d7;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawList
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	overflow: noclip;
+	z-index: 4;
+}
+
+.BuildingDrawCard
+{
+	margin-top: -24px;
+	width: 416px;
+	height: 640px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#202939), color-stop(0.44, #151d2a), to(#090e15));
+	border: 1px solid #ffffff18;
+	overflow: noclip;
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+	perspective: 1200;
+	transition-property: brightness, border, box-shadow;
+	transition-duration: 0.14s;
+	transition-timing-function: ease-out;
+}
+
+.BuildingDrawCard:hover
+{
+	brightness: 1.13;
+	border: 1px solid #f0d99066;
+	box-shadow: fill #d6b45e18 0px 0px 14px 0px;
+}
+
+.BuildingDrawCard.BuildingDrawCardEmpty
+{
+	visibility: collapse;
+}
+
+.BuildingDrawCard.BuildingDrawCardEntrySettling
+{
+	transition-property: none;
+}
+
+.BuildingDrawCard.BuildingDrawCardEntryActive
+{
+	opacity: 1;
+	transition-property: transform, opacity, brightness, border, box-shadow;
+	transition-duration: 0.66s;
+	transition-timing-function: cubic-bezier(0.14, 0.90, 0.20, 1);
+}
+
+.BuildingDrawCard.BuildingDrawCardEntryActive.BuildingDrawCardSlot2
+{
+	transition-duration: 0.76s;
+	transition-timing-function: cubic-bezier(0.14, 0.94, 0.18, 1);
+}
+
+.BuildingDrawCard.BuildingDrawCardDisabled
+{
+	brightness: 0.72;
+	saturation: 0.82;
+}
+
+.BuildingDrawCard.BuildingDrawCardDisabled:hover
+{
+	border: 1px solid #ffffff18;
+	box-shadow: none;
+}
+
+.BuildingDrawCard.BuildingDrawRefreshFlipOut
+{
+	animation-name: building-draw-refresh-flip-out;
+	animation-duration: 0.28s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.42, 0.0, 0.58, 1.0);
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawCard.BuildingDrawRefreshFlipIn
+{
+	animation-name: building-draw-refresh-flip-in;
+	animation-duration: 0.34s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.16, 0.84, 0.26, 1.0);
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawCard.BuildingDrawRefreshFlipOut.BuildingDrawCardSlot2,.BuildingDrawCard.BuildingDrawRefreshFlipIn.BuildingDrawCardSlot2
+{
+	animation-delay: 0.04s;
+}
+
+.BuildingDrawCard.BuildingDrawRefreshFlipOut.BuildingDrawCardSlot3,.BuildingDrawCard.BuildingDrawRefreshFlipIn.BuildingDrawCardSlot3
+{
+	animation-delay: 0.08s;
+}
+
+.BuildingDrawCard.BuildingDrawSelectedFlash
+{
+	animation-name: building-draw-selected-flash;
+	animation-duration: 0.42s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawCardTilt
+{
+	width: 100%;
+	height: 100%;
+	transform: translateZ(0px) rotateX(0deg) rotateY(0deg);
+	transition-property: transform;
+	transition-duration: 0.12s;
+	transition-timing-function: ease-out;
+}
+
+.BuildingDrawCardMain
+{
+	width: 100%;
+	height: 100%;
+	padding: 14px;
+	flow-children: down;
+	z-index: 2;
+	opacity: 1;
+	background-color: gradient(linear, 0% 0%, 100% 100%, from(#ffffff05), color-stop(0.48, #ffffff00), to(#00000020));
+}
+
+.BuildingDrawCard.BuildingDrawIntroActive .BuildingDrawCardMain
+{
+	animation-name: building-draw-panel-appear;
+	animation-duration: 0.52s;
+	animation-delay: 0.24s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawCard.BuildingDrawClosingOutro .BuildingDrawCardMain
+{
+	animation-name: building-draw-panel-disappear;
+	animation-duration: 0.18s;
+	animation-delay: 0.00s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawPreview
+{
+	width: 100%;
+	height: 246px;
+	background-color: gradient(linear, 0% 0%, 100% 100%, from(#0a121c), color-stop(0.54, #152235), to(#070b11));
+	border: 1px solid #ffffff12;
+	overflow: clip;
+}
+
+.BuildingDrawSceneFallback
+{
+	width: 100%;
+	height: 100%;
+	align: center center;
+	opacity: 0.18;
+	saturation: 0.6;
+	wash-color: rgba(180, 208, 255, 0.9);
+	z-index: 1;
+}
+
+.BuildingDrawSceneFallback.HeroLandscapeIcon
+{
+	width: 129.292929%;
+	height: 100%;
+}
+
+.BuildingDrawSceneFallback.BuildingDrawSceneFallbackHidden
+{
+	visibility: collapse;
+}
+
+.BuildingDrawScene
+{
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0.96;
+}
+
+.BuildingDrawSceneHost
+{
+	width: 100%;
+	height: 100%;
+}
+
+.BuildingDrawEconPreviewFrame
+{
+	width: 246px;
+	height: 246px;
+	align: center center;
+	z-index: 2;
+	overflow: clip;
+}
+
+.BuildingDrawSceneVignette
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(radial, 50% 42%, 0% 0%, 70% 72%, from(#ffffff00), color-stop(0.62, #00000008), to(#00000090));
+	z-index: 3;
+}
+
+.BuildingDrawTitleRow
+{
+	width: 100%;
+	height: 34px;
+	margin-top: 8px;
+	flow-children: right;
+}
+
+.BuildingDrawName
+{
+	vertical-align: center;
+	width: fit-children;
+	max-width: 342px;
+	font-size: 23px;
+	font-weight: semi-bold;
+	color: #f5eed4;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawPrimaryIcon
+{
+	vertical-align: center;
+	margin-left: 6px;
+	width: 28px;
+	height: 28px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.BuildingDrawPrimaryIcon.Hidden
+{
+	visibility: collapse;
+}
+
+.BuildingDrawBaseStats
+{
+	width: 100%;
+	height: 50px;
+	margin-top: 6px;
+	flow-children: right;
+}
+
+.BuildingDrawBaseStatCell
+{
+	width: 118px;
+	height: 50px;
+	margin-right: 8px;
+	border: 1px solid #2f4249aa;
+	background-color: #030607a8;
+}
+
+.BuildingDrawBaseStatIcon
+{
+	vertical-align: center;
+	margin-left: 10px;
+	width: 23px;
+	height: 23px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.BuildingDrawBaseStatName
+{
+	margin-left: 42px;
+	margin-top: 6px;
+	width: 58px;
+	font-size: 13px;
+	color: #aeb9c3;
+	text-overflow: shrink;
+}
+
+.BuildingDrawBaseStatValue
+{
+	margin-left: 42px;
+	vertical-align: bottom;
+	margin-bottom: 5px;
+	width: 72px;
+	font-size: 18px;
+	color: #f1dfae;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawMeta
+{
+	width: 100%;
+	height: 82px;
+	margin-top: 8px;
+	flow-children: down;
+	border-top: 1px solid #ffffff10;
+	border-bottom: 1px solid #ffffff10;
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+.BuildingDrawMetaRow
+{
+	width: 100%;
+	height: 23px;
+	flow-children: right;
+}
+
+.BuildingDrawMetaRow.BuildingDrawTagRow
+{
+	height: 23px;
+}
+
+.BuildingDrawMetaLabel
+{
+	vertical-align: center;
+	width: 54px;
+	font-size: 13px;
+	color: #7f8d8d;
+	text-overflow: shrink;
+}
+
+.BuildingDrawMetaIcon
+{
+	vertical-align: center;
+	width: 21px;
+	height: 21px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.BuildingDrawMetaIcon.Hidden
+{
+	visibility: collapse;
+}
+
+.BuildingDrawMetaValue
+{
+	vertical-align: center;
+	margin-left: 7px;
+	width: 284px;
+	font-size: 14px;
+	color: #d8d3c3;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawMetaRow.NoIcon .BuildingDrawMetaValue
+{
+	margin-left: 28px;
+	color: #8f9b9b;
+}
+
+.BuildingDrawSkill
+{
+	width: 100%;
+	height: fit-children;
+	min-height: 154px;
+	margin-top: 8px;
+	flow-children: right;
+	background-color: #0306079a;
+	border: 1px solid #2d3a3faa;
+}
+
+.BuildingDrawSkillIcon
+{
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 72px;
+	height: 72px;
+	border: 1px solid #e5c36a66;
+	box-shadow: fill #00000088 0px 0px 8px 0px;
+}
+
+.BuildingDrawSkillText
+{
+	margin-left: 12px;
+	margin-top: 8px;
+	width: 278px;
+	height: fit-children;
+	min-height: 138px;
+	flow-children: down;
+}
+
+.BuildingDrawSkillName
+{
+	width: 100%;
+	height: 24px;
+	font-size: 16px;
+	font-weight: semi-bold;
+	color: #f2d58e;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawSkillDamageSummary
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 1px;
+	flow-children: down;
+}
+
+.BuildingDrawSkillDamageRow
+{
+	width: 100%;
+	height: 23px;
+	flow-children: right;
+}
+
+.BuildingDrawSkillDamageGroup
+{
+	height: 23px;
+	width: 137px;
+	flow-children: right;
+}
+
+.BuildingDrawSkillDamageSpacer
+{
+	height: 23px;
+	width: 137px;
+}
+
+.BuildingDrawSkillDamageLabel
+{
+	vertical-align: center;
+	width: 33px;
+	font-size: 12px;
+	color: #78878e;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawSkillDamageValue
+{
+	vertical-align: center;
+	width: 104px;
+	height: 23px;
+	flow-children: right;
+}
+
+.BuildingDrawSkillDamageValue.Empty
+{
+	padding-left: 24px;
+}
+
+.BuildingDrawSkillDamageValue .BuildingDrawMetaIcon
+{
+	width: 18px;
+	height: 18px;
+}
+
+.BuildingDrawSkillDamageName
+{
+	vertical-align: center;
+	margin-left: 5px;
+	font-size: 12px;
+	color: #c8d0d0;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawSkillDamageEmpty
+{
+	vertical-align: center;
+	font-size: 12px;
+	color: #7f8d8d;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawSkillDesc
+{
+	width: 100%;
+	margin-top: 2px;
+	font-size: 14px;
+	line-height: 19px;
+	color: #bac6d3;
+	text-shadow: 1px 1px 1px 2 #000000;
+	text-overflow: ellipsis;
+}
+
+.BuildingDrawSkillDesc .highlight_number
+{
+	color: #f2d58e;
+}
+
+.BuildingDrawSkillDesc .highlight_title
+{
+	color: #f2d58e;
+}
+
+.BuildingDrawSkillDesc .inline_img_attr
+{
+	width: 16px;
+	height: 16px;
+}
+
+.BuildingDrawAffinityValue
+{
+	vertical-align: center;
+	width: 340px;
+	height: 23px;
+	flow-children: right;
+}
+
+.BuildingDrawAffinityValue.Empty
+{
+	padding-left: 28px;
+}
+
+.BuildingDrawAffinitySegment
+{
+	height: 23px;
+	width: fit-children;
+	flow-children: right;
+}
+
+.BuildingDrawAffinitySegment .BuildingDrawMetaIcon
+{
+	width: 21px;
+	height: 21px;
+}
+
+.BuildingDrawAffinityName
+{
+	vertical-align: center;
+	margin-left: 7px;
+	font-size: 14px;
+	color: #d8d3c3;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawAffinityName.Empty
+{
+	margin-left: 0px;
+	color: #8f9b9b;
+}
+
+.BuildingDrawAffinitySeparator
+{
+	vertical-align: center;
+	margin-left: 7px;
+	margin-right: 7px;
+	font-size: 14px;
+	color: #768686;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawTagValue
+{
+	vertical-align: center;
+	width: 340px;
+	height: 19px;
+	padding-left: 28px;
+	flow-children: right;
+}
+
+.BuildingDrawTagPill
+{
+	vertical-align: center;
+	margin-right: 6px;
+	padding-left: 6px;
+	padding-right: 6px;
+	height: 19px;
+	background-color: #24313aaa;
+	border: 1px solid #90a6b526;
+	font-size: 13px;
+	color: #c9d6de;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawTagPill.DesignTag
+{
+	background-color: #0a1c24cc;
+	border-color: #446a78cc;
+	color: #c9dee4;
+}
+
+.BuildingDrawTagEmpty
+{
+	vertical-align: center;
+	font-size: 14px;
+	color: #8f9b9b;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.BuildingDrawActions
+{
+	flow-children: right;
+	width: fit-children;
+	height: 38px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 124px;
+	overflow: noclip;
+	opacity: 0;
+}
+
+.BuildingDrawActions.BuildingDrawActionsReady
+{
+	opacity: 1;
+	animation-name: building-draw-actions-reveal;
+	animation-duration: 0.36s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+@keyframes 'building-draw-actions-reveal'
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate3d(0px, 12px, 0px);
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+	}
+	
+}
+
+.BuildingDrawActionButton
+{
+	width: 180px;
+	height: 38px;
+	vertical-align: center;
+	margin-left: 8px;
+	margin-right: 8px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+	box-shadow: #000000cc 0px 3px 10px 0px;
+	transition-property: brightness, border, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+.BuildingDrawActionButton:hover
+{
+	brightness: 1.18;
+	border: 1px solid cHairTop;
+}
+
+.BuildingDrawActionButton:active
+{
+	transform: translateY(1px);
+	brightness: 0.82;
+}
+
+.BuildingDrawActionButton.BuildingDrawActionDisabled
+{
+	saturation: 0;
+	opacity: 0.42;
+	brightness: 0.65;
+}
+
+.BuildingDrawActionButton.BuildingDrawActionDisabled:hover,.BuildingDrawActionButton.BuildingDrawActionDisabled:active
+{
+	transform: none;
+	brightness: 0.65;
+	border: 1px solid cHair;
+}
+
+.BuildingDrawActionButton Label
+{
+	vertical-align: center;
+	font-size: 18px;
+	color: cText;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.BuildingDrawRefreshButton Label
+{
+	align: center center;
+}
+
+.BuildingDrawRefreshButton.BuildingDrawRefreshHidden
+{
+	visibility: collapse;
+}
+
+.BuildingDrawRefundContent
+{
+	flow-children: right;
+	width: fit-children;
+	height: fit-children;
+	align: center center;
+}
+
+.BuildingDrawRefundContent .TDResourceCost
+{
+	vertical-align: center;
+	margin-left: 2px;
+	margin-right: 1px;
+}
+
+.BuildingDrawRefundContent .TDResourceCostIcon
+{
+	width: 18px;
+	height: 18px;
+}
+
+.BuildingDrawRefundContent .TDResourceCostValue
+{
+	font-size: 18px;
+}
+
+.BuildingDrawPendingChipRoot
+{
+	width: 100%;
+	height: 100%;
+	z-index: 59;
+}
+
+.BuildingDrawReopenChip
+{
+	visibility: collapse;
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-left: 1060px;
+	margin-bottom: 240px;
+	padding: 8px 14px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#31505fee), to(#0a1116f8));
+	border: 1px solid #9fd8f166;
+	border-radius: 3px;
+	box-shadow: #000000cc 0px 2px 8px 0px;
+}
+
+.BuildingDrawReopenChip.BuildingDrawReopenVisible
+{
+	visibility: visible;
+}
+
+.BuildingDrawReopenChip:hover
+{
+	brightness: 1.2;
+}
+
+.BuildingDrawReopenChip Label
+{
+	font-size: 16px;
+	color: #eaf7ff;
+}
+
+.BuildingDrawHint
+{
+	align: center bottom;
+	margin-bottom: 140px;
+	font-size: 15px;
+	color: #93a3b8;
+	text-shadow: 1px 1px 1px 2 #000000;
+	visibility: collapse;
+}
+
+.BuildingDrawRebuildFx
+{
+	align: center center;
+	width: 200%;
+	height: 200%;
+	overflow: noclip;
+	z-index: 4;
+	opacity: 1;
+}
+
+.BuildingDrawCard.BuildingDrawIntroActive .BuildingDrawRebuildFx
+{
+	animation-name: building-draw-rebuild-fx-fade;
+	animation-duration: 0.34s;
+	animation-delay: 0.44s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawCard.BuildingDrawClosingOutro .BuildingDrawRebuildFx
+{
+	opacity: 1;
+	animation-name: building-draw-rebuild-fx-outro;
+	animation-duration: 0.34s;
+	animation-delay: 0.10s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawRebuildGlow
+{
+	align: center center;
+	width: 416px;
+	height: 640px;
+	opacity: 0;
+	background-color: gradient(radial, 50% 50%, 0% 0%, 70% 70%, from(rgba(255, 243, 216, 0.50)), color-stop(0.55, rgba(255, 235, 190, 0.22)), to(rgba(255, 255, 255, 0.0)));
+}
+
+.BuildingDrawCard.BuildingDrawIntroActive .BuildingDrawRebuildGlow
+{
+	animation-name: building-draw-rebuild-glow;
+	animation-duration: 0.58s;
+	animation-delay: 0.06s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawCard.BuildingDrawClosingOutro .BuildingDrawRebuildGlow
+{
+	animation-name: building-draw-rebuild-glow-outro;
+	animation-duration: 0.30s;
+	animation-delay: 0.08s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.BuildingDrawRebuildGrid
+{
+	align: center center;
+	width: 416px;
+	height: 640px;
+	flow-children: right-wrap;
+	overflow: noclip;
+}
+
+.BuildingDrawTile
+{
+	width: 59.4286px;
+	height: 58.1818px;
+	opacity: 0;
+	brightness: 1.8;
+	border: 1px solid rgba(255, 246, 220, 0.12);
+	background-color: gradient(linear, 0% 0%, 100% 100%, from(rgba(255, 255, 255, 0.55)), color-stop(0.35, rgba(255, 243, 220, 0.36)), color-stop(0.75, rgba(255, 255, 255, 0.14)), to(rgba(255, 255, 255, 0.02)));
+	transition-property: transform, opacity, brightness;
+	transition-duration: 0.0s;
+	transition-delay: 0.0s;
+	transition-timing-function: ease-out;
+	transform: translate3d(0px, 0px, 0px) rotateZ(0deg) scale3d(1, 1, 1);
+}
+
+.BuildingDrawTile.TilePhaseB
+{
+	brightness: 2.1;
+	background-color: gradient(linear, 0% 0%, 100% 100%, from(rgba(255, 255, 255, 0.68)), color-stop(0.45, rgba(255, 241, 204, 0.42)), color-stop(0.85, rgba(255, 255, 255, 0.10)), to(rgba(255, 255, 255, 0.02)));
+}
+
+@keyframes 'building-draw-panel-appear'
+{
+	from
+	{
+		opacity: 0;
+		transform: scale3d(0.985, 0.985, 1);
+		brightness: 1.12;
+	}
+	
+	55%
+	{
+		opacity: 0.72;
+		transform: scale3d(0.996, 0.996, 1);
+		brightness: 1.04;
+	}
+	
+	to
+	{
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+		brightness: 1.0;
+	}
+	
+}
+
+@keyframes 'building-draw-selected-flash'
+{
+	0%
+	{
+		brightness: 1.0;
+		box-shadow: fill rgba(255, 228, 146, 0.00) 0px 0px 0px 0px;
+		border: 1px solid #ffffff16;
+	}
+	
+	28%
+	{
+		brightness: 1.95;
+		box-shadow: fill rgba(255, 225, 120, 0.72) 0px 0px 42px 0px;
+		border: 1px solid #ffe08a;
+	}
+	
+	55%
+	{
+		brightness: 1.62;
+		box-shadow: fill rgba(255, 202, 80, 0.46) 0px 0px 34px 0px;
+		border: 1px solid #ffd15c;
+	}
+	
+	100%
+	{
+		brightness: 1.22;
+		box-shadow: fill rgba(255, 218, 120, 0.22) 0px 0px 18px 0px;
+		border: 1px solid #f6d57a99;
+	}
+	
+}
+
+@keyframes 'building-draw-refresh-flip-out'
+{
+	0%
+	{
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px) rotateY(0deg) scale3d(1, 1, 1);
+		brightness: 1.0;
+	}
+	
+	45%
+	{
+		opacity: 0.74;
+		transform: translate3d(0px, 0px, 0px) rotateY(-38deg) scale3d(0.985, 0.985, 1);
+		brightness: 1.36;
+	}
+	
+	100%
+	{
+		opacity: 0;
+		transform: translate3d(0px, 0px, 0px) rotateY(-84deg) scale3d(0.96, 0.96, 1);
+		brightness: 1.72;
+	}
+	
+}
+
+@keyframes 'building-draw-refresh-flip-in'
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate3d(0px, 0px, 0px) rotateY(84deg) scale3d(0.96, 0.96, 1);
+		brightness: 1.72;
+	}
+	
+	58%
+	{
+		opacity: 0.88;
+		transform: translate3d(0px, 0px, 0px) rotateY(12deg) scale3d(1.01, 1.01, 1);
+		brightness: 1.22;
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px) rotateY(0deg) scale3d(1, 1, 1);
+		brightness: 1.0;
+	}
+	
+}
+
+@keyframes 'building-draw-root-fade-in'
+{
+	from
+	{
+		opacity: 0;
+	}
+	
+	to
+	{
+		opacity: 1;
+	}
+	
+}
+
+@keyframes 'building-draw-root-fade-out'
+{
+	from
+	{
+		opacity: 1;
+	}
+	
+	to
+	{
+		opacity: 0;
+	}
+	
+}
+
+@keyframes 'building-draw-panel-disappear'
+{
+	0%
+	{
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+		brightness: 1.0;
+	}
+	
+	100%
+	{
+		opacity: 0;
+		transform: scale3d(0.985, 0.985, 1);
+		brightness: 0.82;
+	}
+	
+}
+
+@keyframes 'building-draw-rebuild-fx-fade'
+{
+	0%
+	{
+		opacity: 1;
+	}
+	
+	35%
+	{
+		opacity: 0.82;
+	}
+	
+	100%
+	{
+		opacity: 0;
+	}
+	
+}
+
+@keyframes 'building-draw-rebuild-fx-outro'
+{
+	0%
+	{
+		opacity: 1;
+	}
+	
+	70%
+	{
+		opacity: 1;
+	}
+	
+	100%
+	{
+		opacity: 0;
+	}
+	
+}
+
+@keyframes 'building-draw-rebuild-glow'
+{
+	0%
+	{
+		opacity: 0;
+		transform: scale3d(0.80, 0.80, 1);
+		brightness: 1.0;
+	}
+	
+	35%
+	{
+		opacity: 0.9;
+		transform: scale3d(1.04, 1.04, 1);
+		brightness: 2.2;
+	}
+	
+	100%
+	{
+		opacity: 0;
+		transform: scale3d(1.18, 1.18, 1);
+		brightness: 1.0;
+	}
+	
+}
+
+@keyframes 'building-draw-rebuild-glow-outro'
+{
+	0%
+	{
+		opacity: 0.15;
+		transform: scale3d(0.95, 0.95, 1);
+		brightness: 1.2;
+	}
+	
+	45%
+	{
+		opacity: 0.55;
+		transform: scale3d(1.04, 1.04, 1);
+		brightness: 2.1;
+	}
+	
+	100%
+	{
+		opacity: 0;
+		transform: scale3d(1.18, 1.18, 1);
+		brightness: 1.0;
+	}
+	
+}
+
+.BuildingDrawActionButton.BuildingDrawBanButton
+{
+	width: 240px;
+	height: 38px;
+	horizontal-align: left;
+	vertical-align: top;
+	margin-top: 628px;
+	margin-left: 88px;
+	margin-right: 0;
+	visibility: collapse;
+	z-index: 20;
+}
+
+.BuildingDrawActionButton.BuildingDrawBanButton.BuildingDrawBanReady
+{
+	visibility: visible;
+}
+
+.BuildingDrawActionButton.BuildingDrawBanButton.BuildingDrawBanHidden
+{
+	visibility: collapse;
+}
+
+.BuildingDrawBanHidden
+{
+	visibility: collapse;
+}
+
+.BuildingDrawBans
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 42px;
+	margin-bottom: 34px;
+	width: 430px;
+	height: fit-children;
+	flow-children: down;
+	padding: 10px;
+	background-color: #08121ce8;
+	border: 1px solid #4d525c;
+}
+
+.BuildingDrawBanCount
+{
+	font-size: 18px;
+	color: #e6c8a4;
+}
+
+.BuildingDrawBanHint
+{
+	font-size: 13px;
+	color: #aab5bd;
+	margin-bottom: 5px;
+}
+
+.BuildingDrawBanRow
+{
+	width: 100%;
+	height: 38px;
+	flow-children: right;
+}
+
+.BuildingDrawBannedHero
+{
+	width: 34px;
+	height: 34px;
+	margin-right: 6px;
+	border: 1px solid #925b5b;
+}
+
+.BuildingDrawBanDenseRow
+{
+	visibility: collapse;
+}
+
+.BuildingDrawBans.BuildingDrawBansDense .BuildingDrawBanDenseRow
+{
+	visibility: visible;
+}
+
+.BuildingDrawBans.BuildingDrawBansDense .BuildingDrawBanRow
+{
+	height: 28px;
+}
+
+.BuildingDrawBans.BuildingDrawBansDense .BuildingDrawBannedHero
+{
+	width: 26px;
+	height: 26px;
+	margin-right: 2px;
+}
+

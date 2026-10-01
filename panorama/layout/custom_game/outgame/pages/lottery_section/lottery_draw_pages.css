@@ -1,0 +1,743 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameLotteryDrawPage
+{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	overflow: clip;
+}
+
+.OutgameHeroLotteryPage
+{
+	background-image: url("s2r://panorama/images/custom_game/lottery/img_hero_draw_bg_jpg.vtex");
+}
+
+.OutgameTreasureLotteryPage
+{
+	background-image: url("s2r://panorama/images/custom_game/lottery/img_legacy_treasure_draw_bg_jpg.vtex");
+}
+
+.OutgameCourierLotteryPage
+{
+	background-image: url("s2r://panorama/images/custom_game/lottery/img_courier_draw_bg_jpg.vtex");
+}
+
+.OutgameStoneLotteryPage
+{
+	background-image: url("s2r://panorama/images/custom_game/lottery/img_stone_draw_bg_jpg.vtex");
+}
+
+.OutgameLotteryDrawPage:disabled
+{
+	brightness: 0.6;
+}
+
+.OutgameLotteryDrawContent
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#020508aa), color-stop(0.44, #07101844), color-stop(0.72, #02050888), to(#020508e8));
+}
+
+.OutgameLotteryDrawLoading
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim40;
+}
+
+.OutgameLotteryDrawLoadingText
+{
+	align: center center;
+	width: 460px;
+	color: cTan;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameLotteryDrawActions
+{
+	align: center bottom;
+	margin-bottom: 30px;
+	flow-children: right;
+}
+
+.OutgameLotteryDrawButton
+{
+	width: 224px;
+	height: 78px;
+	margin: 0px 12px;
+	flow-children: down;
+}
+
+.OutgameLotteryDrawButtonTitle
+{
+	horizontal-align: center;
+	margin-top: 12px;
+	width: 200px;
+	height: 28px;
+	color: cCream;
+	font-size: 22px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLotteryDrawButtonCost
+{
+	horizontal-align: center;
+	margin-top: 3px;
+	width: 204px;
+	height: 24px;
+	color: cTan;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLotteryDescription
+{
+	align: left top;
+	margin-left: 30px;
+	margin-top: 24px;
+	width: 860px;
+	height: fit-children;
+	flow-children: down;
+}
+
+.OutgameLotteryDescriptionTitle
+{
+	width: 100%;
+	height: 32px;
+	color: #f2dfb5;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow: 0px 2px 5px 3 #000000;
+}
+
+.OutgameLotteryDescriptionLine
+{
+	width: 100%;
+	margin-top: 3px;
+	color: #e8dcc3;
+	font-size: 18px;
+	text-shadow: 0px 2px 5px 3 #000000;
+}
+
+.OutgameLotteryPityPanel
+{
+	align: right top;
+	margin-right: 24px;
+	margin-top: 18px;
+	width: 278px;
+	height: 82px;
+	padding: 10px 14px;
+	flow-children: down;
+	background-color: #071018d9;
+	border: 1px solid #667b8f88;
+	box-shadow: #00000099 0px 3px 10px 0px;
+}
+
+.OutgameLotteryPityCountdown
+{
+	width: 100%;
+	height: 30px;
+	vertical-align: center;
+	color: #d3c5aa;
+	font-size: 16px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLotteryRevealOverlay
+{
+	width: 100%;
+	height: 100%;
+	z-index: 40;
+	background-color: gradient(radial, 50% 42%, 0% 0%, 95% 95%, from(#0a0f17f5), to(#02040799));
+	opacity: 0;
+	animation-name: LotteryOverlayFadeIn;
+	animation-duration: 0.18s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-out;
+}
+
+@keyframes 'LotteryOverlayFadeIn'
+{
+	0%
+	{
+		opacity: 0;
+	}
+	
+	100%
+	{
+		opacity: 1;
+	}
+	
+}
+
+.OutgameLotteryRevealStage
+{
+	width: 100%;
+	height: 100%;
+	align: center center;
+	overflow: noclip;
+}
+
+.OutgameLotteryRevealGrid
+{
+	align: center center;
+	flow-children: down;
+	overflow: noclip;
+}
+
+.OutgameLotteryRevealRow
+{
+	horizontal-align: center;
+	flow-children: right;
+	overflow: noclip;
+}
+
+.OutgameLotteryRevealCell
+{
+	width: 240px;
+	height: 300px;
+	margin: 4px 6px;
+	align: center center;
+	overflow: noclip;
+}
+
+.OutgameLotteryRevealGrid.Count1 .OutgameLotteryRevealCell
+{
+	width: 360px;
+	height: 432px;
+}
+
+.OutgameLotteryRevealGrid.RowSingle .OutgameLotteryRevealCell
+{
+	width: 280px;
+	height: 340px;
+}
+
+.OutgameLotteryRevealGrid.RowDouble .OutgameLotteryRevealCell
+{
+	width: 240px;
+	height: 300px;
+}
+
+.OutgameLotteryRevealCard
+{
+	width: 176px;
+	height: 232px;
+	align: center center;
+}
+
+.OutgameLotteryRevealGrid.Count1 .OutgameLotteryRevealCard
+{
+	width: 252px;
+	height: 312px;
+}
+
+.OutgameLotteryRevealGrid.RowSingle .OutgameLotteryRevealCard
+{
+	width: 208px;
+	height: 272px;
+}
+
+.OutgameLotteryRevealGrid.RowDouble .OutgameLotteryRevealCard
+{
+	width: 176px;
+	height: 232px;
+}
+
+.OutgameLotteryRevealCell.PreReveal
+{
+	opacity: 0;
+	transform: scale3d(0.12, 0.82, 1);
+}
+
+.OutgameLotteryRevealCell.Revealing
+{
+	opacity: 1;
+	animation-name: LotteryCardFlip;
+	animation-duration: 0.36s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes 'LotteryCardFlip'
+{
+	0%
+	{
+		opacity: 0;
+		transform: scale3d(0.12, 0.82, 1);
+	}
+	
+	55%
+	{
+		opacity: 1;
+		transform: scale3d(1.06, 1.06, 1);
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+	
+}
+
+.OutgameLotteryRevealFx
+{
+	align: center center;
+	width: 190%;
+	height: 165%;
+	z-index: 1;
+}
+
+.OutgameLotteryRevealFlashFx
+{
+	align: center center;
+	width: 250%;
+	height: 210%;
+	z-index: 5;
+	opacity: 0;
+}
+
+.OutgameLotteryRevealCell.Revealing .OutgameLotteryRevealFlashFx
+{
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.2s;
+}
+
+.OutgameLotteryRevealCell.Quality_blue .OutgameLotteryRevealCard
+{
+	box-shadow: #62a6dd66 0px 0px 18px 2px;
+}
+
+.OutgameLotteryRevealCell.Quality_purple .OutgameLotteryRevealCard
+{
+	box-shadow: #8d74d488 0px 0px 22px 3px;
+}
+
+.OutgameLotteryRevealCell.Quality_gold .OutgameLotteryRevealCard
+{
+	box-shadow: #f0c46aaa 0px 0px 32px 4px;
+}
+
+.OutgameLotteryRevealIcon
+{
+	horizontal-align: center;
+	margin-top: 26px;
+	width: 120px;
+	height: 120px;
+}
+
+.OutgameLotteryRevealIcon .XItemIcon
+{
+	width: 120px;
+	height: 120px;
+}
+
+.OutgameLotteryRevealGrid.Count1 .OutgameLotteryRevealIcon,.OutgameLotteryRevealGrid.Count1 .OutgameLotteryRevealIcon .XItemIcon
+{
+	width: 160px;
+	height: 160px;
+}
+
+.OutgameLotteryRevealGrid.Count1 .OutgameLotteryDrawTreasureIcon
+{
+	width: 150px;
+	height: 150px;
+}
+
+.OutgameLotteryDrawTreasureIcon
+{
+	align: center center;
+	width: 108px;
+	height: 108px;
+}
+
+.OutgameCourierLotteryResultIcon
+{
+	align: center top;
+	margin-top: 0px;
+	width: 100%;
+	height: width-percentage(100%);
+}
+
+.OutgameCourierLotteryResultIcon DOTAUIEconSetPreview
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameLotteryRevealName
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 18px;
+	width: 92%;
+	color: cCream;
+	font-size: 17px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLotteryDrawResultStar
+{
+	align: right top;
+	margin-top: 12px;
+	margin-right: 14px;
+	color: #f0d58b;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameLotteryRevealCell.Converted .OutgameLotteryRevealCard
+{
+	box-shadow: #85f0c266 0px 0px 22px 2px;
+}
+
+.OutgameCourierLotteryConversion
+{
+	align: center bottom;
+	margin-bottom: 44px;
+	flow-children: right;
+	animation-name: CourierConversionPop;
+	animation-duration: 0.42s;
+	animation-timing-function: ease-out;
+}
+
+.OutgameCourierLotteryConversionItem
+{
+	flow-children: right;
+	margin-right: 5px;
+}
+
+.OutgameCourierLotteryConversionItemIcon
+{
+	width: 22px;
+	height: 22px;
+	margin-right: 3px;
+	vertical-align: center;
+}
+
+.OutgameCourierLotteryConversionText
+{
+	color: #85f0c2;
+	font-size: 17px;
+	font-weight: bold;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameLotteryRevealHint
+{
+	align: center bottom;
+	margin-bottom: 60px;
+	color: cTan;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+	animation-name: LotteryHintBreathe;
+	animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes 'LotteryHintBreathe'
+{
+	0%
+	{
+		opacity: 0.45;
+	}
+	
+	50%
+	{
+		opacity: 0.95;
+	}
+	
+	100%
+	{
+		opacity: 0.45;
+	}
+	
+}
+
+@keyframes 'CourierConversionPop'
+{
+	0%
+	{
+		opacity: 0;
+		transform: translateY(8px) scale3d(0.7, 0.7, 1);
+	}
+	
+	70%
+	{
+		opacity: 1;
+		transform: translateY(-2px) scale3d(1.08, 1.08, 1);
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: translateY(0px) scale3d(1, 1, 1);
+	}
+	
+}
+
+.OutgameHeroLotterySelectorButton
+{
+	align: right top;
+	margin-right: 24px;
+	margin-top: 146px;
+	width: 278px;
+	height: 62px;
+	flow-children: right;
+}
+
+.OutgameHeroLotterySelectorIcon
+{
+	width: 88px;
+	height: 50px;
+	margin-left: 6px;
+	vertical-align: center;
+	background-size: cover;
+	background-position: 50%;
+	border: 1px solid #5d7182aa;
+}
+
+.OutgameHeroLotterySelectorText
+{
+	vertical-align: center;
+	margin-left: 10px;
+	width: fill-parent-flow(1);
+	color: #f1dfb8;
+	font-size: 17px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameHeroLotteryUpRule
+{
+	align: right top;
+	margin-right: 24px;
+	margin-top: 216px;
+	width: 278px;
+	height: 42px;
+	color: #ddd0b7;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameHeroLotterySelectorPopup
+{
+	align: right top;
+	margin-right: 24px;
+	margin-top: 266px;
+	width: 468px;
+	height: 526px;
+	padding: 12px;
+	flow-children: down;
+	background-color: #091017f4;
+	border: 1px solid cHairline;
+	box-shadow: cScrimDeep 0px 10px 30px 0px;
+	opacity: 0;
+	visibility: collapse;
+	transition-property: opacity;
+	transition-duration: 0.12s;
+}
+
+.OutgameHeroLotterySelectorPopup.Open
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+.OutgameHeroLotterySelectorHeader
+{
+	width: 100%;
+	height: 32px;
+}
+
+.OutgameHeroLotterySelectorTitle
+{
+	vertical-align: center;
+	color: cTan;
+	font-size: 19px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameHeroLotterySelectorGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 8px;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.OutgameHeroLotteryHeroCell
+{
+	width: 104px;
+	height: 122px;
+	margin-right: 8px;
+	margin-bottom: 10px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1a242ce8), color-stop(0.7, #0b1219e8), to(#05070aee));
+	border: 1px solid cHairlineLo;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.12s;
+}
+
+.OutgameHeroLotteryHeroCell:hover
+{
+	brightness: 1.14;
+	border: 1px solid #8cc8e788;
+}
+
+.OutgameHeroLotteryHeroCell.Selected
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1c3548f2), to(#0b141dee));
+	border: 1px solid #63b7eecc;
+}
+
+.OutgameHeroLotteryHeroCell.CurrentUp
+{
+	border: 1px solid #d8ba67cc;
+}
+
+.OutgameHeroLotteryHeroCell.OutgameHeroLotteryHeroNone
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#20262be8), to(#090e12ee));
+}
+
+.OutgameHeroLotteryHeroIcon
+{
+	horizontal-align: center;
+	margin-top: 8px;
+	width: 92px;
+	height: 52px;
+	background-size: cover;
+	background-position: 50%;
+	border: 1px solid #56687888;
+}
+
+.OutgameHeroLotteryHeroNoUpIcon
+{
+	horizontal-align: center;
+	margin-top: 10px;
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	border: 1px solid #6f7b82aa;
+	background-color: gradient(radial, 50% 50%, 0% 0%, 50% 50%, from(#1a252b), to(cInkDeep));
+}
+
+.OutgameHeroLotteryHeroNoUpLine
+{
+	width: 34px;
+	height: 2px;
+	align: center center;
+	background-color: #9aa5aacc;
+}
+
+.OutgameHeroLotteryHeroName
+{
+	horizontal-align: center;
+	margin-top: 70px;
+	width: 92px;
+	height: 40px;
+	color: cCream;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameHeroLotterySelectorActions
+{
+	width: 100%;
+	height: 42px;
+	margin-top: 8px;
+	flow-children: right;
+}
+
+.OutgameHeroLotterySelectorAction
+{
+	width: fill-parent-flow(1);
+	height: 38px;
+	margin-right: 8px;
+}
+
+.OutgameHeroLotterySelectorActionLabel
+{
+	align: center center;
+	font-size: 17px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameLotteryRevealCell.Rarity1 .OutgameLotteryRevealCard
+{
+	border: 1px solid #8f9aa2aa;
+}
+
+.OutgameLotteryRevealCell.Rarity2 .OutgameLotteryRevealCard
+{
+	border: 1px solid #69b77aaa;
+}
+
+.OutgameLotteryRevealCell.Rarity3 .OutgameLotteryRevealCard
+{
+	border: 1px solid #62a6ddaa;
+}
+
+.OutgameLotteryRevealCell.Rarity4 .OutgameLotteryRevealCard
+{
+	border: 1px solid #8d74d4aa;
+}
+
+.OutgameLotteryRevealCell.Rarity5 .OutgameLotteryRevealCard
+{
+	border: 1px solid #d8a45aaa;
+}
+
+.OutgameLotteryRevealCell.Rarity6 .OutgameLotteryRevealCard
+{
+	border: 1px solid #d9655faa;
+}
+
+.OutgameLotteryRevealCell.Rarity7 .OutgameLotteryRevealCard
+{
+	border: 1px solid #55c7c2aa;
+}
+
+.OutgameLotteryRevealCell.Rarity8 .OutgameLotteryRevealCard
+{
+	border: 1px solid #c4d86daa;
+}
+
+.OutgameLotteryRevealCell.Rarity9 .OutgameLotteryRevealCard
+{
+	border: 1px solid #d277cbaa;
+}
+
+.OutgameLotteryRevealCell.Rarity10 .OutgameLotteryRevealCard
+{
+	border: 1px solid #f0d58baa;
+}
+
+.OutgameLotteryRevealCell.Rarity11 .OutgameLotteryRevealCard
+{
+	border: 1px solid #ffffffcc;
+}
+

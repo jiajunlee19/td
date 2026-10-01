@@ -1,0 +1,1 @@
+GameUI.Def={GameState:{GS_None:0,GS_Begin:1,GS_LoginLoading:2,GS_PreGame:3,GS_Battle:4,GS_Round:5,GS_BattleEnd:6,GS_InitMode:7,GS_SaveBattle:8,GS_Wait:9,GS_Marvelous:10,GS_AFK:11,GS_Test:99},MaxDifficult:9};

@@ -1,0 +1,49 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/equipment/outgame_equipment_tooltip.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/item/outgame_item_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/gem/outgame_gem_tooltip.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="tooltip_section_title">
+			<Panel class="tooltip_section_title TooltipCenteredSectionTitle">
+				<Panel class="tooltip_section_title_line" />
+				<Label id="tooltip_section_title_text" text="" />
+				<Panel class="tooltip_section_title_line" />
+			</Panel>
+		</snippet>
+		<snippet name="line">
+			<Panel />
+		</snippet>
+		<snippet name="TextPanel">
+			<Label html="true" />
+		</snippet>
+	</snippets>
+	<Panel class="Container">
+		<Panel id="primary_equip" class="outgame_equipment">
+			<Panel id="BG" />
+			<Panel id="InSlot" class="InSlot" />
+			<Panel id="MainPanel">
+				<Panel id="title_block_bg" class="title_block_bg" />
+				<Panel id="title_block">
+					<Panel class="EquipItem" id="Icon" />
+					<Label id="equipName" text="" />
+					<Label id="equipType" text="" />
+					<Label id="equipSubType" text="" />
+				</Panel>
+				<Panel id="info_block" />
+			</Panel>
+			<Panel class="decorator">
+				<Panel class="decorator_RT" />
+				<Panel class="decorator_LB" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

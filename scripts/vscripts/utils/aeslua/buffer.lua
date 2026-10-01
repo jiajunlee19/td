@@ -1,0 +1,1 @@
+local a={}aeslua.buffer=a;function a.new()return{}end;function a.addString(b,c)table.insert(b,c)for d=#b-1,1,-1 do if#b[d]>#b[d+1]then break end;b[d]=b[d]..table.remove(b)end end;function a.toString(b)for d=#b-1,1,-1 do b[d]=b[d]..table.remove(b)end;return b[1]end;return a

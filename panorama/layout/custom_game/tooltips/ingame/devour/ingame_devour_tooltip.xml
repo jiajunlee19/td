@@ -1,0 +1,38 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/devour/ingame_devour_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/devour/ingame_devour_tooltip.vjs_c" />
+	</scripts>
+	<Panel class="tips_new" hittest="false">
+		<Panel id="main_frame" hittest="false">
+			<Panel id="title_block" hittest="false">
+				<Label id="DevourTipTitle" class="DevourTipTitle" text="" hittest="false" />
+				<Label id="DevourTipIntro" class="DevourTipIntro" text="" hittest="false" />
+			</Panel>
+			<Panel class="DevourTooltipRoot" hittest="false">
+				<Panel id="DevourTipRatioRow" class="DevourTipRatioRow" hittest="false">
+					<Label id="DevourTipRatioLabel" class="DevourTipRatioLabel" text="" hittest="false" />
+					<Label id="DevourTipRatioValue" class="DevourTipRatioValue" text="" hittest="false" />
+				</Panel>
+				<Label id="DevourTipRatioDetail" class="DevourTipRatioDetail" text="" hittest="false" />
+				<Label id="DevourTipGainAttrs" class="DevourTipLine" text="" hittest="false" />
+				<Label id="DevourTipGainPassive" class="DevourTipLine" text="" hittest="false" />
+				<Panel id="DevourTipAttrGrid" class="DevourTipAttrGrid" hittest="false" />
+				<Label id="DevourTipCost" class="DevourTipCost" text="" hittest="false" />
+				<Label id="DevourTipProgress" class="DevourTipLine" text="" hittest="false" />
+				<Panel id="DevourTipDivider" class="DevourTipDivider" hittest="false" />
+				<Label id="DevourTipLimitsTitle" class="DevourTipLimitsTitle" text="" hittest="false" />
+				<Label id="DevourTipLimit1" class="DevourTipLimitLine" text="" hittest="false" />
+				<Label id="DevourTipLimit2" class="DevourTipLimitLine" text="" hittest="false" />
+				<Label id="DevourTipLimit3" class="DevourTipLimitLine" text="" hittest="false" />
+				<Label id="DevourTipNote" class="DevourTipNote" text="" hittest="false" />
+				<Label id="DevourTipBlockReason" class="DevourTipBlockReason" text="" hittest="false" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

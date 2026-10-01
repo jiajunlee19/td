@@ -1,0 +1,150 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.CourierReforgePickerRoot
+{
+	width: 100%;
+	height: 100%;
+	visibility: collapse;
+	z-index: 60;
+}
+
+.CourierReforgePickerRoot.CourierReforgeVisible,.CourierReforgePickerRoot.CourierReforgeCollapsed
+{
+	visibility: visible;
+}
+
+.CourierReforgePickerRoot.CourierReforgeCollapsed #CourierReforgeShade,.CourierReforgePickerRoot.CourierReforgeCollapsed #CourierReforgePanel
+{
+	visibility: collapse;
+}
+
+#CourierReforgeShade
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000a8;
+}
+
+#CourierReforgePanel
+{
+	align: center center;
+	flow-children: down;
+	padding: 24px 32px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1b2228f4), to(#0a0f13f8));
+	border: 1px solid #6f7f89a8;
+	border-radius: 4px;
+	box-shadow: #000000cc 0px 4px 18px 0px;
+}
+
+.CourierReforgeTitle
+{
+	horizontal-align: center;
+	font-size: 24px;
+	font-weight: semi-bold;
+	color: #eafff7;
+	margin-bottom: 18px;
+}
+
+.CourierReforgeRow
+{
+	flow-children: right;
+	horizontal-align: center;
+}
+
+.CourierReforgeOption
+{
+	flow-children: down;
+	width: 168px;
+	padding: 12px;
+	margin-right: 14px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a3137ee), to(#10161bf4));
+	border: 1px solid #6f7f8966;
+	border-radius: 3px;
+	transition-property: brightness, transform, border;
+	transition-duration: 0.12s;
+}
+
+.CourierReforgeOption:hover
+{
+	brightness: 1.22;
+	transform: translateY(-2px);
+	border: 1px solid #b6ffe284;
+}
+
+.CourierReforgeOptionIcon
+{
+	width: 128px;
+	height: 96px;
+	horizontal-align: center;
+}
+
+.CourierReforgeOptionName
+{
+	horizontal-align: center;
+	margin-top: 10px;
+	max-width: 144px;
+	font-size: 16px;
+	color: #d8e2ea;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.CourierReforgeCancelButton
+{
+	horizontal-align: center;
+	margin-top: 20px;
+	width: 180px;
+	height: 36px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#4a3038ee), to(#1b0d10f4));
+	border: 1px solid #a86f6fa8;
+	border-radius: 3px;
+}
+
+.CourierReforgeCancelButton:hover
+{
+	brightness: 1.18;
+}
+
+.CourierReforgeCancelButton Label
+{
+	align: center center;
+	font-size: 17px;
+	color: #f0dede;
+}
+
+.CourierReforgePickerRoot.CourierReforgePicking #CourierReforgePanel
+{
+	saturation: 0.4;
+	opacity: 0.75;
+}
+
+.CourierReforgeReopenChip
+{
+	visibility: collapse;
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-left: 1214px;
+	margin-bottom: 240px;
+	padding: 8px 14px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#315f55ee), to(#0a1614f8));
+	border: 1px solid #9ff1d066;
+	border-radius: 3px;
+	box-shadow: #000000cc 0px 2px 8px 0px;
+}
+
+.CourierReforgePickerRoot.CourierReforgeCollapsed .CourierReforgeReopenChip
+{
+	visibility: visible;
+}
+
+.CourierReforgeReopenChip:hover
+{
+	brightness: 1.2;
+}
+
+.CourierReforgeReopenChip Label
+{
+	font-size: 16px;
+	color: #eafff7;
+}
+

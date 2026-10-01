@@ -1,0 +1,32 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/item/ingame_item_tooltip.vjs_c" />
+	</scripts>
+	<snippets />
+	<Panel class="tips_new">
+		<Panel id="mainBG">
+			<Panel id="topBg">
+				<Panel id="equipInfoPanel">
+					<Image id="equipItemQuality">
+						<Image id="equipItemBg" />
+						<Panel id="equipItemIcon" />
+					</Image>
+					<Image id="equipItemTag" />
+					<Image id="equipItemFrame" />
+					<Label id="equipName" text="" html="true" />
+					<Label id="extraName" text="" html="true" />
+				</Panel>
+				<Image id="rankIcon" />
+				<Panel id="tipsTypeIcon" />
+			</Panel>
+			<Panel id="itemBody" class="IngameItemTooltipBody" />
+		</Panel>
+		<Image id="bgDecorate" />
+	</Panel>
+</root>

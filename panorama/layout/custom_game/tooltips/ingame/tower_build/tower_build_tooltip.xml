@@ -1,0 +1,36 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/tower_build/tower_build_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/hero_upgrade_reward_resolver.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/tower_build/tower_build_tooltip.vjs_c" />
+	</scripts>
+	<snippets />
+	<Panel class="tips_new">
+		<Panel id="mainBG">
+			<Panel id="topBg">
+				<Panel id="equipInfoPanel">
+					<Image id="equipItemQuality">
+						<Panel id="equipItemIcon" />
+					</Image>
+					<Label id="equipName" text="" html="true" />
+					<Label id="extraName" text="" html="true" />
+				</Panel>
+				<Panel id="tipsTypeIcon" class="type_13" />
+			</Panel>
+			<Label id="basicsTitleName" text="" html="true" />
+			<Panel id="basicsDescGrid" />
+			<Image id="line" />
+			<Label id="extraTitleName" text="" html="true" />
+			<Label id="extraDes" text="" html="true" />
+			<Image id="evo_line" />
+			<Label id="evoTitleName" text="" html="true" />
+			<Panel id="evoGrid" />
+		</Panel>
+	</Panel>
+</root>

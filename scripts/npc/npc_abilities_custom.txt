@@ -1,0 +1,230 @@
+// Dota Abilities File
+#base "ability/hero_ability.txt"
+#base "ability/courier_ability.txt"
+
+"DOTAAbilities"
+{
+	"Version"		"1"
+	"dummy_unit"
+	{
+		"AbilityTextureName"			"action_lock_green"
+		"BaseClass"					"ability_lua"
+		"AbilityBehavior"			"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"ScriptFile"				"abilities/common/dummy_unit"
+		"MaxLevel"					"1"
+	}
+	"empty_1"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"empty_1"
+		"MaxLevel"	"1"
+	}
+
+	"empty_2"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"empty_2"
+		"MaxLevel"	"1"
+	}
+	"empty_3"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"		"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"	"Empty"
+		"MaxLevel"	"1"
+	}
+	"empty_ability"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/common/empty_ability"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"AbilityTextureName"			"Empty"
+		"MaxLevel"						"1"
+		"Hidden"						"1"
+	}
+	"empty_4"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"Empty"
+		"MaxLevel"	"1"
+	}
+	"empty_5"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"Empty"
+		"MaxLevel"	"1"
+	}
+	"empty_6"
+	{
+		"BaseClass"			"ability_datadriven"
+		"AbilityBehavior"	"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+		"AbilityTextureName"	"Empty"
+		"MaxLevel"	"1"
+	}
+	//信使默认技能 飞行+无敌
+	"survive_flying_courier"
+	{
+		"AbilityTextureName"			"invoker_attribute_bonus"
+		"BaseClass"						"ability_lua"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"ScriptFile"					"abilities/courier/survive_flying_courier"
+		"Hidden"						"1"
+		"MaxLevel"                      "1"
+	}
+	//使用后直接瞬移。隐藏技能:不进 HUD 技能栏,由右键移动订单(GameManager:OrderFilter)在就绪时优先触发
+	"courier_blink"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"antimage_blink"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_HIDDEN"
+		"IsCastableWhileHidden"			"1" // 引擎会拒绝施放 HIDDEN 技能(dota_hud_error_ability_is_hidden),官方隐藏可施法技能均带此豁免键
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"abilities/courier/courier_blink"
+		"AbilityCastRange"				"2500"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0.3"
+		"MaxLevel"                      "1"
+		"AbilityValues"
+		{
+			"blink_range"				"2500"
+		}
+	}
+	//抽取防御塔，消耗木头后放入信使背包
+	"courier_draw_tower"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"techies_remote_mines"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"abilities/courier/courier_draw_tower"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0.3"
+		// 抽塔递增消耗:技能等级 = 本局已抽次数+1,每抽成功后 +1 级(见 abilities/courier/courier_draw_tower)。
+		// GetSpecialValueFor 按等级取值,服务端扣费与 HUD 显示同读此值,故两端自动同步;
+		// MaxLevel 10 即天然封顶 50。随从每局重新 PickHero 时 UpgradeAbility 回到 1 级 = 重开重置。
+		"MaxLevel"                      "10"
+		"AbilityValues"
+		{
+			"wood_cost"				"5 10 15 20 25 30 35 40 45 50"
+		}
+	}
+
+		//删除已建造的己方防御塔
+	"courier_remove_tower"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"rubick_telekinesis_land"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BUILDING"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"abilities/courier/courier_remove_tower"
+		"AbilityCastRange"				"99999"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0.3"
+		"MaxLevel"                      "1"
+	}
+
+	// 信使集火：选择一名敌方怪物，己方防御塔优先攻击该目标
+	"courier_focus_fire"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"windrunner_focusfire"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_BASIC | DOTA_UNIT_TARGET_HERO"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"abilities/courier/courier_focus_fire"
+		"AbilityCastRange"				"99999"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0.3"
+		"MaxLevel"						"1"
+	}
+
+	// 信使合成装备：选择地面区域，将范围内满足规则的 3 件同阶装备合成为更高一阶装备
+	"courier_compose_equipment"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"tinker_rearm"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"abilities/courier/courier_compose_equipment"
+		"AbilityCastRange"				"99999"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0.5"
+		"MaxLevel"						"1"
+		"AbilityValues"
+		{
+			"radius"					"450"
+		}
+	}
+
+	// 信使整理装备:一键把该玩家所有地面装备移动到信使出生点附近
+	"courier_pickup_equipment"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"dark_seer_vacuum"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"abilities/courier/courier_pickup_equipment"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"0.5"
+		"MaxLevel"						"1"
+	}
+
+	// 信使重铸装备:把背包第一格的 SR/SSR/UR 装备重新随机为同稀有度的另一件
+	"courier_reforge_equipment"
+	{
+		"BaseClass"						"ability_lua"
+		"AbilityTextureName"			"invoker_forge_spirit"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
+		"ScriptFile"					"abilities/courier/courier_reforge_equipment"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"300"
+		"MaxLevel"						"1"
+	}
+
+	// ========== 防御塔金币升级 ==========
+	"tower_gold_upgrade"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/tower/tower_gold_upgrade"
+		"AbilityTextureName"			"alchemist_goblins_greed"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"						"1"
+		"AbilityCooldown"				"0.5"
+		"AbilityValues"
+		{
+			"base_cost"				"100"
+			"cost_per_level"			"50"
+			"max_level"				"30"
+		}
+	}
+
+	// ========== Tower Devour (unlocks at level 30) ==========
+	"tower_devour"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/tower/tower_devour"
+		"AbilityTextureName"			"alchemist_unstable_concoction"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"MaxLevel"						"1"
+		"AbilityCooldown"				"0"
+	}
+
+	// ========== 移动已放置的防御塔 ==========
+	"tower_relocate"
+	{
+		"BaseClass"						"ability_lua"
+		"ScriptFile"					"abilities/tower/tower_relocate"
+		"AbilityTextureName"			"antimage_blink"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE"
+		"MaxLevel"						"1"
+		"AbilityCooldown"				"0"
+	}
+}

@@ -1,0 +1,338 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameMonsterArchiveBody
+{
+	width: 100%;
+	height: 100%;
+	padding: 16px 18px;
+	flow-children: down;
+	background-color: cScrimBody;
+}
+
+.OutgameMonsterArchiveSummary
+{
+	width: 100%;
+	height: 56px;
+	padding: 10px 16px;
+	flow-children: right;
+}
+
+.OutgameMonsterArchiveSummaryText
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	color: #aeb9be;
+	font-size: 16px;
+	vertical-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameMonsterArchiveSummaryCount
+{
+	height: 100%;
+	margin-left: 12px;
+	color: #f0dfba;
+	font-size: 18px;
+	vertical-align: center;
+	text-align: right;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameMonsterArchiveEmpty
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 14px;
+	vertical-align: center;
+}
+
+.OutgameMonsterArchiveGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 14px;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.OutgameMonsterCard
+{
+	width: 324px;
+	height: 292px;
+	margin: 0px 12px 12px 0px;
+	padding: 10px 12px;
+	flow-children: down;
+}
+
+.OutgameMonsterCard.Undiscovered
+{
+	saturation: 0.12;
+	brightness: 0.5;
+}
+
+.OutgameMonsterCard.UndiscoveredEditor
+{
+	border: 2px solid cRed;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ff5a52f0), to(#b91c1cc8));
+	box-shadow: #e5484d40 0px 0px 10px 0px;
+}
+
+.OutgameMonsterCardHeader
+{
+	width: 100%;
+	height: 152px;
+	flow-children: right;
+}
+
+.OutgameMonsterModelFrame
+{
+	width: 152px;
+	height: 152px;
+}
+
+.OutgameMonsterModel
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameMonsterCard.Undiscovered .OutgameMonsterCardHeader,.OutgameMonsterCard.Undiscovered .OutgameMonsterResistanceBlock
+{
+	blur: gaussian(5px);
+	wash-color: #161b22cc;
+}
+
+.OutgameMonsterTitleBlock
+{
+	width: fill-parent-flow(1);
+	height: 152px;
+	margin-left: 12px;
+	flow-children: down;
+}
+
+.OutgameMonsterName
+{
+	width: 100%;
+	height: 28px;
+	color: cCream;
+	font-size: 21px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameMonsterTagList
+{
+	width: 100%;
+	height: 26px;
+	margin-top: 5px;
+	flow-children: right-wrap;
+	overflow: clip;
+}
+
+.OutgameMonsterTag
+{
+	height: 19px;
+	margin: 0px 5px 5px 0px;
+	padding: 1px 8px 0px 8px;
+	color: cTan;
+	font-size: 13px;
+	text-align: center;
+	background-color: #2a2113dc;
+	border: 1px solid #c8a85a30;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameMonsterTag.None
+{
+	color: #7c878c;
+	background-color: #121b21cc;
+	border: 1px solid cHairline;
+}
+
+.OutgameMonsterStatLines
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 8px;
+	flow-children: down;
+}
+
+.OutgameMonsterStatLine
+{
+	width: 100%;
+	height: 24px;
+	margin-bottom: 4px;
+	padding: 0px 10px;
+	flow-children: right;
+	background-color: #0c141ac0;
+	border: 1px solid cHairline;
+}
+
+.OutgameMonsterStatLabel
+{
+	height: 100%;
+	color: cSlate;
+	font-size: 14px;
+	vertical-align: center;
+}
+
+.OutgameMonsterStatValue
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	color: cCream;
+	font-size: 17px;
+	text-align: right;
+	vertical-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameMonsterStatLine.Health .OutgameMonsterStatValue
+{
+	color: #ef9a9a;
+}
+
+.OutgameMonsterStatLine.Armor .OutgameMonsterStatValue
+{
+	color: cSteel;
+}
+
+.OutgameMonsterStatLine.Speed .OutgameMonsterStatValue
+{
+	color: cGold;
+}
+
+.OutgameMonsterResistanceBlock
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 10px;
+	padding-top: 8px;
+	flow-children: down;
+	border-top: 1px solid cCyanWellHair;
+}
+
+.OutgameMonsterResistanceTitle
+{
+	width: 100%;
+	height: 18px;
+	color: #aeb9be;
+	font-size: 14px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameMonsterResistanceGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 6px;
+	flow-children: right-wrap;
+}
+
+.OutgameMonsterResist
+{
+	width: 57px;
+	height: 24px;
+	margin: 0px 2px 4px 0px;
+	padding: 0px 3px;
+	flow-children: right;
+	background-color: #0a1015b0;
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameMonsterResistIcon
+{
+	width: 18px;
+	height: 18px;
+	margin-right: 3px;
+	vertical-align: center;
+}
+
+.OutgameMonsterResistValue
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	color: cSlate;
+	font-size: 13px;
+	text-align: right;
+	vertical-align: center;
+}
+
+.OutgameMonsterResist.WeaknessMild
+{
+	border: 1px solid #a95c5138;
+	background-color: #1a0d0bb0;
+}
+
+.OutgameMonsterResist.WeaknessMild .OutgameMonsterResistValue
+{
+	color: #d98779;
+}
+
+.OutgameMonsterResist.WeaknessStrong
+{
+	border: 1px solid #d36a5a70;
+	background-color: #25100db8;
+}
+
+.OutgameMonsterResist.WeaknessStrong .OutgameMonsterResistValue
+{
+	color: #f28b79;
+}
+
+.OutgameMonsterResist.WeaknessSevere
+{
+	border: 1px solid #f07764b0;
+	background-color: #30120ec0;
+}
+
+.OutgameMonsterResist.WeaknessSevere .OutgameMonsterResistValue
+{
+	color: #ff9d8b;
+}
+
+.OutgameMonsterResist.Neutral .OutgameMonsterResistIcon
+{
+	saturation: 0.2;
+	opacity: 0.5;
+}
+
+.OutgameMonsterResist.Neutral .OutgameMonsterResistValue
+{
+	color: #69757a;
+}
+
+.OutgameMonsterResist.ResistanceMild
+{
+	border: 1px solid #568c9a38;
+	background-color: #0b171bb0;
+}
+
+.OutgameMonsterResist.ResistanceMild .OutgameMonsterResistValue
+{
+	color: #74aebd;
+}
+
+.OutgameMonsterResist.ResistanceStrong
+{
+	border: 1px solid #5fb0c870;
+	background-color: #0c1c22b8;
+}
+
+.OutgameMonsterResist.ResistanceStrong .OutgameMonsterResistValue
+{
+	color: #79d0e6;
+}
+
+.OutgameMonsterResist.ResistanceSevere
+{
+	border: 1px solid #71cce5b0;
+	background-color: #0d2630c0;
+}
+
+.OutgameMonsterResist.ResistanceSevere .OutgameMonsterResistValue
+{
+	color: #91e5f7;
+}
+

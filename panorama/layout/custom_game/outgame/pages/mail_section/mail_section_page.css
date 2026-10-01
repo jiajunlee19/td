@@ -1,0 +1,246 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.MailSectionPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	padding: 18px 18px 20px 18px;
+}
+
+.MailListPanel
+{
+	width: 360px;
+	height: 818px;
+	flow-children: down;
+	margin-right: 16px;
+}
+
+.MailToolbar
+{
+	width: 100%;
+	height: 44px;
+	flow-children: right;
+	margin-bottom: 10px;
+}
+
+.MailToolbarButton,.MailActionButton
+{
+	height: 36px;
+	min-width: 92px;
+	padding: 0 14px;
+	margin-right: 8px;
+}
+
+.MailToolbarButton
+{
+	width: 108px;
+	min-width: 108px;
+	padding: 0 8px;
+}
+
+.MailToolbarButton Label,.MailActionButton Label
+{
+	width: 100%;
+	horizontal-align: center;
+	vertical-align: middle;
+	font-size: 16px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.MailList
+{
+	width: 100%;
+	height: 764px;
+	overflow: squish scroll;
+	flow-children: down;
+}
+
+.MailListItem
+{
+	width: 100%;
+	min-height: 78px;
+	flow-children: down;
+	padding: 10px 12px;
+	margin-bottom: 8px;
+}
+
+.MailListItem.Selected
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#d1edff20), color-stop(0.70, #1a2b36e8), to(#0c1115f2));
+	border-color: cGoldSel;
+}
+
+.MailList .MailListItem.Unread
+{
+	border-left: 3px solid cGold;
+}
+
+.MailList .MailListItem.Claimable
+{
+	border-left: 3px solid cGreen;
+}
+
+.MailListItem.Claimed
+{
+	opacity: 0.72;
+}
+
+.MailListTitleRow
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.MailListTitle
+{
+	width: fill-parent-flow(1);
+	color: #f2f6fb;
+	font-size: 17px;
+	text-overflow: shrink;
+}
+
+.MailListState
+{
+	color: cGold;
+	font-size: 14px;
+	margin-left: 8px;
+}
+
+.MailListItem.Claimable .MailListState
+{
+	color: cGreen;
+}
+
+.MailListItem.Claimed .MailListState
+{
+	color: cSlate;
+}
+
+.MailListMeta
+{
+	width: 100%;
+	margin-top: 6px;
+	color: cSlate;
+	font-size: 14px;
+	text-overflow: shrink;
+}
+
+.MailDetailPane
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+	padding: 18px;
+}
+
+.MailDetailTitle
+{
+	width: 100%;
+	color: #f7fbff;
+	font-size: 24px;
+	text-overflow: shrink;
+}
+
+.MailDetailMeta
+{
+	width: 100%;
+	margin-top: 8px;
+	color: cSlate;
+	font-size: 15px;
+}
+
+.MailDetailContent
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 16px;
+	padding: 12px;
+	color: #dce8f2;
+	font-size: 17px;
+	background-color: #070c11d8;
+	border: 1px solid cHairlineLo;
+	white-space: normal;
+	overflow: squish scroll;
+}
+
+.MailAttachmentTitle
+{
+	width: 100%;
+	margin-top: 14px;
+	color: cGold;
+	font-size: 16px;
+}
+
+.MailAttachmentList
+{
+	width: 100%;
+	height: 158px;
+	flow-children: right-wrap;
+	margin-top: 8px;
+	overflow: squish scroll;
+}
+
+.MailAttachmentItem
+{
+	width: 72px;
+	height: 72px;
+	margin: 0 10px 10px 0;
+}
+
+.MailAttachmentItem .XItemIcon
+{
+	width: 72px;
+	height: 72px;
+}
+
+.MailAttachmentList.Claimed .MailAttachmentItem
+{
+	saturation: 0.35;
+	opacity: 0.72;
+}
+
+.MailAttachmentChip
+{
+	min-width: 72px;
+	height: 30px;
+	padding: 0 10px;
+	margin: 0 8px 8px 0;
+	background-color: #142029e8;
+	border: 1px solid cHairlineLo;
+}
+
+.MailAttachmentChip Label
+{
+	vertical-align: middle;
+	horizontal-align: center;
+	color: #d7e6f2;
+	font-size: 14px;
+}
+
+.MailActionRow
+{
+	width: 100%;
+	height: 46px;
+	margin-top: 12px;
+	flow-children: right;
+}
+
+.MailEmptyState
+{
+	width: 100%;
+	height: 100%;
+}
+
+.MailList .MailEmptyState
+{
+	ignore-parent-flow: true;
+}
+
+.MailEmptyState Label
+{
+	horizontal-align: center;
+	vertical-align: middle;
+}
+

@@ -1,0 +1,47 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/top_menus/top_menus.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/entry_bar/entry_bar.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/seven_day_entry/seven_day_entry.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/moonrise_entry/moonrise_entry.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hoard_entry/hoard_entry.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/seven_day_entry/seven_day_entry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/moonrise_entry/moonrise_entry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hoard_entry/hoard_entry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/entry_bar/entry_bar.vjs_c" />
+	</scripts>
+	<Panel class="EntryBar" hittest="false" hittestchildren="true">
+		<Panel id="EntryBarButtons" class="EntryBarButtons" hittest="false" hittestchildren="true">
+			<Panel id="SevenDayEntryNew" class="MenuBtn TDMenuIcon SevenDayEntryButton tooltip-bottom Hidden" hittest="true" onmouseover="DOTAShowTextTooltip(&apos;#outgame_activity_page_seven_day&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel id="Bg" />
+				<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_seven_day_png.vtex" />
+				<Panel class="RedTip" />
+			</Panel>
+			<Panel id="SevenDayEntryReturn" class="MenuBtn TDMenuIcon SevenDayEntryButton tooltip-bottom Hidden" hittest="true" onmouseover="DOTAShowTextTooltip(&apos;#outgame_activity_page_return_login&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel id="Bg" />
+				<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_return_login_png.vtex" />
+				<Panel class="RedTip" />
+			</Panel>
+			<Panel id="MoonriseEntryButton" class="MenuBtn TDMenuIcon MoonriseEntryButton tooltip-bottom Hidden" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#outgame_activity_group_moonrise&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel id="Bg" />
+				<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/event_moonrise_png.vtex" />
+				<Panel class="RedTip" />
+			</Panel>
+			<Panel id="HoardEntryButton" class="MenuBtn TDMenuIcon HoardEntryButton tooltip-bottom Hidden" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#outgame_activity_group_relic_treasure&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel id="Bg" />
+				<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/event_hoard_png.vtex" />
+				<Panel id="HoardEntryRedTip" class="RedTip" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

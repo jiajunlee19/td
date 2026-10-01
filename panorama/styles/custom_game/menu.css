@@ -1,0 +1,95 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.equip_pop_menu
+{
+	padding: 4px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#162027f2), color-stop(0.55, #090f14f4), to(#030507fa));
+	border: 1px solid #ffffff14;
+	border-radius: 2px;
+	box-shadow: #000000cc 0px 8px 22px 0px;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.equip_pop_menu .equip_item
+{
+	margin: 0px 0px 2px 0px;
+	width: 140px;
+	height: 37px;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-image: none;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#202a31e8), to(#090d11ee));
+	border: 1px solid #ffffff0d;
+	transition-property: brightness, border, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+.equip_pop_menu .equip_item:hover
+{
+	brightness: 1.12;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2c3942f2), to(#0e151aee));
+	border: 1px solid #8cc8e7aa;
+}
+
+.equip_pop_menu .equip_item:active
+{
+	transform: translateY(1px);
+	brightness: 0.84;
+}
+
+.equip_pop_menu .equip_item.Disabled
+{
+	saturation: 0.15;
+	brightness: 0.58;
+}
+
+.equip_pop_menu .equip_item.Disabled #PopMenuBtnName
+{
+	color: #79828a;
+}
+
+.equip_pop_menu .equip_item.Disabled:hover
+{
+	brightness: 0.58;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#202a31e8), to(#090d11ee));
+	border: 1px solid #ffffff0d;
+}
+
+.equip_pop_menu .equip_item.Disabled:active
+{
+	transform: none;
+	brightness: 0.58;
+}
+
+.equip_pop_menu #grid
+{
+	flow-children: down;
+	align: center center;
+}
+
+.equip_pop_menu #PopMenuBtnName
+{
+	align: center center;
+	text-align: center;
+	font-size: 18px;
+	color: #e6dfcc;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.equip_pop_menu .item_slot
+{
+	margin-top: 8px;
+	width: 140px;
+	height: 37px;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-image: none;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#202a31e8), to(#090d11ee));
+	border: 1px solid #ffffff0d;
+}
+

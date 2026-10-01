@@ -1,0 +1,911 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.BalanceRootPanel
+{
+	z-index: 140;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.18s;
+	transition-timing-function: ease-out;
+}
+
+.BalanceRootPanel.panel-hidden
+{
+	opacity: 0;
+}
+
+#ClickEmpty
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000f2;
+}
+
+.BalanceMainPanel
+{
+	width: 100%;
+	height: 100%;
+	background-color: #05090d;
+	overflow: noclip;
+}
+
+.BalanceBackdrop
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(radial, 50% 44%, 0% 0%, 82% 78%, from(#17262b80), color-stop(0.44, #071014e6), to(#010305fb));
+}
+
+.BalanceEdgeVignette
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(radial, 50% 50%, 0% 0%, 72% 74%, from(#00000000), color-stop(0.56, #00000035), to(#000000d8));
+}
+
+.Animation
+{
+	transition-duration: 0.36s;
+	transition-timing-function: ease-in-out;
+	transition-property: transform, opacity;
+}
+
+.Show
+{
+	transform: translateY(36px);
+	opacity: 0;
+}
+
+.ShowTitle
+{
+	transform: translateY(-36px);
+	opacity: 0;
+}
+
+.BalanceTitleArea
+{
+	horizontal-align: center;
+	margin-top: 26px;
+	width: 100%;
+	height: 180px;
+	overflow: noclip;
+}
+
+.BalanceTitleText
+{
+	horizontal-align: center;
+	margin-top: 0px;
+	width: 360px;
+	height: 78px;
+	text-align: center;
+	font-size: 68px;
+	font-weight: semi-bold;
+	text-shadow: 0px 3px 4px #000000ee;
+}
+
+.Succese .BalanceTitleText
+{
+	color: gradient(linear, 0% 0%, 0% 100%, from(#fff3c0), color-stop(0.5, #f4d476), to(#b97b2d));
+}
+
+.Failure .BalanceTitleText
+{
+	color: gradient(linear, 0% 0%, 0% 100%, from(#f2f5fb), color-stop(0.5, #bfc6d0), to(#6f7883));
+}
+
+.BalanceTitleLine
+{
+	width: 190px;
+	height: 26px;
+	margin-top: 30px;
+	background-size: 100% 100%;
+	opacity: 0.9;
+}
+
+.BalanceTitleLine.left
+{
+	horizontal-align: center;
+	transform: translateX(-265px);
+	background-image: url("s2r://panorama/images/custom_game/balance/new/title_line_left_png.vtex");
+}
+
+.BalanceTitleLine.right
+{
+	horizontal-align: center;
+	transform: translateX(265px);
+	background-image: url("s2r://panorama/images/custom_game/balance/new/title_line_right_png.vtex");
+}
+
+.BalanceDifficultyLine
+{
+	horizontal-align: center;
+	margin-top: 82px;
+	width: 720px;
+	height: 28px;
+	text-align: center;
+	font-size: 24px;
+	color: #d9d0bd;
+	text-shadow: 0px 2px 3px #000000cc;
+}
+
+.BalanceTimeLine
+{
+	horizontal-align: center;
+	margin-top: 116px;
+	flow-children: right;
+	height: 36px;
+}
+
+.BalanceTimeCaption
+{
+	vertical-align: center;
+	font-size: 23px;
+	color: #b9b2a5;
+	text-shadow: 0px 2px 3px #000000cc;
+}
+
+.BalanceTimeValue
+{
+	vertical-align: center;
+	margin-left: 10px;
+	font-size: 30px;
+	font-weight: semi-bold;
+	text-shadow: 0px 2px 3px #000000cc;
+}
+
+.Succese .BalanceTimeValue
+{
+	color: #ffc96b;
+}
+
+.Failure .BalanceTimeValue
+{
+	color: #ff6a62;
+}
+
+.BalanceGradeTextBlock
+{
+	horizontal-align: right;
+	margin-right: 80px;
+	margin-top: 38px;
+	width: 320px;
+	height: 92px;
+}
+
+.BalanceGradeTitle
+{
+	horizontal-align: center;
+	width: 100%;
+	height: 38px;
+	text-align: center;
+	font-size: 34px;
+	font-weight: semi-bold;
+	text-shadow: 0px 2px 3px #000000cc;
+}
+
+.Succese .BalanceGradeTitle
+{
+	color: #f4d782;
+}
+
+.Failure .BalanceGradeTitle
+{
+	color: #e79a92;
+}
+
+.BalanceGradeDesc
+{
+	margin-top: 44px;
+	width: 100%;
+	height: 34px;
+	text-align: center;
+	font-size: 18px;
+	color: #c5bba9;
+	text-shadow: 0px 2px 3px #000000cc;
+}
+
+.BalanceContent
+{
+	horizontal-align: center;
+	margin-top: 215px;
+	width: 1830px;
+	height: 710px;
+	flow-children: right;
+}
+
+.BalancePanel
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#101b20e2), color-stop(0.58, #061014db), to(#030608e6));
+	border: 1px solid #6f73643d;
+	box-shadow: 0px 0px 18px #00000088;
+}
+
+.BalanceOverviewPanel
+{
+	width: 440px;
+	height: 665px;
+}
+
+.BalanceCenterColumn
+{
+	width: 880px;
+	height: 665px;
+	margin-left: 34px;
+	flow-children: down;
+}
+
+.BalanceTeamPanel
+{
+	width: 880px;
+	height: 488px;
+}
+
+.BalanceHighlightPanel
+{
+	margin-top: 12px;
+	width: 880px;
+	height: 165px;
+}
+
+.BalanceRewardsPanel
+{
+	margin-left: 34px;
+	width: 500px;
+	height: 665px;
+}
+
+.BalanceSectionTitle
+{
+	margin-left: 24px;
+	margin-top: 18px;
+	font-size: 23px;
+	color: #d6c9ad;
+	text-shadow: 0px 2px 3px #000000cc;
+}
+
+.BalanceOverviewEmblem
+{
+	horizontal-align: center;
+	margin-top: 58px;
+	width: 330px;
+	height: 145px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#152129e8), color-stop(0.56, #0a1117f1), to(#04070af4));
+	border: 1px solid #5f62584f;
+	box-shadow: #00000088 0px 4px 12px 0px;
+}
+
+.Succese .BalanceOverviewEmblem
+{
+	border: 1px solid #d3aa5578;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1f2a27f0), color-stop(0.58, #101813f2), to(#060907f7));
+}
+
+.Failure .BalanceOverviewEmblem
+{
+	border: 1px solid #9d4b466e;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#241c1fe8), color-stop(0.58, #111116f2), to(#070609f7));
+}
+
+.BalanceOverviewResultStack
+{
+	width: 100%;
+	height: 100%;
+}
+
+.BalanceOverviewResultText
+{
+	align: center center;
+	width: 292px;
+	height: 72px;
+	text-align: center;
+	font-size: 48px;
+	font-weight: semi-bold;
+	letter-spacing: 0px;
+	text-overflow: shrink;
+	text-shadow: 0px 3px 4px #000000ee;
+}
+
+.Succese .BalanceOverviewResultText
+{
+	color: #ffda78;
+}
+
+.Failure .BalanceOverviewResultText
+{
+	color: #d5d9df;
+}
+
+.BalanceOverviewStats
+{
+	horizontal-align: center;
+	margin-top: 220px;
+	width: 390px;
+	height: 410px;
+	flow-children: down;
+	background-color: #071013a8;
+	border: 1px solid #59605a35;
+}
+
+.BalanceStatRow
+{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #ffffff0c;
+}
+
+.BalanceStatIcon
+{
+	vertical-align: center;
+	margin-left: 26px;
+	width: 30px;
+	height: 30px;
+	background-size: 100% 100%;
+	wash-color: #c8c3b6;
+}
+
+.BalanceStatIcon.total-wave
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_total_wave_png.vtex");
+}
+
+.BalanceStatIcon.elite-wave
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_elite_wave_png.vtex");
+}
+
+.BalanceStatIcon.boss-wave
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_boss_wave_png.vtex");
+}
+
+.BalanceStatIcon.current-monster
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_current_monster_png.vtex");
+}
+
+.BalanceStatIcon.total-kill
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_total_kill_png.vtex");
+}
+
+.BalanceStatIcon.gold
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_gold_png.vtex");
+	wash-color: none;
+}
+
+.BalanceStatIcon.tower
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_tower_png.vtex");
+}
+
+.BalanceStatIcon.devour
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_devour_png.vtex");
+}
+
+.BalanceStatName
+{
+	vertical-align: center;
+	margin-left: 78px;
+	width: 210px;
+	height: 30px;
+	font-size: 19px;
+	color: #bfb6a6;
+}
+
+.BalanceStatValue
+{
+	vertical-align: center;
+	horizontal-align: right;
+	margin-right: 24px;
+	width: 95px;
+	height: 34px;
+	text-align: right;
+	font-size: 23px;
+	color: #f1efe5;
+}
+
+.BalanceTeamHeader
+{
+	margin-top: 54px;
+	margin-left: 12px;
+	width: 856px;
+	height: 36px;
+}
+
+.BalanceTeamHeader Label
+{
+	vertical-align: center;
+	height: 28px;
+	font-size: 17px;
+	color: #9f998d;
+	text-align: center;
+}
+
+.BalanceHeaderRank
+{
+	margin-left: 8px;
+	width: 64px;
+}
+
+.BalanceHeaderName
+{
+	margin-left: 112px;
+	width: 154px;
+	text-align: left;
+}
+
+.BalanceHeaderPower
+{
+	margin-left: 292px;
+	width: 110px;
+}
+
+.BalanceHeaderDamage
+{
+	margin-left: 430px;
+	width: 140px;
+}
+
+.BalanceHeaderShare
+{
+	margin-left: 592px;
+	width: 120px;
+}
+
+.BalanceHeaderKills
+{
+	margin-left: 735px;
+	width: 70px;
+}
+
+.BalanceGrid
+{
+	margin-top: 92px;
+	margin-left: 12px;
+	width: 856px;
+	height: 330px;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.BalancePlayerRow
+{
+	width: 856px;
+	height: 74px;
+	margin-bottom: 8px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#071316ea), color-stop(0.62, #081116c8), to(#07101488));
+	border: 1px solid #59605a2e;
+}
+
+.BalancePlayerRow.rank-top
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#102b3fe8), color-stop(0.70, #081a28d8), to(#07101490));
+	border: 1px solid #3a9ad678;
+}
+
+.BalanceRankBadge
+{
+	vertical-align: center;
+	margin-left: 12px;
+	width: 67px;
+	height: 76px;
+	background-size: 100% 100%;
+	background-image: url("s2r://panorama/images/custom_game/outgame/rank/rank_medal_4_png.vtex");
+}
+
+.BalancePlayerRow.rank-1 .BalanceRankBadge
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/rank/rank_medal_1_png.vtex");
+}
+
+.BalancePlayerRow.rank-2 .BalanceRankBadge
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/rank/rank_medal_2_png.vtex");
+}
+
+.BalancePlayerRow.rank-3 .BalanceRankBadge
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/rank/rank_medal_3_png.vtex");
+}
+
+.BalancePlayerRow.rank-4 .BalanceRankBadge
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/rank/rank_medal_4_png.vtex");
+}
+
+.BalancePlayerAvatarMount
+{
+	vertical-align: center;
+	margin-left: 86px;
+	width: 58px;
+	height: 58px;
+}
+
+.BalancePlayerAvatarMount .PlayerAvatar,.BalancePlayerAvatarMount #HeadBg,.BalancePlayerAvatarMount #HeadMask,.BalancePlayerAvatarMount #HeadFrame,.BalancePlayerAvatarMount #HeadIcon
+{
+	width: 58px;
+	height: 58px;
+}
+
+.BalancePlayerName
+{
+	vertical-align: center;
+	margin-left: 158px;
+	width: 150px;
+	height: 30px;
+	font-size: 20px;
+	color: #f2d27a;
+	text-overflow: shrink;
+}
+
+.BalanceTableValue
+{
+	vertical-align: center;
+	height: 30px;
+	font-size: 21px;
+	color: #efe5d0;
+	text-align: center;
+}
+
+.BalancePowerValue
+{
+	margin-left: 300px;
+	width: 105px;
+}
+
+.BalanceDamageValue
+{
+	margin-left: 430px;
+	width: 140px;
+}
+
+.BalanceShareCell
+{
+	vertical-align: center;
+	margin-left: 590px;
+	width: 122px;
+	height: 46px;
+}
+
+.BalanceShareText
+{
+	horizontal-align: center;
+	width: 100%;
+	height: 24px;
+	text-align: center;
+	font-size: 18px;
+	color: #f2e4cc;
+}
+
+.BalanceShareBar
+{
+	horizontal-align: center;
+	margin-top: 29px;
+	width: 104px;
+	height: 7px;
+	background-color: #050607;
+	border: 1px solid #25313a;
+}
+
+.BalanceShareFill
+{
+	width: 0%;
+	height: 100%;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#5ec9ff), to(#e3c46f));
+}
+
+.BalanceKillsValue
+{
+	margin-left: 736px;
+	width: 72px;
+}
+
+.BalanceRowMedal
+{
+	vertical-align: center;
+	horizontal-align: right;
+	margin-right: 12px;
+	width: 46px;
+	height: 46px;
+	background-size: 100% 100%;
+	background-image: url("s2r://panorama/images/custom_game/balance/new/medal_mvp_png.vtex");
+	visibility: collapse;
+	opacity: 0;
+}
+
+.BalancePlayerRow.show-medal .BalanceRowMedal
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.BalanceRowMedalText
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: -4px;
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	font-size: 14px;
+	color: #ffd674;
+	text-shadow: 0px 1px 2px #000000ee;
+}
+
+.BalanceTeamNote
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 16px;
+	width: 360px;
+	height: 24px;
+	text-align: center;
+	font-size: 16px;
+	color: #8f918d;
+}
+
+.BalanceHighlightBody
+{
+	margin-top: 48px;
+	margin-left: 14px;
+	width: 852px;
+	height: 104px;
+}
+
+.BalanceHighlightPortrait
+{
+	width: 150px;
+	height: 104px;
+	background-size: 100% 100%;
+	background-image: url("s2r://panorama/images/custom_game/balance/new/highlight_tower_png.vtex");
+	border: 1px solid #5f573f73;
+}
+
+.BalanceHighlightPortrait.placeholder
+{
+	background-image: none;
+	background-color: #05090d99;
+	border: 1px solid #3d443f60;
+}
+
+.BalanceHighlightInfo
+{
+	margin-left: 170px;
+	width: 670px;
+	height: 104px;
+}
+
+.BalanceHighlightTitleLine
+{
+	width: 100%;
+	height: 34px;
+	border-bottom: 1px solid #ffffff12;
+}
+
+.BalanceHighlightName
+{
+	width: 200px;
+	height: 32px;
+	font-size: 25px;
+	color: #e5d6bd;
+}
+
+.BalanceHighlightTag
+{
+	margin-left: 142px;
+	margin-top: 4px;
+	width: 78px;
+	height: 24px;
+	text-align: center;
+	font-size: 16px;
+	color: #4bc4ff;
+	border: 1px solid #2ca8df9a;
+	background-color: #071a2288;
+}
+
+.BalanceHighlightTag.tag-hidden
+{
+	visibility: collapse;
+}
+
+.BalanceHighlightMetrics
+{
+	margin-top: 38px;
+	width: 670px;
+	height: 62px;
+	flow-children: right;
+}
+
+.BalanceHighlightMetric
+{
+	width: 132px;
+	height: 58px;
+	border-right: 1px solid #ffffff10;
+}
+
+.BalanceHighlightMetricName
+{
+	horizontal-align: center;
+	width: 120px;
+	height: 24px;
+	text-align: center;
+	font-size: 15px;
+	color: #8f918a;
+}
+
+.BalanceHighlightMetricValue
+{
+	horizontal-align: center;
+	margin-top: 27px;
+	width: 126px;
+	height: 30px;
+	text-align: center;
+	font-size: 21px;
+	color: #eadcc8;
+}
+
+.BalanceRewardSection
+{
+	margin-left: 22px;
+	margin-top: 54px;
+	width: 456px;
+	height: 170px;
+	background-color: #081014a8;
+	border: 1px solid #59605a32;
+}
+
+.BalanceRewardSection.second
+{
+	margin-top: 250px;
+}
+
+.BalanceRewardSection.section-hidden
+{
+	visibility: collapse;
+}
+
+.BalanceRewardSectionTitle
+{
+	margin-left: 16px;
+	margin-top: 16px;
+	width: 240px;
+	height: 28px;
+	font-size: 18px;
+	color: #bcb3a2;
+}
+
+.BalanceRewardList
+{
+	margin-left: 16px;
+	margin-top: 56px;
+	width: 424px;
+	height: 104px;
+	flow-children: right-wrap;
+	overflow: noclip noclip;
+}
+
+.BalanceRewardList.empty
+{
+	brightness: 0.7;
+}
+
+.BalanceRewardLoading
+{
+	width: 100%;
+	margin-top: 16px;
+	color: #9fb0c4;
+	font-size: 19px;
+	letter-spacing: 1px;
+	text-align: center;
+	opacity: 0.85;
+}
+
+.BalanceRewardSlot
+{
+	width: 44px;
+	height: 44px;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#111b21), to(#04080a));
+	border: 1px solid #6f6b5b4f;
+}
+
+.BalanceRewardSlot.empty
+{
+	saturation: 0.2;
+	brightness: 0.55;
+}
+
+.BalanceRewardSlot .XItemIcon
+{
+	align: center center;
+	width: 40px;
+	height: 40px;
+}
+
+.Failure .victory-only
+{
+	visibility: collapse;
+}
+
+.Succese .failure-only
+{
+	visibility: collapse;
+}
+
+.Failure .BalanceRewardsPanel
+{
+	visibility: collapse;
+}
+
+.Failure .BalanceContent
+{
+	width: 1354px;
+}
+
+.BalanceActions
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 34px;
+	width: 320px;
+	height: 82px;
+}
+
+.BalanceActionButton
+{
+	width: 320px;
+	height: 68px;
+	border: 1px solid #7a817850;
+	transition-property: brightness, transform;
+	transition-duration: 0.12s;
+	transition-timing-function: ease-out;
+}
+
+.BalanceActionButton:hover
+{
+	brightness: 1.35;
+}
+
+.BalanceActionButton:active
+{
+	transform: translateY(1px);
+}
+
+.BalanceActionButton Label
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 100%;
+	height: 34px;
+	text-align: center;
+	font-size: 27px;
+	color: #f3eee2;
+	text-shadow: 0px 2px 3px #000000cc;
+}
+
+.BalanceActionButton.secondary
+{
+	horizontal-align: center;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#25313a), to(#0b1116));
+}
+
+.BalanceActionButton.restart
+{
+	horizontal-align: center;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#348f4f), to(#0f2c1b));
+	border: 1px solid #70b780aa;
+}
+
+.BalanceActionButton.pending
+{
+	horizontal-align: center;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#26332b), to(#101713));
+	border: 1px solid #52665a66;
+	brightness: 0.65;
+	saturation: 0.35;
+	transform: none;
+}
+

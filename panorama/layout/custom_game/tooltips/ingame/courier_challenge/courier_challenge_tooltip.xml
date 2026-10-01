@@ -1,0 +1,24 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/courier_challenge/courier_challenge_tooltip.vjs_c" />
+	</scripts>
+	<Panel class="tips_new">
+		<Panel id="mainBG">
+			<Panel id="topBg">
+				<Panel id="equipInfoPanel">
+					<Image id="equipItemQuality">
+						<Image id="equipItemIcon" />
+					</Image>
+					<Label id="equipName" />
+					<Label id="extraName" />
+				</Panel>
+			</Panel>
+			<Panel id="challengeBody" class="IngameItemTooltipBody" />
+		</Panel>
+	</Panel>
+</root>

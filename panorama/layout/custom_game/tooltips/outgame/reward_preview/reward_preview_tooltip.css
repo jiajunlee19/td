@@ -1,0 +1,77 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.tips_new
+{
+	width: 361px;
+}
+
+#BasePanel
+{
+	padding: 10px 0px 12px 0px;
+	overflow: clip scroll;
+}
+
+#BaseGrid
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+.ItemPanel
+{
+	width: 100%;
+	height: fit-children;
+}
+
+.ItemPanel #Grid
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+.ItemPanel #Title
+{
+	visibility: collapse;
+}
+
+.ItemPanelCell
+{
+	width: 100%;
+	height: 96px;
+}
+
+.ItemPanelCell #ItemIconGrid
+{
+	vertical-align: center;
+	horizontal-align: left;
+	margin-left: 14px;
+	width: 78px;
+	height: 78px;
+}
+
+.ItemPanelCell #ItemName
+{
+	horizontal-align: right;
+	margin-top: 13px;
+	margin-right: 12px;
+	width: 246px;
+	height: 24px;
+	font-size: 20px;
+	color: #e8f3f3;
+	text-overflow: shrink;
+}
+
+.ItemPanelCell #ItemDesc
+{
+	horizontal-align: right;
+	margin-top: 42px;
+	margin-right: 12px;
+	width: 246px;
+	height: 46px;
+	font-size: 16px;
+	color: #9ebbc0;
+	text-overflow: shrink;
+}
+

@@ -1,0 +1,445 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameEquipArchiveBody
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	background-color: cScrimBody;
+}
+
+.OutgameEquipArchiveLoading
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrimBody;
+}
+
+.OutgameEquipArchiveLoadingText
+{
+	align: center center;
+	width: 460px;
+	color: cTan;
+	font-size: 26px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameEquipArchiveGridPanel
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveGrid
+{
+	margin: 14px 16px 14px 16px;
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: right-wrap;
+	overflow: squish scroll;
+	padding-top: 6px;
+	padding-left: 6px;
+	padding-bottom: 16px;
+}
+
+.OutgameEquipArchiveGridEmpty
+{
+	width: 100%;
+	height: 80px;
+	margin-top: 26px;
+}
+
+.OutgameEquipArchiveItem
+{
+	width: 124px;
+	height: 158px;
+	margin: 0px 10px 12px 0px;
+	padding: 8px 7px;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveItem:hover
+{
+	brightness: 1.32;
+}
+
+.OutgameEquipArchiveItem.Selected
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 9px 0px;
+}
+
+.OutgameEquipArchiveItem.Locked
+{
+	saturation: 0.2;
+	brightness: 0.58;
+}
+
+.OutgameEquipArchiveItem.Collected
+{
+	border: 1px solid #78d49bcc;
+}
+
+.OutgameEquipArchiveItemIconFrame
+{
+	width: 104px;
+	height: 74px;
+	horizontal-align: center;
+}
+
+.OutgameEquipArchiveItemIcon
+{
+	width: 92px;
+	height: 66px;
+	align: center center;
+}
+
+.OutgameEquipArchiveItemName
+{
+	width: 110px;
+	height: 34px;
+	horizontal-align: center;
+	margin-top: 7px;
+	color: cCream;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipArchiveItemLevel
+{
+	width: 110px;
+	height: 20px;
+	horizontal-align: center;
+	margin-top: 2px;
+	color: cSlate;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipArchiveItemLevel.MaxLevel
+{
+	color: cGold;
+}
+
+.OutgameEquipArchiveDetailPanel
+{
+	width: 378px;
+	height: 100%;
+	padding: 16px 16px 14px 16px;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveOperatePanel
+{
+	width: 346px;
+	height: 100%;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveSelected
+{
+	width: 346px;
+	height: 148px;
+}
+
+.OutgameEquipArchiveSelectedIcon
+{
+	margin-left: 12px;
+	vertical-align: center;
+	width: 136px;
+	height: 96px;
+}
+
+.OutgameEquipArchiveSelectedInfo
+{
+	margin-left: 164px;
+	vertical-align: center;
+	width: 166px;
+	height: 96px;
+}
+
+.OutgameEquipArchiveSelectedQuality
+{
+	margin-top: 50px;
+	width: 160px;
+	height: 24px;
+	color: cSlate;
+	font-size: 17px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEquipArchiveSelectedName
+{
+	width: 160px;
+	height: 42px;
+	color: cCream;
+	font-size: 24px;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipArchiveSelectedLevel
+{
+	margin-top: 78px;
+	width: 160px;
+	height: 22px;
+	color: cSlate;
+	font-size: 16px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipArchiveSelectedLevel.MaxLevel
+{
+	color: cGold;
+}
+
+.OutgameEquipArchiveDetailContent
+{
+	margin-top: 14px;
+	width: 346px;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.OutgameEquipArchiveDetailSection
+{
+	width: 346px;
+	margin-bottom: 12px;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveDetailSection.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameEquipArchiveDetailSectionTitle
+{
+	margin-left: 4px;
+	width: 330px;
+	height: 24px;
+	color: cTan;
+	font-size: 18px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameEquipArchiveDetailSectionList
+{
+	margin-top: 6px;
+	width: 346px;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveAttrLine
+{
+	margin-left: 6px;
+	width: 334px;
+	min-height: 25px;
+	margin-bottom: 4px;
+	color: cSteel;
+	font-size: 18px;
+	line-height: 22px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEquipArchiveAttrLine .inline_img_attr,.OutgameEquipArchiveEffectText .inline_img_attr
+{
+	width: 18px;
+	height: 18px;
+}
+
+.OutgameEquipArchiveEffectText
+{
+	margin-left: 6px;
+	width: 334px;
+	color: cSteel;
+	font-size: 17px;
+	line-height: 23px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEquipArchiveDetailEmpty
+{
+	width: 346px;
+	min-height: 34px;
+	padding: 7px 8px;
+	color: cSlate;
+	font-size: 15px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEquipArchiveCostPanel
+{
+	margin-top: 12px;
+	width: 346px;
+	height: 210px;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveCostSection
+{
+	width: 100%;
+	height: 210px;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveCostTitle
+{
+	margin-left: 12px;
+	margin-top: 8px;
+	width: 140px;
+	height: 22px;
+	color: cTan;
+	font-size: 16px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameEquipArchiveCostList
+{
+	margin-left: 12px;
+	margin-top: 6px;
+	width: 322px;
+	height: 112px;
+	flow-children: right;
+	overflow: squish scroll;
+}
+
+.OutgameEquipArchiveCostItem
+{
+	width: 92px;
+	height: 108px;
+	margin-right: 10px;
+	flow-children: down;
+}
+
+.OutgameEquipArchiveCostItem.Shortage
+{
+	saturation: 0.4;
+	brightness: 0.72;
+}
+
+.OutgameEquipArchiveCostIcon
+{
+	horizontal-align: center;
+	width: 82px;
+	height: 82px;
+}
+
+.OutgameEquipArchiveCostIcon .XItemIcon
+{
+	width: 82px;
+	height: 82px;
+}
+
+.OutgameEquipArchiveCostFallbackIcon
+{
+	align: center center;
+	width: 62px;
+	height: 62px;
+}
+
+.OutgameEquipArchiveCostLabel
+{
+	margin-top: 2px;
+	horizontal-align: center;
+	width: 88px;
+	height: 24px;
+	color: cSteel;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipArchiveCostEmpty
+{
+	vertical-align: center;
+	margin-left: 8px;
+	width: 220px;
+	color: cSlate;
+	font-size: 15px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEquipArchiveCostActions
+{
+	margin-left: 12px;
+	margin-top: 12px;
+	width: 322px;
+	height: 42px;
+	flow-children: right;
+}
+
+.OutgameEquipArchiveActionButton
+{
+	width: 149px;
+	height: 40px;
+}
+
+.OutgameEquipArchiveActionButton.Primary,.OutgameEquipArchiveActionButton.Confirm
+{
+	margin-right: 24px;
+}
+
+.OutgameEquipArchiveActionButtonLabel
+{
+	align: center center;
+	width: 136px;
+	height: 26px;
+	font-size: 18px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameEquipArchiveItem.Selected:hover
+{
+	box-shadow: cGoldGlow 0px 0px 11px 0px;
+}
+
+.OutgameEquipArchiveItem.Undiscovered
+{
+	saturation: 0.12;
+	brightness: 0.5;
+}
+
+.OutgameEquipArchiveItem.Undiscovered .OutgameEquipArchiveItemIcon
+{
+	blur: gaussian(3.4px);
+	wash-color: #161b22cc;
+}
+
+.OutgameEquipArchiveSelectedIcon.Undiscovered
+{
+	blur: gaussian(4.2px);
+	saturation: 0.12;
+	brightness: 0.5;
+}
+
+.OutgameEquipArchiveItemLock
+{
+	align: center center;
+	width: 100%;
+	height: 20px;
+	color: cTan;
+	font-size: 14px;
+	text-align: center;
+	background-color: #05080bcc;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEquipArchiveItemLock.Hidden
+{
+	visibility: collapse;
+}
+

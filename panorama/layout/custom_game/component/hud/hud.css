@@ -1,0 +1,6580 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+Label
+{
+	color: cText;
+}
+
+.drop_target
+{
+	padding: -2px;
+	border-radius: 2px;
+	border: 2px solid cAmber;
+}
+
+VerticalScrollBar
+{
+	width: 14px;
+	margin-right: 6px;
+	border-radius: 6px;
+	border: 2px solid #000000;
+	background-color: #0c272986;
+	transition-property: none;
+	transition-duration: 0s;
+}
+
+VerticalScrollBar .ScrollThumb
+{
+	border: 0px solid #00000000;
+	border-radius: 4px;
+	background-color: #007e6f6e;
+}
+
+VerticalScrollBar:hover .ScrollThumb
+{
+	background-color: #007e6f6e;
+	brightness: 1.2;
+}
+
+TextEntry
+{
+	padding-top: 6px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 2px solid cHair;
+	box-shadow: #000 -2px -2px 0px 4px;
+	background-color: cGlassSolid;
+	color:cText;
+}
+
+TextEntry Label,TextEntry #PlaceholderText
+{
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin: 1px;
+	color: cTextDim;
+}
+
+ProgressBar
+{
+	overflow: clip;
+}
+
+#TDHudActionLayer
+{
+	width: 100%;
+	height: 100%;
+	z-index: 65;
+}
+
+.hidden
+{
+	visibility: collapse;
+}
+
+.opacityHidden
+{
+	opacity: 0;
+}
+
+#InventoryIconKuang
+{
+	width: 47px;
+	height: 47px;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+#InventoryIconQuality
+{
+	width: 47px;
+	height: 47px;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.empty #InventoryItemIcon
+{
+	visibility: collapse;
+}
+
+#InventoryItemIcon
+{
+	visibility: visible;
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+#dragImage
+{
+	width: 64px;
+	height: 64px;
+	opacity: 0.6;
+}
+
+.ability-cd-mask
+{
+	width: 100%;
+	height: 100%;
+	align: center center;
+	background-color: #232323cc;
+}
+
+#cooldownLabel
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 22px;
+	color: rgba(255, 255, 255, 1);
+	text-shadow: 1px 1px 2px 2px #000000;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+}
+
+.WindowsBlockBg
+{
+	background-color: cScrim60;
+	border-radius: 5px;
+}
+
+Label
+{
+	color: cText;
+}
+
+VerticalScrollBar
+{
+	width: 14px;
+	margin-right: 6px;
+	border-radius: 6px;
+	border: 2px solid #000000;
+	background-color: #0c272986;
+	transition-property: none;
+	transition-duration: 0s;
+}
+
+VerticalScrollBar .ScrollThumb
+{
+	border: 0px solid #00000000;
+	border-radius: 4px;
+	background-color: #007e6f6e;
+}
+
+VerticalScrollBar:hover .ScrollThumb
+{
+	background-color: #007e6f6e;
+	brightness: 1.2;
+}
+
+TextEntry
+{
+	padding-top: 6px;
+	padding-left: 10px;
+	border-radius: 5px;
+	border: 2px solid cHair;
+	box-shadow: #000 -2px -2px 0px 4px;
+	background-color: cGlassSolid;
+	color: cText;
+}
+
+TextEntry Label,TextEntry #PlaceholderText
+{
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin: 1px;
+	color: cTextDim;
+}
+
+ProgressBar
+{
+	overflow: clip;
+}
+
+#ViewBG
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	background-color: cGlassFill;
+}
+
+#ViewBG #BGBorder1
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	border: 3px solid #000000;
+}
+
+#ViewBG #BGBorder2
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin: 3px;
+	border: 5px solid cAmber;
+}
+
+#ViewBG #BGBorder3
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin: 7px;
+	border: 3px solid #000000;
+}
+
+#ViewBG #TitleBG
+{
+	height: 90px;
+	width: 100%;
+	margin: 8px;
+	background-color: cGlassFill;
+}
+
+#ViewBG #TitleBG #TitleBorder1
+{
+	height: 100%;
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border: 3px solid #000000;
+}
+
+.CloseBtn
+{
+	width: 32px;
+	height: 32px;
+	margin-top: 16px;
+	margin-right: 16px;
+	horizontal-align: right;
+	vertical-align: top;
+	background-image: url("s2r://panorama/images/custom_game/hud/close_png.vtex");
+	background-position: 50% 50%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transition-property: wash-color;
+	transition-duration: 0.1s;
+}
+
+.CloseBtn Label
+{
+	color: #ffffff;
+}
+
+.CloseBtn:hover
+{
+	wash-color: #ffddddff;
+}
+
+.CloseBtn:active
+{
+	wash-color: cRed;
+	background-size: 90% 90%;
+}
+
+.TitleLabel
+{
+	max-width: 400px;
+	height: 60px;
+	color: cText;
+	font-size: 50px;
+	font-weight: normal;
+	text-shadow: 0px 0px 0px 3 #007e70;
+	letter-spacing: 2px;
+	text-overflow: shrink;
+	font-family: defaultFont;
+}
+
+.ScrollBarContainer>#VerticalScrollBar
+{
+	border-radius: 5px;
+	background-color: #19241e80;
+}
+
+.ScrollBarContainer>#VerticalScrollBar>#ScrollThumb
+{
+	border-radius: 5px;
+	background-color: #57c7ba;
+	opacity: 0.3;
+}
+
+.ItemBorder
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.ItemBorder #BGBorder1
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	border: 2px solid #000000;
+}
+
+.ItemBorder #BGBorder2
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin: 2px;
+	border: 2px solid cAmber;
+}
+
+.ItemBorder #BGBorder3
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin: 4px;
+	border: 2px solid #000000;
+}
+
+.WithItemBorder.StoreItemImage
+{
+	margin: 6px;
+}
+
+.SmallBg
+{
+	background-color: cGlassFill;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.SmallBg #BGBorder1
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	border: 2px solid #000000;
+}
+
+.SmallBg #BGBorder2
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin: 2px;
+	border: 2px solid cAmber;
+}
+
+.SmallBg #BGBorder3
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	margin: 4px;
+	border: 2px solid #000000;
+}
+
+#StorePanelTitle
+{
+	width: 100%;
+	horizontal-align: right;
+}
+
+.GreenTitleBg
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 1px;
+}
+
+.GreenTitleBg #BGBorder1
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 1px;
+	border: 2px solid #000000;
+}
+
+.GreenTitleBg #BGBorder2
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 1px;
+	margin: 2px;
+	border: 2px solid cGreen;
+}
+
+.GreenTitleBg #BGBorder3
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 1px;
+	margin: 4px;
+	border: 2px solid #000000;
+}
+
+.GreenTitleBg #MainBgGreen
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 1px;
+	margin: 3px;
+	background-color: cGreenDeep;
+	opacity: 0.5;
+}
+
+#RequireUnitIcons
+{
+	margin-bottom: 28px;
+	vertical-align: bottom;
+	horizontal-align: left;
+	flow-children: right;
+}
+
+.FiveAbilities #RequireUnitIcons,.SixAbilities #RequireUnitIcons
+{
+	margin-bottom: 31px;
+}
+
+.UnitIcon
+{
+	width: 20px;
+	height: 20px;
+	border-radius: 30%;
+	tooltip-body-position: 50% 100%;
+	tooltip-position: bottom;
+	box-shadow: fill #cac7c880 -1px -1px 2px 2px;
+}
+
+.UnitIcon.rarity_r
+{
+	box-shadow: fill #bbe3ff80 -1px -1px 2px 2px;
+}
+
+.UnitIcon.rarity_sr
+{
+	box-shadow: fill #d3bcff80 -1px -1px 2px 2px;
+}
+
+.UnitIcon.rarity_ssr
+{
+	box-shadow: fill #e1c98980 -1px -1px 2px 2px;
+}
+
+.show_level_up_tab #LevelUpBurstFXContainer
+{
+	visibility: visible;
+}
+
+#CustomAbilityCharges
+{
+	margin-left: 3px;
+	margin-bottom: 27px;
+	vertical-align: bottom;
+	horizontal-align: left;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#444), to(black));
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	z-index: 2;
+	padding: 1px;
+	box-shadow: fill 2px 2px 4px black;
+	visibility: collapse;
+}
+
+.FiveAbilities #CustomAbilityCharges,.SixAbilities #CustomAbilityCharges
+{
+	margin-bottom: 28px;
+}
+
+.show_ability_charges #CustomAbilityCharges
+{
+	visibility: visible;
+}
+
+#CustomAbilityCharges_FG
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	border: 2px solid cGreen;
+	transition-property: clip;
+	transition-duration: 0s;
+}
+
+#CustomAbilityCharges Label
+{
+	margin-top: 2px;
+	font-size: 15px;
+	width: 100%;
+	vertical-align: middle;
+	text-align: center;
+	text-overflow: shrink;
+	color: #fff;
+}
+
+#LevelUpTab
+{
+	vertical-align: bottom;
+	horizontal-align: center;
+	margin-bottom: 88px;
+	height: 37px;
+}
+
+.star_ability
+{
+	width: 8px;
+	height: 8px;
+	margin: 1px;
+	background-image: url("s2r://panorama/images/custom_game/hud/star_png.vtex");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	saturation: 0;
+	brightness: 0;
+}
+
+.star_ability.active_level
+{
+	saturation: 1;
+	brightness: 1;
+}
+
+.auto_castable #LevelUpLight
+{
+	background-image: url("s2r://panorama/images/hud/reborn/levelup_lightcast_autocast_psd.vtex");
+	z-index: 1;
+	margin-top: 70px;
+	visibility: collapse;
+}
+
+#LevelUpLight
+{
+	horizontal-align: center;
+	margin-top: 72px;
+	padding-left: 2px;
+	width: 100%;
+	height: 82px;
+	background-image: url("s2r://panorama/images/hud/reborn/levelup_lightcast_psd.vtex");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	z-index: 0;
+	transition-property: opacity;
+	transition-timing-function: ease-in-out;
+	transition-duration: .32s;
+}
+
+.HIDE_INVENTORY_PANEL #inventory
+{
+	visibility: visible;
+}
+
+#inventory
+{
+	margin-top: -5px;
+	padding-left: -3px;
+	margin-right: 0px;
+}
+
+#inventory_list2
+{
+	visibility: collapse;
+}
+
+.PartyPortraitLivesContent
+{
+	flow-children: right;
+	horizontal-align: center;
+}
+
+.PartyPortraitLivesIcon
+{
+	width: 24px;
+	height: 26px;
+	background-image: url("s2r://");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.PartyPortraitLivesLabel
+{
+	margin-left: 0px;
+	margin-top: -2px;
+	vertical-align: bottom;
+	color: white;
+	font-size: 20px;
+	font-weight: semi-bold;
+	text-shadow: 1px 2px 2px #000000;
+	overflow: noclip;
+}
+
+@keyframes 'button-highlight'
+{
+	0%
+	{
+		box-shadow: 0px 0px 0px 0px #ffffff00;
+	}
+	
+	50%
+	{
+		box-shadow: 0px 0px 15px 5px cAmberGlow;
+		brightness: 1.5;
+	}
+	
+	100%
+	{
+		box-shadow: 0px 0px 0px 0px #ffffff00;
+	}
+	
+}
+
+.button-highlight
+{
+	animation-name: button-highlight;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'slideInFromBottom'
+{
+	from
+	{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	
+	to
+	{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	
+}
+
+@keyframes 'slideOutToBottom'
+{
+	from
+	{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	
+	to
+	{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	
+}
+
+.panel-hidden
+{
+	transform: translateY(100px);
+	opacity: 0;
+}
+
+.panel-animation
+{
+	transition-duration: 0.15s;
+	transition-timing-function: ease-out;
+	transition-property: opacity, transform;
+}
+
+#Setting
+{
+	width: 100%;
+	height: 100%;
+}
+
+#Setting #SettingMask
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.805);
+}
+
+#Setting #SettingGrid
+{
+	vertical-align: center;
+	horizontal-align: center;
+	background-color: rgba(0, 0, 0, 0.805);
+	border-radius: 20px;
+	padding: 10px;
+	margin-top: 455px;
+	flow-children: right-wrap;
+}
+
+#Setting #KeyBindingGrid
+{
+	align: center center;
+	max-height: 400px;
+	flow-children: down-wrap;
+	background-color: rgba(0, 0, 0, 0.764);
+	padding: 20px;
+	border: 1px white solid;
+	border-radius: 20px;
+}
+
+.CustomKeyBindingCell
+{
+	height: 55px;
+	flow-children: right;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 5px;
+	margin: 1px;
+}
+
+.CustomKeyBindingCell #desc
+{
+	vertical-align: center;
+	min-width: 300px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.HeroAbilityBindAbilityButton.Custom
+{
+	width: 45px;
+	height: 45px;
+	margin: 5px;
+}
+
+#DOTAAbilityBarSettings
+{
+	width: 500px;
+	height: 60px;
+	margin-top: 420px;
+	align: center center;
+}
+
+.SettingPanelAnimation
+{
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: opacity;
+}
+
+.SettingHidden
+{
+	opacity: 0;
+}
+
+.settingCell
+{
+	width: 150px;
+	height: 50px;
+	brightness: 1;
+	transition: brightness 0.15s ease-out 0s;
+}
+
+.settingCell:hover
+{
+	brightness: 2.5;
+}
+
+.settingCell #settingName
+{
+	vertical-align: center;
+	margin-left: 48px;
+	text-align: right;
+	font-size: 20px;
+	color: #ffffff;
+	text-shadow: 0px 0px 2px 2 #000000;
+}
+
+.settingCell #toggleBg
+{
+	vertical-align: center;
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url("s2r://");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.settingCell #toggleIcon
+{
+	vertical-align: center;
+	horizontal-align: center;
+	width: 28px;
+	height: 23px;
+	background-image: url("s2r://");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.panel-hiddenX
+{
+	transform: translateX(-50px);
+	opacity: 0;
+}
+
+#InGamePreviewScene
+{
+	align: right bottom;
+	width: 100%;
+	height: 500px;
+}
+
+#NpcBtnPanel
+{
+	horizontal-align: left;
+	vertical-align: top;
+	margin-top: 160px;
+	margin-left: 230px;
+	height: 800px;
+	flow-children: right;
+	visibility: collapse;
+}
+
+#NpcBtnPanel.ShowFastNpcBtn
+{
+	visibility: visible;
+}
+
+#NpcQuickPanel
+{
+	height: 110px;
+	width: 110px;
+	margin-left: 10px;
+}
+
+#NpcQuickImg_20
+{
+	horizontal-align: center;
+	vertical-align: top;
+	height: 80px;
+	width: 80px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url("s2r://");
+	border-radius: 2px;
+	border: 2px solid cAmber;
+}
+
+#NpcQuickImg_21
+{
+	horizontal-align: center;
+	vertical-align: top;
+	height: 80px;
+	width: 80px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url("s2r://");
+	border-radius: 2px;
+	border: 2px solid cAmber;
+}
+
+#NpcQuickImg_22
+{
+	horizontal-align: center;
+	vertical-align: top;
+	height: 80px;
+	width: 80px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url("s2r://");
+	border-radius: 2px;
+	border: 2px solid cAmber;
+}
+
+#NpcQuickImg_23
+{
+	horizontal-align: center;
+	vertical-align: top;
+	height: 80px;
+	width: 80px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url("s2r://");
+	border-radius: 2px;
+	border: 2px solid cAmber;
+}
+
+#NpcQuickLabel
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	text-align: center;
+	width: 110px;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px 3 #000000;
+	font-family: Reaver, Goudy Trajan Medium, FZKai-Z03, TH Sarabun New, YDYGO 540;
+	font-size: 22;
+}
+
+#TDHudOverlay
+{
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+}
+
+#TDPartyPanel,#TDRightStack,#TDBottomDock
+{
+	transition-property: transform, opacity;
+	transition-duration: 0.42s;
+	transition-timing-function: cubic-bezier(0.16, 0.90, 0.24, 1.00);
+}
+
+#TDRightStack
+{
+	transition-delay: 0.06s;
+}
+
+#TDBottomDock
+{
+	transition-delay: 0.12s;
+}
+
+#TDHudOverlay.TDHudIntroPending #TDPartyPanel
+{
+	transform: translateX(-390px);
+	opacity: 0;
+}
+
+#TDHudOverlay.TDHudIntroPending #TDRightStack
+{
+	transform: translateX(400px);
+	opacity: 0;
+}
+
+#TDHudOverlay.TDHudIntroPending #TDBottomDock
+{
+	transform: translateY(260px);
+	opacity: 0;
+}
+
+#TDTopGradientMask
+{
+	horizontal-align: center;
+	vertical-align: top;
+	width: 100%;
+	height: 92px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cScrim80), color-stop(0.38, cScrim80), color-stop(0.68, cScrim40), to(#02060700));
+}
+
+#TDBottomGradientMask
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	width: 100%;
+	height: 228px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#02060700), color-stop(0.30, cScrim40), color-stop(0.64, cScrim80), to(cScrim80));
+}
+
+.TDGlassPanel
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), color-stop(0.5, cGlassFill), to(cGlassDeep));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cEdgeTop), to(cEdgeBottom));
+	border-radius: 4px;
+	box-shadow: cScrim60 0px 0px 10px 0px;
+}
+
+.TDGlassSheen
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 1px;
+	vertical-align: top;
+	horizontal-align: center;
+	border-radius: 4px 4px 0px 0px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#ffffff00), color-stop(0.5, cSheenMid), to(#ffffff00));
+	z-index: 30;
+}
+
+.TDPanelHeader
+{
+	width: 100%;
+	height: 32px;
+}
+
+.TDPanelTitle
+{
+	vertical-align: center;
+	margin-left: 14px;
+	font-size: 16px;
+	color: cText;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDPanelColumn
+{
+	vertical-align: center;
+	font-size: 12px;
+	color: cTextDim;
+	text-align: right center;
+}
+
+.TDIconButton
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+}
+
+.TDIconButton Label
+{
+	align: center center;
+	font-size: 16px;
+	color: cTextMid;
+}
+
+.TDIconButton:hover,.TDToolButton:hover,.TDRefreshButton:hover,.TDShopSlot:hover,.TDTowerActionButton:hover
+{
+	brightness: 1.45;
+}
+
+#TDTopToolbar
+{
+	horizontal-align: left;
+	vertical-align: top;
+	margin-left: 16px;
+	margin-top: 14px;
+	height: 36px;
+	flow-children: right;
+}
+
+.TDToolButton
+{
+	width: 32px;
+	height: 32px;
+	margin-right: 12px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+	transition-property: brightness;
+	transition-duration: 0.12s;
+}
+
+.TDMenuButton
+{
+	width: 56px;
+}
+
+.TDMenuButton #Bg
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	background-color: cGlassSolid;
+}
+
+.TDMenuButtonText
+{
+	align: center center;
+	color: cTextMid;
+	font-size: 13px;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDToolButtonIcon
+{
+	align: center center;
+	color: cTextMid;
+	font-size: 18px;
+	font-weight: semi-bold;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDTopStatus
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 3px;
+	width: 576px;
+	flow-children: down;
+	padding: 5px 6px 7px 6px;
+	overflow: noclip;
+	z-index: 60;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassTopA), to(cGlassTopB));
+}
+
+#TDStatusRow1
+{
+	horizontal-align: center;
+	vertical-align: top;
+	width: 564px;
+	height: 34px;
+	flow-children: none;
+}
+
+#TDStatusRow2
+{
+	horizontal-align: center;
+	vertical-align: top;
+	width: 564px;
+	height: 34px;
+	margin-top: 2px;
+	flow-children: none;
+}
+
+#TDStatusLogo
+{
+	horizontal-align: left;
+	vertical-align: center;
+	margin-left: 4px;
+	width: 106px;
+	height: 32px;
+	overflow: clip;
+}
+
+.TDStatusLogoImage
+{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+
+#TDStatusLogoChinese
+{
+	visibility: collapse;
+	background-image: url("s2r://panorama/images/custom_game/hud/game_logo_schinese_png.vtex");
+	background-size: contain;
+	background-position: 50% 50%;
+}
+
+#TDStatusLogoEnglish
+{
+	visibility: visible;
+	background-image: url("s2r://panorama/images/custom_game/hud/game_logo_english_png.vtex");
+	background-size: contain;
+	background-position: 50% 50%;
+}
+
+.Language_schinese #TDStatusLogoChinese
+{
+	visibility: visible;
+}
+
+.Language_schinese #TDStatusLogoEnglish
+{
+	visibility: collapse;
+}
+
+.TDDifficultyMetric
+{
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.TDDifficultyMetric .TDMetricValue
+{
+	font-size: 17px;
+	color: cAmberBright;
+}
+
+#TDResourceBar
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 3px;
+	margin-left: 1062px;
+	width: 470px;
+	height: 46px;
+	flow-children: right;
+	padding-left: 8px;
+	padding-right: 8px;
+	overflow: noclip;
+	z-index: 60;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassTopA), to(cGlassTopB));
+}
+
+.TDCourierRelicButton
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 55px;
+	margin-left: 827px;
+	width: 235px;
+	height: 76px;
+	flow-children: none;
+	overflow: noclip;
+	z-index: 70;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), color-stop(0.52, cGlassFill), to(cGlassDeep));
+	transition-property: brightness, border, box-shadow;
+	transition-duration: 0.12s;
+}
+
+.TDCourierRelicMainRow
+{
+	width: 100%;
+	height: 36px;
+	flow-children: none;
+}
+
+.TDCourierRelicIcon
+{
+	vertical-align: center;
+	margin-left: 11px;
+	width: 25px;
+	height: 25px;
+	background-size: contain;
+}
+
+.TDCourierRelicTitle
+{
+	vertical-align: center;
+	width: 100%;
+	font-size: 16px;
+	color: cText;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDCourierRelicSummary
+{
+	width: 100%;
+	height: 20px;
+	margin-top: 36px;
+	padding-top: 2px;
+	border-top: 1px solid cHairLo;
+	font-size: 13px;
+	color: cTextMid;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDCourierRelicControlHint
+{
+	width: 100%;
+	height: 20px;
+	margin-top: 56px;
+	padding-top: 2px;
+	border-top: 1px solid cHairLo;
+	font-size: 12px;
+	color: cTextDim;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDCourierRelicButton:hover
+{
+	brightness: 1.18;
+}
+
+.TDCourierRelicButton.NoRelicChoice:hover
+{
+	border: 1px solid cDataDim;
+	box-shadow: cDataGlow 0px 0px 7px 0px;
+}
+
+.TDCourierRelicButton.HasRelicChoice
+{
+	border: 1px solid cAmberBorder;
+	animation-name: TDCourierRelicAvailablePulse;
+	animation-duration: 1.6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.TDCourierRelicButton.HasRelicChoice:hover
+{
+	brightness: 1.18;
+	border: 1px solid cAmberBorder;
+	animation-name: TDCourierRelicAvailablePulse;
+	animation-duration: 1.6s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'TDCourierRelicAvailablePulse'
+{
+	0%
+	{
+		box-shadow: cAmberGlow 0px 0px 3px 0px;
+	}
+	
+	50%
+	{
+		box-shadow: cAmberGlow 0px 0px 15px 4px;
+	}
+	
+	100%
+	{
+		box-shadow: cAmberGlow 0px 0px 3px 0px;
+	}
+	
+}
+
+.TDRelicInventoryOverlay
+{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	visibility: visible;
+	z-index: 1000;
+	transition-property: opacity;
+	transition-duration: 0.12s;
+}
+
+.TDRelicInventoryOverlay.panel-hidden
+{
+	opacity: 0;
+	visibility: collapse;
+}
+
+.TDRelicInventoryBackdrop
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim60;
+}
+
+.TDRelicInventoryWindow
+{
+	align: center center;
+	width: 720px;
+	height: 610px;
+	overflow: noclip;
+	z-index: 2;
+}
+
+.TDRelicInventoryHeader
+{
+	width: 100%;
+	height: 56px;
+}
+
+.TDRelicInventoryHeaderIcon
+{
+	vertical-align: center;
+	margin-left: 18px;
+	width: 30px;
+	height: 30px;
+}
+
+.TDRelicInventoryTitle
+{
+	vertical-align: center;
+	margin-left: 58px;
+	width: 310px;
+	font-size: 23px;
+	font-weight: semi-bold;
+	color: cText;
+	text-shadow: 1px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDRelicInventoryTotal
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 58px;
+	width: 190px;
+	font-size: 15px;
+	color: cAmberBright;
+	text-align: right;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#TDRelicInventoryClose
+{
+	ignore-parent-flow: true;
+	width: 34px;
+	height: 34px;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 12px;
+	margin-right: 12px;
+	z-index: 5;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a3137ee), color-stop(0.45, #151b20f4), to(#06090cf8));
+	border-radius: 4px;
+	border: 1px solid #6f7f89a8;
+	box-shadow: cScrim80 0px 3px 10px 0px;
+	transition-property: brightness, border, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+#TDRelicInventoryClose:hover
+{
+	brightness: 1.22;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#39434cf2), color-stop(0.45, #1b242bf4), to(#080d11f8));
+	border: 1px solid #c7d9e3c8;
+}
+
+#TDRelicInventoryClose:active
+{
+	transform: translateY(1px);
+	brightness: 0.78;
+}
+
+.TDRelicInventoryCloseIcon
+{
+	width: 18px;
+	height: 18px;
+	align: center center;
+}
+
+.TDRelicInventoryCloseLine
+{
+	width: 18px;
+	height: 2px;
+	align: center center;
+	background-color: #e3edf3;
+	box-shadow: cScrim80 0px 1px 2px 0px;
+}
+
+.TDRelicInventoryCloseLineA
+{
+	transform: rotateZ(45deg);
+}
+
+.TDRelicInventoryCloseLineB
+{
+	transform: rotateZ(-45deg);
+}
+
+.TDRelicInventoryHeaderLine
+{
+	width: 680px;
+	height: 1px;
+	horizontal-align: center;
+	margin-top: 56px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#ffffff00), color-stop(0.5, cHairHi), to(#ffffff00));
+}
+
+.TDRelicInventoryScroll
+{
+	width: 680px;
+	height: 526px;
+	horizontal-align: center;
+	margin-top: 66px;
+	overflow: squish scroll;
+}
+
+.TDRelicInventoryGrid
+{
+	width: 660px;
+	height: fit-children;
+	flow-children: down;
+}
+
+.TDRelicInventoryRowContent
+{
+	width: 660px;
+	height: 94px;
+	margin-bottom: 8px;
+	flow-children: right;
+	border: 1px solid cHair;
+	border-radius: 4px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), to(cGlassSolid));
+}
+
+.TDRelicInventoryRowContent.panel-hidden
+{
+	visibility: collapse;
+}
+
+.TDRelicInventoryRowIconFrame
+{
+	vertical-align: center;
+	margin-left: 8px;
+	width: 78px;
+	height: 78px;
+	padding: 3px;
+	border: 1px solid #9aa6a666;
+	border-radius: 3px;
+	background-color: cScrim60;
+}
+
+.TDRelicInventoryRowIcon
+{
+	width: 70px;
+	height: 70px;
+}
+
+.TDRelicInventoryRowInfo
+{
+	vertical-align: center;
+	margin-left: 12px;
+	width: 480px;
+	height: 78px;
+}
+
+.TDRelicInventoryRowName
+{
+	width: 390px;
+	height: 27px;
+	font-size: 18px;
+	color: cText;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDRelicInventoryRowBadges
+{
+	width: 116px;
+	height: 28px;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 8px;
+	margin-right: 12px;
+	flow-children: right;
+	ignore-parent-flow: true;
+}
+
+.TDRelicInventoryRowQuality
+{
+	width: 54px;
+	height: 28px;
+	margin-right: 8px;
+	padding-top: 3px;
+	border: 1px solid #9aa6a666;
+	border-radius: 14px;
+	background-color: cScrim60;
+	font-size: 15px;
+	color: #9aa6a6;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDRelicInventoryRowDescription
+{
+	width: 100%;
+	height: 47px;
+	margin-top: 31px;
+	font-size: 14px;
+	color: cTextMid;
+	white-space: normal;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDRelicInventoryRowCount
+{
+	width: 54px;
+	height: 28px;
+	padding-top: 3px;
+	border: 1px solid cAmberBorder;
+	border-radius: 14px;
+	background-color: cScrim60;
+	font-size: 15px;
+	color: cAmberBright;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDRelicInventoryRowContent.Quality1 .TDRelicInventoryRowIconFrame
+{
+	border: 1px solid #9aa6a666;
+}
+
+.TDRelicInventoryRowContent.Quality1 .TDRelicInventoryRowQuality
+{
+	color: #9aa6a6;
+	border: 1px solid #9aa6a666;
+}
+
+.TDRelicInventoryRowContent.Quality2 .TDRelicInventoryRowIconFrame
+{
+	border: 1px solid #72c47666;
+}
+
+.TDRelicInventoryRowContent.Quality2 .TDRelicInventoryRowQuality
+{
+	color: #72c476;
+	border: 1px solid #72c47666;
+}
+
+.TDRelicInventoryRowContent.Quality3 .TDRelicInventoryRowIconFrame
+{
+	border: 1px solid #5ba7ff66;
+}
+
+.TDRelicInventoryRowContent.Quality3 .TDRelicInventoryRowQuality
+{
+	color: #5ba7ff;
+	border: 1px solid #5ba7ff66;
+}
+
+.TDRelicInventoryRowContent.Quality4 .TDRelicInventoryRowIconFrame
+{
+	border: 1px solid #c079ff66;
+}
+
+.TDRelicInventoryRowContent.Quality4 .TDRelicInventoryRowQuality
+{
+	color: #c079ff;
+	border: 1px solid #c079ff66;
+}
+
+.TDRelicInventoryRowContent.Quality5 .TDRelicInventoryRowIconFrame
+{
+	border: 1px solid #ffc85766;
+}
+
+.TDRelicInventoryRowContent.Quality5 .TDRelicInventoryRowQuality
+{
+	color: #ffc857;
+	border: 1px solid #ffc85766;
+}
+
+.TDRelicInventoryEmpty
+{
+	align: center center;
+	width: 540px;
+	font-size: 18px;
+	color: cTextDim;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDRelicInventoryEmpty.panel-hidden
+{
+	visibility: collapse;
+}
+
+#TDWaveProgress
+{
+	horizontal-align: center;
+	vertical-align: top;
+	width: 564px;
+	height: 50px;
+	overflow: noclip;
+}
+
+#TDWaveProgress.Hidden
+{
+	visibility: collapse;
+}
+
+#TDWaveTrack
+{
+	horizontal-align: center;
+	vertical-align: top;
+	width: 528px;
+	height: 50px;
+	flow-children: none;
+	overflow: noclip;
+}
+
+#TDWaveLine
+{
+	horizontal-align: left;
+	vertical-align: top;
+	margin-top: 20px;
+	width: 528px;
+	height: 3px;
+	background-color: cTrack;
+	border-radius: 3px;
+}
+
+#TDWaveStartCap
+{
+	horizontal-align: left;
+	vertical-align: top;
+	margin-top: 16px;
+	width: 3px;
+	height: 11px;
+	background-color: cAmber;
+	border-radius: 2px;
+}
+
+#TDWaveFill
+{
+	horizontal-align: left;
+	vertical-align: top;
+	margin-top: 20px;
+	width: 0px;
+	height: 3px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(cAmberDim), to(cAmber));
+	border-radius: 3px;
+	box-shadow: cAmberGlow 0px 0px 3px 0px;
+}
+
+#TDWaveArrow
+{
+	horizontal-align: left;
+	vertical-align: top;
+	width: 13px;
+	height: 9px;
+	background-image: url("s2r://panorama/images/custom_game/hud/wave_progress/arrow_png.vtex");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transform: rotateZ(180deg);
+}
+
+.TDWaveNode
+{
+	horizontal-align: left;
+	vertical-align: top;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	transition-property: opacity;
+	transition-duration: 0.15s;
+}
+
+.TDWaveNode.kind-pressure
+{
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: cPurple;
+	box-shadow: cPurpleGlow 0px 0px 4px 0px;
+}
+
+.TDWaveNode.kind-gold
+{
+	width: 15px;
+	height: 15px;
+	background-image: url("s2r://panorama/images/custom_game/hud/wave_progress/coin_png.vtex");
+	img-shadow: 0px 0px 3px cAmber;
+}
+
+.TDWaveNode.kind-boss_check
+{
+	width: 17px;
+	height: 17px;
+	background-image: url("s2r://panorama/images/custom_game/hud/wave_progress/skull_png.vtex");
+	img-shadow: 0px 0px 3px #ff9a52;
+}
+
+.TDWaveNode.kind-phantom_roshan
+{
+	width: 15px;
+	height: 15px;
+	background-image: url("s2r://panorama/images/custom_game/hud/wave_progress/ghost_png.vtex");
+	img-shadow: 0px 0px 3px cData;
+}
+
+.TDWaveNode.kind-final_roshan
+{
+	width: 20px;
+	height: 20px;
+	background-image: url("s2r://panorama/images/custom_game/hud/wave_progress/hskull_png.vtex");
+	img-shadow: 0px 0px 4px cRed;
+}
+
+.TDWaveNum
+{
+	horizontal-align: left;
+	vertical-align: top;
+	width: 26px;
+	font-size: 9px;
+	font-weight: semi-bold;
+	color: cTextMid;
+	text-align: center;
+	text-shadow: 0px 1px 3px cScrim80;
+	transition-property: opacity;
+	transition-duration: 0.15s;
+}
+
+.TDWaveNum.done
+{
+	color: cText;
+}
+
+.TDModifierBar
+{
+	flow-children: right;
+	overflow: noclip;
+	height: 38px;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.12s;
+	z-index: 68;
+}
+
+.TDModifierBar.Empty
+{
+	opacity: 0;
+}
+
+.TDPlayerModifierBar
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 138px;
+	margin-left: 1062px;
+	width: 470px;
+}
+
+.TDSelectedModifierBar
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-left: 374px;
+	margin-bottom: 236px;
+	width: 650px;
+}
+
+.TDModifierSlot
+{
+	width: 34px;
+	height: 34px;
+	margin-right: 5px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+	box-shadow: cScrim80 0px 0px 5px 0px;
+	overflow: clip;
+	transition-property: brightness;
+	transition-duration: 0.12s;
+}
+
+.TDModifierSlot:hover
+{
+	brightness: 1.35;
+}
+
+.TDModifierSlot.Buff
+{
+	border: 1px solid cGreenBorder;
+}
+
+.TDModifierSlot.Debuff
+{
+	border: 1px solid cRedBorder;
+}
+
+.TDModifierIcon
+{
+	width: 100%;
+	height: 100%;
+	saturation: 0.94;
+}
+
+.TDModifierSlot.Debuff .TDModifierIcon
+{
+	wash-color: cRedWash;
+}
+
+.TDModifierCooldown
+{
+	vertical-align: bottom;
+	width: 100%;
+	height: 0%;
+	background-color: cScrim80;
+	z-index: 2;
+}
+
+.TDModifierStack,.TDModifierTime
+{
+	z-index: 3;
+	color: cTextVal;
+	font-family: monospaceNumbersFont;
+	font-weight: bold;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDModifierStack
+{
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: -2px;
+	margin-right: 1px;
+	font-size: 15px;
+}
+
+.TDModifierTime
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	width: 100%;
+	height: 15px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.TDTopMetric
+{
+	flow-children: down;
+	width: fit-children;
+	vertical-align: center;
+}
+
+.TDMetricName
+{
+	horizontal-align: center;
+	font-size: 10px;
+	color: cTextDim;
+	letter-spacing: 1px;
+}
+
+.TDMetricValue
+{
+	horizontal-align: center;
+	font-size: 16px;
+	color: cTextVal;
+	font-weight: semi-bold;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDStatusRow1Right
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 4px;
+	flow-children: right;
+}
+
+#TDStatusRow1Left
+{
+	horizontal-align: left;
+	vertical-align: center;
+	margin-left: 110px;
+	flow-children: right;
+}
+
+.TDAbandonButton
+{
+	width: 46px;
+	height: 22px;
+	vertical-align: center;
+	margin-left: 8px;
+	border-radius: 4px;
+	background-color: cRedDeep;
+	border: 1px solid cRedBorder;
+	transition-property: background-color, opacity, box-shadow;
+	transition-duration: 0.12s;
+}
+
+.TDAbandonButton:hover
+{
+	background-color: cRed;
+}
+
+.TDAbandonButton.Unavailable
+{
+	visibility: collapse;
+}
+
+.TDMonsterMetric
+{
+	vertical-align: center;
+}
+
+#TDStatusRow1Right .TDMonsterMetric
+{
+	margin-left: 10px;
+}
+
+.TDMonsterMetric .TDMetricValue
+{
+	font-size: 20px;
+}
+
+.TDMetricValRow
+{
+	flow-children: right;
+	horizontal-align: center;
+}
+
+#TDNextWavePreview
+{
+	horizontal-align: left;
+	vertical-align: center;
+	margin-left: 4px;
+	flow-children: right;
+}
+
+.TDPreviewLabel
+{
+	vertical-align: center;
+	margin-right: 6px;
+	font-size: 10px;
+	color: cTextDim;
+	letter-spacing: 1px;
+}
+
+.TDPreviewArrow
+{
+	vertical-align: center;
+	margin-right: 6px;
+	font-size: 9px;
+	color: cAmber;
+}
+
+.TDNextWaveBossBadge
+{
+	vertical-align: center;
+	margin-right: 6px;
+	padding: 1px 6px 1px 6px;
+	border-radius: 3px;
+	background-color: cRedDeep;
+	border: 1px solid cRedBorder;
+}
+
+.TDNextWaveBossBadge.Hidden
+{
+	visibility: collapse;
+}
+
+.TDNextWaveBossText
+{
+	font-size: 10px;
+	font-weight: bold;
+	color: cText;
+	letter-spacing: 1px;
+}
+
+.TDPreviewName
+{
+	vertical-align: center;
+	margin-right: 8px;
+	font-size: 15px;
+	font-weight: semi-bold;
+	color: cText;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDNextWavePreview.boss
+{
+	border-radius: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(cRedWashHi), color-stop(0.5, cRedWashMid), to(cRedWashLo));
+}
+
+#TDNextWavePreview.boss .TDPreviewName
+{
+	color: cAmberBright;
+	text-shadow: 0px 0px 6px 3 cRed;
+}
+
+.TDNextWaveTags
+{
+	vertical-align: center;
+	flow-children: right;
+}
+
+.TDNextWaveTagChip
+{
+	vertical-align: center;
+	margin-right: 4px;
+	padding: 1px 6px 1px 6px;
+	border-radius: 3px;
+	background-color: cSheen;
+	border: 1px solid cHairHi;
+	font-size: 11px;
+	color: cTextMid;
+}
+
+#TDStatusRightCluster
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 4px;
+	flow-children: right;
+}
+
+#TDStatusRightCluster .TDWaveMetric
+{
+	vertical-align: center;
+	margin-right: 16px;
+}
+
+#TDStatusRightCluster .TDRewardMetric
+{
+	vertical-align: center;
+	margin-right: 0px;
+}
+
+.TDCountdownValue
+{
+	width: 46px;
+	text-align: center;
+	font-size: 13px;
+	font-weight: semi-bold;
+	color: cAmber;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDCountdownValue.Hidden
+{
+	visibility: collapse;
+}
+
+.TDFinalBossCountdown
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	color: cAmberBright;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 3px 2 #000000;
+}
+
+.TDFinalBossCountdown.Hidden
+{
+	visibility: collapse;
+}
+
+.TDPrepCountdown
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	color: cAmberBright;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 3px 2 #000000;
+}
+
+.TDPrepCountdown.Hidden
+{
+	visibility: collapse;
+}
+
+.TDSaveBattleStatusRow
+{
+	width: 100%;
+	height: 100%;
+	flow-children: none;
+}
+
+.TDSaveBattleStatusRow.Hidden
+{
+	visibility: collapse;
+}
+
+#TDHudOverlay.TDInSaveBattleStage #TDNextWavePreview,#TDHudOverlay.TDInSaveBattleStage #TDStatusRightCluster,#TDHudOverlay.TDInSaveBattleStage .TDPrepCountdown,#TDHudOverlay.TDInSaveBattleStage .TDFinalBossCountdown
+{
+	visibility: collapse;
+}
+
+.TDSaveBattleStageTitle
+{
+	horizontal-align: left;
+	vertical-align: center;
+	margin-left: 8px;
+	max-width: 210px;
+	font-size: 15px;
+	font-weight: semi-bold;
+	color: cAmber;
+	text-shadow: 1px 1px 3px 2 #000000;
+	text-overflow: ellipsis;
+}
+
+.TDSaveBattleStageCountdown
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 19px;
+	font-weight: bold;
+	color: cAmberBright;
+	letter-spacing: 1px;
+	text-shadow: 1px 1px 3px 2 #000000;
+}
+
+.TDSaveBattleStageCountdown.Dim
+{
+	color: cTextDim;
+	font-weight: normal;
+}
+
+.TDSaveBattleStageStatus
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 8px;
+	flow-children: right;
+}
+
+.TDSaveBattleStageStatusDot
+{
+	vertical-align: center;
+	width: 9px;
+	height: 9px;
+	margin-right: 6px;
+	border-radius: 5px;
+	background-color: cTextDim;
+}
+
+.TDSaveBattleStageStatusLabel
+{
+	vertical-align: center;
+	font-size: 14px;
+	font-weight: semi-bold;
+	color: cTextMid;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDSaveBattleStageStatus.Challenging .TDSaveBattleStageStatusDot
+{
+	background-color: cData;
+	box-shadow: 0px 0px 6px 2 cData;
+}
+
+.TDSaveBattleStageStatus.Challenging .TDSaveBattleStageStatusLabel
+{
+	color: cData;
+}
+
+.TDSaveBattleStageStatus.Waiting .TDSaveBattleStageStatusDot
+{
+	background-color: cAmber;
+}
+
+.TDSaveBattleStageStatus.Waiting .TDSaveBattleStageStatusLabel
+{
+	color: cAmber;
+}
+
+.TDSaveBattleStageStatus.Failed .TDSaveBattleStageStatusDot
+{
+	background-color: cRed;
+	box-shadow: 0px 0px 6px 2 cRed;
+}
+
+.TDSaveBattleStageStatus.Failed .TDSaveBattleStageStatusLabel
+{
+	color: cRed;
+}
+
+@keyframes 'TDBossCountdownBlink'
+{
+	0%
+	{
+		opacity: 1.0;
+	}
+	
+	50%
+	{
+		opacity: 0.28;
+	}
+	
+	100%
+	{
+		opacity: 1.0;
+	}
+	
+}
+
+.TDFinalBossCountdown.Danger
+{
+	color: cRed;
+	text-shadow: 0px 0px 6px 3 cRed;
+	animation-name: TDBossCountdownBlink;
+	animation-duration: 0.7s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.TDWaveRewardValue
+{
+	vertical-align: center;
+	margin-left: 6px;
+	padding-left: 17px;
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_wood_png.vtex");
+	background-size: 13px 13px;
+	background-position: 0px 50%;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	color: cGreen;
+	font-weight: semi-bold;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDTimeMetric
+{
+	width: fit-children;
+}
+
+.TDAccelButton
+{
+	width: 46px;
+	height: 22px;
+	vertical-align: center;
+	margin-left: 8px;
+	border-radius: 4px;
+	background-color: cGreenDeep;
+	border: 1px solid cGreenBorder;
+	transition-property: background-color, opacity, box-shadow;
+	transition-duration: 0.12s;
+}
+
+.TDAccelButton:hover
+{
+	background-color: cGreen;
+}
+
+.TDAccelButton.Active
+{
+	background-color: cAmber;
+	border: 1px solid cAmberBright;
+	box-shadow: 0px 0px 8px 2px cAmberGlow;
+}
+
+.TDAccelButton.Unavailable
+{
+	background-color: #3a3a3a;
+	border: 1px solid #555555;
+	opacity: 0.45;
+}
+
+.TDAccelLabel,.TDAbandonLabel
+{
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+	text-align: center;
+	font-size: 13px;
+	color: cText;
+	font-weight: semi-bold;
+}
+
+.TDTopDivider
+{
+	vertical-align: center;
+	width: 1px;
+	height: 22px;
+	margin-left: 2px;
+	margin-right: 12px;
+	background-color: cHairLo;
+}
+
+.TDOverflowValue
+{
+	vertical-align: center;
+	margin-left: 6px;
+	font-size: 11px;
+	color: cGreen;
+}
+
+#TDMonsterMetric.OverflowWarning #TDMonsterValue,#TDMonsterMetric.OverflowWarning #TDOverflowValue
+{
+	color: cRed;
+}
+
+#TDBossHealthBar
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 146px;
+	width: 610px;
+	height: 76px;
+	opacity: 0;
+	transform: translateY(-8px);
+	transition-property: opacity, transform, brightness;
+	transition-duration: 0.18s;
+}
+
+#TDBossHealthBar.Active
+{
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+#TDBossHealthBar.FinalBoss
+{
+	brightness: 1.2;
+}
+
+.TDBossHealthGlow
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	background-color: gradient(linear, 0% 50%, 100% 50%, from(#00000000), color-stop(0.18, cRedGlowEdge), color-stop(0.5, cRedGlowMid), color-stop(0.82, cRedGlowEdge), to(#00000000));
+	z-index: 0;
+}
+
+.TDBossHealthFrame
+{
+	align: center center;
+	width: 560px;
+	height: 66px;
+	padding: 6px 10px 7px 10px;
+	border: 1px solid cRedBorder;
+	box-shadow: fill cScrim80 0px 0px 12px 0px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), color-stop(0.48, cGlassSolid), to(cGlassDeep));
+	flow-children: down;
+	z-index: 1;
+}
+
+#TDBossHealthBar.FinalBoss .TDBossHealthFrame
+{
+	border: 1px solid cAmberBorder;
+	box-shadow: fill cScrim80 0px 0px 14px 0px;
+}
+
+.TDBossHealthName
+{
+	horizontal-align: center;
+	width: 100%;
+	height: 20px;
+	color: cText;
+	font-size: 15px;
+	font-weight: semi-bold;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDBossHealthBar.FinalBoss .TDBossHealthName
+{
+	color: cAmberBright;
+}
+
+.TDBossHealthMeter
+{
+	horizontal-align: center;
+	width: 500px;
+	height: 26px;
+	margin-top: 4px;
+	overflow: noclip;
+}
+
+.TDBossHealthProgress
+{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	border-radius: 0px;
+	background-color: none;
+	box-shadow: 0px 1px 2px cScrim60;
+	z-index: 2;
+}
+
+.TDBossHealthProgress .ProgressBarLeft
+{
+	height: 100%;
+	overflow: noclip;
+	border-radius: 3px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cEnemyFillA), color-stop(0.2, cEnemyFillB), color-stop(0.5, cEnemyFillC), to(cEnemyFillA));
+	border-top-width: 0px;
+	brightness: 1;
+}
+
+.TDBossHealthProgress .ProgressBarRight
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cEnemyEmpty), color-stop(0.2, cEnemyEmpty), color-stop(0.5, cEnemyEmpty), to(cEnemyEmpty));
+}
+
+.TDBossHealthSceneContainer
+{
+	width: 100%;
+	height: 100%;
+	overflow: noclip;
+}
+
+.TDBossHealthBurner
+{
+	width: 100%;
+	height: 100%;
+	hue-rotation: 240deg;
+	opacity: 0.7;
+}
+
+.TDBossHealthValue
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	font-family: monospaceNumbersFont;
+	font-weight: bold;
+	color: cTextVal;
+	text-align: center;
+	text-shadow: 0px 1px 4px 3 #000000;
+	z-index: 4;
+}
+
+.TDResourceItem
+{
+	height: 100%;
+	min-width: 100px;
+	flow-children: right;
+}
+
+#TDFoodResourceItem
+{
+	min-width: 116px;
+}
+
+.TDResourceIcon
+{
+	vertical-align: center;
+	width: 24px;
+	height: 24px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDResourceGold .TDResourceIcon
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_gold_png.vtex");
+}
+
+.TDResourceWood .TDResourceIcon
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_wood_png.vtex");
+}
+
+.TDResourceGlory .TDResourceIcon
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_glory_png.vtex");
+}
+
+.TDResourceFood .TDResourceIcon
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_food_png.vtex");
+}
+
+.TDResourceValue
+{
+	vertical-align: center;
+	margin-left: 5px;
+	font-size: 17px;
+	color: cTextVal;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDResourceCost
+{
+	flow-children: right;
+	width: fit-children;
+	height: fit-children;
+}
+
+.TDResourceCostList
+{
+	flow-children: right;
+	width: fit-children;
+	height: fit-children;
+}
+
+.TDResourceCostListItem
+{
+	flow-children: right;
+	width: fit-children;
+	height: fit-children;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.TDResourceCostListText
+{
+	vertical-align: center;
+}
+
+.TDResourceCostIcon
+{
+	vertical-align: center;
+	width: 16px;
+	height: 16px;
+}
+
+.TDResourceCost.Plain .TDResourceCostIcon,.TDResourceCost.Fallback .TDResourceCostIcon
+{
+	visibility: collapse;
+}
+
+.TDResourceCost.Plain .TDResourceCostValue,.TDResourceCost.Fallback .TDResourceCostValue
+{
+	margin-left: 0px;
+}
+
+.TDResourceCostValue
+{
+	vertical-align: center;
+	margin-left: 3px;
+	color: cTextVal;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDResourceCostGold .TDResourceCostValue
+{
+	color: cAmberBright;
+}
+
+.TDResourceCostWood .TDResourceCostValue
+{
+	color: cWood;
+}
+
+.TDResourceCostGlory .TDResourceCostValue
+{
+	color: cData;
+}
+
+.TDResourceCostFood .TDResourceCostValue
+{
+	color: cAmberBright;
+}
+
+.TDResourceCost.Insufficient .TDResourceCostValue
+{
+	color: cRed;
+}
+
+#TDPartyPanel
+{
+	horizontal-align: left;
+	vertical-align: top;
+	margin-left: 6px;
+	margin-top: 55px;
+	width: 360px;
+	height: 230px;
+	transition-property: transform, height, opacity;
+}
+
+#TDPartyPanel.Collapsed
+{
+	transform: translateX(-334px);
+	height: 34px;
+}
+
+#TDPartyPanel.Collapsed .TDPanelTitle,#TDPartyPanel.Collapsed .TDPartyColumns,#TDPartyPanel.Collapsed #TDPartyList
+{
+	visibility: collapse;
+}
+
+#TDPartyCollapse
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 8px;
+	width: 24px;
+	height: 24px;
+}
+
+#TDPartyPanel.Collapsed #TDPartyCollapse
+{
+	margin-right: 0px;
+	width: 26px;
+	height: 34px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#TDPartyCollapse Label
+{
+	align: center center;
+	color: cTextMid;
+	font-size: 16px;
+	font-weight: semi-bold;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDPartyColumns
+{
+	margin-top: 32px;
+	width: 100%;
+	height: 20px;
+}
+
+.TDPartyRankColumn
+{
+	margin-left: 14px;
+	width: 14px;
+	text-align: center;
+}
+
+.TDPartyNameColumn
+{
+	margin-left: 72px;
+}
+
+.TDPartyPowerColumn
+{
+	horizontal-align: right;
+	margin-right: 54px;
+	width: 76px;
+}
+
+.TDPartyDpsColumn
+{
+	horizontal-align: right;
+	margin-right: 8px;
+	width: 40px;
+}
+
+#TDPartyList
+{
+	margin-top: 52px;
+	width: 100%;
+	height: 172px;
+	flow-children: down;
+}
+
+.TDPartyRow
+{
+	width: 100%;
+	height: 43px;
+}
+
+.TDPartyRankBar
+{
+	vertical-align: center;
+	margin-left: 6px;
+	width: 3px;
+	height: 34px;
+	background-color: cData;
+}
+
+.TDPartyRank
+{
+	vertical-align: center;
+	margin-left: 14px;
+	width: 14px;
+	font-size: 13px;
+	color: cTextDim;
+	text-align: center;
+}
+
+.TDPartyAvatar
+{
+	vertical-align: center;
+	margin-left: 34px;
+	width: 32px;
+	height: 32px;
+	border: 1px solid cHair;
+}
+
+.TDPartyName
+{
+	vertical-align: center;
+	margin-left: 72px;
+	width: 150px;
+	height: 22px;
+	font-size: 13px;
+	color: cTextMid;
+}
+
+.TDPartyConnectionStatus
+{
+	vertical-align: center;
+	margin-left: 166px;
+	width: 56px;
+	height: 20px;
+	font-size: 12px;
+	color: #d99b61;
+	text-align: right center;
+	text-overflow: shrink;
+	visibility: collapse;
+}
+
+.TDPartyRow.TDPartyDisconnected .TDPartyName,.TDPartyRow.TDPartyAbandoned .TDPartyName
+{
+	width: 90px;
+	color: cTextDim;
+}
+
+.TDPartyRow.TDPartyDisconnected .TDPartyConnectionStatus,.TDPartyRow.TDPartyAbandoned .TDPartyConnectionStatus
+{
+	visibility: visible;
+}
+
+.TDPartyRow.TDPartyDisconnected .TDPartyAvatar,.TDPartyRow.TDPartyAbandoned .TDPartyAvatar
+{
+	saturation: 0.25;
+	wash-color: #a34c45;
+}
+
+.TDPartyRow.TDPartyAbandoned .TDPartyConnectionStatus
+{
+	color: #b66b64;
+}
+
+.TDPartyPower
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 54px;
+	width: 76px;
+	font-size: 14px;
+	font-weight: semi-bold;
+	color: cTextVal;
+	text-align: right center;
+}
+
+.TDPartyDps
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 8px;
+	width: 40px;
+	font-size: 12px;
+	color: cTextMid;
+	text-align: right center;
+}
+
+#TDBattleLogPanel
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-left: 6px;
+	margin-bottom: 236px;
+	width: 360px;
+	height: 270px;
+	transform: translateX(0px);
+	transition-property: transform, height, opacity;
+	transition-duration: 0.18s;
+}
+
+#TDBattleLogPanel.Collapsed
+{
+	transform: translateX(-334px);
+	height: 34px;
+}
+
+#TDBattleLogPanel.Collapsed .TDPanelTitle
+{
+	visibility: collapse;
+}
+
+#TDBattleLogPanel.Collapsed #TDBattleLogList
+{
+	visibility: collapse;
+}
+
+#TDBattleLogCollapse
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 8px;
+	width: 24px;
+	height: 24px;
+}
+
+#TDBattleLogPanel.Collapsed #TDBattleLogCollapse
+{
+	margin-right: 0px;
+	width: 26px;
+	height: 34px;
+	border-radius: 0px 4px 4px 0px;
+}
+
+#TDBattleLogCollapse Label
+{
+	align: center center;
+	color: cTextMid;
+	font-size: 16px;
+	font-weight: semi-bold;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDBattleLogList
+{
+	margin-top: 32px;
+	width: 100%;
+	height: 230px;
+	padding-left: 14px;
+	padding-right: 12px;
+	padding-bottom: 8px;
+	flow-children: down;
+	overflow: squish scroll;
+	opacity-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffffffcc), color-stop(0.12, #ffffffff), color-stop(0.90, #ffffffff), to(#ffffff22));
+}
+
+#TDBattleLogList #VerticalScrollBar,#TDBattleLogList #HorizontalScrollBar
+{
+	opacity: 0;
+}
+
+.TDBattleLogRow
+{
+	width: 100%;
+	min-height: 24px;
+	height: fit-children;
+	margin-bottom: 4px;
+	padding: 3px 8px 4px 8px;
+	flow-children: down;
+	border-left: 2px solid cHair;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(cGlassFill), color-stop(0.72, cGlassFill), to(#101d2000));
+}
+
+.TDBattleLogText
+{
+	width: 100%;
+	height: fit-children;
+	font-size: 13px;
+	color: cTextMid;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDBattleLogRow.Reward
+{
+	border-left-color: cData;
+}
+
+.TDBattleLogRow.Warning
+{
+	border-left-color: cAmber;
+}
+
+.TDBattleLogRow.Good
+{
+	border-left-color: cGreen;
+}
+
+.TDBattleLogRow.Good .TDBattleLogText
+{
+	color: cGreen;
+}
+
+.TDBattleLogRow.Warning .TDBattleLogText
+{
+	color: cAmber;
+}
+
+.TDBattleLogRow.Reward .TDBattleLogText
+{
+	color: cData;
+}
+
+#TDRightStack
+{
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 55px;
+	margin-right: 6px;
+	width: 370px;
+	flow-children: down;
+}
+
+#TDEquipmentPanel,#TDConsumablePanel,#TDResourceExchangePanel,#TDChallengePanel,#TDSaveBattlePanel,#TDQuestPanel
+{
+	width: 370px;
+	margin-bottom: 6px;
+}
+
+#TDSaveBattlePanel
+{
+	height: fit-children;
+}
+
+#TDSaveBattlePanel.SaveBattleHidden
+{
+	visibility: collapse;
+}
+
+#TDHudOverlay.TDInSaveBattleStage #TDEquipmentPanel,#TDHudOverlay.TDInSaveBattleStage #TDConsumablePanel,#TDHudOverlay.TDInSaveBattleStage #TDResourceExchangePanel,#TDHudOverlay.TDInSaveBattleStage #TDChallengePanel,#TDHudOverlay.TDInSaveBattleStage #TDQuestPanel
+{
+	visibility: collapse;
+}
+
+#TDSaveBattleGrid
+{
+	width: 346px;
+	height: 368px;
+	margin-left: 12px;
+	margin-top: 36px;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+#TDSaveBattleGrid VerticalScrollBar
+{
+	opacity: 0;
+}
+
+.TDSaveBattleEntry
+{
+	width: 100%;
+	height: 84px;
+	margin-bottom: 8px;
+	padding: 0px 8px 0px 0px;
+	flow-children: right;
+	border-radius: 4px;
+	border: 1px solid #33474dcc;
+	background-color: #070c0ddd;
+	transition-property: brightness, border, wash-color;
+	transition-duration: 0.12s;
+}
+
+.TDSaveBattleEntry:hover
+{
+	brightness: 1.35;
+	border: 1px solid #6a949ecc;
+}
+
+.TDSaveBattleEntry.Locked
+{
+	wash-color: #67707566;
+	brightness: 0.7;
+}
+
+.TDSaveBattleEntry.Active
+{
+	border: 1px solid #d2ac54dd;
+	box-shadow: fill #d29b2828 0px 0px 10px 0px;
+}
+
+.TDSaveBattleRail
+{
+	width: 3px;
+	height: 100%;
+	background-color: #d2ac54;
+}
+
+.TDSaveBattleEntry.Greed .TDSaveBattleRail
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#ffb454), to(#8a6bd0));
+}
+
+.TDSaveBattleEntry.Locked .TDSaveBattleRail
+{
+	background-color: #4a565c;
+}
+
+.TDSaveBattleInfo
+{
+	width: fill-parent-flow(1);
+	height: fit-children;
+	vertical-align: center;
+	margin-left: 12px;
+	flow-children: down;
+}
+
+.TDSaveBattleName
+{
+	width: 100%;
+	font-size: 17px;
+	color: #ece3c9;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDSaveBattleMeta
+{
+	margin-top: 4px;
+	width: 100%;
+	font-size: 13px;
+	color: #94bfc2;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDSaveBattleDrop
+{
+	margin-top: 4px;
+	width: 100%;
+	font-size: 13px;
+	color: #d9bf86;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDSaveBattleDrop.Hidden,.TDSaveBattleDepthMini.Hidden,.TDSaveBattleDepthCount.Hidden,.TDSaveBattleStartButton.Hidden
+{
+	visibility: collapse;
+}
+
+.TDSaveBattleDepthMini
+{
+	margin-top: 7px;
+	flow-children: right;
+}
+
+.TDDepthCell
+{
+	width: 13px;
+	height: 5px;
+	margin-right: 2px;
+	border-radius: 1px;
+	background-color: #223240;
+}
+
+.TDDepthCell.Done
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#6fb4ff), to(#b985ff));
+}
+
+.TDDepthCell.Cur
+{
+	background-color: #ffcf7a;
+	box-shadow: 0px 0px 6px 0px #ffbf5c;
+}
+
+.TDSaveBattleRight
+{
+	width: 88px;
+	height: fit-children;
+	vertical-align: center;
+	flow-children: down;
+}
+
+.TDSaveBattleStatus
+{
+	horizontal-align: right;
+	width: 100%;
+	font-size: 14px;
+	color: #b7c5c4;
+	text-align: right;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDSaveBattleEntry.Active .TDSaveBattleStatus
+{
+	color: #7fd8ff;
+}
+
+.TDSaveBattleEntry.Cleared .TDSaveBattleStatus
+{
+	color: #8bdb82;
+}
+
+.TDSaveBattleEntry.Locked .TDSaveBattleStatus
+{
+	color: #9aa1a4;
+}
+
+.TDSaveBattleDepthCount
+{
+	horizontal-align: right;
+	margin-top: 10px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #ffcf7a;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDSaveBattleMoreHint
+{
+	width: 100%;
+	margin-top: 2px;
+	font-size: 12px;
+	color: #6f828d;
+	text-align: center;
+}
+
+.TDSaveBattleStartButton
+{
+	horizontal-align: right;
+	margin-top: 10px;
+	margin-right: 2px;
+	width: 72px;
+	height: 30px;
+	border-radius: 4px;
+	border: 1px solid #668b91cc;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#284b54ee), color-stop(0.5, #10242bf6), to(#071216f6));
+	transition-property: brightness, border;
+	transition-duration: 0.12s;
+}
+
+.TDSaveBattleStartButton.Greed
+{
+	border: 1px solid #8a6bd0cc;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#4a3068ee), to(#1a1226f6));
+}
+
+.TDSaveBattleStartButton Label
+{
+	align: center center;
+	color: #eff5f0;
+	font-size: 14px;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDSaveBattleStartButton:hover
+{
+	brightness: 1.45;
+	border: 1px solid #9cd5dfee;
+}
+
+.TDSaveBattleStartButton.Disabled
+{
+	brightness: 0.56;
+	border: 1px solid #3c474aaa;
+	background-color: #0c1112cc;
+}
+
+#TDResourceExchangePanel
+{
+	height: 158px;
+}
+
+.TDResourceExchangeRows
+{
+	margin-left: 12px;
+	margin-top: 38px;
+	width: 346px;
+	flow-children: down;
+}
+
+.TDResourceExchangeRow
+{
+	width: 100%;
+	height: 34px;
+	margin-bottom: 4px;
+	flow-children: right;
+	overflow: clip;
+	background-color: cGlassFill;
+	border: 1px solid cHair;
+	border-radius: 3px;
+}
+
+.TDResourceExchangeRow.PopulationHint
+{
+	animation-name: TDResourceExchangePopulationHint;
+	animation-duration: 1.35s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.TDResourceExchangeRow.PopulationHintWeak
+{
+	animation-name: TDResourceExchangePopulationHintWeak;
+	animation-duration: 1.55s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+@keyframes 'TDResourceExchangePopulationHint'
+{
+	0%
+	{
+		brightness: 1;
+		border: 1px solid cHair;
+		box-shadow: cDataGlow 0px 0px 0px 0px;
+	}
+	
+	50%
+	{
+		brightness: 1.22;
+		border: 1px solid cData;
+		box-shadow: cDataGlow 0px 0px 12px 1px;
+	}
+	
+	100%
+	{
+		brightness: 1;
+		border: 1px solid cHair;
+		box-shadow: cDataGlow 0px 0px 0px 0px;
+	}
+	
+}
+
+@keyframes 'TDResourceExchangePopulationHintWeak'
+{
+	0%
+	{
+		brightness: 1;
+		border: 1px solid cHair;
+		box-shadow: cDataGlow 0px 0px 0px 0px;
+	}
+	
+	50%
+	{
+		brightness: 1.1;
+		border: 1px solid cDataDim;
+		box-shadow: cDataGlow 0px 0px 5px 0px;
+	}
+	
+	100%
+	{
+		brightness: 1;
+		border: 1px solid cHair;
+		box-shadow: cDataGlow 0px 0px 0px 0px;
+	}
+	
+}
+
+.TDResourceExchangeRowInfo
+{
+	width: 274px;
+	height: 100%;
+	flow-children: right;
+}
+
+.TDResourceExchangeRowInfo.TDResourceExchangeSuccessRoll
+{
+	animation-name: TDResourceExchangeSuccessInfoRoll;
+	animation-duration: 0.56s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+@keyframes 'TDResourceExchangeSuccessInfoRoll'
+{
+	0%
+	{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+	
+	42%
+	{
+		opacity: 0;
+		transform: translateX(-274px);
+	}
+	
+	43%
+	{
+		opacity: 0;
+		transform: translateX(274px);
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: translateX(0px);
+	}
+	
+}
+
+.TDResourceExchangeRowCost
+{
+	vertical-align: center;
+	margin-left: 8px;
+	flow-children: right;
+}
+
+.TDResourceExchangeRowArrow
+{
+	vertical-align: center;
+	margin-left: 6px;
+	margin-right: 6px;
+	width: 16px;
+	height: 16px;
+	background-image: url("s2r://panorama/images/custom_game/equipment/common_bag_btn_arrow_right_png.vtex");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDResourceExchangeRowOutput
+{
+	vertical-align: center;
+	flow-children: right;
+}
+
+.TDResourceExchangeRowCount
+{
+	vertical-align: center;
+	margin-left: 12px;
+	font-size: 12px;
+	color: cTextDim;
+}
+
+.TDResourceExchangeRowButton
+{
+	vertical-align: center;
+	horizontal-align: right;
+	margin-right: 8px;
+	width: 64px;
+	height: 24px;
+	border-radius: 4px;
+	border: 1px solid cData;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), color-stop(0.48, cGlassFill), to(cGlassDeep));
+	box-shadow: cDataGlow 0px 0px 8px 0px;
+	pre-transform-scale2d: 1;
+	transform: translateY(0px);
+	transition-property: brightness, border, background-color, box-shadow, transform, pre-transform-scale2d;
+	transition-duration: 0.08s;
+}
+
+.TDResourceExchangeRowButton Label
+{
+	align: center center;
+	color: cText;
+	font-size: 13px;
+}
+
+.TDResourceExchangeRowButton:hover
+{
+	border: 1px solid cData;
+	brightness: 1.45;
+}
+
+.TDResourceExchangeRowButton:active
+{
+	transform: translateY(1px);
+	pre-transform-scale2d: 0.94;
+	brightness: 0.72;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassDeep), color-stop(0.52, cGlassFill), to(cGlassRaise));
+	box-shadow: cDataGlow 0px 0px 3px 0px;
+}
+
+.TDResourceExchangeRowButton:active Label
+{
+	transform: translateY(1px);
+}
+
+.TDResourceExchangeRowButton.CannotAfford
+{
+	border: 1px solid cHair;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassFill), color-stop(0.5, cGlassSolid), to(cGlassDeep));
+	box-shadow: none;
+	brightness: 0.72;
+}
+
+.TDResourceExchangeRowButton.CannotAfford:hover
+{
+	border: 1px solid cHair;
+	brightness: 0.72;
+}
+
+.TDResourceExchangeRowButton.CannotAfford:active
+{
+	transform: translateY(0px);
+	pre-transform-scale2d: 1;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassFill), color-stop(0.5, cGlassSolid), to(cGlassDeep));
+	box-shadow: none;
+	brightness: 0.72;
+}
+
+.TDResourceExchangeRowButton.CannotAfford:active Label
+{
+	transform: translateY(0px);
+}
+
+.TDResourceExchangeRowButton.CannotAfford Label
+{
+	color: cTextDim;
+}
+
+.TDResourceExchangeRowCost .TDResourceCostIcon,.TDResourceExchangeRowOutput .TDResourceCostIcon
+{
+	width: 16px;
+	height: 16px;
+}
+
+.TDResourceExchangeRowCost .TDResourceCostValue,.TDResourceExchangeRowOutput .TDResourceCostValue
+{
+	font-size: 14px;
+	color: cTextVal;
+}
+
+.TDResourceExchangeRowCost.Insufficient .TDResourceCostValue
+{
+	color: cRed;
+}
+
+.TDPanelLockedOverlay
+{
+	width: 100%;
+	height: 100%;
+	background-color: cGlassSolid;
+	border-radius: 4px;
+}
+
+.TDPanelLockedIcon
+{
+	align: center center;
+	margin-top: -16px;
+	width: 34px;
+	height: 34px;
+	background-image: url("s2r://panorama/images/custom_game/common/common_lock_png.vtex");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	wash-color: cTextDim;
+}
+
+.TDPanelLockedLabel
+{
+	horizontal-align: center;
+	vertical-align: center;
+	margin-top: 30px;
+	max-width: 320px;
+	font-size: 14px;
+	color: cTextMid;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDEquipmentPanel.Locked #TDEquipmentGrid,#TDConsumablePanel.Locked #TDConsumableGrid,#TDResourceExchangePanel.Locked .TDResourceExchangeRows,#TDChallengePanel.Locked #TDCourierChallengeGrid,#TDChallengePanel.Locked .TDChallengeControlsHint
+{
+	visibility: collapse;
+}
+
+#TDEquipmentPanel
+{
+	height: 212px;
+}
+
+#TDConsumablePanel
+{
+	height: 134px;
+}
+
+#TDQuestPanel
+{
+	height: 375px;
+	opacity: 1;
+	transform: translateX(0px);
+	transition-property: transform, opacity;
+	transition-duration: 0.24s;
+	transition-timing-function: ease-in-out;
+}
+
+#TDQuestPanel.NoTasks
+{
+	opacity: 0;
+	transform: translateX(400px);
+}
+
+#TDQuestGrid
+{
+	height: 330px;
+	flow-children: down;
+	overflow: scroll;
+}
+
+#TDQuestGrid VerticalScrollBar
+{
+	opacity: 0;
+}
+
+.TDRefreshButton
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 12px;
+	width: 86px;
+	height: 25px;
+	border-radius: 4px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+}
+
+.TDRefreshButton Label
+{
+	align: center center;
+	color: cTextMid;
+	font-size: 13px;
+}
+
+#TDEquipmentRefreshButton,#TDConsumableRefreshButton
+{
+	width: 144px;
+	height: 28px;
+	flow-children: right;
+	margin-right: 10px;
+	border: 1px solid cData;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), color-stop(0.48, cGlassFill), to(cGlassDeep));
+	box-shadow: cDataGlow 0px 0px 8px 0px;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.12s;
+}
+
+#TDEquipmentRefreshButton:hover,#TDConsumableRefreshButton:hover
+{
+	border: 1px solid cData;
+	brightness: 1.45;
+}
+
+#TDEquipmentRefreshButton.CannotAfford,#TDConsumableRefreshButton.CannotAfford
+{
+	border: 1px solid cHair;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassFill), color-stop(0.5, cGlassSolid), to(cGlassDeep));
+	box-shadow: none;
+	brightness: 0.72;
+}
+
+#TDEquipmentRefreshButton.CannotAfford:hover,#TDConsumableRefreshButton.CannotAfford:hover
+{
+	border: 1px solid cHair;
+	brightness: 0.72;
+}
+
+#TDEquipmentRefreshButton.CannotAfford #TDEquipmentRefreshLabel,#TDConsumableRefreshButton.CannotAfford #TDConsumableRefreshLabel
+{
+	color: cTextDim;
+}
+
+#TDEquipmentRefreshIcon,#TDConsumableRefreshIcon
+{
+	vertical-align: center;
+	margin-left: 8px;
+	width: 18px;
+	height: 18px;
+	background-image: url("s2r://panorama/images/custom_game/hud/shop_refresh_png.vtex");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#TDEquipmentRefreshLabel,#TDConsumableRefreshLabel
+{
+	align: left center;
+	margin-left: 5px;
+	width: 36px;
+	font-size: 15px;
+	color: cText;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDEquipmentRefreshCountdown,#TDConsumableRefreshCountdown
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-top: 6px;
+	margin-right: 156px;
+	min-width: 100px;
+	height: 32px;
+	color: cData;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 0px 0px 4px 2 #000000;
+}
+
+#TDEquipmentRefreshCost,#TDConsumableRefreshCost
+{
+	vertical-align: center;
+	horizontal-align: left;
+	margin-left: 6px;
+	margin-right: 0px;
+}
+
+#TDEquipmentRefreshCost .TDResourceCostIcon,#TDConsumableRefreshCost .TDResourceCostIcon
+{
+	width: 17px;
+	height: 17px;
+}
+
+#TDEquipmentRefreshCost .TDResourceCostValue,#TDConsumableRefreshCost .TDResourceCostValue
+{
+	font-size: 15px;
+	color: cTextVal;
+}
+
+#TDEquipmentRefreshCost.Insufficient .TDResourceCostValue,#TDConsumableRefreshCost.Insufficient .TDResourceCostValue
+{
+	color: cRed;
+}
+
+.TDShopGrid
+{
+	margin-left: 14px;
+	margin-top: 38px;
+	width: 342px;
+	height: 160px;
+	flow-children: right-wrap;
+}
+
+.TDShopSlot
+{
+	width: 53px;
+	height: 80px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+	flow-children: down;
+	transform: rotateZ(0deg);
+	pre-transform-scale2d: 1;
+	transition-property: brightness, wash-color, transform, pre-transform-scale2d;
+	transition-duration: 0.12s;
+	transition-timing-function: ease-in-out;
+}
+
+.TDShopSlot.Purchased
+{
+	wash-color: #555555a9;
+	brightness: 0.85;
+}
+
+.TDShopSlot.Placeholder
+{
+	opacity: 0.75;
+}
+
+.TDShopSlotIcon
+{
+	horizontal-align: center;
+	margin-top: 4px;
+	width: 45px;
+	height: 45px;
+	overflow: clip;
+	border-radius: 2px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition-property: border, brightness;
+	transition-duration: 0.12s;
+}
+
+.TDShopSlot:hover .TDShopSlotIcon
+{
+	border: 1px solid cHairHi;
+}
+
+.TDShopSlotIconStatic
+{
+	width: 45px;
+	height: 45px;
+	ignore-parent-flow: true;
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.TDShopSlotPrice
+{
+	horizontal-align: center;
+	margin-top: 1px;
+}
+
+.TDShopSlotPrice .TDResourceCostIcon
+{
+	width: 13px;
+	height: 13px;
+}
+
+.TDShopSlotPrice .TDResourceCostValue
+{
+	font-size: 13px;
+}
+
+#TDEquipmentGrid
+{
+	width: 342px;
+	height: 170px;
+	margin-left: 14px;
+	margin-top: 38px;
+}
+
+#TDEquipmentGrid .TDShopSlot
+{
+	width: 80px;
+	height: 80px;
+	margin-right: 5px;
+	margin-bottom: 4px;
+}
+
+#TDEquipmentGrid.TDEquipmentShopRolling .TDShopSlot,#TDConsumableGrid.TDEquipmentShopRolling .TDShopSlot
+{
+	brightness: 1.12;
+}
+
+#TDEquipmentGrid .TDEquipmentShopSlotRolling,#TDConsumableGrid .TDEquipmentShopSlotRolling
+{
+	brightness: 1.8;
+	saturation: 1.35;
+	animation-name: TDEquipmentShopSlotRollingPulse;
+	animation-duration: 0.18s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+#TDEquipmentGrid .TDEquipmentShopSlotRolling .TDShopSlotIcon,#TDConsumableGrid .TDEquipmentShopSlotRolling .TDShopSlotIcon
+{
+	border: 1px solid cAmberBright;
+	opacity: 0.88;
+	pre-transform-scale2d: 0.92;
+}
+
+#TDEquipmentGrid .TDEquipmentShopSlotLocked,#TDConsumableGrid .TDEquipmentShopSlotLocked
+{
+	brightness: 2;
+	animation-name: TDEquipmentShopSlotLockedPop;
+	animation-duration: 0.24s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+#TDEquipmentGrid .TDEquipmentShopIconReel,#TDConsumableGrid .TDEquipmentShopIconReel
+{
+	ignore-parent-flow: true;
+	width: 74px;
+	height: 810px;
+	flow-children: down;
+	transform: translateY(0px);
+	transition-property: transform;
+	transition-duration: 0s;
+	transition-timing-function: cubic-bezier(0.12, 0.82, 0.18, 1);
+}
+
+#TDEquipmentGrid .TDEquipmentShopIconReelImage,#TDConsumableGrid .TDEquipmentShopIconReelImage
+{
+	width: 74px;
+	height: 54px;
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#TDEquipmentGrid .TDEquipmentShopIconReelReady,#TDConsumableGrid .TDEquipmentShopIconReelReady
+{
+	transform: translateY(-756px);
+}
+
+#TDEquipmentGrid .TDEquipmentShopIconReelReady.TDEquipmentShopIconReelRolling,#TDConsumableGrid .TDEquipmentShopIconReelReady.TDEquipmentShopIconReelRolling
+{
+	transform: translateY(0px);
+}
+
+#TDEquipmentGrid .TDEquipmentShopIconReelRolling .TDEquipmentShopIconReelImage,#TDConsumableGrid .TDEquipmentShopIconReelRolling .TDEquipmentShopIconReelImage
+{
+	brightness: 1.25;
+}
+
+@keyframes 'TDEquipmentShopSlotRollingPulse'
+{
+	0%
+	{
+		transform: rotateZ(-4deg);
+		pre-transform-scale2d: 1;
+	}
+	
+	50%
+	{
+		transform: rotateZ(4deg);
+		pre-transform-scale2d: 0.96;
+	}
+	
+	100%
+	{
+		transform: rotateZ(-4deg);
+		pre-transform-scale2d: 1;
+	}
+	
+}
+
+@keyframes 'TDEquipmentShopSlotLockedPop'
+{
+	0%
+	{
+		pre-transform-scale2d: 0.92;
+	}
+	
+	60%
+	{
+		pre-transform-scale2d: 1.08;
+	}
+	
+	100%
+	{
+		pre-transform-scale2d: 1;
+	}
+	
+}
+
+#TDEquipmentGrid .TDShopSlotIcon,#TDEquipmentGrid .TDShopSlotIconStatic
+{
+	width: 74px;
+	height: 54px;
+}
+
+#TDEquipmentGrid .TDShopSlotIcon
+{
+	margin-top: 5px;
+}
+
+.TDEquipmentShopLevelBadge
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 4px;
+	margin-right: 4px;
+	padding: 1px 4px 0;
+	min-width: 28px;
+	height: 17px;
+	border-radius: 2px;
+	background-color: cGlassSolid;
+	border: 1px solid cHair;
+	color: cTextMid;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0 1px 2px #000000;
+}
+
+#TDEquipmentGrid .TDShopSlotPrice
+{
+	margin-bottom: 2px;
+}
+
+#TDEquipmentGrid .TDShopSlotPrice .TDResourceCostIcon
+{
+	width: 17px;
+	height: 17px;
+}
+
+#TDEquipmentGrid .TDShopSlotPrice .TDResourceCostValue
+{
+	font-size: 16px;
+	color: cAmberBright;
+}
+
+#TDConsumableGrid
+{
+	width: 342px;
+	height: 84px;
+	margin-left: 14px;
+	margin-top: 48px;
+	flow-children: right;
+}
+
+#TDConsumableGrid .TDShopSlot
+{
+	width: 80px;
+	height: 80px;
+	margin-right: 5px;
+	margin-bottom: 0px;
+}
+
+#TDConsumableGrid .TDShopSlotIcon,#TDConsumableGrid .TDShopSlotIconStatic
+{
+	width: 74px;
+	height: 54px;
+}
+
+#TDConsumableGrid .TDShopSlotIcon
+{
+	margin-top: 5px;
+}
+
+#TDConsumableGrid .TDShopSlotPrice
+{
+	margin-bottom: 2px;
+}
+
+#TDConsumableGrid .TDShopSlotPrice .TDResourceCostIcon
+{
+	width: 17px;
+	height: 17px;
+}
+
+#TDConsumableGrid .TDShopSlotPrice .TDResourceCostValue
+{
+	font-size: 16px;
+	color: cAmberBright;
+}
+
+.TDQuestSlot
+{
+	width: 342px;
+	height: 100px;
+	margin-right: 0px;
+	margin-bottom: 10px;
+	flow-children: none;
+	opacity: 1;
+	transform: translateX(0px);
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), to(cGlassDeep));
+	border: 1px solid cHair;
+	border-radius: 4px;
+	box-shadow: cScrim60 0px 1px 4px 0px;
+	transition-property: brightness, wash-color, border, opacity, transform, pre-transform-scale2d;
+	transition-duration: 0.16s;
+	transition-timing-function: ease-in-out;
+}
+
+.TDQuestSlot.Entering
+{
+	animation-name: TDQuestSlotEnter;
+	animation-duration: 0.18s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+}
+
+.TDQuestSlot.Removing
+{
+	opacity: 0;
+	transform: translateX(34px);
+	pre-transform-scale2d: 0.98;
+	brightness: 0.8;
+}
+
+.TDQuestSlot:hover
+{
+	brightness: 1.05;
+	border: 1px solid cHairHi;
+}
+
+@keyframes 'TDQuestSlotEnter'
+{
+	from
+	{
+		opacity: 0;
+		transform: translateX(24px);
+		pre-transform-scale2d: 0.98;
+		brightness: 1.12;
+	}
+	
+	to
+	{
+		opacity: 1;
+		transform: translateX(0px);
+		pre-transform-scale2d: 1.0;
+		brightness: 1.0;
+	}
+	
+}
+
+.TDQuestSlotContent
+{
+	vertical-align: center;
+	margin-left: 14px;
+	margin-right: 100px;
+	width: 220px;
+	height: 82px;
+	flow-children: down;
+}
+
+.TDQuestDescription
+{
+	width: 220px;
+	height: 30px;
+	color: cText;
+	font-size: 18px;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDQuestProgressRow
+{
+	width: 220px;
+	height: 20px;
+	flow-children: right;
+}
+
+.TDQuestProgressBar
+{
+	vertical-align: center;
+	width: 136px;
+	height: 11px;
+	border-radius: 3px;
+	border: 1px solid cScrim40;
+	background-color: cGlassSolid;
+}
+
+.TDQuestProgressBar .ProgressBarLeft
+{
+	border-radius: 3px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(cGreen), to(cAmber));
+}
+
+.TDQuestProgressBar .ProgressBarRight
+{
+	border-radius: 3px;
+	background-color: cGlassRaise;
+}
+
+.TDQuestProgressText
+{
+	vertical-align: center;
+	margin-left: 8px;
+	width: 74px;
+	height: 20px;
+	color: cData;
+	font-size: 14px;
+	text-align: right center;
+	text-shadow: 1px 1px 1px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDQuestRewardList
+{
+	width: 220px;
+	height: 28px;
+	flow-children: right;
+}
+
+.TDQuestRewardItem
+{
+	height: 28px;
+	margin-right: 12px;
+	flow-children: right;
+}
+
+.TDQuestRewardCost
+{
+	vertical-align: center;
+}
+
+.TDQuestRewardCost .TDResourceCostIcon
+{
+	width: 18px;
+	height: 18px;
+}
+
+.TDQuestRewardCost .TDResourceCostValue
+{
+	font-size: 15px;
+}
+
+.TDQuestRewardIcon
+{
+	vertical-align: center;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconConsumable
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/sidebar_group/codex_consumable_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconEquipment
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/sidebar_group/codex_equipment_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconMonster
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/sidebar_group/codex_monster_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconRelic
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_relic_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconTower
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_tower_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconGold
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_gold_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconWood
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_wood_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconGlory
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_glory_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconFood
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/resources/resource_food_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconStrength
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconAgility
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconIntelligence
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconAll
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_all_psd.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconAttack,.TDQuestRewardIcon.TDQuestRewardIconDirectDamage
+{
+	background-image: url("s2r://panorama/images/hud/reborn/icon_damage_psd.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconAttackSpeed
+{
+	background-image: url("s2r://panorama/images/hud/reborn/icon_attack_speed_psd.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconAttackRange
+{
+	background-image: url("s2r://panorama/images/hud/reborn/icon_attack_range_psd.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconSkillDamage
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_skill_damage_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconCooldown
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_cooldown_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconMonsterNormal
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_current_monster_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconMonsterElite
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_elite_wave_png.vtex");
+}
+
+.TDQuestRewardIcon.TDQuestRewardIconMonsterBoss
+{
+	background-image: url("s2r://panorama/images/custom_game/balance/new/stat_boss_wave_png.vtex");
+}
+
+.TDQuestRewardText
+{
+	vertical-align: center;
+	max-width: 104px;
+	color: cAmberBright;
+	font-size: 15px;
+	text-shadow: 1px 1px 1px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDQuestButton
+{
+	width: 88px;
+	height: 40px;
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 8px;
+	border-radius: 3px;
+	border: 1px solid cGreenBorder;
+	background-color: cGreenDeep;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.12s;
+}
+
+.TDQuestButton:hover
+{
+	brightness: 1.6;
+	border: 1px solid cGreen;
+}
+
+.TDQuestButton.Disabled
+{
+	wash-color: #626262aa;
+	brightness: 0.75;
+}
+
+.TDQuestButtonLabel
+{
+	align: center center;
+	width: 84px;
+	color: cText;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 1px 1px 1px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDQuestSlot.Preview
+{
+	brightness: 0.78;
+	saturation: 0.7;
+}
+
+.TDQuestSlot.Preview:hover
+{
+	brightness: 0.82;
+}
+
+.TDQuestSlot.Preview .TDQuestDescription
+{
+	color: cTextDim;
+}
+
+.TDQuestProgressRow.PreviewProgress .TDQuestProgressBar
+{
+	visibility: collapse;
+}
+
+.TDQuestProgressRow.PreviewProgress .TDQuestProgressText
+{
+	margin-left: 0px;
+	width: 136px;
+	text-align: left center;
+	color: cTextDim;
+}
+
+#TDBottomDock
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-left: 6px;
+	margin-bottom: 6px;
+	width: 1360px;
+	height: 224px;
+	flow-children: right;
+}
+
+#TDMiniMapPanel
+{
+	width: 205px;
+	height: 224px;
+	margin-right: 3px;
+	z-index: 90;
+	border-radius: 4px;
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cEdgeTop), to(cEdgeBottom));
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), color-stop(0.5, cGlassFill), to(cGlassDeep));
+	box-shadow: cScrim60 0px 0px 10px 0px;
+}
+
+#minimap
+{
+	align: center center;
+	width: 188px;
+	height: 188px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: #152018;
+	overflow: clip;
+}
+
+#TDTowerPanel
+{
+	width: 430px;
+	height: 224px;
+	margin-right: 3px;
+	flow-children: right;
+}
+
+#TDTowerPortrait
+{
+	width: 134px;
+	height: 190px;
+	margin-left: 14px;
+	margin-top: 18px;
+	border-radius: 4px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+	overflow: clip;
+}
+
+#TDTowerPortraitFallback
+{
+	width: 100%;
+	height: 100%;
+	opacity: 0.28;
+	z-index: 1;
+}
+
+#TDTowerPortraitNative
+{
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+#TDTowerPortraitShade
+{
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cScrim60), color-stop(0.16, #00000010), color-stop(0.72, #00000000), to(cScrim60));
+}
+
+#TDTowerPortraitHero
+{
+	width: 100%;
+	height: 100%;
+	opacity: 0.92;
+	saturation: 0.95;
+}
+
+#TDTowerPortraitIcon
+{
+	align: center center;
+	width: 118px;
+	height: 118px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.35;
+	wash-color: #1a2526;
+}
+
+#TDTowerPortrait.TDCourierPortrait #TDTowerPortraitFallback
+{
+	opacity: 1;
+}
+
+#TDTowerPortrait.TDCourierPortrait #TDTowerPortraitIcon
+{
+	opacity: 0.92;
+	wash-color: none;
+}
+
+#TDTowerSummary
+{
+	width: 266px;
+	height: 208px;
+	margin-left: 12px;
+	margin-top: 10px;
+}
+
+#TDTowerInfoSummary,#TDCourierSummary,#TDEnemySummary
+{
+	width: 100%;
+	height: 100%;
+	visibility: collapse;
+}
+
+#TDTowerInfoSummary.Active,#TDCourierSummary.Active,#TDEnemySummary.Active
+{
+	visibility: visible;
+}
+
+.TDSelectedEnemy #TDTowerPanel
+{
+	width: 892px;
+}
+
+.TDSelectedEnemy #TDTowerSummary
+{
+	width: 728px;
+}
+
+.TDSelectedEnemy #TDInventoryPanel,.TDSelectedEnemy #TDSkillPanel
+{
+	visibility: collapse;
+}
+
+.TDSelectedAlly #TDTowerActionRow
+{
+	visibility: collapse;
+}
+
+.TDTowerTitleRow
+{
+	width: 100%;
+	height: 34px;
+}
+
+.TDTowerTitleNameGroup
+{
+	vertical-align: center;
+	width: 202px;
+	height: 100%;
+	flow-children: right;
+}
+
+.TDTowerName
+{
+	vertical-align: center;
+	width: fit-children;
+	max-width: 176px;
+	font-size: 18px;
+	color: cText;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: ellipsis;
+}
+
+.TDTowerTitlePrimaryIcon
+{
+	vertical-align: center;
+	margin-left: 5px;
+	width: 18px;
+	height: 18px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDTowerTitlePrimaryIcon.Hidden
+{
+	visibility: collapse;
+}
+
+.TDTowerLevel
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 8px;
+	font-size: 18px;
+	color: cTextVal;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+#TDTowerDetailRow
+{
+	margin-top: 38px;
+	width: 100%;
+	height: 102px;
+	flow-children: right;
+}
+
+#TDTowerStatGrid
+{
+	width: 130px;
+	height: 96px;
+	flow-children: down;
+}
+
+.TDTowerStat
+{
+	width: 100%;
+	height: 24px;
+}
+
+.TDTowerStatIcon
+{
+	vertical-align: center;
+	width: 18px;
+	height: 18px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDStatStrength
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex");
+}
+
+.TDStatAgility
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex");
+}
+
+.TDStatIntelligence
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex");
+}
+
+.TDStatAttack
+{
+	background-image: url("s2r://panorama/images/hud/facets/icons/damage_png.vtex");
+}
+
+.TDTowerStat.Primary .TDTowerStatIcon
+{
+	brightness: 1.8;
+	saturation: 1.25;
+}
+
+.TDTowerStat.Primary .TDTowerStatName,.TDTowerStat.Primary .TDTowerStatValue
+{
+	color: cAmberBright;
+}
+
+.TDTowerStatName
+{
+	vertical-align: center;
+	margin-left: 26px;
+	width: 38px;
+	color: cTextDim;
+	font-size: 13px;
+}
+
+.TDTowerStatValue
+{
+	horizontal-align: right;
+	vertical-align: center;
+	width: 62px;
+	font-size: 13px;
+	color: cTextVal;
+	text-align: right center;
+}
+
+#TDTowerMetaPanel
+{
+	width: 128px;
+	height: 100px;
+	margin-left: 8px;
+	flow-children: down;
+}
+
+.TDTowerMetaRow
+{
+	width: 100%;
+	height: 24px;
+	flow-children: right;
+}
+
+.TDTowerMetaRow.Hidden
+{
+	visibility: collapse;
+}
+
+.TDTowerMetaName
+{
+	vertical-align: center;
+	width: 36px;
+	font-size: 13px;
+	color: cTextDim;
+}
+
+.TDTowerMetaIcon
+{
+	vertical-align: center;
+	margin-left: 2px;
+	width: 18px;
+	height: 18px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDTowerMetaIcon.Hidden
+{
+	visibility: collapse;
+}
+
+.TDTowerAffinityRows
+{
+	width: 100%;
+	height: 72px;
+	flow-children: down;
+}
+
+.TDPrimaryAttributeIcon.Strength
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex");
+}
+
+.TDPrimaryAttributeIcon.Agility
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex");
+}
+
+.TDPrimaryAttributeIcon.Intelligence
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex");
+}
+
+.TDPrimaryAttributeIcon.All
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/mini_primary_attribute_icon_all_psd.vtex");
+}
+
+.TDTowerMetaValue
+{
+	vertical-align: center;
+	margin-left: 4px;
+	width: 68px;
+	font-size: 13px;
+	color: cTextVal;
+	text-align: left center;
+	text-overflow: shrink;
+}
+
+.TDTowerAffinityRow.NoIcon .TDTowerMetaValue
+{
+	margin-left: 24px;
+}
+
+#TDTowerTagList
+{
+	margin-top: 137px;
+	horizontal-align: center;
+	width: fit-children;
+	max-width: 100%;
+	height: 16px;
+	flow-children: right;
+}
+
+#TDTowerTagList.Empty
+{
+	visibility: collapse;
+}
+
+.TDTowerTagChip
+{
+	vertical-align: center;
+	height: 16px;
+	min-width: 28px;
+	margin-right: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 2px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+	font-size: 10px;
+	color: cTextMid;
+	text-align: center;
+}
+
+.TDTowerTagChip.DesignTag
+{
+	border-color: cDataDim;
+	background-color: cGlassFill;
+	color: cTextMid;
+}
+
+#TDTowerActionRow
+{
+	vertical-align: bottom;
+	width: 100%;
+	height: 46px;
+	flow-children: right;
+}
+
+.TDTowerActionButton
+{
+	width: 80px;
+	height: 42px;
+	margin-right: 8px;
+	border-radius: 4px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+}
+
+.TDTowerActionButton.Disabled
+{
+	brightness: 0.45;
+}
+
+.TDTowerActionName
+{
+	horizontal-align: center;
+	margin-top: 5px;
+	font-size: 15px;
+	color: cText;
+}
+
+.TDTowerActionCost
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 4px;
+	font-size: 11px;
+	color: cTextDim;
+}
+
+.TDTowerDevourCost
+{
+	height: 16px;
+	flow-children: right;
+}
+
+.TDTowerDevourCost.Resource
+{
+	width: fit-children;
+}
+
+.TDTowerDevourCost.Plain,.TDTowerDevourCost.Fallback
+{
+	width: 100%;
+	flow-children: none;
+}
+
+.TDTowerDevourCost.Plain .TDResourceCostValue,.TDTowerDevourCost.Fallback .TDResourceCostValue
+{
+	horizontal-align: center;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.TDTowerActionCost .TDResourceCostIcon
+{
+	width: 13px;
+	height: 13px;
+}
+
+.TDTowerActionCost .TDResourceCostValue
+{
+	font-size: 11px;
+	color: cTextVal;
+}
+
+.TDTowerActionCost .TDResourceCostListText
+{
+	font-size: 11px;
+	color: cTextVal;
+}
+
+.TDTowerMoveCost
+{
+	width: fit-children;
+	height: 16px;
+	flow-children: right;
+}
+
+.TDTowerMoveCost.ScrollMode
+{
+	height: 13px;
+}
+
+.TDTowerMoveCost.ChargeMode
+{
+	width: 100%;
+	flow-children: none;
+}
+
+.TDTowerMoveCostIcon
+{
+	width: 13px;
+	height: 13px;
+	vertical-align: center;
+}
+
+.TDTowerMoveCostValue
+{
+	vertical-align: center;
+	width: fit-children;
+	font-size: 12px;
+	color: cTextVal;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDTowerMoveCost.ScrollMode .TDTowerMoveCostValue
+{
+	width: fit-children;
+	margin-left: 0px;
+	margin-top: 0px;
+	font-size: 11px;
+	color: cTextDim;
+	text-overflow: ellipsis;
+}
+
+.TDTowerMoveCost.ChargeMode .TDTowerMoveCostValue
+{
+	horizontal-align: center;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+}
+
+.TDTowerMoveCost.CannotAfford .TDTowerMoveCostValue
+{
+	color: cRed;
+}
+
+.TDTowerMoveCost.BootsMode
+{
+	width: 100%;
+	flow-children: none;
+}
+
+.TDTowerMoveCost.BootsMode .TDTowerMoveCostValue
+{
+	horizontal-align: center;
+	width: 100%;
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+	color: cGreen;
+}
+
+#TDChallengePanel
+{
+	height: 116px;
+}
+
+.TDChallengeControlsHint
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 14px;
+	max-width: 250px;
+	font-size: 11px;
+	color: cTextDim;
+	text-align: right;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 cShadowDeep;
+}
+
+#TDCourierChallengeGrid
+{
+	margin-left: 14px;
+	margin-top: 38px;
+	width: 342px;
+	height: 68px;
+	flow-children: right;
+}
+
+.TDCourierChallengeCard
+{
+	width: 80px;
+	height: 68px;
+	margin-right: 5px;
+	flow-children: down;
+	transition-property: brightness, wash-color, saturation;
+	transition-duration: 0.12s;
+}
+
+.TDCourierChallengeCard:hover
+{
+	brightness: 1.5;
+}
+
+.TDCourierChallengeCard.Cooling
+{
+	wash-color: #87909522;
+	brightness: 0.92;
+}
+
+.TDCourierChallengeCard.Exhausted,.TDCourierChallengeCard.Unavailable
+{
+	saturation: 0;
+	brightness: 0.6;
+}
+
+.TDCourierChallengeButton
+{
+	horizontal-align: center;
+	margin-top: 2px;
+	width: 74px;
+	height: 42px;
+	flow-children: none;
+	overflow: clip;
+	border-radius: 2px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+	transition-property: border, box-shadow;
+	transition-duration: 0.12s;
+}
+
+.TDCourierChallengeCard:hover .TDCourierChallengeButton
+{
+	border: 1px solid cHairHi;
+}
+
+.TDCourierChallengeCard.Auto .TDCourierChallengeButton
+{
+	border: 1px solid cGreenBorder;
+	box-shadow: fill cGreenGlow 0px 0px 5px 0px;
+}
+
+.TDCourierChallengeCard.InactiveConfig
+{
+	visibility: collapse;
+}
+
+.TDCourierChallengePortrait
+{
+	align: center center;
+	width: 42px;
+	height: 42px;
+}
+
+.TDCourierChallengeName
+{
+	horizontal-align: center;
+	margin-top: 2px;
+	width: 78px;
+	height: 18px;
+	text-align: center;
+	text-overflow: shrink;
+	font-size: 12px;
+	color: cText;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDCourierChallengeAttempts
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 2px;
+	min-width: 14px;
+	font-size: 11px;
+	font-weight: semi-bold;
+	color: cAmberBright;
+	text-align: right center;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDCourierChallengeAutoDot
+{
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-left: 3px;
+	margin-bottom: 3px;
+	width: 7px;
+	height: 7px;
+	border-radius: 4px;
+	background-color: #26383a;
+}
+
+.TDCourierChallengeCard.Active .TDCourierChallengeAutoDot
+{
+	background-color: cGreen;
+	box-shadow: fill cGreenGlow 0px 0px 6px 0px;
+}
+
+.TDCourierChallengeCooldownMask
+{
+	width: 74px;
+	height: 74px;
+	align: center center;
+	background-color: cScrim80;
+	visibility: collapse;
+}
+
+.TDCourierChallengeCard.ShowCooldown .TDCourierChallengeCooldownMask,.TDCourierChallengeCard.Unavailable .TDCourierChallengeCooldownMask,.TDCourierChallengeCard.Exhausted .TDCourierChallengeCooldownMask
+{
+	visibility: visible;
+}
+
+.TDCourierChallengeCooldownText
+{
+	align: center center;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	font-size: 18px;
+	color: #ffffff;
+	text-align: center;
+	text-shadow: 0px 0px 6px 6 #000000;
+	visibility: collapse;
+}
+
+.TDCourierChallengeCard.ShowCooldown .TDCourierChallengeCooldownText,.TDCourierChallengeCard.Unavailable .TDCourierChallengeCooldownText,.TDCourierChallengeCard.Exhausted .TDCourierChallengeCooldownText
+{
+	visibility: visible;
+}
+
+.TDCourierChallengeCard.Unavailable .TDCourierChallengeCooldownText
+{
+	font-size: 11px;
+	color: cTextDim;
+}
+
+.TDCourierChallengeCard.Exhausted .TDCourierChallengeCooldownText
+{
+	font-size: 11px;
+	color: cRed;
+}
+
+#TDCourierDetailRow
+{
+	margin-top: 40px;
+	width: 100%;
+	height: 96px;
+	flow-children: right;
+}
+
+#TDCourierStatGrid
+{
+	width: 130px;
+	height: 78px;
+	flow-children: down;
+}
+
+#TDCourierReport
+{
+	width: 118px;
+	height: 96px;
+	margin-left: 8px;
+	flow-children: down;
+}
+
+.TDCourierReportRow
+{
+	width: 100%;
+	height: 24px;
+}
+
+.TDCourierReportName
+{
+	vertical-align: center;
+	color: cTextDim;
+	font-size: 13px;
+}
+
+.TDCourierReportValue
+{
+	horizontal-align: right;
+	vertical-align: center;
+	width: 66px;
+	text-align: right;
+	color: cTextVal;
+	font-size: 13px;
+}
+
+.TDCourierHeroIcon
+{
+	vertical-align: center;
+	margin-left: 6px;
+	width: 18px;
+	height: 18px;
+}
+
+#TDCourierToggleRow
+{
+	vertical-align: bottom;
+	horizontal-align: center;
+	width: fit-children;
+	height: 42px;
+	margin-bottom: 10px;
+	flow-children: right;
+}
+
+.TDCourierToggleButton
+{
+	width: 80px;
+	height: 42px;
+	margin-right: 8px;
+	border-radius: 4px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+	transition-property: brightness, border;
+	transition-duration: 0.12s;
+}
+
+.TDCourierToggleButton:hover
+{
+	brightness: 1.5;
+	border: 1px solid cHairHi;
+}
+
+.TDCourierToggleName
+{
+	horizontal-align: center;
+	margin-top: 5px;
+	font-size: 15px;
+	color: cText;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDCourierToggleState
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 4px;
+	font-size: 12px;
+	color: cTextDim;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDCourierToggleButton.On .TDCourierToggleState
+{
+	color: cGreen;
+}
+
+.TDCourierToggleButton.Off .TDCourierToggleState
+{
+	color: cTextDim;
+}
+
+.TDEnemyTitleRow
+{
+	width: 100%;
+	height: 34px;
+	flow-children: right;
+}
+
+.TDEnemyName
+{
+	vertical-align: top;
+	margin-left: 22px;
+	margin-top: 5px;
+	width: fill-parent-flow(1);
+	height: 28px;
+	font-size: 20px;
+	color: cText;
+	text-align: left center;
+	text-shadow: 1px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.TDEnemyTitleRightGroup
+{
+	vertical-align: top;
+	margin-top: 5px;
+	margin-right: 22px;
+	width: 330px;
+	height: 28px;
+}
+
+.TDEnemyTitleRightContent
+{
+	horizontal-align: right;
+	width: fit-children;
+	height: 28px;
+	flow-children: right;
+}
+
+#TDEnemyTagList
+{
+	vertical-align: center;
+	width: fit-children;
+	height: 28px;
+	flow-children: right;
+}
+
+.TDEnemyTagChip
+{
+	height: 28px;
+	min-width: 34px;
+	margin-right: 4px;
+	margin-bottom: 0;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 4px;
+	padding-bottom: 3px;
+	border-radius: 2px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+	color: cTextMid;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.TDEnemyArmorBadge
+{
+	width: 96px;
+	height: 28px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+}
+
+.TDEnemyArmorIcon
+{
+	vertical-align: center;
+	margin-left: 6px;
+	width: 20px;
+	height: 20px;
+	background-image: url("s2r://panorama/images/custom_game/hud/attr/armor_png_png.vtex");
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDEnemyArmorValue
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 8px;
+	width: 58px;
+	font-size: 15px;
+	color: cTextVal;
+	text-align: right center;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDEnemyInfoRow
+{
+	margin-top: 38px;
+	width: 100%;
+	height: 160px;
+	flow-children: down;
+}
+
+.TDEnemySkillBlock
+{
+	width: 100%;
+	height: 58px;
+}
+
+.TDEnemyVitalBlock
+{
+	width: 100%;
+	height: 82px;
+	margin-top: 20px;
+}
+
+.TDEnemyStatusBar
+{
+	horizontal-align: center;
+	width: 694px;
+	height: 26px;
+	margin-top: 8px;
+	overflow: noclip;
+}
+
+.TDEnemyManaStatusBar
+{
+	margin-top: 38px;
+}
+
+.TDEnemyDotaProgress
+{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	border-radius: 0px;
+	background-color: none;
+	box-shadow: 0px 1px 2px cScrim60;
+	z-index: 2;
+}
+
+.TDEnemyDotaProgress .ProgressBarLeft
+{
+	height: 100%;
+	overflow: noclip;
+}
+
+.TDEnemyDotaHealthProgress .ProgressBarLeft
+{
+	border-radius: 3px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cEnemyFillA), color-stop(0.2, cEnemyFillB), color-stop(0.5, cEnemyFillC), to(cEnemyFillA));
+	border-top-width: 0px;
+	brightness: 1;
+}
+
+.TDEnemyDotaHealthProgress .ProgressBarRight
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cEnemyEmpty), color-stop(0.2, cEnemyEmpty), color-stop(0.5, cEnemyEmpty), to(cEnemyEmpty));
+}
+
+.TDEnemyDotaManaProgress .ProgressBarLeft
+{
+	border-radius: 3px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2b4287), color-stop(0.2, #4165ce), color-stop(0.5, #4a73ea), to(#2b4287));
+	border-top-width: 0px;
+	brightness: 1;
+}
+
+.TDEnemyDotaManaProgress .ProgressBarRight
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#101932), color-stop(0.2, #172447), color-stop(0.5, #162244), to(#101932));
+}
+
+.TDEnemyDotaSceneContainer
+{
+	width: 100%;
+	height: 100%;
+	overflow: noclip;
+}
+
+.TDEnemyDotaBurner
+{
+	width: 100%;
+	height: 100%;
+}
+
+.TDEnemyHealthBurner
+{
+	hue-rotation: 240deg;
+	opacity: 0.7;
+}
+
+.TDEnemyManaBurner
+{
+	hue-rotation: 50deg;
+	opacity: 0.4;
+}
+
+.TDEnemyBarText
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	font-size: 18px;
+	font-family: monospaceNumbersFont;
+	font-weight: bold;
+	color: cTextVal;
+	text-align: center;
+	text-shadow: 0px 1px 4px 3 #000000;
+	z-index: 4;
+}
+
+.TDEnemySectionTitle
+{
+	height: 18px;
+	font-size: 12px;
+	color: cTextDim;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+#TDEnemyResistanceGrid
+{
+	align: center center;
+	margin-top: 18px;
+	width: 244px;
+	height: 174px;
+	flow-children: right-wrap;
+}
+
+.TDEnemyResistanceCell
+{
+	width: 114px;
+	height: 29px;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-bottom: 5px;
+	border-radius: 2px;
+	border: 1px solid cHair;
+	background-color: cGlassFill;
+}
+
+.TDEnemyResistanceIcon
+{
+	vertical-align: center;
+	margin-left: 5px;
+	width: 20px;
+	height: 20px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDDamageAttributeIcon.Physical,.TDQuestRewardIcon.TDQuestRewardIconDamagePhysical
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_physical_png.vtex");
+}
+
+.TDDamageAttributeIcon.Arcane,.TDQuestRewardIcon.TDQuestRewardIconDamageArcane
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_arcane_png.vtex");
+}
+
+.TDDamageAttributeIcon.Fire,.TDQuestRewardIcon.TDQuestRewardIconDamageFire
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_fire_png.vtex");
+}
+
+.TDDamageAttributeIcon.Cold,.TDQuestRewardIcon.TDQuestRewardIconDamageCold
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_cold_png.vtex");
+}
+
+.TDDamageAttributeIcon.Lightning,.TDQuestRewardIcon.TDQuestRewardIconDamageLightning
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_lightning_png.vtex");
+}
+
+.TDDamageAttributeIcon.Earth,.TDQuestRewardIcon.TDQuestRewardIconDamageEarth
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_earth_png.vtex");
+}
+
+.TDDamageAttributeIcon.Shadow,.TDQuestRewardIcon.TDQuestRewardIconDamageShadow
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_shadow_png.vtex");
+}
+
+.TDDamageAttributeIcon.Poison,.TDQuestRewardIcon.TDQuestRewardIconDamagePoison
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_poison_png.vtex");
+}
+
+.TDDamageAttributeIcon.Holy,.TDQuestRewardIcon.TDQuestRewardIconDamageHoly
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_holy_png.vtex");
+}
+
+.TDDamageAttributeIcon.Void,.TDQuestRewardIcon.TDQuestRewardIconDamageVoid
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_void_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Physical
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_physical_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Arcane
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_arcane_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Fire
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_fire_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Cold
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_cold_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Lightning
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_lightning_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Earth
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_earth_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Shadow
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_shadow_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Poison
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_poison_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Holy
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_holy_png.vtex");
+}
+
+.TDEnemyResistanceIcon.Void
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/resistance_void_png.vtex");
+}
+
+.TDEnemyResistanceValue
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 6px;
+	width: 76px;
+	font-size: 14px;
+	color: cTextVal;
+	text-align: right;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDEnemyResistanceCell.Negative .TDEnemyResistanceValue
+{
+	color: cRed;
+}
+
+.TDEnemyResistanceCell.Immune
+{
+	border: 1px solid cAmberBorder;
+	box-shadow: fill cAmberGlow 0px 0px 8px 0px;
+}
+
+.TDEnemyResistanceCell.Immune .TDEnemyResistanceValue
+{
+	color: cAmberBright;
+}
+
+#TDEnemyTraitGrid
+{
+	margin-left: 22px;
+	margin-top: 4px;
+	width: 694px;
+	height: 54px;
+	flow-children: right;
+}
+
+.TDEnemyTraitSlot
+{
+	horizontal-align: left;
+	width: 52px;
+	height: 52px;
+	margin-right: 8px;
+	box-shadow: fill #000000 -1.5px -1.5px 3px 3px;
+	background-color: cGlassFill;
+}
+
+.TDEnemyTraitSlot.Empty
+{
+	background-color: cGlassSolid;
+	box-shadow: inset cScrim60 0px 0px 8px 0px;
+}
+
+.TDEnemyTraitAbility
+{
+	width: 100%;
+	height: 100%;
+}
+
+.TDEnemyTraitAbility #ButtonSize
+{
+	width: 48px;
+	height: 48px;
+}
+
+.TDEnemyTraitAbility #ButtonWell
+{
+	width: fit-children;
+	height: fit-children;
+	background-size: 0px;
+}
+
+.TDEnemyTraitAbility #AbilityImage,.TDEnemyTraitAbility #Cooldown
+{
+	margin: 0px;
+}
+
+.TDEnemyTraitAbility #AbilityBevel
+{
+	visibility: visible;
+	margin: 0px;
+	background-image: url("s2r://panorama/images/hud/reborn/query_ability_bevel_psd.vtex");
+	background-size: 100%;
+}
+
+.TDEnemyTraitAbility #Hotkey,.TDEnemyTraitAbility #HotkeyModifier,.TDEnemyTraitAbility #ManaCost,.TDEnemyTraitAbility #ManaCostBG,.TDEnemyTraitAbility #GoldCost,.TDEnemyTraitAbility #GoldCostBG,.TDEnemyTraitAbility #ActiveAbilityBorder,.TDEnemyTraitAbility #PassiveAbilityBorder,.TDEnemyTraitAbility #SilencedOverlay,.TDEnemyTraitAbility #CombineLockedOverlay,.TDEnemyTraitAbility #AbilityStatusOverlay,.TDEnemyTraitAbility #AbilityLevelContainer,.TDEnemyTraitAbility #LevelUpTab
+{
+	visibility: collapse;
+}
+
+#TDInventoryPanel
+{
+	width: 126px;
+	height: 224px;
+	margin-right: 3px;
+}
+
+#TDInventoryGrid
+{
+	align: center center;
+	margin-left: 6px;
+	margin-top: 38px;
+	width: 110px;
+	height: 168px;
+	flow-children: right-wrap;
+}
+
+.TDInventorySlot
+{
+	width: 48px;
+	height: 48px;
+	margin-right: 6px;
+	margin-bottom: 7px;
+	flow-children: down;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+}
+
+.TDInventorySlot.Usable
+{
+	border: 1px solid cHairHi;
+}
+
+.TDInventorySlot.Usable:hover
+{
+	brightness: 1.5;
+}
+
+.TDInventorySlot.Passive
+{
+	brightness: 0.75;
+}
+
+.TDInventorySlot.ReadOnly
+{
+	brightness: 0.68;
+}
+
+.TDInventorySlot.ReadOnly:hover
+{
+	brightness: 0.68;
+}
+
+.TDInventorySlot.Empty
+{
+	border: 1px solid cHairLo;
+	background-color: cGlassSolid;
+}
+
+.TDInventoryDraggingFrom
+{
+	opacity: 0.45;
+}
+
+.TDInventorySlotDragTarget
+{
+	border: 1px solid cAmber;
+	box-shadow: fill cAmberGlow 0px 0px 12px 0px;
+	brightness: 1.55;
+}
+
+.TDInventorySlotIconFrame
+{
+	horizontal-align: center;
+	margin-top: 3px;
+	width: 42px;
+	height: 42px;
+	border-radius: 2px;
+	overflow: clip;
+}
+
+.TDInventorySlotIconHost
+{
+	width: 100%;
+	height: 100%;
+}
+
+.TDInventorySlotWideIcon .TDInventorySlotIconFrame
+{
+	width: 44px;
+	height: 32px;
+	margin-top: 2px;
+}
+
+.TDInventorySlotName
+{
+	horizontal-align: center;
+	width: 46px;
+	height: 13px;
+	margin-top: 1px;
+	font-size: 10px;
+	color: cTextMid;
+	text-align: center;
+	text-shadow: 1px 1px 1px 2 #000000;
+	text-overflow: shrink;
+	visibility: collapse;
+}
+
+.TDInventorySlotWideIcon .TDInventorySlotName
+{
+	visibility: visible;
+}
+
+.TDInventoryDragPreview
+{
+	width: 48px;
+	height: 48px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	flow-children: none;
+	z-index: 999;
+}
+
+.TDInventoryDragPreview .TDInventorySlotIconFrame
+{
+	align: center center;
+	margin-top: 0px;
+	width: 42px;
+	height: 42px;
+}
+
+.TDInventoryDragPreview.TDInventorySlotWideIcon .TDInventorySlotIconFrame
+{
+	width: 44px;
+	height: 32px;
+	margin-top: 0px;
+}
+
+.TDInventoryDragPreview .TDInventorySlotName
+{
+	visibility: collapse;
+}
+
+.TDInventorySlotCharges
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	ignore-parent-flow: true;
+	margin-right: 3px;
+	margin-bottom: 1px;
+	min-width: 14px;
+	font-size: 12px;
+	color: cTextVal;
+	text-align: right center;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDInventorySlotWideIcon .TDInventorySlotCharges
+{
+	vertical-align: top;
+	margin-top: 21px;
+	margin-bottom: 0px;
+}
+
+.TDInventorySlotCooldownMask
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim80;
+	visibility: collapse;
+}
+
+.TDInventorySlotCooldownText
+{
+	width: 100%;
+	color: #ffffff;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	font-size: 16px;
+	text-shadow: 0px 0px 4px 4 #000000;
+	text-align: center;
+	vertical-align: center;
+	text-overflow: shrink;
+	visibility: collapse;
+}
+
+.TDInventorySlot.Cooling .TDInventorySlotCooldownMask
+{
+	visibility: visible;
+}
+
+.TDInventorySlot.Cooling .TDInventorySlotCooldownText
+{
+	visibility: visible;
+}
+
+.TDInventoryContextMenu
+{
+	width: 126px;
+	height: fit-children;
+	opacity: 0;
+	z-index: 220;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), to(cGlassDeep));
+	border: 1px solid cHairHi;
+	box-shadow: cScrim80 0px 0px 12px 0px;
+	transition-property: opacity, brightness;
+	transition-duration: 0.1s;
+}
+
+.TDInventoryContextMenu.Active
+{
+	opacity: 1;
+}
+
+.TDInventoryComposeButton
+{
+	visibility: collapse;
+	border: 1px solid cData;
+	box-shadow: cDataGlow 0px 0px 8px 0px;
+	transition-property: brightness, border, box-shadow;
+	transition-duration: 0.12s;
+}
+
+.TDInventoryComposeButton.Visible
+{
+	visibility: visible;
+}
+
+.TDInventoryComposeButton:active
+{
+	brightness: 0.85;
+}
+
+.TDInventoryComposeButton.Disabled,.TDInventoryComposeButton.Disabled:hover
+{
+	border: 1px solid cHair;
+	box-shadow: none;
+	brightness: 0.55;
+}
+
+.TDInventoryComposeIcon
+{
+	align: center center;
+	width: 18px;
+	height: 18px;
+	border-radius: 2px;
+	img-shadow: 0px 1px 3px 1 #000000;
+}
+
+.TDInventoryComposeButton.Disabled .TDInventoryComposeIcon
+{
+	saturation: 0.2;
+}
+
+.TDInventoryContextMenuButton
+{
+	width: 100%;
+	height: 36px;
+	flow-children: right;
+	padding-left: 10px;
+	padding-right: 8px;
+	background-color: cGlassFill;
+	transition-property: brightness, background-color;
+	transition-duration: 0.1s;
+}
+
+.TDInventoryContextMenuButton:hover
+{
+	brightness: 1.55;
+	background-color: cGlassRaise;
+}
+
+.TDInventoryContextMenuButton Label
+{
+	vertical-align: center;
+	font-size: 15px;
+	color: cText;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.TDInventoryContextSellPrice
+{
+	vertical-align: center;
+	margin-left: 6px;
+}
+
+.TDInventoryContextSellPrice .TDResourceCostIcon
+{
+	width: 15px;
+	height: 15px;
+}
+
+.TDInventoryContextSellPrice .TDResourceCostValue
+{
+	font-size: 14px;
+	color: cAmberBright;
+}
+
+#TDSkillPanel
+{
+	width: 330px;
+	height: 224px;
+	margin-right: 3px;
+}
+
+.TDSkillHelpButton
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 12px;
+	margin-bottom: 10px;
+	width: 34px;
+	height: 34px;
+	z-index: 20;
+	tooltip-position: top;
+	border-radius: 4px;
+	border: 1px solid cHairLo;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), color-stop(0.48, cGlassFill), to(cGlassDeep));
+	box-shadow: cScrim80 0px 2px 8px 0px;
+	visibility: collapse;
+	transition-property: brightness, border;
+	transition-duration: 0.12s;
+}
+
+.TDSelectedCourier .TDSkillHelpButton
+{
+	visibility: collapse;
+}
+
+.TDSkillHelpButton:hover
+{
+	brightness: 1.25;
+	border: 1px solid cData;
+}
+
+.TDSkillHelpButton:active
+{
+	brightness: 0.78;
+}
+
+.TDSkillHelpButtonBg
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cSheen), color-stop(0.42, cGlassSolid), to(cGlassDeep));
+}
+
+.TDSkillHelpButtonIcon
+{
+	align: center center;
+	width: 78%;
+	height: 78%;
+	opacity: 0.76;
+	img-shadow: 0px 2px 5px 2 #000000;
+}
+
+.TDSkillHelpButton:hover .TDSkillHelpButtonIcon
+{
+	opacity: 0.92;
+	wash-color: cText;
+}
+
+.TDSkillPanelHeader
+{
+	width: 100%;
+	height: 34px;
+}
+
+.TDSkillCount
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 14px;
+	font-size: 14px;
+	color: cTextMid;
+}
+
+#TDSkillSlots
+{
+	margin-left: 18px;
+	margin-top: 44px;
+	width: 296px;
+	height: 72px;
+	flow-children: right;
+}
+
+.TDSkillSlot
+{
+	width: 46px;
+	height: 46px;
+	margin-right: 8px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+}
+
+.TDSkillSlot.Usable
+{
+	border: 1px solid cHairHi;
+}
+
+.TDSkillSlot.Usable:hover
+{
+	brightness: 1.5;
+}
+
+.TDSkillSlot.Passive
+{
+	brightness: 0.75;
+}
+
+.TDSkillSlot.ReadOnly
+{
+	brightness: 0.75;
+}
+
+.TDSkillSlot.ReadOnly:hover
+{
+	brightness: 0.75;
+}
+
+.TDSkillAbility
+{
+	width: 100%;
+	height: 100%;
+}
+
+.TDSkillSlot.Empty
+{
+	background-color: cGlassSolid;
+	border: 1px solid cHairLo;
+}
+
+.TDSelectedCourier #TDSkillSlots
+{
+	margin-left: 35px;
+	margin-top: 48px;
+	width: 260px;
+	height: 118px;
+	flow-children: right-wrap;
+}
+
+.TDSelectedCourier .TDSkillSlot
+{
+	width: 56px;
+	height: 56px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	border: 0px solid #00000000;
+	background-color: #00000000;
+}
+
+.TDSelectedCourier .TDSkillSlot.Usable
+{
+	border: 0px solid #00000000;
+}
+
+.TDSelectedCourier .TDSkillSlot.Passive
+{
+	brightness: 0.88;
+}
+
+.TDSelectedCourier .TDSkillSlot.Empty
+{
+	border: 0px solid #00000000;
+	background-color: #00000000;
+}
+
+.TDSelectedCourier .TDCourierSkillWoodCost
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin-right: 2px;
+	margin-bottom: 0px;
+	padding: 1px 2px 1px 2px;
+	border-radius: 2px;
+	background-color: cGlassSolid;
+}
+
+.TDSelectedCourier .TDCourierSkillWoodCost .TDResourceCostIcon
+{
+	width: 13px;
+	height: 13px;
+}
+
+.TDSelectedCourier .TDCourierSkillWoodCost .TDResourceCostValue
+{
+	font-size: 12px;
+	color: cWood;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.TDSelectedCourier .TDSkillAbility #AbilityCastRange,.TDSelectedCourier .TDSkillAbility #AbilityCastRangeBG,.TDSelectedCourier .TDSkillAbility #AbilityRange,.TDSelectedCourier .TDSkillAbility #AbilityRangeBG,.TDSelectedCourier .TDSkillAbility #CastRange,.TDSelectedCourier .TDSkillAbility #CastRangeBG,.TDSelectedCourier .TDSkillAbility #Range,.TDSelectedCourier .TDSkillAbility #RangeBG,.TDSelectedCourier .TDSkillAbility #RangeLabel
+{
+	visibility: collapse;
+}
+
+#TDSkillTree
+{
+	horizontal-align: center;
+	margin-top: 42px;
+	width: 300px;
+	height: 172px;
+	overflow: noclip;
+	visibility: collapse;
+}
+
+.TDSelectedCourier #TDSkillTree,.TDSelectedUnit #TDSkillTree,.TDSelectedEnemy #TDSkillTree
+{
+	visibility: collapse;
+}
+
+.TDSelectedTower #TDSkillSlots,.TDSelectedAllyTower #TDSkillSlots
+{
+	visibility: collapse;
+}
+
+#TDSkillTree.TowerBranchTree
+{
+	visibility: visible;
+}
+
+.TDSkillTreeMain
+{
+	margin-left: 0px;
+	margin-top: 52px;
+	width: 64px;
+	height: 64px;
+	border-radius: 3px;
+	border: 0px solid #00000000;
+	background-color: #00000000;
+	overflow: noclip;
+	z-index: 6;
+}
+
+.TDSkillTreeMain.Usable:hover
+{
+	brightness: 1.35;
+}
+
+.TDSkillTreeMain.ReadOnly
+{
+	brightness: 0.82;
+}
+
+.TDSkillTreeMain.Empty
+{
+	border: 1px solid cHairLo;
+	background-color: cGlassSolid;
+}
+
+.TDSkillTreeMainAbility
+{
+	width: 100%;
+	height: 100%;
+}
+
+.TDSkillTreeMainAbility #ButtonSize
+{
+	width: 64px;
+	height: 64px;
+}
+
+.TDSkillTreeMainAbility #ButtonWell
+{
+	width: fit-children;
+	height: fit-children;
+	background-size: 0px;
+}
+
+.TDSkillTreeMainAbility #AbilityImage,.TDSkillTreeMainAbility #Cooldown
+{
+	margin: 0px;
+	width: 64px;
+	height: 64px;
+}
+
+.TDSkillTreeMainAbility #AbilityBevel
+{
+	margin: 0px;
+}
+
+.TDSkillTreeMainAbility #Hotkey,.TDSkillTreeMainAbility #HotkeyModifier,.TDSkillTreeMainAbility #ManaCost,.TDSkillTreeMainAbility #ManaCostBG,.TDSkillTreeMainAbility #GoldCost,.TDSkillTreeMainAbility #GoldCostBG,.TDSkillTreeMainAbility #AbilityLevelContainer
+{
+	visibility: collapse;
+}
+
+.TDSkillTreeTrunkBase
+{
+	margin-left: 59px;
+	margin-top: 84px;
+	width: 212px;
+	height: 3px;
+	background-color: cLineIdle;
+}
+
+.TDSkillTreeSegment
+{
+	margin-top: 84px;
+	height: 3px;
+}
+
+.TDSkillTreeSegment.Stage1
+{
+	margin-left: 59px;
+	width: 60px;
+}
+
+.TDSkillTreeSegment.Stage2
+{
+	margin-left: 116px;
+	width: 79px;
+}
+
+.TDSkillTreeSegment.Stage3
+{
+	margin-left: 192px;
+	width: 79px;
+}
+
+.TDSkillTreeSegment.Locked,.TDSkillBranchConnector.Locked
+{
+	background-color: cLineIdle;
+	z-index: 1;
+}
+
+.TDSkillTreeSegment.Available,.TDSkillBranchConnector.Available
+{
+	background-color: cDataDim;
+	z-index: 2;
+}
+
+.TDSkillTreeSegment.Selected,.TDSkillBranchConnector.Selected
+{
+	background-color: cAmber;
+	z-index: 4;
+}
+
+.TDSkillTreeSegment.Pending,.TDSkillBranchConnector.Pending
+{
+	background-color: cData;
+	z-index: 5;
+}
+
+.TDSkillTreeSegment.Rejected,.TDSkillBranchConnector.Rejected
+{
+	background-color: cLineRejected;
+	z-index: 1;
+}
+
+.TDSkillBranchConnector
+{
+	width: 3px;
+}
+
+.TDSkillBranchConnector.Stage1
+{
+	margin-left: 116px;
+}
+
+.TDSkillBranchConnector.Stage2
+{
+	margin-left: 192px;
+}
+
+.TDSkillBranchConnector.Stage3
+{
+	margin-left: 268px;
+}
+
+.TDSkillBranchConnector.Upper
+{
+	margin-top: 42px;
+	height: 42px;
+}
+
+.TDSkillBranchConnector.Lower
+{
+	margin-top: 87px;
+	height: 25px;
+}
+
+.TDSkillBranchNode
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+	overflow: noclip;
+	z-index: 6;
+}
+
+.TDSkillBranchNode.Stage1
+{
+	margin-left: 90px;
+}
+
+.TDSkillBranchNode.Stage2
+{
+	margin-left: 166px;
+}
+
+.TDSkillBranchNode.Stage3
+{
+	margin-left: 242px;
+}
+
+.TDSkillBranchNode.Upper
+{
+	margin-top: -4px;
+}
+
+.TDSkillBranchNode.Lower
+{
+	margin-top: 110px;
+}
+
+.TDSkillBranchNode.Available
+{
+	border: 1px solid cDataDim;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassSolid), to(cGlassDeep));
+	animation-name: TDSkillBranchAvailablePulse;
+	animation-duration: 1.45s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.TDSkillBranchNode.Available:hover
+{
+	brightness: 1.12;
+}
+
+.TDSkillBranchNode.Pending
+{
+	border: 2px solid cData;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassRaise), to(cGlassDeep));
+	brightness: 1.25;
+}
+
+.TDSkillBranchNode.Selected
+{
+	border: 2px solid cAmber;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassSelWarm), to(#11110bee));
+}
+
+.TDSkillBranchNode.Rejected
+{
+	opacity: 0.42;
+	saturation: 0.25;
+}
+
+.TDSkillBranchNode.Locked
+{
+	opacity: 0.5;
+	saturation: 0.2;
+}
+
+.TDSkillBranchIcon
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 2px;
+	saturation: 0.75;
+	brightness: 0.85;
+	overflow: clip;
+}
+
+.TDSkillBranchIconBase
+{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDSkillBranchCooldownMask
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim80;
+	visibility: collapse;
+}
+
+.TDSkillBranchCooldownText
+{
+	color: #ffffff;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	font-size: 28px;
+	text-shadow: 0px 0px 6px 6 #000000;
+	width: 100%;
+	text-align: center;
+	vertical-align: center;
+	text-overflow: shrink;
+	visibility: collapse;
+}
+
+.TDSkillBranchNode.Cooling .TDSkillBranchCooldownMask
+{
+	visibility: visible;
+}
+
+.TDSkillBranchNode.Cooling .TDSkillBranchCooldownText
+{
+	visibility: visible;
+}
+
+.TDSkillBranchNode.Pending .TDSkillBranchIcon,.TDSkillBranchNode.Selected .TDSkillBranchIcon
+{
+	saturation: 1;
+	brightness: 1;
+}
+
+.TDSkillBranchNode.Available .TDSkillBranchIcon
+{
+	saturation: 0.35;
+	brightness: 0.72;
+	wash-color: cDimWash;
+}
+
+.TDSkillBranchNode.Cooling .TDSkillBranchIconBase
+{
+	saturation: 0.6;
+	brightness: 0.82;
+	contrast: 0.95;
+	wash-color: cScrim40;
+}
+
+@keyframes 'TDSkillBranchAvailablePulse'
+{
+	0%
+	{
+		border: 1px solid cDataDim;
+		box-shadow: cDataGlow 0px 0px 0px 0px;
+	}
+	
+	50%
+	{
+		border: 1px solid cData;
+		box-shadow: cDataGlow 0px 0px 10px 1px;
+	}
+	
+	100%
+	{
+		border: 1px solid cDataDim;
+		box-shadow: cDataGlow 0px 0px 0px 0px;
+	}
+	
+}
+
+#TDDevouredPanel
+{
+	width: 256px;
+	height: 224px;
+}
+
+#TDEnemyResistancePanel
+{
+	width: 100%;
+	height: 100%;
+	visibility: collapse;
+}
+
+.TDSelectedEnemy #TDEnemyResistancePanel
+{
+	visibility: visible;
+}
+
+.TDSelectedEnemy #TDDevouredHeader,.TDSelectedEnemy #TDDevouredGrid
+{
+	visibility: collapse;
+}
+
+.TDSelectedCourier #TDDevouredPanel
+{
+	visibility: collapse;
+}
+
+#TDDevouredGrid
+{
+	margin-left: 12px;
+	margin-top: 38px;
+	width: 232px;
+	height: 176px;
+	flow-children: right-wrap;
+}
+
+.TDDevouredSlot
+{
+	width: 53px;
+	height: 68px;
+	margin-right: 4px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border: 1px solid cHair;
+	background-color: cGlassSolid;
+}
+
+.TDDevouredSlotIconWrap
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 1px;
+	width: 49px;
+	height: 49px;
+	z-index: 1;
+}
+
+.TDDevouredSlotAbility,.TDDevouredSlotIcon
+{
+	width: 100%;
+	height: 100%;
+	border-radius: 2px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TDDevouredSlot.HasSkill:hover
+{
+	brightness: 1.35;
+}
+
+.TDDevouredSlot.Empty
+{
+	border: 1px solid cHairLo;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGlassSolid), to(cGlassDeep));
+}
+
+.TDDevouredBranchDots
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: -4px;
+	width: fit-children;
+	height: 18px;
+	z-index: 10;
+	flow-children: down;
+}
+
+.TDDevouredBranchDotRow
+{
+	horizontal-align: center;
+	width: fit-children;
+	height: 8px;
+	flow-children: right;
+}
+
+.TDDevouredBranchDot
+{
+	width: 11px;
+	height: 4px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-bottom: 1px;
+	border-radius: 1px;
+	background-color: #201b0c;
+	border: 1px solid cAmberBorder;
+	box-shadow: fill cScrim60 0px 0px 2px 0px;
+}
+
+.TDDevouredBranchDot.Selected
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cAmberBright), color-stop(0.45, cAmber), to(cAmberDim));
+	border: 1px solid cAmberBright;
+	box-shadow: fill cAmberGlow 0px 0px 5px 0px;
+}
+
+#TutorialGuideHost
+{
+	width: 100%;
+	height: 100%;
+	z-index: 140;
+}
+
+.DevourTargetPreviewHost
+{
+	visibility: collapse;
+	z-index: 210;
+}
+
+.DevourTargetPreviewHost.DevourPreviewVisible
+{
+	visibility: visible;
+}
+

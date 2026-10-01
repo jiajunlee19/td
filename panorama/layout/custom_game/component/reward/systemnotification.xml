@@ -1,0 +1,23 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/reward/systemnotification.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/reward/systemnotification.vjs_c" />
+	</scripts>
+	<snippets />
+	<Panel class="SystemNotificationRoot" hittest="false">
+		<Panel class="SystemNotificationContainer show FadeIn" id="SystemNotificationContainer">
+			<Image class="IconBg" id="IconBg">
+				<Image class="Icon" id="Icon" />
+				<Image class="Frame" id="Frame" />
+				<Image class="Tag" id="Tag" />
+			</Image>
+			<Label class="Title" id="Title" text="这里是标题文本" html="true" />
+			<Label class="Desc" id="Desc" text="这里是描述文本这里是描述文本这里是描述文本这里是描述文本" html="true" />
+		</Panel>
+	</Panel>
+</root>

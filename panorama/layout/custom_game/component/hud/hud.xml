@@ -1,0 +1,875 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/hud/dota_hud_xp.vcss_c" />
+		<include src="s2r://panorama/styles/hud/dota_hud_health_mana.vcss_c" />
+		<include src="s2r://panorama/styles/hud/dota_hud_pregame.vcss_c" />
+		<include src="s2r://panorama/styles/hud/dota_hud_ability_panel.vcss_c" />
+		<include src="s2r://panorama/styles/custom_ui.vcss_c" />
+		<include src="s2r://panorama/styles/hud/dota_hud_aghs_status_display.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/hud_tokens.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/hud.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/class/game_attr_panel.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/building/building_helper.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/building/building_draw_picker.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/building/tower_choice.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/courier_reforge/courier_reforge_picker.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/tower_evolution_state.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan_data.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/setting/key_binding.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/sequence_actions.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/dota_sequence_actions.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/class/game_attr_panel_layout.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/class/game_attr_panel.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/class/overhead.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/building/building_helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/building/building_draw_picker.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/building/tower_choice.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/courier_reforge/courier_reforge_picker.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/building/building_adapter.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/hero_ability_feature_view.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/tutorial/tutorial_guide.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/hud.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="TowerChoiceHeroCard">
+			<Panel class="TowerChoiceHeroCard" hittest="true" hittestchildren="false">
+				<Image id="TowerChoiceHeroImage" class="TowerChoiceHeroImage" hittest="false" />
+				<Label id="TowerChoiceHeroName" class="TowerChoiceHeroName" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="attrPanelCell">
+			<Panel class="attrPanelCell" hittest="false" hittestchildren="false">
+				<Label id="attr_Name" class="AttrName" />
+				<Label id="attr_LocalValue" class="AttrNumber" />
+				<Label id="attr_GlobalValue" class="AttrNumber" />
+				<Label id="attr_Value" class="AttrNumber AttrResult" />
+			</Panel>
+		</snippet>
+		<snippet name="attrMatrixRow">
+			<Panel class="AttrMatrixRow" hittest="false" hittestchildren="true">
+				<Label id="AttrTypeName" class="AttrMatrixName" hittest="false" />
+				<Label id="AttrMatrixValue0" class="AttrMatrixNumber" hittest="true" />
+				<Label id="AttrMatrixValue1" class="AttrMatrixNumber" hittest="true" />
+				<Label id="AttrMatrixValue2" class="AttrMatrixNumber" hittest="true" />
+				<Label id="AttrMatrixValue3" class="AttrMatrixNumber" hittest="true" />
+				<Label id="AttrMatrixValue4" class="AttrMatrixNumber" hittest="true" />
+				<Label id="AttrMatrixValue5" class="AttrMatrixNumber" hittest="true" />
+			</Panel>
+		</snippet>
+		<snippet name="settingCell">
+			<Panel class="settingCell" hittest="true">
+				<Image id="toggleBg" hittest="false">
+					<Image id="toggleIcon" hittest="false" />
+				</Image>
+				<Label id="settingName" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="Setting">
+			<Panel class="SettingPanelAnimation SettingHidden" hittest="false">
+				<Panel id="SettingMask" />
+				<Panel id="SettingGrid" />
+				<Panel id="KeyBindingGrid">
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#dota_settings_selectcourier" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="CourierSelect" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#custom_setting_show_attrpanel" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="ScoreboardToggle" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#custom_setting_skill_q" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="AbilityPrimary1" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#custom_setting_skill_w" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="AbilityPrimary2" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#custom_setting_skill_e" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="AbilityPrimary3" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#custom_setting_skill_d" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="AbilitySecondary1" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#custom_setting_skill_f" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="AbilitySecondary2" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+					<Panel class="CustomKeyBindingCell">
+						<Label id="desc" html="true" text="#custom_setting_skill_r" />
+						<DOTASettingsKeyBinder id="AbilityBinder" bind="AbilityUltimate" class="Custom HeroAbilityBindAbilityButton" onmouseout="UIHideTextTooltip()" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="BuildingDrawBanButton">
+			<Button class="BuildingDrawActionButton BuildingDrawBanButton" enabled="true" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#ui_buildsystem_draw_ban_tooltip&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel class="BuildingDrawRefundContent" hittest="false">
+					<Label id="BuildingDrawBanPrefix" text="#ui_buildsystem_draw_ban" hittest="false" />
+					<Panel id="BuildingDrawBanRefund" hittest="false" />
+					<Label id="BuildingDrawBanSuffix" hittest="false" />
+				</Panel>
+			</Button>
+		</snippet>
+		<snippet name="BuildingDrawBans">
+			<Panel class="BuildingDrawBans" hittest="false" hittestchildren="true">
+				<Label id="BuildingDrawBanCount" class="BuildingDrawBanCount" onmouseover="DOTAShowTextTooltip(&apos;#ui_buildsystem_draw_ban_rules&apos;)" onmouseout="DOTAHideTextTooltip()" />
+				<Label id="BuildingDrawBanHint" class="BuildingDrawBanHint" />
+				<Panel id="BuildingDrawBanRow1" class="BuildingDrawBanRow" />
+				<Panel id="BuildingDrawBanRow2" class="BuildingDrawBanRow" />
+				<Panel id="BuildingDrawBanRow3" class="BuildingDrawBanRow BuildingDrawBanDenseRow" />
+			</Panel>
+		</snippet>
+		<snippet name="BuildingDrawCardContent">
+			<Panel class="BuildingDrawCardContent" hittest="true" hittestchildren="false">
+				<Panel id="BuildingDrawPreview" class="BuildingDrawPreview" hittest="false">
+					<Image id="BuildingDrawSceneFallback" class="BuildingDrawSceneFallback" hittest="false" />
+					<Panel id="BuildingDrawSceneHost" class="BuildingDrawSceneHost" hittest="false" />
+					<Panel class="BuildingDrawSceneVignette" hittest="false" />
+				</Panel>
+				<Panel class="BuildingDrawTitleRow" hittest="false">
+					<Label id="BuildingDrawName" class="BuildingDrawName" text="" hittest="false" />
+					<Panel id="BuildingDrawPrimaryIcon" class="BuildingDrawPrimaryIcon TDPrimaryAttributeIcon" hittest="false" />
+				</Panel>
+				<Panel class="BuildingDrawBaseStats" hittest="false">
+					<Panel class="BuildingDrawBaseStatCell" hittest="false">
+						<Panel class="BuildingDrawBaseStatIcon TDStatStrength" hittest="false" />
+						<Label class="BuildingDrawBaseStatName" text="#DOTA_HeroSelectorCategory_PrimaryAttribute_Strength" hittest="false" />
+						<Label id="BuildingDrawStrengthValue" class="BuildingDrawBaseStatValue" text="" hittest="false" />
+					</Panel>
+					<Panel class="BuildingDrawBaseStatCell" hittest="false">
+						<Panel class="BuildingDrawBaseStatIcon TDStatAgility" hittest="false" />
+						<Label class="BuildingDrawBaseStatName" text="#DOTA_HeroSelectorCategory_PrimaryAttribute_Agility" hittest="false" />
+						<Label id="BuildingDrawAgilityValue" class="BuildingDrawBaseStatValue" text="" hittest="false" />
+					</Panel>
+					<Panel class="BuildingDrawBaseStatCell" hittest="false">
+						<Panel class="BuildingDrawBaseStatIcon TDStatIntelligence" hittest="false" />
+						<Label class="BuildingDrawBaseStatName" text="#DOTA_HeroSelectorCategory_PrimaryAttribute_Intelligence" hittest="false" />
+						<Label id="BuildingDrawIntelligenceValue" class="BuildingDrawBaseStatValue" text="" hittest="false" />
+					</Panel>
+				</Panel>
+				<Panel id="BuildingDrawMeta" class="BuildingDrawMeta" hittest="false" />
+				<Panel class="BuildingDrawSkill" hittest="false">
+					<Image id="BuildingDrawSkillIcon" class="BuildingDrawSkillIcon" hittest="false" />
+					<Panel class="BuildingDrawSkillText" hittest="false">
+						<Label id="BuildingDrawSkillName" class="BuildingDrawSkillName" text="" hittest="false" />
+						<Panel id="BuildingDrawSkillDamageSummary" class="BuildingDrawSkillDamageSummary" hittest="false" />
+						<Label id="BuildingDrawSkillDesc" class="BuildingDrawSkillDesc" html="true" text="" hittest="false" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="TDSaveBattleEntryContent">
+			<Panel class="TDSaveBattleEntryContent" hittest="false" hittestchildren="true">
+				<Panel class="TDSaveBattleRail" hittest="false" />
+				<Panel class="TDSaveBattleInfo" hittest="false">
+					<Label id="TDSaveBattleEntryName" class="TDSaveBattleName" text="" hittest="false" />
+					<Label id="TDSaveBattleEntryMeta" class="TDSaveBattleMeta" text="" hittest="false" />
+					<Label id="TDSaveBattleEntryDrop" class="TDSaveBattleDrop Hidden" text="" hittest="false" />
+					<Panel id="TDSaveBattleEntryDepthMini" class="TDSaveBattleDepthMini Hidden" hittest="false" />
+				</Panel>
+				<Panel class="TDSaveBattleRight" hittest="false" hittestchildren="true">
+					<Label id="TDSaveBattleEntryStatus" class="TDSaveBattleStatus" text="" hittest="false" />
+					<Label id="TDSaveBattleEntryDepthCount" class="TDSaveBattleDepthCount Hidden" text="" hittest="false" />
+					<Button id="TDSaveBattleEntryStartButton" class="TDSaveBattleStartButton Hidden" hittest="true" hittestchildren="false">
+						<Label id="TDSaveBattleEntryStartText" text="" hittest="false" />
+					</Button>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="TDRelicInventoryRowContent">
+			<Panel class="TDRelicInventoryRowContent panel-hidden" hittest="false" hittestchildren="false">
+				<Panel id="TDRelicInventoryRowIconFrame" class="TDRelicInventoryRowIconFrame" hittest="false">
+					<Image id="TDRelicInventoryRowIcon" class="TDRelicInventoryRowIcon" hittest="false" />
+				</Panel>
+				<Panel class="TDRelicInventoryRowInfo" hittest="false">
+					<Label id="TDRelicInventoryRowName" class="TDRelicInventoryRowName" text="" hittest="false" />
+					<Label id="TDRelicInventoryRowDescription" class="TDRelicInventoryRowDescription" text="" html="true" hittest="false" />
+				</Panel>
+				<Panel class="TDRelicInventoryRowBadges" hittest="false" hittestchildren="false">
+					<Label id="TDRelicInventoryRowQuality" class="TDRelicInventoryRowQuality" text="" hittest="false" />
+					<Label id="TDRelicInventoryRowCount" class="TDRelicInventoryRowCount" text="" hittest="false" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="fill">
+		<Panel id="TDHudActionLayer" hittest="false" hittestchildren="true" />
+		<Panel id="TDHudOverlay" class="TDHudIntroPending" hittest="false" hittestchildren="true">
+			<Panel id="TDTopGradientMask" hittest="false" />
+			<Panel id="TDBottomGradientMask" hittest="false" />
+			<Panel id="TDTopStatus" class="TDGlassPanel">
+				<Panel class="TDGlassSheen" hittest="false" />
+				<Panel id="TDStatusRow1">
+					<Panel id="TDStatusLogo" hittest="false">
+						<Panel id="TDStatusLogoChinese" class="TDStatusLogoImage" hittest="false" />
+						<Panel id="TDStatusLogoEnglish" class="TDStatusLogoImage" hittest="false" />
+					</Panel>
+					<Panel id="TDStatusRow1Left" hittest="false" hittestchildren="true">
+						<Panel id="TDAbandonButton" class="TDAbandonButton">
+							<Label class="TDAbandonLabel" text="#hud_abandon_button" />
+						</Panel>
+						<Panel id="TDAccelButton" class="TDAccelButton">
+							<Label class="TDAccelLabel" text="#hud_accel_button" />
+						</Panel>
+					</Panel>
+					<Panel id="TDDifficultyMetric" class="TDTopMetric TDDifficultyMetric">
+						<Label class="TDMetricName" text="#outgame_rank_difficulty" />
+						<Label id="TDDifficultyValue" class="TDMetricValue" text="-" />
+					</Panel>
+					<Panel id="TDStatusRow1Right">
+						<Panel id="TDMonsterMetric" class="TDTopMetric TDMonsterMetric">
+							<Label class="TDMetricName" text="#hud_top_metric_monsters" />
+							<Panel class="TDMetricValRow">
+								<Label id="TDMonsterValue" class="TDMetricValue" text="0 / 0" />
+								<Label id="TDOverflowValue" class="TDOverflowValue" text="#hud_top_metric_stable" />
+							</Panel>
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel id="TDStatusRow2">
+					<Panel id="TDNextWavePreview">
+						<Label class="TDPreviewLabel" text="#hud_top_metric_time" />
+						<Label class="TDPreviewArrow" text="▶" />
+						<Panel id="TDNextWaveBossBadge" class="TDNextWaveBossBadge Hidden">
+							<Label class="TDNextWaveBossText" text="BOSS" />
+						</Panel>
+						<Label id="TDNextWaveName" class="TDPreviewName" text="-" />
+						<Panel id="TDNextWaveTags" class="TDNextWaveTags" />
+					</Panel>
+					<Label id="TDFinalBossCountdown" class="TDFinalBossCountdown Hidden" text="00:00" hittest="false" />
+					<Label id="TDPrepCountdown" class="TDPrepCountdown Hidden" text="00:00" hittest="false" />
+					<Panel id="TDStatusRightCluster">
+						<Panel class="TDTopMetric TDWaveMetric">
+							<Label class="TDMetricName" text="#hud_top_metric_wave" />
+							<Label id="TDWaveValue" class="TDMetricValue" text="0" />
+						</Panel>
+						<Panel class="TDTopMetric TDRewardMetric">
+							<Label class="TDMetricName" text="#hud_top_metric_wave_reward" />
+							<Label id="TDWaveRewardValue" class="TDWaveRewardValue" text="" />
+						</Panel>
+					</Panel>
+					<Panel id="TDSaveBattleStatusRow" class="TDSaveBattleStatusRow Hidden" hittest="false">
+						<Label id="TDSaveBattleStageTitle" class="TDSaveBattleStageTitle" text="-" />
+						<Label id="TDSaveBattleStageCountdown" class="TDSaveBattleStageCountdown" text="--:--" />
+						<Panel id="TDSaveBattleStageStatus" class="TDSaveBattleStageStatus">
+							<Panel class="TDSaveBattleStageStatusDot" />
+							<Label id="TDSaveBattleStageStatusLabel" class="TDSaveBattleStageStatusLabel" text="-" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel id="TDWaveProgress" hittest="false" hittestchildren="false">
+					<Panel id="TDWaveTrack" hittest="false" hittestchildren="false">
+						<Panel id="TDWaveLine" hittest="false" />
+						<Panel id="TDWaveStartCap" hittest="false" />
+						<Panel id="TDWaveFill" hittest="false" />
+						<Panel id="TDWaveArrow" hittest="false" />
+						<Label id="TDTimeValue" class="TDCountdownValue" text="00:00" hittest="false" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="TDResourceBar" class="TDGlassPanel">
+				<Panel class="TDGlassSheen" hittest="false" />
+				<Panel id="TDGoldResourceItem" class="TDResourceItem TDResourceGold tooltip-bottom" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#hud_resource_gold_tooltip&apos;)" onmouseout="DOTAHideTextTooltip()">
+					<Panel class="TDResourceIcon" />
+					<Label id="TDGoldValue" class="TDResourceValue" text="0" />
+				</Panel>
+				<Panel class="TDTopDivider" />
+				<Panel id="TDWoodResourceItem" class="TDResourceItem TDResourceWood tooltip-bottom" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#hud_resource_wood_tooltip&apos;)" onmouseout="DOTAHideTextTooltip()">
+					<Panel class="TDResourceIcon" />
+					<Label id="TDWoodValue" class="TDResourceValue" text="0" />
+				</Panel>
+				<Panel class="TDTopDivider" />
+				<Panel id="TDGloryResourceItem" class="TDResourceItem TDResourceGlory tooltip-bottom" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#hud_resource_glory_tooltip&apos;)" onmouseout="DOTAHideTextTooltip()">
+					<Panel class="TDResourceIcon" />
+					<Label id="TDGloryValue" class="TDResourceValue" text="0" />
+				</Panel>
+				<Panel class="TDTopDivider" />
+				<Panel id="TDFoodResourceItem" class="TDResourceItem TDResourceFood tooltip-bottom" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#hud_resource_food_tooltip&apos;)" onmouseout="DOTAHideTextTooltip()">
+					<Panel class="TDResourceIcon" />
+					<Label id="TDFoodValue" class="TDResourceValue" text="0 / 0" />
+				</Panel>
+			</Panel>
+			<Panel id="TDCourierRelicButton" class="TDCourierRelicButton TDGlassPanel clicksound" hittest="true" hittestchildren="false">
+				<Panel class="TDGlassSheen" hittest="false" />
+				<Panel class="TDCourierRelicMainRow" hittest="false">
+					<Image class="TDCourierRelicIcon" src="s2r://panorama/images/custom_game/hud/resources/resource_relic_png.vtex" hittest="false" />
+					<Label class="TDCourierRelicTitle" text="#hud_courier_relic_choose" hittest="false" />
+				</Panel>
+				<Label id="TDCourierRelicSummary" class="TDCourierRelicSummary" text="" hittest="false" />
+				<Label class="TDCourierRelicControlHint" text="#hud_relic_entry_controls" hittest="false" />
+			</Panel>
+			<Panel id="TDPlayerModifierBar" class="TDModifierBar TDPlayerModifierBar" hittest="false" hittestchildren="true" />
+			<Panel id="TDBossHealthBar" class="TDBossHealthBar" hittest="false" hittestchildren="false">
+				<Panel class="TDBossHealthGlow" />
+				<Panel class="TDBossHealthFrame">
+					<Label id="TDBossHealthName" class="TDBossHealthName" text="" />
+					<Panel class="TDBossHealthMeter">
+						<ProgressBar id="TDBossHealthProgress" class="TDBossHealthProgress" value="0" hittest="false">
+							<Panel id="TDBossHealthProgress_Left" class="ProgressBarLeft" hittest="false">
+								<Panel class="TDBossHealthSceneContainer" hittest="false">
+									<DOTAScenePanel id="TDBossHealthBurner" class="TDBossHealthBurner" map="scenes/hud/healthbarburner" renderdeferred="false" rendershadows="false" camera="camera_1" hittest="false" particleonly="true" />
+								</Panel>
+							</Panel>
+						</ProgressBar>
+						<Label id="TDBossHealthValue" class="TDBossHealthValue" text="" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="TDPartyPanel" class="TDGlassPanel">
+				<Panel class="TDGlassSheen" hittest="false" />
+				<Panel class="TDPanelHeader">
+					<Label class="TDPanelTitle" text="#hud_party_title" />
+					<Panel id="TDPartyCollapse" class="TDIconButton" hittest="true" hittestchildren="false">
+						<Label id="TDPartyCollapseLabel" text="&lt;" hittest="false" />
+					</Panel>
+				</Panel>
+				<Panel class="TDPartyColumns">
+					<Label class="TDPanelColumn TDPartyRankColumn" text="#hud_party_col_rank" />
+					<Label class="TDPanelColumn TDPartyNameColumn" text="#balance_team_name" />
+					<Label class="TDPanelColumn TDPartyPowerColumn" text="#hud_party_battle_power" />
+					<Label class="TDPanelColumn TDPartyDpsColumn" text="#hud_party_damage_share" />
+				</Panel>
+				<Panel id="TDPartyList" />
+			</Panel>
+			<Panel id="TDBattleLogPanel" class="TDGlassPanel">
+				<Panel class="TDGlassSheen" hittest="false" />
+				<Panel class="TDPanelHeader">
+					<Label class="TDPanelTitle" text="#hud_battle_log_title" />
+					<Panel id="TDBattleLogCollapse" class="TDIconButton">
+						<Label id="TDBattleLogCollapseLabel" text="&lt;" />
+					</Panel>
+				</Panel>
+				<Panel id="TDBattleLogList" />
+			</Panel>
+			<Panel id="TDSelectedModifierBar" class="TDModifierBar TDSelectedModifierBar" hittest="false" hittestchildren="true" />
+			<Panel id="TDRightStack">
+				<Panel id="TDSaveBattlePanel" class="TDGlassPanel SaveBattleHidden">
+					<Panel class="TDPanelHeader">
+						<Label class="TDPanelTitle" text="#save_battle_title" />
+					</Panel>
+					<Panel id="TDSaveBattleGrid" />
+				</Panel>
+				<Panel id="TDQuestPanel" class="TDGlassPanel NoTasks">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDPanelHeader">
+						<Label id="TDQuestTitle" class="TDPanelTitle" text="#quest_main_title" />
+						<Panel id="TDQuestPButton" class="TDRefreshButton" visible="false">
+							<Label id="TDQuestLabel" text="" />
+						</Panel>
+					</Panel>
+					<Panel id="TDQuestGrid" class="TDShopGrid" />
+				</Panel>
+				<Panel id="TDResourceExchangePanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDPanelHeader">
+						<Label class="TDPanelTitle" text="#resource_exchange_title" />
+					</Panel>
+					<Panel id="TDResourceExchangeLocked" class="TDPanelLockedOverlay" visible="false">
+						<Panel class="TDPanelLockedIcon" />
+						<Label id="TDResourceExchangeLockedLabel" class="TDPanelLockedLabel" text="" />
+					</Panel>
+					<Panel id="TDResourceExchangeRows" class="TDResourceExchangeRows" />
+				</Panel>
+				<Panel id="TDChallengePanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDPanelHeader">
+						<Label class="TDPanelTitle" text="#hud_courier_challenge_panel_title" />
+						<Label class="TDChallengeControlsHint" text="#hud_courier_challenge_controls" hittest="false" />
+					</Panel>
+					<Panel id="TDChallengeLocked" class="TDPanelLockedOverlay" visible="false">
+						<Panel class="TDPanelLockedIcon" />
+						<Label id="TDChallengeLockedLabel" class="TDPanelLockedLabel" text="" />
+					</Panel>
+					<Panel id="TDCourierChallengeGrid" class="TDChallengeGrid" />
+				</Panel>
+				<Panel id="TDConsumablePanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDPanelHeader">
+						<Label class="TDPanelTitle" text="#shop_consumable_title" />
+						<Label id="TDConsumableRefreshCountdown" class="TDEquipmentRefreshCountdown" text="" />
+						<Panel id="TDConsumableRefreshButton" class="TDRefreshButton">
+							<Panel id="TDConsumableRefreshIcon" class="TDEquipmentRefreshIcon TDRefreshIcon" />
+							<Label id="TDConsumableRefreshLabel" text="#shop_refresh" />
+							<Panel id="TDConsumableRefreshCost" class="TDEquipmentRefreshCost" />
+						</Panel>
+					</Panel>
+					<Panel id="TDConsumableGrid" class="TDShopGrid" />
+					<Panel id="TDConsumableLocked" class="TDPanelLockedOverlay" visible="false">
+						<Panel class="TDPanelLockedIcon" />
+						<Label id="TDConsumableLockedLabel" class="TDPanelLockedLabel" text="" />
+					</Panel>
+				</Panel>
+				<Panel id="TDEquipmentPanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDPanelHeader">
+						<Label class="TDPanelTitle" text="#shop_equipment_title" />
+						<Label id="TDEquipmentRefreshCountdown" class="TDEquipmentRefreshCountdown" text="" />
+						<Panel id="TDEquipmentRefreshButton" class="TDRefreshButton">
+							<Panel id="TDEquipmentRefreshIcon" class="TDEquipmentRefreshIcon TDRefreshIcon" />
+							<Label id="TDEquipmentRefreshLabel" text="#shop_refresh" />
+							<Panel id="TDEquipmentRefreshCost" class="TDEquipmentRefreshCost" />
+						</Panel>
+					</Panel>
+					<Panel id="TDEquipmentGrid" class="TDShopGrid" />
+					<Panel id="TDEquipmentLocked" class="TDPanelLockedOverlay" visible="false">
+						<Panel class="TDPanelLockedIcon" />
+						<Label id="TDEquipmentLockedLabel" class="TDPanelLockedLabel" text="" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="TDBottomDock">
+				<Panel id="TDMiniMapPanel" hittest="false" hittestchildren="true">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<DOTAMinimap id="minimap" hittest="true" />
+				</Panel>
+				<Panel id="TDTowerPanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel id="TDTowerPortrait" hittest="true" hittestchildren="false">
+						<Panel id="TDTowerPortraitFallback">
+							<Image id="TDTowerPortraitIcon" />
+							<DOTAHeroImage id="TDTowerPortraitHero" heroimagestyle="portrait" hittest="false" />
+						</Panel>
+						<DOTAPortrait id="TDTowerPortraitNative" hittest="false" />
+						<Panel id="TDTowerPortraitShade" hittest="false" />
+					</Panel>
+					<Panel id="TDTowerSummary">
+						<Panel id="TDTowerInfoSummary" class="Active">
+							<Panel class="TDTowerTitleRow">
+								<Panel id="TDTowerTitleNameGroup" class="TDTowerTitleNameGroup">
+									<Label id="TDTowerName" class="TDTowerName" text="-" />
+									<Panel id="TDTowerHeroTypeIcon" class="TDTowerTitlePrimaryIcon TDPrimaryAttributeIcon tooltip-bottom" hittest="true" hittestchildren="false" />
+								</Panel>
+								<Label id="TDTowerLevel" class="TDTowerLevel" text="Lv.0" />
+							</Panel>
+							<Panel id="TDTowerDetailRow">
+								<Panel id="TDTowerStatGrid">
+									<Panel id="TDTowerStrengthRow" class="TDTowerStat">
+										<Panel class="TDTowerStatIcon TDStatStrength" />
+										<Label class="TDTowerStatName" text="#DOTA_Hero_Selection_STR" />
+										<Label id="TDTowerStrength" class="TDTowerStatValue" text="0" />
+									</Panel>
+									<Panel id="TDTowerAgilityRow" class="TDTowerStat">
+										<Panel class="TDTowerStatIcon TDStatAgility" />
+										<Label class="TDTowerStatName" text="#DOTA_Hero_Selection_AGI" />
+										<Label id="TDTowerAgility" class="TDTowerStatValue" text="0" />
+									</Panel>
+									<Panel id="TDTowerIntelligenceRow" class="TDTowerStat">
+										<Panel class="TDTowerStatIcon TDStatIntelligence" />
+										<Label class="TDTowerStatName" text="#DOTA_Hero_Selection_INT" />
+										<Label id="TDTowerIntelligence" class="TDTowerStatValue" text="0" />
+									</Panel>
+									<Panel class="TDTowerStat">
+										<Panel class="TDTowerStatIcon TDStatAttack" />
+										<Label class="TDTowerStatName" text="#hud_tower_attr_attack" />
+										<Label id="TDTowerAttack" class="TDTowerStatValue" text="0" />
+									</Panel>
+								</Panel>
+								<Panel id="TDTowerMetaPanel" class="tooltip-top" hittest="true" hittestchildren="false">
+									<Panel class="TDTowerMetaRow">
+										<Label class="TDTowerMetaName" text="#hud_tower_meta_main_attack" />
+										<Panel id="TDTowerPrimaryDamageTypeIcon" class="TDTowerMetaIcon TDDamageAttributeIcon" />
+										<Label id="TDTowerPrimaryDamageType" class="TDTowerMetaValue" text="-" />
+									</Panel>
+									<Panel id="TDTowerAffinityRows" class="TDTowerAffinityRows" />
+								</Panel>
+							</Panel>
+							<Panel id="TDTowerTagList" />
+							<Panel id="TDTowerActionRow">
+								<Panel id="TDTowerUpgradeButton" class="TDTowerActionButton tooltip-top" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#ui_tower_upgrade_tip&apos;)" onmouseout="DOTAHideTextTooltip()">
+									<Label class="TDTowerActionName" text="#hud_tower_action_upgrade" />
+									<Panel id="TDTowerUpgradeCost" class="TDTowerActionCost" />
+								</Panel>
+								<Panel id="TDTowerMoveButton" class="TDTowerActionButton tooltip-top" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#ui_tower_move_tip&apos;)" onmouseout="DOTAHideTextTooltip()">
+									<Label class="TDTowerActionName" text="#hud_tower_action_move" />
+									<Panel id="TDTowerMoveCost" class="TDTowerActionCost TDTowerMoveCost" />
+								</Panel>
+								<Panel id="TDTowerDevourButton" class="TDTowerActionButton tooltip-top" hittestchildren="false">
+									<Label class="TDTowerActionName" text="#hud_tower_action_devour" />
+									<Panel id="TDTowerDevourCost" class="TDTowerActionCost TDTowerDevourCost" />
+								</Panel>
+							</Panel>
+						</Panel>
+						<Panel id="TDCourierSummary">
+							<Panel class="TDTowerTitleRow">
+								<Panel class="TDTowerTitleNameGroup">
+									<Label id="TDCourierName" class="TDTowerName" text="-" />
+									<Image id="TDCourierHeroTypeIcon" class="TDCourierHeroIcon" src="s2r://panorama/images/control_icons/24px/couriers.vsvg" hittest="false" />
+								</Panel>
+							</Panel>
+							<Panel id="TDCourierDetailRow">
+								<Panel id="TDCourierStatGrid">
+									<Panel class="TDTowerStat">
+										<Panel class="TDTowerStatIcon TDStatStrength" />
+										<Label class="TDTowerStatName" text="#DOTA_Hero_Selection_STR" />
+										<Label id="TDCourierStrength" class="TDTowerStatValue" text="0" />
+									</Panel>
+									<Panel class="TDTowerStat">
+										<Panel class="TDTowerStatIcon TDStatAgility" />
+										<Label class="TDTowerStatName" text="#DOTA_Hero_Selection_AGI" />
+										<Label id="TDCourierAgility" class="TDTowerStatValue" text="0" />
+									</Panel>
+									<Panel class="TDTowerStat">
+										<Panel class="TDTowerStatIcon TDStatIntelligence" />
+										<Label class="TDTowerStatName" text="#DOTA_Hero_Selection_INT" />
+										<Label id="TDCourierIntelligence" class="TDTowerStatValue" text="0" />
+									</Panel>
+								</Panel>
+								<Panel id="TDCourierReport">
+									<Panel class="TDCourierReportRow">
+										<Label class="TDCourierReportName" text="#hud_courier_report_damage" />
+										<Label id="TDCourierReportDamage" class="TDCourierReportValue" text="0" />
+									</Panel>
+									<Panel class="TDCourierReportRow">
+										<Label class="TDCourierReportName" text="#hud_courier_report_kills" />
+										<Label id="TDCourierReportKills" class="TDCourierReportValue" text="0" />
+									</Panel>
+									<Panel class="TDCourierReportRow">
+										<Label class="TDCourierReportName" text="#hud_courier_report_gold" />
+										<Label id="TDCourierReportGold" class="TDCourierReportValue" text="0" />
+									</Panel>
+									<Panel class="TDCourierReportRow">
+										<Label class="TDCourierReportName" text="#hud_courier_report_devour" />
+										<Label id="TDCourierReportDevour" class="TDCourierReportValue" text="0" />
+									</Panel>
+								</Panel>
+							</Panel>
+							<Panel id="TDCourierToggleRow">
+								<Panel id="TDCourierToggleDamage" class="TDCourierToggleButton" hittest="true" hittestchildren="false">
+									<Label class="TDCourierToggleName" text="#hud_setting_damage_number" hittest="false" />
+									<Label id="TDCourierToggleDamageState" class="TDCourierToggleState" hittest="false" />
+								</Panel>
+								<Panel id="TDCourierToggleGold" class="TDCourierToggleButton" hittest="true" hittestchildren="false">
+									<Label class="TDCourierToggleName" text="#hud_setting_gold_number" hittest="false" />
+									<Label id="TDCourierToggleGoldState" class="TDCourierToggleState" hittest="false" />
+								</Panel>
+								<Panel id="TDCourierToggleEffect" class="TDCourierToggleButton" hittest="true" hittestchildren="false">
+									<Label class="TDCourierToggleName" text="#hud_setting_skill_effect" hittest="false" />
+									<Label id="TDCourierToggleEffectState" class="TDCourierToggleState" hittest="false" />
+								</Panel>
+							</Panel>
+						</Panel>
+						<Panel id="TDEnemySummary">
+							<Panel class="TDEnemyTitleRow">
+								<Label id="TDEnemyName" class="TDEnemyName" text="-" />
+								<Panel class="TDEnemyTitleRightGroup">
+									<Panel class="TDEnemyTitleRightContent">
+										<Panel id="TDEnemyTagList" />
+										<Panel class="TDEnemyArmorBadge">
+											<Panel class="TDEnemyArmorIcon" />
+											<Label id="TDEnemyArmor" class="TDEnemyArmorValue" text="-" />
+										</Panel>
+									</Panel>
+								</Panel>
+							</Panel>
+							<Panel class="TDEnemyInfoRow">
+								<Panel class="TDEnemySkillBlock">
+									<Panel id="TDEnemyTraitGrid" />
+								</Panel>
+								<Panel class="TDEnemyVitalBlock">
+									<Panel class="TDEnemyStatusBar TDEnemyHealthStatusBar">
+										<ProgressBar id="TDEnemyHealthBar" class="TDEnemyDotaProgress TDEnemyDotaHealthProgress" hittest="false">
+											<Panel id="TDEnemyHealthBar_Left" class="ProgressBarLeft" hittest="false">
+												<Panel class="TDEnemyDotaSceneContainer" hittest="false">
+													<DOTAScenePanel id="TDEnemyHealthBurner" class="TDEnemyDotaBurner TDEnemyHealthBurner" map="scenes/hud/healthbarburner" renderdeferred="false" rendershadows="false" camera="camera_1" hittest="false" particleonly="true" />
+												</Panel>
+											</Panel>
+										</ProgressBar>
+										<Label id="TDEnemyHealth" class="TDEnemyBarText" text="-" />
+									</Panel>
+									<Panel class="TDEnemyStatusBar TDEnemyManaStatusBar">
+										<ProgressBar id="TDEnemyManaBar" class="TDEnemyDotaProgress TDEnemyDotaManaProgress" hittest="false">
+											<Panel id="TDEnemyManaBar_Left" class="ProgressBarLeft" hittest="false">
+												<Panel class="TDEnemyDotaSceneContainer" hittest="false">
+													<DOTAScenePanel id="TDEnemyManaBurner" class="TDEnemyDotaBurner TDEnemyManaBurner" map="scenes/hud/healthbarburner" renderdeferred="false" rendershadows="false" camera="camera_1" hittest="false" particleonly="true" />
+												</Panel>
+											</Panel>
+										</ProgressBar>
+										<Label id="TDEnemyMana" class="TDEnemyBarText" text="-" />
+									</Panel>
+								</Panel>
+							</Panel>
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel id="TDInventoryPanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDPanelHeader">
+						<Label class="TDPanelTitle" text="#hud_inventory_title" />
+						<Panel id="TDInventoryComposeButton" class="TDIconButton TDInventoryComposeButton tooltip-top" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#hud_inventory_compose_tooltip&apos;)" onmouseout="DOTAHideTextTooltip()">
+							<Image class="TDInventoryComposeIcon" src="s2r://panorama/images/spellicons/tinker_rearm_png.vtex" hittest="false" />
+						</Panel>
+					</Panel>
+					<Panel id="TDInventoryGrid" />
+				</Panel>
+				<Panel id="TDSkillPanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDSkillPanelHeader">
+						<Label id="TDSkillPanelTitle" class="TDPanelTitle" text="#hud_skill_title_triggered" />
+						<Label id="TDSkillCount" class="TDSkillCount" text="0/8" />
+					</Panel>
+					<Panel id="TDSkillSlots" />
+					<Panel id="TDSkillTree" />
+					<Panel id="TDSkillHelpButton" class="TDSkillHelpButton tooltip-top" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_help&apos;)" onmouseout="DOTAHideTextTooltip()">
+						<Panel class="TDSkillHelpButtonBg" hittest="false" />
+						<Image class="TDSkillHelpButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_help_png.vtex" hittest="false" />
+					</Panel>
+				</Panel>
+				<Panel id="TDDevouredPanel" class="TDGlassPanel">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel id="TDDevouredHeader" class="TDPanelHeader">
+						<Label class="TDPanelTitle" text="#hud_devoured_title" />
+						<Label id="TDDevouredCount" class="TDSkillCount" text="0/8" />
+					</Panel>
+					<Panel id="TDDevouredGrid" />
+					<Panel id="TDEnemyResistancePanel">
+						<Panel class="TDPanelHeader">
+							<Label class="TDPanelTitle" text="#hud_enemy_resistance" />
+						</Panel>
+						<Panel id="TDEnemyResistanceGrid" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel id="TDInventoryContextMenu" class="TDInventoryContextMenu">
+				<Panel id="TDInventoryContextSell" class="TDInventoryContextMenuButton clicksound">
+					<Label id="TDInventoryContextSellLabel" text="#hud_inventory_context_sell" />
+					<Panel id="TDInventoryContextSellPrice" class="TDInventoryContextSellPrice" />
+				</Panel>
+			</Panel>
+			<Panel id="TDRelicInventoryOverlay" class="TDRelicInventoryOverlay panel-hidden" hittest="false" hittestchildren="true">
+				<Panel id="TDRelicInventoryBackdrop" class="TDRelicInventoryBackdrop" hittest="true" hittestchildren="false" />
+				<Panel id="TDRelicInventoryWindow" class="TDRelicInventoryWindow TDGlassPanel" hittest="true" hittestchildren="true">
+					<Panel class="TDGlassSheen" hittest="false" />
+					<Panel class="TDRelicInventoryHeader" hittest="false" hittestchildren="true">
+						<Image class="TDRelicInventoryHeaderIcon" src="s2r://panorama/images/custom_game/hud/resources/resource_relic_png.vtex" hittest="false" />
+						<Label class="TDRelicInventoryTitle" text="#hud_relic_inventory_title" hittest="false" />
+						<Label id="TDRelicInventoryTotal" class="TDRelicInventoryTotal" text="" hittest="false" />
+						<Panel id="TDRelicInventoryClose" class="clicksound tooltip-bottom" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#DOTA_Close&apos;)" onmouseout="DOTAHideTextTooltip()">
+							<Panel class="TDRelicInventoryCloseIcon" hittest="false">
+								<Panel class="TDRelicInventoryCloseLine TDRelicInventoryCloseLineA" hittest="false" />
+								<Panel class="TDRelicInventoryCloseLine TDRelicInventoryCloseLineB" hittest="false" />
+							</Panel>
+						</Panel>
+					</Panel>
+					<Panel class="TDRelicInventoryHeaderLine" hittest="false" />
+					<Panel id="TDRelicInventoryScroll" class="TDRelicInventoryScroll" hittest="true" hittestchildren="true">
+						<Panel id="TDRelicInventoryGrid" class="TDRelicInventoryGrid" hittest="false" hittestchildren="true" />
+					</Panel>
+					<Label id="TDRelicInventoryEmpty" class="TDRelicInventoryEmpty" text="#hud_relic_inventory_empty" hittest="false" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="GameAttrPanel" hittest="true" hittestchildren="true" onactivate="()=&gt;{}">
+			<Panel id="attrPanelBackground" hittest="false" />
+			<Panel id="GameAttrPanelTitle" hittest="false">
+				<Label text="#topmenu_tool_attributes" />
+			</Panel>
+			<Panel id="GameAttrIdentity" hittest="false" hittestchildren="false">
+				<DOTAHeroImage id="GameAttrPortrait" heroimagestyle="landscape" class="AttrHidden" />
+				<Panel id="GameAttrIdentityText">
+					<Label id="GameAttrUnitName" />
+					<Label id="GameAttrUnitMeta" />
+				</Panel>
+				<Panel class="AttrSummary">
+					<Label text="#game_attr_11011" />
+					<Label id="GameAttrSummaryAttack" class="AttrSummaryValue" />
+				</Panel>
+				<Panel class="AttrSummary">
+					<Label text="#game_attr_11013" />
+					<Label id="GameAttrSummaryStrength" class="AttrSummaryValue" />
+				</Panel>
+				<Panel class="AttrSummary">
+					<Label text="#game_attr_11014" />
+					<Label id="GameAttrSummaryAgility" class="AttrSummaryValue" />
+				</Panel>
+				<Panel class="AttrSummary">
+					<Label text="#game_attr_11015" />
+					<Label id="GameAttrSummaryIntelligence" class="AttrSummaryValue" />
+				</Panel>
+			</Panel>
+			<Panel id="GameAttrPanelToolbar">
+				<TextEntry id="GameAttrPanelSearchInput" placeholder="#hud_attr_search" />
+				<ToggleButton id="GameAttrEffectiveOnly">
+					<Label text="#hud_attr_effective_only" hittest="false" />
+				</ToggleButton>
+			</Panel>
+			<Panel id="GameAttrDirectory">
+				<Label class="AttrDirectoryTitle" text="#hud_attr_directory" hittest="false" />
+				<Button id="AttrNav_basic" class="AttrNav" hittest="true" hittestchildren="false">
+					<Label class="AttrNavIndex" text="01" />
+					<Label class="AttrNavName" text="#hud_attr_group_basic" />
+				</Button>
+				<Button id="AttrNav_damage" class="AttrNav" hittest="true" hittestchildren="false">
+					<Label class="AttrNavIndex" text="02" />
+					<Label class="AttrNavName" text="#hud_attr_group_damage" />
+				</Button>
+				<Button id="AttrNav_skills" class="AttrNav" hittest="true" hittestchildren="false">
+					<Label class="AttrNavIndex" text="03" />
+					<Label class="AttrNavName" text="#hud_attr_group_skills" />
+				</Button>
+				<Button id="AttrNav_defense" class="AttrNav" hittest="true" hittestchildren="false">
+					<Label class="AttrNavIndex" text="04" />
+					<Label class="AttrNavName" text="#hud_attr_group_defense" />
+				</Button>
+				<Button id="AttrNav_growth" class="AttrNav" hittest="true" hittestchildren="false">
+					<Label class="AttrNavIndex" text="05" />
+					<Label class="AttrNavName" text="#hud_attr_group_growth" />
+				</Button>
+				<Button id="AttrNav_special" class="AttrNav" hittest="true" hittestchildren="false">
+					<Label class="AttrNavIndex" text="06" />
+					<Label class="AttrNavName" text="#hud_attr_group_special" />
+				</Button>
+				<Label class="AttrDirectoryHint" text="#hud_attr_directory_hint" hittest="false" />
+			</Panel>
+			<Panel id="GameAttrColumnHeader" class="AttrColumnHeader" hittest="false" hittestchildren="false">
+				<Label class="AttrName" text="#hud_attr_name" />
+				<Label class="AttrNumber" text="#hud_game_attr_panel_hero_attrs" />
+				<Label class="AttrNumber" text="#hud_game_attr_panel_global_attrs" />
+				<Label class="AttrNumber AttrResult" text="#hud_attr_result" />
+			</Panel>
+			<Panel id="attrPanelGridParent">
+				<Panel id="attrPanelGrid">
+					<Panel id="AttrGroup_basic" class="AttrGroup">
+						<Label id="AttrGroupTitle_basic" class="AttrGroupTitle" text="#hud_attr_group_basic" hittest="false" />
+						<Panel id="AttrRows_basic" class="AttrRows" hittest="false" hittestchildren="true" />
+					</Panel>
+					<Panel id="AttrGroup_damage" class="AttrGroup">
+						<Label id="AttrGroupTitle_damage" class="AttrGroupTitle" text="#hud_attr_group_damage" hittest="false" />
+						<Panel id="AttrRows_damage" class="AttrRows" hittest="false" hittestchildren="true" />
+						<Panel id="AttrMatrixControls">
+							<Label text="#hud_attr_matrix_scope" />
+							<Button id="AttrScope_merged" class="AttrScope" hittest="true" hittestchildren="false">
+								<Label text="#hud_attr_result" />
+							</Button>
+							<Button id="AttrScope_hero" class="AttrScope" hittest="true" hittestchildren="false">
+								<Label text="#hud_game_attr_panel_hero_attrs" />
+							</Button>
+							<Button id="AttrScope_global" class="AttrScope" hittest="true" hittestchildren="false">
+								<Label text="#hud_game_attr_panel_global_attrs" />
+							</Button>
+						</Panel>
+						<Panel id="AttrMatrix_typed_damage" class="AttrMatrix">
+							<Label class="AttrMatrixTitle" text="#hud_attr_typed_damage" hittest="false" />
+							<Panel class="AttrMatrixHeader" hittest="false" hittestchildren="false">
+								<Label class="AttrMatrixName" text="#hud_attr_type" />
+								<Label class="AttrMatrixNumber" text="#hud_attr_layer_base" />
+								<Label class="AttrMatrixNumber" text="#attr_series_20" />
+								<Label class="AttrMatrixNumber" text="#attr_series_30" />
+								<Label class="AttrMatrixNumber" text="#attr_series_40" />
+								<Label class="AttrMatrixNumber" text="#attr_series_50" />
+								<Label class="AttrMatrixNumber" text="#attr_series_60" />
+							</Panel>
+							<Panel id="AttrMatrixRows_typed_damage" class="AttrRows" />
+						</Panel>
+						<Panel id="AttrMatrix_typed_crit" class="AttrMatrix">
+							<Label class="AttrMatrixTitle" text="#hud_attr_typed_crit" hittest="false" />
+							<Panel class="AttrMatrixHeader" hittest="false" hittestchildren="false">
+								<Label class="AttrMatrixName" text="#hud_attr_type" />
+								<Label class="AttrMatrixNumber" text="#hud_attr_layer_base" />
+								<Label class="AttrMatrixNumber" text="#attr_series_20" />
+								<Label class="AttrMatrixNumber" text="#attr_series_30" />
+								<Label class="AttrMatrixNumber" text="#attr_series_40" />
+								<Label class="AttrMatrixNumber" text="#attr_series_50" />
+								<Label class="AttrMatrixNumber" text="#attr_series_60" />
+							</Panel>
+							<Panel id="AttrMatrixRows_typed_crit" class="AttrRows" />
+						</Panel>
+						<Panel id="AttrMatrix_typed_crit_damage" class="AttrMatrix">
+							<Label class="AttrMatrixTitle" text="#hud_attr_typed_crit_damage" hittest="false" />
+							<Panel class="AttrMatrixHeader" hittest="false" hittestchildren="false">
+								<Label class="AttrMatrixName" text="#hud_attr_type" />
+								<Label class="AttrMatrixNumber" text="#hud_attr_layer_base" />
+								<Label class="AttrMatrixNumber" text="#attr_series_20" />
+								<Label class="AttrMatrixNumber" text="#attr_series_30" />
+								<Label class="AttrMatrixNumber" text="#attr_series_40" />
+								<Label class="AttrMatrixNumber" text="#attr_series_50" />
+								<Label class="AttrMatrixNumber" text="#attr_series_60" />
+							</Panel>
+							<Panel id="AttrMatrixRows_typed_crit_damage" class="AttrRows" />
+						</Panel>
+					</Panel>
+					<Panel id="AttrGroup_skills" class="AttrGroup">
+						<Label id="AttrGroupTitle_skills" class="AttrGroupTitle" text="#hud_attr_group_skills" hittest="false" />
+						<Panel id="AttrRows_skills" class="AttrRows" hittest="false" hittestchildren="true" />
+					</Panel>
+					<Panel id="AttrGroup_defense" class="AttrGroup">
+						<Label id="AttrGroupTitle_defense" class="AttrGroupTitle" text="#hud_attr_group_defense" hittest="false" />
+						<Panel id="AttrRows_defense" class="AttrRows" hittest="false" hittestchildren="true" />
+					</Panel>
+					<Panel id="AttrGroup_growth" class="AttrGroup">
+						<Label id="AttrGroupTitle_growth" class="AttrGroupTitle" text="#hud_attr_group_growth" hittest="false" />
+						<Panel id="AttrRows_growth" class="AttrRows" hittest="false" hittestchildren="true" />
+					</Panel>
+					<Panel id="AttrGroup_special" class="AttrGroup">
+						<Label id="AttrGroupTitle_special" class="AttrGroupTitle" text="#hud_attr_group_special" hittest="false" />
+						<Panel id="AttrRows_special" class="AttrRows" hittest="false" hittestchildren="true" />
+					</Panel>
+					<Label id="GameAttrEmpty" class="AttrHidden" text="#hud_attr_no_data" hittest="false" />
+				</Panel>
+			</Panel>
+			<Label id="GameAttrFooter" text="#hud_attr_rules_hint" hittest="false" />
+			<Button id="GameAttrPanelCloseBtn" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#DOTA_Close&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Label text="×" />
+			</Button>
+		</Panel>
+		<Panel id="Setting" class="SettingPanelAnimation SettingHidden" hittest="false" />
+		<Panel id="OverHead" class="fill" hittest="false" hittestchildren="false" />
+		<Panel id="dropped_item_position_panel" hittest="false" />
+		<Panel id="BuildingDrawPickerRoot" class="BuildingDrawPickerRoot" hittest="true" />
+		<Panel id="BuildingDrawPendingChipRoot" class="BuildingDrawPendingChipRoot" hittest="false" hittestchildren="true" />
+		<Panel id="CourierReforgePickerRoot" class="CourierReforgePickerRoot" hittest="true" />
+		<Panel id="TowerChoiceRoot" class="TowerChoiceRoot TowerChoiceHidden" hittest="true" hittestchildren="true">
+			<Panel class="TowerChoiceWindow">
+				<Label class="TowerChoiceTitle" text="#ui_tower_choice_title" />
+				<Label class="TowerChoiceHint" text="#ui_tower_choice_hint" />
+				<Panel class="TowerChoiceToolbar">
+					<TextEntry id="TowerChoiceSearch" class="TowerChoiceSearch" placeholder="#ui_tower_choice_search" />
+					<Button id="TowerChoiceFilter0" class="TowerChoiceTab" hittestchildren="false">
+						<Label text="#ui_tower_choice_all" />
+					</Button>
+					<Button id="TowerChoiceFilter1" class="TowerChoiceTab" hittestchildren="false">
+						<Label text="#ui_tower_choice_strength" />
+					</Button>
+					<Button id="TowerChoiceFilter2" class="TowerChoiceTab" hittestchildren="false">
+						<Label text="#ui_tower_choice_agility" />
+					</Button>
+					<Button id="TowerChoiceFilter3" class="TowerChoiceTab" hittestchildren="false">
+						<Label text="#ui_tower_choice_intellect" />
+					</Button>
+					<Button id="TowerChoiceFilter4" class="TowerChoiceTab" hittestchildren="false">
+						<Label text="#ui_tower_choice_universal" />
+					</Button>
+				</Panel>
+				<Panel class="TowerChoiceBody">
+					<Panel id="TowerChoiceGrid" class="TowerChoiceGrid" hittest="false" hittestchildren="true">
+						<Label id="TowerChoiceEmpty" class="TowerChoiceEmpty" text="#ui_tower_choice_empty" />
+					</Panel>
+				</Panel>
+				<Panel class="TowerChoiceActions">
+					<Label id="TowerChoiceName" class="TowerChoiceName" />
+					<Button id="TowerChoiceConfirm" class="TowerChoiceAction TowerChoiceConfirm" hittestchildren="false">
+						<Label text="#ui_tower_choice_confirm" />
+					</Button>
+					<Button id="TowerChoiceClose" class="TowerChoiceAction" hittestchildren="false">
+						<Label text="#ui_tower_choice_cancel" />
+					</Button>
+					<Label class="TowerChoiceSendingLabel" text="#ui_tower_choice_sending" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="TutorialGuideHost" class="TutorialGuideHost" hittest="false" hittestchildren="true" />
+	</Panel>
+</root>

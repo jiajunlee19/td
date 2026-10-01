@@ -1,0 +1,1 @@
+"use strict";(function(){const e=GameUI.ArenaOutgame||{};const t=e.PageControllers||{};e.PageControllers=t;e.PageControllerRegistry={Register:function(e,n){if(!e||typeof n!=="function"){return}t[e]=n},Get:function(e){return t[e]||null}};GameUI.ArenaOutgame=e})();

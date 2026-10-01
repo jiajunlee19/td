@@ -1,0 +1,413 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/menu.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_panel.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_item_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_courier_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_lottery_pages.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_vip_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_save_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_hero_appearance_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/lottery_section/lottery_draw_pages.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/shop_section/shop_catalog_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/auction_section/auction_section_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/battlepass_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/daily_task_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/seven_day_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/month_card_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/activity_one_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/activity_two_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/rebate_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/mail_section/mail_section_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/rank_section/rank_section_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/equipment_section_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/gem_board_view.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/rune_board_view.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/rune_word_board_view.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/stone_board_view.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/codex_item_grid_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/equip_archive_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/hero_upgrade_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/debuff_archive_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/monster_archive_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_surfaces.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan_data.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_command_manager.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_data_store.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/redtipmanager/redtipmanager.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/utils/popmenu.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_shared.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_routes.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_page_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_route_store.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_red_tip_projection.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_sidebar.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_standard_page_controller.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/equipment_section_utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/equipment_slot_interaction.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/gem_board_view.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/rune_board_view.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/rune_compose_board_view.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/rune_word_board_view.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/stone_board_view.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/stone_upgrade_board_view.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/equipment_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_section_utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/codex_section_utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_item_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_courier_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_lottery_pages.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_vip_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_save_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_hero_appearance_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_daily_limit_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/lottery_section/lottery_draw_pages.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/lottery_section/lottery_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/shop_section/shop_section_utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/shop_section/shop_purchase_dialog.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/shop_section/shop_catalog_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/shop_section/shop_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/auction_section/auction_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/battlepass_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/daily_task_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/seven_day_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/month_card_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/activity_one_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/activity_two_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/rebate_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/activity_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/mail_section/mail_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/rank_section/rank_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/codex_item_grid_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/equip_archive_page.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/hero_upgrade_reward_resolver.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/hero_upgrade_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/debuff_archive_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/codex_wearable_models.generated.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/monster_archive_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/codex/codex_section_page.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_panel.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="OutgameEquipmentWorkspaceContent">
+			<Panel class="OutgameEquipmentWorkspace" hittest="false" hittestchildren="true">
+				<Panel class="OutgameEquipmentWorkspaceContentInset" hittest="false" hittestchildren="true">
+					<Panel id="EquipmentWorkspaceContent" class="OutgameEquipmentWorkspaceContent" hittest="false" hittestchildren="true" />
+				</Panel>
+				<Panel class="OutgameEquipmentWorkspaceHeader" hittest="false" hittestchildren="true">
+					<Panel class="OutgameEquipmentWorkspaceSummaryInset" hittest="false" hittestchildren="true">
+						<Panel id="EquipmentWorkspaceSummary" class="OutgameEquipmentWorkspaceSummary" hittest="false" hittestchildren="true" />
+					</Panel>
+					<Panel id="EquipmentWorkspaceTarget" class="OutgameEquipmentWorkspaceTarget" hittest="false" hittestchildren="true" />
+				</Panel>
+				<Panel id="EquipmentWorkspaceFooter" class="OutgameEquipmentWorkspaceFooter" hittest="false" hittestchildren="true" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentForgeMaterialsContent">
+			<Panel class="OutgameEquipmentForgeMaterials" hittest="false" hittestchildren="true">
+				<Label class="OutgameEquipmentForgeMaterialsTitle" text="#outgame_equipment_cost" hittest="false" />
+				<Panel class="OutgameEquipmentForgeMaterialsInset" hittest="false" hittestchildren="true">
+					<Panel id="ForgeMaterialsList" class="OutgameEquipmentForgeMaterialsList" hittest="true" hittestchildren="true" />
+				</Panel>
+				<Label id="ForgeMaterialsEmpty" class="OutgameEquipmentForgeMaterialsEmpty" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentForgeMaterialContent">
+			<Panel class="OutgameEquipmentForgeMaterial" hittest="false" hittestchildren="true">
+				<Panel id="ForgeMaterialIcon" class="OutgameEquipmentForgeMaterialIcon" hittest="true" hittestchildren="false" />
+				<Panel class="OutgameEquipmentForgeMaterialNameInset" hittest="false" hittestchildren="false">
+					<Label id="ForgeMaterialName" class="OutgameEquipmentForgeMaterialName" hittest="false" />
+				</Panel>
+				<Label id="ForgeMaterialCount" class="OutgameEquipmentForgeMaterialCount" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentRecoinActionsContent">
+			<Panel class="OutgameEquipmentOpChips" hittest="false" hittestchildren="true">
+				<Panel class="OutgameEquipmentOpChipRow" hittest="false" hittestchildren="true">
+					<Panel id="RecoinAction0" class="OutgameEquipmentOpChip" />
+					<Panel id="RecoinAction1" class="OutgameEquipmentOpChip Second" />
+				</Panel>
+				<Panel class="OutgameEquipmentOpChipRow Last" hittest="false" hittestchildren="true">
+					<Panel id="RecoinAction2" class="OutgameEquipmentOpChip" />
+					<Panel id="RecoinAction3" class="OutgameEquipmentOpChip Second" />
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentRecoinActionContent">
+			<Panel hittest="true" hittestchildren="true">
+				<Panel id="RecoinActionIcon" class="OutgameEquipmentOpChipIcon" hittest="true" hittestchildren="false" />
+				<Panel class="OutgameEquipmentOpChipBody" hittest="false" hittestchildren="false">
+					<Label id="RecoinActionName" class="OutgameEquipmentOpChipName" hittest="false" />
+					<Label id="RecoinActionMaterial" class="OutgameEquipmentOpChipMaterial" hittest="false" />
+				</Panel>
+				<Label id="RecoinActionCost" class="OutgameEquipmentOpChipCost" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentInheritPreviewContent">
+			<Panel hittest="true" hittestchildren="true">
+				<Label class="OutgameEquipmentInheritPreviewTitle" text="#outgame_equipment_inherit_preview" />
+				<Panel class="OutgameEquipmentInheritPreviewRow">
+					<Label class="OutgameEquipmentInheritPreviewCaption" text="#outgame_equipment_inherit_current_strength" />
+					<Label id="InheritCurrentStrength" class="OutgameEquipmentInheritPreviewValue" text="-" />
+				</Panel>
+				<Panel class="OutgameEquipmentInheritPreviewRow">
+					<Label class="OutgameEquipmentInheritPreviewCaption" text="#outgame_equipment_inherit_expected_strength" />
+					<Label id="InheritExpectedStrength" class="OutgameEquipmentInheritPreviewValue" text="-" />
+				</Panel>
+				<Panel id="InheritAttrList" class="OutgameEquipmentInheritAttrList">
+					<Label id="InheritAttrEmpty" class="OutgameEquipmentOperationAttrEmpty" text="#outgame_equipment_select_from_inventory" hittest="false" />
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentInheritAttrRowContent">
+			<Panel hittest="false" hittestchildren="false">
+				<Label id="AttrName" class="InheritAttrName" />
+				<Label id="AttrCurrent" class="InheritAttrValue" />
+				<Label class="InheritAttrArrow" text="→" />
+				<Label id="AttrExpected" class="InheritAttrValue" />
+				<Label id="AttrDelta" class="InheritAttrDelta" />
+			</Panel>
+		</snippet>
+		<snippet name="equip_pop_menu">
+			<Panel class="equip_pop_menu" hittest="true" onactivate="()=&gt;{}">
+				<Panel id="grid" />
+			</Panel>
+		</snippet>
+		<snippet name="RankSpeedRowContent">
+			<Panel class="RankRowContent" hittest="false" hittestchildren="true">
+				<Panel class="RankCell Column_rank" hittest="false">
+					<Image id="RankMedal" class="RankMedalIcon Hidden" hittest="false" />
+					<Panel id="RankBadge" class="RankBadge" hittest="false">
+						<Label id="RankBadgeText" class="RankBadgeText" text="" hittest="false" />
+					</Panel>
+				</Panel>
+				<Panel class="RankCell Column_player" hittest="false" hittestchildren="true">
+					<Panel id="RankPlayerBadge" class="RankPlayerBadge" hittest="false" hittestchildren="true">
+						<Panel class="RankPlayerAvatarHost" hittest="false" hittestchildren="true">
+							<DOTAAvatarImage id="RankPlayerAvatar" class="RankPlayerAvatar" hittest="true" hittestchildren="false" />
+						</Panel>
+						<DOTAUserName id="RankPlayerName" class="RankPlayerName" hittest="false" />
+					</Panel>
+					<Label id="RankUnknownPlayer" class="RankUnknownPlayer Hidden" text="-" hittest="false" />
+				</Panel>
+				<Panel class="RankCell Column_difficulty" hittest="false">
+					<Label id="RankCellDifficultyText" class="RankCellText" text="" hittest="false" />
+				</Panel>
+				<Panel class="RankCell Column_time" hittest="false">
+					<Label id="RankCellTimeText" class="RankCellText" text="" hittest="false" />
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="RankTeamSpeedRowContent">
+			<Panel class="RankRowContent" hittest="false" hittestchildren="true">
+				<Panel class="RankCell Column_rank" hittest="false">
+					<Image id="RankMedal" class="RankMedalIcon Hidden" hittest="false" />
+					<Panel id="RankBadge" class="RankBadge" hittest="false">
+						<Label id="RankBadgeText" class="RankBadgeText" text="" hittest="false" />
+					</Panel>
+				</Panel>
+				<Panel class="RankCell Column_team" hittest="false" hittestchildren="true">
+					<Panel id="RankTeamMembers" class="RankTeamMembers" hittest="false" hittestchildren="true">
+						<Panel class="RankTeamMemberRow" hittest="false" hittestchildren="true">
+							<Panel id="RankTeamMember0" class="RankTeamMember" hittest="false" hittestchildren="true">
+								<Panel class="RankTeamAvatarHost" hittest="false" hittestchildren="true">
+									<DOTAAvatarImage id="RankTeamAvatar0" class="RankTeamAvatar" hittest="true" hittestchildren="false" />
+								</Panel>
+								<DOTAUserName id="RankTeamName0" class="RankTeamName" hittest="false" />
+							</Panel>
+							<Panel id="RankTeamMember1" class="RankTeamMember" hittest="false" hittestchildren="true">
+								<Panel class="RankTeamAvatarHost" hittest="false" hittestchildren="true">
+									<DOTAAvatarImage id="RankTeamAvatar1" class="RankTeamAvatar" hittest="true" hittestchildren="false" />
+								</Panel>
+								<DOTAUserName id="RankTeamName1" class="RankTeamName" hittest="false" />
+							</Panel>
+						</Panel>
+						<Panel class="RankTeamMemberRow" hittest="false" hittestchildren="true">
+							<Panel id="RankTeamMember2" class="RankTeamMember" hittest="false" hittestchildren="true">
+								<Panel class="RankTeamAvatarHost" hittest="false" hittestchildren="true">
+									<DOTAAvatarImage id="RankTeamAvatar2" class="RankTeamAvatar" hittest="true" hittestchildren="false" />
+								</Panel>
+								<DOTAUserName id="RankTeamName2" class="RankTeamName" hittest="false" />
+							</Panel>
+							<Panel id="RankTeamMember3" class="RankTeamMember" hittest="false" hittestchildren="true">
+								<Panel class="RankTeamAvatarHost" hittest="false" hittestchildren="true">
+									<DOTAAvatarImage id="RankTeamAvatar3" class="RankTeamAvatar" hittest="true" hittestchildren="false" />
+								</Panel>
+								<DOTAUserName id="RankTeamName3" class="RankTeamName" hittest="false" />
+							</Panel>
+						</Panel>
+					</Panel>
+					<Label id="RankUnknownPlayer" class="RankUnknownPlayer Hidden" text="-" hittest="false" />
+				</Panel>
+				<Panel class="RankCell Column_difficulty" hittest="false">
+					<Label id="RankCellDifficultyText" class="RankCellText" text="" hittest="false" />
+				</Panel>
+				<Panel class="RankCell Column_time" hittest="false">
+					<Label id="RankCellTimeText" class="RankCellText" text="" hittest="false" />
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="RankEquipmentRowContent">
+			<Panel class="RankRowContent" hittest="false" hittestchildren="true">
+				<Panel class="RankCell Column_rank" hittest="false">
+					<Image id="RankMedal" class="RankMedalIcon Hidden" hittest="false" />
+					<Panel id="RankBadge" class="RankBadge" hittest="false">
+						<Label id="RankBadgeText" class="RankBadgeText" text="" hittest="false" />
+					</Panel>
+				</Panel>
+				<Panel class="RankCell Column_player" hittest="false" hittestchildren="true">
+					<Panel id="RankPlayerBadge" class="RankPlayerBadge" hittest="false" hittestchildren="true">
+						<Panel class="RankPlayerAvatarHost" hittest="false" hittestchildren="true">
+							<DOTAAvatarImage id="RankPlayerAvatar" class="RankPlayerAvatar" hittest="true" hittestchildren="false" />
+						</Panel>
+						<DOTAUserName id="RankPlayerName" class="RankPlayerName" hittest="false" />
+					</Panel>
+					<Label id="RankUnknownPlayer" class="RankUnknownPlayer Hidden" text="-" hittest="false" />
+				</Panel>
+				<Panel class="RankCell Column_score" hittest="false">
+					<Label id="RankCellScoreText" class="RankCellText" text="" hittest="false" />
+				</Panel>
+				<Panel class="RankCell Column_equipment" hittest="false">
+					<Panel id="RankEquipmentList" class="RankEquipmentList" hittest="false" hittestchildren="true">
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot0" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot1" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot2" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot3" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot4" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot5" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot6" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot7" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot8" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot9" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot10" class="RankEquipmentSlot" />
+						</Panel>
+						<Panel class="RankEquipmentSlotFrame">
+							<Panel id="RankEquipmentSlot11" class="RankEquipmentSlot" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentFilterContent">
+			<Panel class="OutgameEquipmentFilterContent" hittest="false">
+				<Label id="OutgameFilterLabel" class="OutgameEquipmentFilterLabel" text="" hittest="false" />
+				<Label id="OutgameFilterCount" class="OutgameEquipmentFilterCount OutgameOptionButtonCount" text="" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameHorizontalFilterContent">
+			<Panel class="OutgameHorizontalFilterContent" hittest="false">
+				<Label id="OutgameFilterLabel" class="OutgameRuneWordFilterLabel" text="" hittest="false" />
+				<Label id="OutgameFilterCount" class="OutgameRuneWordFilterCount OutgameOptionButtonCount" text="" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipmentInventoryCellContent">
+			<Panel class="OutgameEquipmentInventoryCellContent" hittest="false">
+				<Panel id="OutgameInventoryIconHost" class="OutgameEquipmentCellIcon" hittest="false" />
+				<Panel id="OutgameInventorySelectMark" class="OutgameEquipmentCellSelectMark" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameRuneInventoryCardContent">
+			<Panel class="OutgameRuneInventoryCardContent" hittest="false">
+				<Panel id="OutgameInventoryIconHost" class="OutgameRuneCardIcon" hittest="false" />
+				<Panel id="OutgameInventorySelectMark" class="OutgameRuneCardSelectMark" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameStoneInventoryCardContent">
+			<Panel class="OutgameStoneInventoryCardContent" hittest="false">
+				<Panel id="OutgameInventoryIconHost" class="OutgameStoneCardIcon" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameRuneWordRowContent">
+			<Panel class="OutgameRuneWordRowContent" hittest="false" hittestchildren="true">
+				<Image id="OutgameRuneWordIcon" class="OutgameRuneWordIcon" hittest="false" />
+				<Panel class="OutgameRuneWordInfo" hittest="false">
+					<Panel id="OutgameRuneWordNameRow" class="OutgameRuneWordNameRow" hittest="false">
+						<Label id="OutgameRuneWordName" class="OutgameRuneWordName" text="" hittest="false" />
+						<Label id="OutgameRuneWordCountTag" class="OutgameRuneWordCountTag" text="" hittest="false" />
+						<Label id="OutgameRuneWordActiveBadge" class="OutgameRuneWordActiveBadge Hidden" text="#outgame_rune_word_active" hittest="false" />
+					</Panel>
+					<Label id="OutgameRuneWordDesc" class="OutgameRuneWordDesc Hidden" text="" hittest="false" />
+				</Panel>
+				<Panel id="OutgameRuneWordSeq" class="OutgameRuneWordSeq" hittest="false" hittestchildren="true" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameGemMaterialCardContent">
+			<Panel class="OutgameGemMaterialCardContent" hittest="false" hittestchildren="true">
+				<Panel id="OutgameGemMaterialIcon" class="OutgameGemMaterialIcon" hittest="true" hittestchildren="true" />
+				<Panel class="OutgameGemMaterialId" hittest="false">
+					<Label id="OutgameGemMaterialName" class="OutgameGemMaterialName" text="" hittest="false" />
+					<Panel id="OutgameGemMaterialAttrs" class="OutgameGemMaterialAttrs" hittest="false" />
+				</Panel>
+				<Label id="OutgameGemMaterialOwn" class="OutgameGemMaterialOwn" text="" hittest="false" />
+				<Panel id="OutgameGemMaterialActionHost" class="OutgameGemMaterialActionHost" hittest="false" hittestchildren="true" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameEquipArchiveItemContent">
+			<Panel class="OutgameEquipArchiveItemContent" hittest="false">
+				<Panel class="OutgameEquipArchiveItemIconFrame OutgameIconWell" hittest="false">
+					<Image id="OutgameEquipArchiveItemIcon" class="OutgameEquipArchiveItemIcon" hittest="false" />
+					<Label id="OutgameEquipArchiveItemLock" class="OutgameEquipArchiveItemLock" text="#tooltip_ability_branch_status_locked" hittest="false" />
+				</Panel>
+				<Label id="OutgameEquipArchiveItemName" class="OutgameEquipArchiveItemName" text="" hittest="false" />
+				<Label id="OutgameEquipArchiveItemLevel" class="OutgameEquipArchiveItemLevel" text="" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="MailListItemContent">
+			<Panel class="MailListItemContent" hittest="false">
+				<Panel class="MailListTitleRow" hittest="false">
+					<Label id="MailListTitle" class="MailListTitle" text="" hittest="false" />
+					<Label id="MailListState" class="MailListState" text="" hittest="false" />
+				</Panel>
+				<Label id="MailListMeta" class="MailListMeta" text="" hittest="false" />
+			</Panel>
+		</snippet>
+		<snippet name="OutgameLotteryRevealCardContent">
+			<Panel class="OutgameLotteryRevealCardContent" hittest="false" hittestchildren="true">
+				<Panel id="OutgameLotteryRevealIconHost" class="OutgameLotteryRevealIcon OutgameLotteryRevealIconHost" hittest="false" hittestchildren="true" />
+				<Label id="OutgameLotteryRevealName" class="OutgameLotteryRevealName" text="" hittest="false" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="OutgamePanelHost fill panel-hidden" hittest="true" hittestchildren="true" onactivate="()=&gt;{}">
+		<Panel id="OutgamePanel" class="fill" hittest="true" hittestchildren="true" onactivate="()=&gt;{}">
+			<Panel id="OutgamePageHost" class="fill" hittest="true" hittestchildren="true" onactivate="()=&gt;{}" />
+			<Panel id="OutgameToastHost" class="fill" hittest="false" />
+			<Panel id="PopMenus" class="fill" hittest="false" />
+		</Panel>
+	</Panel>
+</root>

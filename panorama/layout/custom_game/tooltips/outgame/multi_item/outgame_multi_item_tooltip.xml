@@ -1,0 +1,50 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/equipment/outgame_equipment_tooltip.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/multi_item/outgame_multi_item_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/effect_tooltip_utils.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/multi_item/outgame_multi_item_tooltip.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="outgame_simple_item">
+			<Panel id="primary_equip" class="outgame_equipment">
+				<Panel id="BG" />
+				<Panel id="MainPanel">
+					<Panel class="title_block_bg" />
+					<Panel id="title_block">
+						<Panel class="EquipItem" id="Icon" />
+						<Label id="equipName" />
+						<Label id="equipType" />
+						<Label id="equipSubType" html="true" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</snippet>
+		<snippet name="tooltip_section_title">
+			<Panel class="tooltip_section_title TooltipCenteredSectionTitle">
+				<Panel class="tooltip_section_title_line" />
+				<Label id="tooltip_section_title_text" text="" />
+				<Panel class="tooltip_section_title_line" />
+			</Panel>
+		</snippet>
+		<snippet name="line">
+			<Panel />
+		</snippet>
+		<snippet name="TextPanel">
+			<Label html="true" />
+		</snippet>
+	</snippets>
+	<Panel class="Container">
+		<Panel id="Items" />
+		<Panel class="decorator">
+			<Panel class="decorator_RT" />
+			<Panel class="decorator_LB" />
+		</Panel>
+	</Panel>
+</root>

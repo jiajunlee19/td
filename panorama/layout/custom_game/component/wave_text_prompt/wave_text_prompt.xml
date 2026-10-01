@@ -1,0 +1,23 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/component/wave_text_prompt/wave_text_prompt.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/wave_text_prompt/wave_text_prompt.vjs_c" />
+	</scripts>
+	<Panel class="WaveTextPromptRoot fill" hittest="false" hittestchildren="false">
+		<Panel id="WaveTextPromptStage" class="WaveTextPromptStage">
+			<Panel id="WaveTextPromptBox" class="WaveTextPromptBox">
+				<Panel class="WaveTextPromptPlate" />
+				<Panel class="WaveTextPromptLine WaveTextPromptLineTop" />
+				<Panel class="WaveTextPromptLine WaveTextPromptLineBottom" />
+				<Panel class="WaveTextPromptLine WaveTextPromptLineLeft" />
+				<Panel class="WaveTextPromptLine WaveTextPromptLineRight" />
+				<Panel id="WaveTextPromptCharRow" class="WaveTextPromptCharRow" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

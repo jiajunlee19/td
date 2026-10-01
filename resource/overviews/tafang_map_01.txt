@@ -1,0 +1,8 @@
+tafang_map_01
+{
+	material materials/overviews/tafang_map_01.vmat
+	pos_x -5000
+	pos_y 5000
+	scale 9.766
+}
+

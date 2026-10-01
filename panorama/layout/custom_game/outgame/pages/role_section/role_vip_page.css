@@ -1,0 +1,378 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameRoleVipPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	overflow: clip;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#070d13), to(#05080c));
+}
+
+.OutgameVipHero
+{
+	width: 100%;
+	flow-children: down;
+	padding: 30px 20px 26px 20px;
+	background-color: #070d13;
+	background-image: url("s2r://panorama/images/custom_game/outgame/vip/vip_hero_bg_png.vtex");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-img-opacity: 1;
+	border-bottom: 1px solid cGoldBorder;
+}
+
+.OutgameVipMedallion
+{
+	horizontal-align: center;
+	margin-top: 0px;
+	width: 166px;
+	height: 166px;
+	transform: translateY(10px);
+	z-index: 1;
+	background-image: url("s2r://panorama/images/custom_game/outgame/vip/vip_medallion_png.vtex");
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.OutgameVipMedallionLevel
+{
+	width: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+	color: cGoldBright;
+	font-size: 46px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0px 2px 8px 3 #000000;
+}
+
+.OutgameVipTitle
+{
+	horizontal-align: center;
+	margin-top: 18px;
+	color: cCream;
+	font-size: 29px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-align: center;
+	text-shadow: 0px 2px 6px cScrim80;
+}
+
+.OutgameVipExp
+{
+	horizontal-align: center;
+	width: 480px;
+	flow-children: down;
+	margin-top: 14px;
+}
+
+.OutgameVipExpText
+{
+	horizontal-align: center;
+	color: cTan;
+	font-size: 15px;
+	text-align: center;
+}
+
+.OutgameVipExpBar
+{
+	horizontal-align: center;
+	width: 460px;
+	height: 10px;
+	margin-top: 8px;
+	overflow: clip;
+	border-radius: 5px;
+	background-color: #0b1116cc;
+	border: 1px solid cHairline;
+}
+
+.OutgameVipExpFill
+{
+	height: 100%;
+	border-radius: 5px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(cBlue), to(cGoldBright));
+}
+
+.OutgameVipSignIn
+{
+	horizontal-align: center;
+	flow-children: down;
+	margin-top: 18px;
+}
+
+.OutgameVipSignInState
+{
+	horizontal-align: center;
+	color: cGoldBright;
+	font-size: 15px;
+	text-align: center;
+}
+
+.OutgameVipSignInState.Done
+{
+	color: cGreen;
+}
+
+.OutgameVipSignInButton
+{
+	horizontal-align: center;
+	width: 200px;
+	height: 48px;
+	margin-top: 10px;
+}
+
+.OutgameVipSignInButtonText
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.OutgameVipShowcase
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	padding: 16px 22px 20px 22px;
+	border-top: 1px solid cGoldBorder;
+}
+
+.OutgameVipDetailHeader
+{
+	width: 100%;
+	height: 46px;
+	border-radius: 2px;
+}
+
+.OutgameVipDetailNav
+{
+	horizontal-align: center;
+	vertical-align: center;
+	flow-children: right;
+}
+
+.OutgameVipDetailTitleText
+{
+	vertical-align: center;
+	color: cCream;
+	font-size: 19px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.OutgameIconButton
+{
+	width: 34px;
+	height: 34px;
+	vertical-align: center;
+	border-radius: 2px;
+	background-color: cPanelRaised;
+	border: 1px solid cHairline;
+}
+
+.OutgameIconButtonPrev
+{
+	horizontal-align: left;
+	margin-left: 6px;
+}
+
+.OutgameIconButtonNext
+{
+	horizontal-align: right;
+	margin-right: 6px;
+}
+
+.OutgameIconButtonText
+{
+	horizontal-align: center;
+	vertical-align: center;
+	color: cSteel;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.OutgameVipBadge
+{
+	vertical-align: center;
+	margin-left: 12px;
+	padding: 2px 9px 3px 9px;
+	border-radius: 2px;
+	font-size: 13px;
+}
+
+.OutgameVipBadge.Live
+{
+	color: cGreen;
+	background-color: #12281c88;
+	border: 1px solid #7fe6a455;
+}
+
+.OutgameVipBadge.Preview
+{
+	color: cGoldBright;
+	background-color: #1a130788;
+	border: 1px solid cGoldBorder;
+}
+
+.OutgameVipCaption
+{
+	width: 100%;
+	height: 20px;
+	margin-top: 11px;
+	color: cTan;
+	font-size: 14px;
+	text-align: center;
+}
+
+.OutgameVipGiftButton.Hidden,.OutgameVipGiftLock.Hidden,.OutgameVipGiftClaimed.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameVipDetailBody
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: right;
+	margin-top: 14px;
+}
+
+.OutgameVipPerkCol
+{
+	width: 57%;
+	height: 100%;
+	flow-children: down;
+}
+
+.OutgameVipGiftCol
+{
+	width: 41%;
+	height: 100%;
+	margin-left: 2%;
+	flow-children: down;
+}
+
+.OutgameVipColHead
+{
+	width: 100%;
+	height: 28px;
+	margin-bottom: 11px;
+}
+
+.OutgameVipColTitle
+{
+	horizontal-align: left;
+	vertical-align: center;
+	color: cCream;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.OutgameVipGiftState
+{
+	horizontal-align: right;
+	vertical-align: center;
+	padding: 2px 9px 3px 9px;
+	font-size: 13px;
+}
+
+.OutgameVipPerkList
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.OutgameVipPerkEmpty
+{
+	width: 100%;
+	margin-top: 22px;
+}
+
+.OutgameVipGiftCard
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	padding: 13px 12px 12px 12px;
+	border-radius: 3px;
+	background-color: #05090ecc;
+	border: 1px solid cHairline;
+	box-shadow: fill cScrim80 0px 0px 18px 0px;
+}
+
+.OutgameVipGiftItems
+{
+	width: 100%;
+	flow-children: right-wrap;
+	horizontal-align: center;
+}
+
+.OutgameVipGiftCard.Locked .OutgameVipGiftItems
+{
+	saturation: 0.3;
+	brightness: 0.62;
+	opacity: 0.72;
+}
+
+.OutgameVipGiftCard.Claimed .OutgameVipGiftItems
+{
+	saturation: 0.55;
+	brightness: 0.82;
+	opacity: 0.9;
+}
+
+.OutgameVipRewardSlot
+{
+	width: 86px;
+	height: 86px;
+	margin: 0px 8px 8px 0px;
+}
+
+.OutgameVipGiftFoot
+{
+	width: 100%;
+	flow-children: down;
+	vertical-align: bottom;
+	margin-top: 12px;
+}
+
+.OutgameVipGiftButton
+{
+	horizontal-align: center;
+	width: 160px;
+	height: 40px;
+}
+
+.OutgameVipGiftButtonText
+{
+	horizontal-align: center;
+	vertical-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.OutgameVipGiftLock
+{
+	horizontal-align: center;
+	color: cSlate;
+	font-size: 13px;
+	text-align: center;
+}
+
+.OutgameVipGiftClaimed
+{
+	horizontal-align: center;
+	padding: 6px 16px;
+	color: cGreen;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 2px;
+	background-color: #12281c66;
+	border: 1px solid #7fe6a455;
+}
+

@@ -1,0 +1,33 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/reward_preview/reward_preview_tooltip.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/reward_preview/reward_preview_tooltip.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="ItemPanel">
+			<Panel class="ItemPanel">
+				<Label id="Title" text="#tooltip_reward_preview_title" html="true" />
+				<Panel id="Grid" />
+			</Panel>
+		</snippet>
+		<snippet name="ItemPanelCell">
+			<Panel class="ItemPanelCell">
+				<Panel id="ItemIconGrid" />
+				<Label id="ItemName" text="" html="true" />
+				<Label id="ItemDesc" text="" html="true" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="tips_new">
+		<Panel id="BasePanel">
+			<Panel id="BaseGrid" />
+		</Panel>
+	</Panel>
+</root>

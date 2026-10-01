@@ -1,0 +1,607 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.RelicChoiceRoot
+{
+	width: 100%;
+	height: 100%;
+	z-index: 125;
+	opacity: 1;
+	visibility: visible;
+	overflow: noclip;
+	transition-property: opacity;
+	transition-duration: 0.16s;
+	transition-timing-function: ease-out;
+}
+
+.RelicChoiceRoot.Hidden
+{
+	opacity: 0;
+	visibility: collapse;
+}
+
+.RelicChoiceRoot.ClosingOutro
+{
+	visibility: visible;
+	opacity: 0;
+	transition-duration: 0.24s;
+	transition-timing-function: ease-in;
+}
+
+.RelicChoiceRootContent
+{
+	width: 100%;
+	height: 100%;
+	overflow: noclip;
+}
+
+#RelicChoiceBackdrop
+{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(4, 7, 11, 0.82);
+}
+
+.RelicChoiceTitle
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 96px;
+	font-size: 30px;
+	font-weight: semi-bold;
+	color: #f5e6b0;
+	text-align: center;
+	text-shadow: 1px 1px 2px 2 #000000;
+	z-index: 5;
+}
+
+.RelicChoiceGrid
+{
+	horizontal-align: center;
+	vertical-align: center;
+	height: 640px;
+	flow-children: right;
+	overflow: noclip;
+	z-index: 4;
+}
+
+.RelicChoiceGrid.ChoiceCount1
+{
+	width: 432px;
+}
+
+.RelicChoiceGrid.ChoiceCount2
+{
+	width: 864px;
+}
+
+.RelicChoiceGrid.ChoiceCount3
+{
+	width: 1296px;
+}
+
+.RelicChoiceGrid.ChoiceCount4,.RelicChoiceGrid.ChoiceCountMany
+{
+	width: 1728px;
+}
+
+.RelicChoiceCard
+{
+	width: 432px;
+	height: 640px;
+	perspective: 1200px;
+}
+
+.RelicChoiceCard.CardHidden
+{
+	visibility: collapse;
+}
+
+.RelicDrawCardMain
+{
+	width: 416px;
+	height: 640px;
+	margin: 0px 8px;
+	padding: 14px;
+	flow-children: down;
+	overflow: noclip;
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#202939), color-stop(0.44, #151d2a), to(#090e15));
+	border: 1px solid #ffffff18;
+	transition-property: brightness, border, box-shadow;
+	transition-duration: 0.14s;
+	transition-timing-function: ease-out;
+	z-index: 1;
+}
+
+.RelicDrawCardMain:hover,.RelicDrawCardMain.Hovered
+{
+	brightness: 1.13;
+	border: 1px solid #f0d99066;
+	box-shadow: fill #d6b45e18 0px 0px 14px 0px;
+}
+
+.RelicDrawCardMain.EntrySettling
+{
+	transition-property: none;
+	opacity: 0;
+	brightness: 0.72;
+}
+
+.RelicDrawCardMain.EntryActive
+{
+	opacity: 1;
+	brightness: 1;
+	transition-property: transform, opacity, brightness, border, box-shadow;
+	transition-duration: 0.62s;
+	transition-timing-function: cubic-bezier(0.16, 0.88, 0.22, 1);
+}
+
+.RelicDrawCardMain.EntryActive .RelicDrawPreview
+{
+	animation-name: relic-draw-preview-reveal;
+	animation-duration: 0.48s;
+	animation-delay: 0.08s;
+	animation-fill-mode: both;
+	animation-timing-function: cubic-bezier(0.16, 0.88, 0.22, 1);
+	animation-iteration-count: 1;
+}
+
+.RelicDrawCardMain.EntryActive .RelicDrawTitleRow
+{
+	animation-name: relic-draw-copy-reveal;
+	animation-duration: 0.38s;
+	animation-delay: 0.17s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.RelicDrawCardMain.EntryActive .RelicDrawDivider
+{
+	animation-name: relic-draw-divider-reveal;
+	animation-duration: 0.34s;
+	animation-delay: 0.22s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.RelicDrawCardMain.EntryActive .RelicDrawDesc
+{
+	animation-name: relic-draw-copy-reveal;
+	animation-duration: 0.42s;
+	animation-delay: 0.25s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.RelicDrawCardMain.SelectedFlash
+{
+	animation-name: relic-draw-selected-flash;
+	animation-duration: 0.42s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+.RelicDrawCardMain.ClosingOutro
+{
+	animation-name: relic-draw-panel-disappear;
+	animation-duration: 0.18s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+}
+
+.RelicDrawCardMain.ConfigError
+{
+	saturation: 0.2;
+	border: 1px solid #d75e5eaa;
+}
+
+.RelicDrawPreview
+{
+	width: 100%;
+	height: 300px;
+	background-color: gradient(linear, 0% 0%, 100% 100%, from(#0a121c), color-stop(0.54, #152235), to(#070b11));
+	border: 1px solid #ffffff12;
+	overflow: clip;
+}
+
+.RelicDrawIcon
+{
+	width: 208px;
+	height: 208px;
+	align: center center;
+	z-index: 2;
+}
+
+.RelicDrawPreviewVignette
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(radial, 50% 42%, 0% 0%, 70% 72%, from(#ffffff00), color-stop(0.62, #00000008), to(#00000090));
+	z-index: 3;
+}
+
+.RelicDrawQuality
+{
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 8px;
+	margin-right: 8px;
+	padding: 1px 8px 0px 8px;
+	height: 22px;
+	background-color: #06090ccc;
+	border: 1px solid #9aa6a666;
+	color: #9aa6a6;
+	font-size: 15px;
+	font-weight: semi-bold;
+	text-shadow: 1px 1px 1px 2 #000000;
+	z-index: 4;
+}
+
+.RelicDrawCardMain.Quality1 .RelicDrawQuality
+{
+	border: 1px solid #9aa6a666;
+	color: #9aa6a6;
+}
+
+.RelicDrawCardMain.Quality2 .RelicDrawQuality
+{
+	border: 1px solid #72c47666;
+	color: #72c476;
+}
+
+.RelicDrawCardMain.Quality3 .RelicDrawQuality
+{
+	border: 1px solid #5ba7ff66;
+	color: #5ba7ff;
+}
+
+.RelicDrawCardMain.Quality4 .RelicDrawQuality
+{
+	border: 1px solid #c079ff66;
+	color: #c079ff;
+}
+
+.RelicDrawCardMain.Quality5 .RelicDrawQuality
+{
+	border: 1px solid #ffc85766;
+	color: #ffc857;
+}
+
+.RelicDrawTitleRow
+{
+	width: 100%;
+	height: 34px;
+	margin-top: 10px;
+	flow-children: right;
+}
+
+.RelicDrawName
+{
+	vertical-align: center;
+	width: fill-parent-flow(1.0);
+	font-size: 23px;
+	font-weight: semi-bold;
+	color: #f5eed4;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+.RelicDrawDivider
+{
+	width: 82%;
+	height: 1px;
+	horizontal-align: center;
+	margin-top: 11px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.16, #9aa7b040), color-stop(0.50, #9aa7b0ee), color-stop(0.84, #9aa7b040), to(#00000000));
+}
+
+.RelicDrawCardMain.Quality1 .RelicDrawDivider
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.16, #9aa7b040), color-stop(0.50, #9aa7b0ee), color-stop(0.84, #9aa7b040), to(#00000000));
+}
+
+.RelicDrawCardMain.Quality2 .RelicDrawDivider
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.16, #79d06a40), color-stop(0.50, #79d06aee), color-stop(0.84, #79d06a40), to(#00000000));
+}
+
+.RelicDrawCardMain.Quality3 .RelicDrawDivider
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.16, #63a4ff40), color-stop(0.50, #63a4ffee), color-stop(0.84, #63a4ff40), to(#00000000));
+}
+
+.RelicDrawCardMain.Quality4 .RelicDrawDivider
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.16, #b36ae040), color-stop(0.50, #b36ae0ee), color-stop(0.84, #b36ae040), to(#00000000));
+}
+
+.RelicDrawCardMain.Quality5 .RelicDrawDivider
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.16, #f7d47b40), color-stop(0.50, #f7d47bee), color-stop(0.84, #f7d47b40), to(#00000000));
+}
+
+.RelicDrawDesc
+{
+	width: 100%;
+	margin-top: 12px;
+	font-size: 15px;
+	line-height: 21px;
+	color: #bac6d3;
+	text-align: center;
+	text-shadow: 1px 1px 1px 2 #000000;
+	text-overflow: ellipsis;
+}
+
+.RelicDrawDesc .highlight_number
+{
+	color: #f2d58e;
+}
+
+.RelicDrawDesc .highlight_title
+{
+	color: #f2d58e;
+}
+
+.RelicDrawStatus
+{
+	width: 100%;
+	vertical-align: bottom;
+	margin-bottom: 14px;
+	color: #ffaaa2;
+	font-size: 13px;
+	text-align: center;
+	text-overflow: shrink;
+	opacity: 0;
+}
+
+.RelicDrawCardMain.ConfigError .RelicDrawStatus
+{
+	opacity: 1;
+}
+
+.RelicChoiceActions
+{
+	flow-children: right;
+	width: fit-children;
+	height: 38px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 150px;
+	z-index: 200;
+	overflow: noclip;
+	opacity: 0;
+}
+
+.RelicChoiceRoot.ActionsRevealed .RelicChoiceActions
+{
+	opacity: 1;
+	animation-name: relic-draw-copy-reveal;
+	animation-duration: 0.36s;
+	animation-fill-mode: both;
+	animation-timing-function: ease-out;
+	animation-iteration-count: 1;
+}
+
+#RelicChoiceCloseButton
+{
+	width: 140px;
+	height: 38px;
+	vertical-align: center;
+	margin-left: 8px;
+	margin-right: 8px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a3137ee), color-stop(0.45, #151b20f4), to(#06090cf8));
+	border-radius: 3px;
+	border: 1px solid #6f7f89a8;
+	box-shadow: #000000cc 0px 3px 10px 0px;
+	transition-property: brightness, border, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+#RelicChoiceCloseButton:hover
+{
+	brightness: 1.18;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#39434cf2), color-stop(0.45, #1b242bf4), to(#080d11f8));
+	border: 1px solid #c7d9e3c8;
+}
+
+#RelicChoiceCloseButton:active
+{
+	transform: translateY(1px);
+	brightness: 0.82;
+}
+
+#RelicChoiceCloseButton.Disabled
+{
+	saturation: 0;
+	opacity: 0.42;
+	brightness: 0.65;
+}
+
+#RelicChoiceCloseButton.Disabled:hover,#RelicChoiceCloseButton.Disabled:active
+{
+	transform: none;
+	brightness: 0.65;
+	border: 1px solid #6f7f89a8;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a3137ee), color-stop(0.45, #151b20f4), to(#06090cf8));
+}
+
+#RelicChoiceRerollButton
+{
+	width: 140px;
+	height: 38px;
+	vertical-align: center;
+	margin-left: 8px;
+	margin-right: 8px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#315f55ee), color-stop(0.45, #1d3d36f4), to(#0a1614f8));
+	border-radius: 3px;
+	border: 1px solid #9ff1d066;
+	box-shadow: #000000cc 0px 3px 10px 0px;
+	transition-property: brightness, border, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+#RelicChoiceRerollButton:hover
+{
+	brightness: 1.18;
+	border: 1px solid #b6ffe284;
+}
+
+#RelicChoiceRerollButton:active
+{
+	transform: translateY(1px);
+	brightness: 0.82;
+}
+
+#RelicChoiceRerollButton.Disabled
+{
+	saturation: 0;
+	opacity: 0.42;
+	brightness: 0.65;
+}
+
+#RelicChoiceRerollButton.Disabled:hover,#RelicChoiceRerollButton.Disabled:active
+{
+	transform: none;
+	brightness: 0.65;
+	border: 1px solid #9ff1d066;
+}
+
+#RelicChoiceRerollButton.Hidden
+{
+	visibility: collapse;
+}
+
+.RelicChoiceRerollLabel
+{
+	align: center center;
+	font-size: 18px;
+	color: #eafff7;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+.RelicChoiceCloseLabel
+{
+	align: center center;
+	font-size: 18px;
+	color: #d8e2ea;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 1px 1px 2px 2 #000000;
+}
+
+@keyframes 'relic-draw-preview-reveal'
+{
+	0%
+	{
+		opacity: 0.16;
+		transform: translate3d(0px, 26px, 0px) scale3d(0.88, 0.88, 1);
+		brightness: 1.65;
+	}
+	
+	68%
+	{
+		opacity: 1;
+		transform: translate3d(0px, -3px, 0px) scale3d(1.018, 1.018, 1);
+		brightness: 1.14;
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+		brightness: 1;
+	}
+	
+}
+
+@keyframes 'relic-draw-copy-reveal'
+{
+	0%
+	{
+		opacity: 0;
+		transform: translate3d(0px, 12px, 0px);
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+	}
+	
+}
+
+@keyframes 'relic-draw-divider-reveal'
+{
+	0%
+	{
+		opacity: 0;
+		transform: scale3d(0.18, 1, 1);
+	}
+	
+	100%
+	{
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+	}
+	
+}
+
+@keyframes 'relic-draw-selected-flash'
+{
+	0%
+	{
+		brightness: 1.0;
+		box-shadow: fill rgba(255, 228, 146, 0.00) 0px 0px 0px 0px;
+		border: 1px solid #ffffff16;
+	}
+	
+	28%
+	{
+		brightness: 1.95;
+		box-shadow: fill rgba(255, 225, 120, 0.72) 0px 0px 42px 0px;
+		border: 1px solid #ffe08a;
+	}
+	
+	55%
+	{
+		brightness: 1.62;
+		box-shadow: fill rgba(255, 202, 80, 0.46) 0px 0px 34px 0px;
+		border: 1px solid #ffd15c;
+	}
+	
+	100%
+	{
+		brightness: 1.22;
+		box-shadow: fill rgba(255, 218, 120, 0.22) 0px 0px 18px 0px;
+		border: 1px solid #f6d57a99;
+	}
+	
+}
+
+@keyframes 'relic-draw-panel-disappear'
+{
+	0%
+	{
+		opacity: 1;
+		transform: scale3d(1, 1, 1);
+		brightness: 1.0;
+	}
+	
+	100%
+	{
+		opacity: 0;
+		transform: scale3d(0.985, 0.985, 1);
+		brightness: 0.82;
+	}
+	
+}
+

@@ -1,0 +1,172 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.RoundAdvanceRoot
+{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.12s;
+}
+
+.RoundAdvanceRoot.panel-hidden
+{
+	visibility: collapse;
+	opacity: 0;
+}
+
+.RoundAdvanceButton
+{
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 94px;
+	width: 190px;
+	height: 42px;
+	border-radius: 4px;
+	border: 1px solid #70b780cc;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#348f4fee), to(#102f1dee));
+	box-shadow: #00000099 0px 0px 12px 0px;
+	transition-property: brightness, transform, border;
+	transition-duration: 0.12s;
+}
+
+.RoundAdvanceButton:hover
+{
+	brightness: 1.3;
+	border: 1px solid #a9dfb4ee;
+}
+
+.RoundAdvanceButton:active
+{
+	transform: translateY(1px);
+}
+
+.RoundAdvanceButton.Disabled
+{
+	brightness: 0.58;
+	border: 1px solid #536058aa;
+	background-color: #151b18ee;
+}
+
+.RoundAdvanceButton.Disabled:hover
+{
+	brightness: 0.58;
+	border: 1px solid #536058aa;
+}
+
+#RoundAdvanceButtonLabel
+{
+	align: center center;
+	width: 100%;
+	height: 30px;
+	color: #f2f7f0;
+	font-size: 18px;
+	font-weight: semi-bold;
+	text-align: center;
+	text-shadow: 0px 2px 3px 2 #000000cc;
+	text-overflow: shrink;
+}
+
+.RoundAdvanceConfirmOverlay
+{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.12s;
+}
+
+.RoundAdvanceConfirmOverlay.panel-hidden
+{
+	visibility: collapse;
+	opacity: 0;
+}
+
+.RoundAdvanceConfirmBackdrop
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000b8;
+}
+
+.RoundAdvanceConfirmPanel
+{
+	align: center center;
+	width: 500px;
+	height: 210px;
+	flow-children: down;
+	padding: 34px 34px 28px 34px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1c2931fb), to(#080d11fb));
+	border: 1px solid #78909daa;
+	box-shadow: #000000cc 0px 14px 36px 0px;
+}
+
+.RoundAdvanceConfirmText
+{
+	horizontal-align: center;
+	width: 100%;
+	height: 72px;
+	color: #edf3f4;
+	font-size: 24px;
+	text-align: center;
+	vertical-align: center;
+	text-shadow: 0px 2px 4px 2 #000000cc;
+	text-overflow: shrink;
+}
+
+.RoundAdvanceConfirmActions
+{
+	horizontal-align: center;
+	margin-top: 18px;
+	flow-children: right;
+}
+
+.RoundAdvanceConfirmAction
+{
+	width: 176px;
+	height: 48px;
+	margin-left: 14px;
+	border-radius: 3px;
+	border: 1px solid #657680aa;
+	transition-property: brightness, transform;
+	transition-duration: 0.12s;
+}
+
+#RoundAdvanceConfirmButton
+{
+	margin-left: 0px;
+}
+
+.RoundAdvanceConfirmAction.Confirm
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#348f4fee), to(#102f1dee));
+	border: 1px solid #70b780cc;
+}
+
+.RoundAdvanceConfirmAction.Cancel
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#6c3935ee), to(#2b1210ee));
+	border: 1px solid #a96861bb;
+}
+
+.RoundAdvanceConfirmAction:hover
+{
+	brightness: 1.3;
+}
+
+.RoundAdvanceConfirmAction:active
+{
+	transform: translateY(1px);
+}
+
+.RoundAdvanceConfirmAction Label
+{
+	align: center center;
+	width: 100%;
+	height: 30px;
+	color: #f2f3f3;
+	font-size: 20px;
+	text-align: center;
+	text-shadow: 0px 2px 3px 2 #000000cc;
+}
+

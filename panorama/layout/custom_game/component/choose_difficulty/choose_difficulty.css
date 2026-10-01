@@ -1,0 +1,900 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.ChooseDifficultyRoot
+{
+	width: 100%;
+	height: 100%;
+	z-index: 110;
+	transition-property: opacity;
+	transition-duration: 0.22s;
+	transition-timing-function: ease-out;
+}
+
+.ChooseDifficultyRoot.panel-hidden
+{
+	transform: translateY(0px);
+	opacity: 0;
+}
+
+.DifficultySceneBackdrop
+{
+	width: 100%;
+	height: 100%;
+	background-color: #05090d;
+}
+
+.DifficultySceneVignette
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(radial, 50% 44%, 0% 0%, 82% 78%, from(#17262b80), color-stop(0.44, #071014e6), to(#010305fb));
+}
+
+.DifficultyHeader
+{
+	horizontal-align: center;
+	margin-top: 38px;
+	flow-children: down;
+}
+
+.DifficultyTitle
+{
+	horizontal-align: center;
+	font-size: 48px;
+	font-weight: semi-bold;
+	color: #e8dfd4;
+	text-shadow: 0px 2px 6px 3.0 #000000;
+}
+
+.DifficultyCountdown
+{
+	horizontal-align: center;
+	margin-top: 4px;
+	font-size: 25px;
+	color: #d2c9b8;
+	text-shadow: 0px 2px 4px 2.0 #000000;
+}
+
+.DifficultyBody
+{
+	horizontal-align: center;
+	vertical-align: center;
+	margin-top: 58px;
+	width: 1811px;
+	height: 820px;
+	flow-children: right;
+}
+
+.DifficultyColumn
+{
+	height: 100%;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#061014ee), color-stop(0.55, #071115dd), to(#05090ccc));
+	border: 1px solid #42505a80;
+	box-shadow: fill #00000070 0px 0px 26px 0px;
+}
+
+.DifficultyLeftColumn
+{
+	width: 500px;
+	margin-right: 18px;
+	padding: 22px 18px 16px 18px;
+}
+
+.DifficultyCenterColumn
+{
+	width: 730px;
+	margin-right: 18px;
+	padding: 24px;
+}
+
+.DifficultyRightColumn
+{
+	width: 545px;
+	padding: 24px;
+	overflow: clip scroll;
+}
+
+.DifficultyPanelTitle
+{
+	font-size: 23px;
+	font-weight: semi-bold;
+	color: #e5ded0;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyGroupList
+{
+	margin-top: 16px;
+	width: 100%;
+	height: 500px;
+	flow-children: down;
+	overflow: clip scroll;
+}
+
+.DifficultyGroupRow
+{
+	width: 100%;
+	height: 88px;
+	margin-bottom: 10px;
+	padding: 10px 14px 10px 12px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#081a1aee), color-stop(0.65, #091012e8), to(#05080aaa));
+	border: 1px solid #38434a88;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.16s;
+}
+
+.DifficultyGroupRow:hover
+{
+	brightness: 1.5;
+}
+
+.DifficultyGroupRow.selected
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#123a55f6), color-stop(0.72, #0a2232ef), to(#07141bdd));
+	border: 2px solid #2f9fe6cc;
+	box-shadow: fill #178fe644 0px 0px 14px 0px;
+}
+
+.DifficultyGroupRow.locked
+{
+	saturation: 0.2;
+	brightness: 0.72;
+}
+
+.DifficultyGroupRow.group-hidden
+{
+	visibility: collapse;
+}
+
+.DifficultyGroupBadge
+{
+	width: 70px;
+	height: 70px;
+	margin-right: 22px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#173754), to(#0b1823));
+	border: 1px solid #45657b;
+	box-shadow: inset #5ebaff22 0px 0px 12px 0px;
+}
+
+.DifficultyGroupRow.locked .DifficultyGroupBadge
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#202525), to(#101313));
+	border: 1px solid #454545;
+	box-shadow: inset #ffffff0b 0px 0px 10px 0px;
+}
+
+.DifficultyGroupNumber
+{
+	align: center center;
+	font-size: 44px;
+	font-weight: bold;
+	color: #f2eee8;
+	text-shadow: 0px 2px 3px 2.0 #000000;
+}
+
+.DifficultyGroupContent
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+}
+
+.DifficultyGroupName
+{
+	margin-top: 5px;
+	font-size: 24px;
+	color: #e6ded0;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyGroupPower
+{
+	margin-top: 5px;
+	font-size: 17px;
+	color: #9dafaa;
+}
+
+.DifficultyGroupProgress
+{
+	width: 82px;
+	height: 100%;
+}
+
+.DifficultyGroupProgressText
+{
+	align: center center;
+	font-size: 21px;
+	color: #f6d582;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyGroupLock
+{
+	align: center center;
+	width: 34px;
+	height: 34px;
+	background-image: url("s2r://panorama/images/custom_game/choose_difficulty/difficulty_status_locked_png.vtex");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+}
+
+.DifficultyGroupRow.locked .DifficultyGroupProgressText
+{
+	opacity: 0;
+}
+
+.DifficultyGroupRow.locked .DifficultyGroupLock
+{
+	opacity: 1;
+}
+
+.DifficultyMoreHint
+{
+	width: 100%;
+	height: 28px;
+	margin-top: 2px;
+}
+
+.DifficultyMoreHint Label
+{
+	align: center center;
+	font-size: 16px;
+	color: #a8a394;
+}
+
+.DifficultyNoticePanel
+{
+	width: 100%;
+	height: 168px;
+	margin-top: 12px;
+	padding: 12px 16px;
+	flow-children: down;
+	background-color: #050a0dcc;
+	border: 1px solid #2a373f99;
+}
+
+.DifficultyNoticeBody
+{
+	margin-top: 8px;
+	width: 100%;
+	height: 104px;
+	flow-children: down;
+	overflow: clip scroll;
+}
+
+.DifficultyNoticeText
+{
+	width: 100%;
+	font-size: 16px;
+	line-height: 20px;
+	color: #c6d1d0;
+}
+
+.DifficultyNoticeEmpty
+{
+	color: #7f8a89;
+}
+
+.DifficultyCenterHeader
+{
+	width: 100%;
+	height: 38px;
+	flow-children: right;
+}
+
+.DifficultyCurrentGroup
+{
+	margin-left: 12px;
+	margin-top: 4px;
+	font-size: 18px;
+	color: #b3aa9d;
+}
+
+.DifficultyStageList
+{
+	width: 100%;
+	height: 626px;
+	margin-top: 16px;
+	flow-children: down;
+	overflow: clip scroll;
+}
+
+.DifficultyStageRow
+{
+	width: 100%;
+	height: 112px;
+	margin-bottom: 12px;
+	padding: 10px 14px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#081317f4), color-stop(0.68, #071012e6), to(#05080ab8));
+	border: 1px solid #31404a99;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.16s;
+}
+
+.DifficultyStageRow:hover
+{
+	brightness: 1.45;
+}
+
+.DifficultyStageRow.stage-hidden
+{
+	visibility: collapse;
+}
+
+.DifficultyStageRow.selected
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#123a56fa), color-stop(0.72, #0a2233f2), to(#08131bdd));
+	border: 2px solid #2f9fe6cc;
+	box-shadow: fill #178fe644 0px 0px 14px 0px;
+}
+
+.DifficultyStageRow.completed
+{
+	border: 1px solid #9d6a2a99;
+}
+
+.DifficultyStageRow.locked
+{
+	saturation: 0.15;
+	brightness: 0.72;
+}
+
+.DifficultyStageBadge
+{
+	width: 106px;
+	height: 90px;
+	margin-right: 22px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#153755), to(#081823));
+	border: 1px solid #496a82;
+	box-shadow: inset #5ebaff22 0px 0px 12px 0px;
+}
+
+.DifficultyStageRow.completed .DifficultyStageBadge
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#543b16), to(#1b1207));
+	border: 1px solid #a36e25;
+	box-shadow: inset #ffba3d28 0px 0px 12px 0px;
+}
+
+.DifficultyStageRow.locked .DifficultyStageBadge
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#242827), to(#111313));
+	border: 1px solid #4a4a4a;
+	box-shadow: inset #ffffff0a 0px 0px 10px 0px;
+}
+
+.DifficultyStageCode
+{
+	align: center center;
+	font-size: 38px;
+	font-weight: bold;
+	color: #f4efe7;
+	text-shadow: 0px 2px 3px 2.0 #000000;
+}
+
+.DifficultyStageInfo
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+}
+
+.DifficultyStageName
+{
+	margin-top: 20px;
+	font-size: 25px;
+	color: #e6ded0;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyStagePower
+{
+	margin-top: 6px;
+	font-size: 17px;
+	color: #9dafaa;
+}
+
+.DifficultyStagePreview
+{
+	width: 230px;
+	height: 100%;
+	flow-children: down;
+}
+
+.DifficultyStagePreviewTitle
+{
+	width: 100%;
+	height: 18px;
+	margin-top: 4px;
+	text-align: center;
+	font-size: 14px;
+	color: #aeb9be;
+	text-shadow: 0px 1px 2px 2.0 #000000;
+}
+
+.DifficultyRecommendedAttributeList
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: right;
+}
+
+.DifficultyStageLockHint
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	visibility: collapse;
+	padding-top: 36px;
+	text-align: center;
+	color: #f2ddaa;
+	font-size: 16px;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2.0 #000000;
+}
+
+.DifficultyStageRow.locked .DifficultyStagePreviewTitle,.DifficultyStageRow.locked .DifficultyRecommendedAttributeList
+{
+	visibility: collapse;
+}
+
+.DifficultyStageRow.locked .DifficultyStageLockHint
+{
+	visibility: visible;
+}
+
+.DifficultyRecommendedAttributeSlot
+{
+	width: 66px;
+	height: 62px;
+	margin-left: 6px;
+	vertical-align: center;
+	flow-children: down;
+	padding: 5px 3px 4px 3px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#101c21ee), to(#050a0dcc));
+	border: 1px solid #3b4b5399;
+}
+
+.DifficultyRecommendedAttributeSlot.empty
+{
+	saturation: 0.15;
+	brightness: 0.55;
+}
+
+.DifficultyRecommendedAttributeIcon
+{
+	width: 30px;
+	height: 30px;
+	horizontal-align: center;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.DifficultyRecommendedAttributeIcon.Physical
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_physical_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Arcane
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_arcane_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Fire
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_fire_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Cold
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_cold_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Lightning
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_lightning_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Earth
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_earth_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Shadow
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_shadow_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Poison
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_poison_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Holy
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_holy_png.vtex");
+}
+
+.DifficultyRecommendedAttributeIcon.Void
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_void_png.vtex");
+}
+
+.DifficultyRecommendedAttributeName
+{
+	width: 100%;
+	margin-top: 2px;
+	text-align: center;
+	font-size: 13px;
+	color: #d9d1c4;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2.0 #000000;
+}
+
+.DifficultyStageState
+{
+	width: 56px;
+	height: 100%;
+}
+
+.DifficultyStageCheck,.DifficultyStageLock,.DifficultyStageCircle
+{
+	align: center center;
+	width: 48px;
+	height: 48px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+}
+
+.DifficultyStageCheck
+{
+	background-image: url("s2r://panorama/images/custom_game/choose_difficulty/difficulty_status_completed_png.vtex");
+}
+
+.DifficultyStageCircle
+{
+	background-image: url("s2r://panorama/images/custom_game/choose_difficulty/difficulty_status_available_png.vtex");
+}
+
+.DifficultyStageLock
+{
+	background-image: url("s2r://panorama/images/custom_game/choose_difficulty/difficulty_status_locked_png.vtex");
+	width: 42px;
+	height: 42px;
+}
+
+.DifficultyStageRow.completed .DifficultyStageCheck
+{
+	opacity: 1;
+}
+
+.DifficultyStageRow.locked .DifficultyStageLock
+{
+	opacity: 1;
+}
+
+.DifficultyStageRow.available .DifficultyStageCircle
+{
+	opacity: 1;
+}
+
+.DifficultyActionBar
+{
+	horizontal-align: center;
+	margin-top: 4px;
+	flow-children: right;
+}
+
+.DifficultyPrimaryButton,.DifficultySecondaryButton
+{
+	width: 280px;
+	height: 72px;
+	margin: 0px 16px;
+	border: 1px solid #5b6769aa;
+}
+
+.DifficultyPrimaryButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2c944a), to(#0c3f1f));
+	border: 1px solid #6bc47d88;
+}
+
+.DifficultySecondaryButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1f3037), to(#0a1519));
+}
+
+.DifficultyPrimaryButton Label,.DifficultySecondaryButton Label
+{
+	align: center center;
+	font-size: 28px;
+	color: #f0ece0;
+	text-shadow: 0px 2px 3px 2.0 #000000;
+}
+
+.DifficultyTimeoutHint
+{
+	horizontal-align: center;
+	margin-top: 20px;
+	font-size: 19px;
+	color: #b9b2a7;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyDetailHeader
+{
+	width: 100%;
+	height: 68px;
+	margin-top: 20px;
+	border-bottom: 1px solid #29353c99;
+}
+
+.DifficultyDetailCode
+{
+	font-size: 32px;
+	font-weight: bold;
+	color: #f1e6d0;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyDetailName
+{
+	margin-left: 86px;
+	font-size: 32px;
+	color: #f1e6d0;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyInfoSection
+{
+	width: 100%;
+	margin-top: 16px;
+	flow-children: down;
+}
+
+.DifficultyInfoTitle
+{
+	font-size: 20px;
+	color: #cfc7b8;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyHeroUnlockSection
+{
+	margin-top: 12px;
+}
+
+.DifficultyHeroUnlockSection.hero-unlock-hidden
+{
+	visibility: collapse;
+}
+
+.DifficultyHeroUnlockTitleRow
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.DifficultyHeroUnlockCount
+{
+	vertical-align: center;
+	margin-left: 8px;
+	font-size: 17px;
+	font-weight: bold;
+	color: #ffbf5c;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyHeroUnlockScroll
+{
+	width: 100%;
+	height: 84px;
+	margin-top: 6px;
+	padding: 6px 6px 12px 6px;
+	background-color: #05090cb8;
+	border: 1px solid #2e444f99;
+	overflow: scroll clip;
+	flow-children: right;
+}
+
+.DifficultyHeroUnlockScroll.TwoRow
+{
+	height: 154px;
+	flow-children: down-wrap;
+}
+
+.DifficultyHeroUnlockSection.empty .DifficultyHeroUnlockScroll
+{
+	visibility: collapse;
+}
+
+.DifficultyHeroUnlockCard
+{
+	width: 78px;
+	height: 60px;
+	margin-right: 6px;
+	margin-bottom: 6px;
+	flow-children: down;
+}
+
+.DifficultyHeroUnlockCard:hover
+{
+	brightness: 1.15;
+}
+
+.DifficultyHeroUnlockCardAvatar
+{
+	width: 78px;
+	height: 44px;
+	border: 1px solid #34434c99;
+}
+
+.DifficultyHeroUnlockCardName
+{
+	width: 100%;
+	margin-top: 3px;
+	font-size: 12px;
+	color: #d9d1c4;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.DifficultyHeroUnlockEmpty
+{
+	width: 100%;
+	height: 54px;
+	margin-top: 6px;
+	padding: 8px 12px;
+	background-color: #05090cb8;
+	border: 1px solid #2e444f99;
+	vertical-align: center;
+	font-size: 17px;
+	color: #928b80;
+	visibility: collapse;
+}
+
+.DifficultyHeroUnlockSection.empty .DifficultyHeroUnlockEmpty
+{
+	visibility: visible;
+}
+
+.DifficultyWaveStats
+{
+	width: 100%;
+	height: 70px;
+	margin-top: 8px;
+	flow-children: right;
+	background-color: #05090cb8;
+	border: 1px solid #24313a99;
+}
+
+.DifficultyWaveStat
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: right;
+}
+
+.DifficultyWaveIcon
+{
+	width: 38px;
+	height: 38px;
+	vertical-align: center;
+	margin-left: 12px;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.DifficultyWaveIconNormal
+{
+	background-image: url("s2r://panorama/images/custom_game/choose_difficulty/icon_wave_normal_png.vtex");
+}
+
+.DifficultyWaveIconElite
+{
+	background-image: url("s2r://panorama/images/custom_game/choose_difficulty/icon_wave_elite_png.vtex");
+}
+
+.DifficultyWaveIconBoss
+{
+	background-image: url("s2r://panorama/images/custom_game/choose_difficulty/icon_wave_boss_png.vtex");
+}
+
+.DifficultyWaveValue
+{
+	width: 36px;
+	vertical-align: center;
+	margin-left: 6px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #f1e8d5;
+}
+
+.DifficultyWaveLabel
+{
+	vertical-align: center;
+	margin-left: 4px;
+	font-size: 16px;
+	color: #b7b0a2;
+}
+
+.DifficultyRewardList
+{
+	width: 100%;
+	height: fit-children;
+	min-height: 70px;
+	margin-top: 8px;
+	padding-bottom: 8px;
+	flow-children: right-wrap;
+	background-color: #05090cb8;
+	border: 1px solid #24313a99;
+}
+
+.DifficultyRewardList.empty
+{
+	brightness: 0.72;
+}
+
+.DifficultyRewardSlot
+{
+	width: 58px;
+	height: 58px;
+	margin-left: 8px;
+	margin-top: 8px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#111a1f), to(#05080a));
+	border: 1px solid #34434c99;
+}
+
+.DifficultyRewardSlot.empty
+{
+	saturation: 0.2;
+	brightness: 0.55;
+}
+
+.DifficultyRewardSlot .XItemIcon
+{
+	align: center center;
+	width: 54px;
+	height: 54px;
+}
+
+.DifficultyRewardTitleRow
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.DifficultyRewardSoloHint
+{
+	width: 100%;
+	margin-top: 6px;
+	font-size: 16px;
+	color: #a8a394;
+	text-shadow: 0px 1px 3px 2.0 #000000;
+}
+
+.DifficultyClaimedBadge
+{
+	margin-left: 10px;
+	vertical-align: center;
+	padding: 1px 8px 2px 8px;
+	font-size: 15px;
+	color: #0b140c;
+	background-color: #6fcf7a;
+	border: 1px solid #a6e6ad;
+	border-radius: 3px;
+}
+
+.DifficultyClaimedBadge.claimed-hidden
+{
+	visibility: collapse;
+}
+

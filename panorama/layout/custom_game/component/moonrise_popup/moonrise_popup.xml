@@ -1,0 +1,84 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<snippets>
+		<snippet name="MoonriseTaskRow">
+			<Panel class="MoonriseTaskRow" hittest="false" hittestchildren="true">
+				<Panel class="MoonriseTaskOrdinal" hittest="false" hittestchildren="false">
+					<Label id="TaskOrdinal" class="MoonriseTaskOrdinalText" />
+				</Panel>
+				<Label id="TaskDescription" class="OutgameDailyTaskDesc" hittest="false" />
+				<Label id="TaskProgress" class="OutgameDailyTaskProgress" hittest="false" />
+				<Label id="TaskState" class="OutgameDailyTaskState" hittest="false" />
+				<Panel id="TaskRewards" class="OutgameDailyTaskReward" hittest="false" hittestchildren="true" />
+				<Button id="TaskAction" class="OutgameDailyTaskAction OutgameActionButton" hittest="true" hittestchildren="false">
+					<Label id="TaskActionText" class="OutgameActionButtonText" />
+				</Button>
+			</Panel>
+		</snippet>
+		<snippet name="MoonriseResource">
+			<Panel class="MoonriseResourceDetails" hittest="true" hittestchildren="false">
+				<Panel class="MoonrisePopupResourceIconFrame">
+					<Image id="ResourceIcon" class="MoonrisePopupResourceIcon" />
+				</Panel>
+				<Label id="ResourceName" class="MoonrisePopupResourceName" />
+				<Label id="ResourceAmount" class="MoonrisePopupResourceAmount" />
+			</Panel>
+		</snippet>
+		<snippet name="MoonriseRewardDetails">
+			<Panel class="MoonriseRewardDetails" hittest="true" hittestchildren="false">
+				<Panel id="RewardIcon" class="MoonriseRewardIcon" hittest="false" hittestchildren="false" />
+				<Panel class="MoonriseRewardText" hittest="false" hittestchildren="false">
+					<Label id="RewardName" class="MoonriseRewardName" />
+					<Label id="RewardCount" class="MoonriseRewardCount" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/shop_section/shop_catalog_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/daily_task_page.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/moonrise_popup/moonrise_popup.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/moonrise_popup/moonrise_popup.vjs_c" />
+	</scripts>
+	<Panel class="MoonrisePopupRoot fill panel-hidden" hittest="false" hittestchildren="false" onactivate="()=&gt;{}">
+		<Panel id="MoonrisePopupBackdrop" class="MoonrisePopupBackdrop" hittest="true" />
+		<Panel class="MoonrisePopupShell" hittest="true" hittestchildren="false" />
+		<Panel class="MoonrisePopupWindow" hittest="true" hittestchildren="true">
+			<Panel class="MoonrisePopupBg" hittest="false" hittestchildren="false" />
+			<Label id="MoonrisePopupTitle" class="MoonrisePopupTitle" text="#outgame_activity_group_moonrise" />
+			<Panel class="MoonriseTitleOrnament" hittest="false" />
+			<Panel class="MoonrisePopupFrame" hittest="false" hittestchildren="false" />
+			<Panel id="MoonrisePopupDurationPlate" class="MoonrisePopupDuration Hidden" hittest="false">
+				<Label id="MoonrisePopupDuration" class="MoonrisePopupDurationText" text="" />
+			</Panel>
+			<Panel id="MoonrisePopupResources" class="MoonrisePopupResources" hittest="false" hittestchildren="true" />
+			<Panel id="MoonrisePopupTabs" class="MoonrisePopupTabs" hittest="false" hittestchildren="true">
+				<Panel id="MoonrisePopupTab_daily" class="MoonrisePopupTab OutgameOptionButton" hittest="true" hittestchildren="false">
+					<Label class="MoonrisePopupTabLabel" text="#outgame_activity_page_moonrise_daily" />
+					<Panel class="RedTip" />
+				</Panel>
+				<Panel id="MoonrisePopupTab_shop" class="MoonrisePopupTab OutgameOptionButton" hittest="true" hittestchildren="false">
+					<Label class="MoonrisePopupTabLabel" text="#outgame_activity_page_moonrise_temple" />
+				</Panel>
+			</Panel>
+			<Button id="MoonrisePopupClose" class="MoonrisePopupClose tooltip-bottom" hittest="true" hittestchildren="false" onmouseover="DOTAShowTextTooltip(&apos;#DOTA_Close&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel class="MoonrisePopupCloseIcon">
+					<Panel class="MoonrisePopupCloseLine MoonrisePopupCloseLineA" />
+					<Panel class="MoonrisePopupCloseLine MoonrisePopupCloseLineB" />
+				</Panel>
+			</Button>
+			<Panel id="MoonrisePopupBody" class="MoonrisePopupBody" />
+		</Panel>
+	</Panel>
+</root>

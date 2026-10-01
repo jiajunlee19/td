@@ -1,0 +1,6 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<Panel hittest="false">
+		<Panel id="BuildingCorePreviewImage" class="BuildingCorePreviewRoot Hidden" hittest="false" />
+	</Panel>
+</root>

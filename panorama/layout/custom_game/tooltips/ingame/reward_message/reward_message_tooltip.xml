@@ -1,0 +1,30 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/reward_message/reward_message_tooltip.vjs_c" />
+	</scripts>
+	<snippets />
+	<Panel class="tips_new">
+		<Panel id="mainBG">
+			<Panel id="topBg">
+				<Panel id="equipInfoPanel">
+					<Image id="equipItemQuality">
+						<Image id="equipItemIcon" />
+					</Image>
+					<Label id="equipName" text="" html="true" />
+					<Label id="extraName" text="" html="true" />
+				</Panel>
+			</Panel>
+			<Label id="basicsTitleName" text="" html="true" />
+			<Panel id="basicsDescGrid" />
+			<Image id="line" />
+			<Label id="extraTitleName" text="" html="true" />
+			<Label id="extraDes" text="" html="true" />
+		</Panel>
+		<Image id="bgDecorate" />
+	</Panel>
+</root>

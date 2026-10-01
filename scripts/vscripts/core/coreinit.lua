@@ -1,0 +1,1 @@
+if IsClient()then local a=GetMapName()if a=="solo"or a=="maps/solo.vpk"then return end;require("utils.decrypt")require("libraries.dotaex")require("libraries.utils")require("modifiers/reg/register")require("module.manager.ConfigManager")end

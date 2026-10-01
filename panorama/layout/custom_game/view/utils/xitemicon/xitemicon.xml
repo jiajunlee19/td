@@ -1,0 +1,24 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+	</styles>
+	<Panel class="XItemIcon">
+		<Panel id="Bg" />
+		<Panel id="TypeBg" />
+		<Panel id="PfxIconContainer" />
+		<Image id="Icon" />
+		<Panel id="Frame" hittest="false" />
+		<Panel id="Tag" hittest="false" />
+		<Panel id="StatusClaimed" hittest="false" hittestchildren="false" />
+		<Label id="Num" text="" />
+		<Label id="EquipTier" />
+		<Label id="EquipStrength" />
+		<Panel id="EquipStatusLayer" hittest="false" hittestchildren="false">
+			<Panel id="StatusSystemLock" class="EquipStatusBadge" hittest="false" hittestchildren="false" />
+			<Panel id="StatusFavorite" class="EquipStatusBadge" hittest="false" hittestchildren="false" />
+			<Panel id="StatusCurrentPreset" class="EquipStatusBadge" hittest="false" hittestchildren="false" />
+			<Panel id="StatusOtherPreset" class="EquipStatusBadge" hittest="false" hittestchildren="false" />
+		</Panel>
+	</Panel>
+</root>

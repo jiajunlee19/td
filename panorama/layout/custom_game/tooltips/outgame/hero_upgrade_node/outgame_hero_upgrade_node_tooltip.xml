@@ -1,0 +1,33 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/hero_upgrade_node/outgame_hero_upgrade_node_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/hero_upgrade_node/outgame_hero_upgrade_node_tooltip.vjs_c" />
+	</scripts>
+	<Panel class="OutgameHeroUpgradeNodeTooltip">
+		<Panel id="MainPanel">
+			<Panel id="HeroUpgradeNodeTooltipHeader">
+				<Panel id="HeroUpgradeNodeTooltipIcon" />
+				<Panel id="HeroUpgradeNodeTooltipTitleBox">
+					<Label id="HeroUpgradeNodeTooltipName" />
+					<Label id="HeroUpgradeNodeTooltipMeta" />
+				</Panel>
+			</Panel>
+			<Panel id="HeroUpgradeNodeTooltipBody">
+				<Panel id="HeroUpgradeNodeTooltipRewardSection" class="HeroUpgradeNodeTooltipSection">
+					<Label id="HeroUpgradeNodeTooltipRewardTitle" class="HeroUpgradeNodeTooltipSectionTitle" />
+					<Label id="HeroUpgradeNodeTooltipRewardText" class="HeroUpgradeNodeTooltipText" html="true" />
+				</Panel>
+				<Panel class="HeroUpgradeNodeTooltipDivider" />
+				<Panel id="HeroUpgradeNodeTooltipMaterialSection" class="HeroUpgradeNodeTooltipSection">
+					<Label id="HeroUpgradeNodeTooltipMaterialTitle" class="HeroUpgradeNodeTooltipSectionTitle" />
+					<Label id="HeroUpgradeNodeTooltipMaterialText" class="HeroUpgradeNodeTooltipText" />
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

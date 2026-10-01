@@ -1,0 +1,7 @@
+#base "item/tower_build_items.txt"
+#base "item/ingame_equipment.txt"
+#base "item/consumable_shop.txt"
+"DOTAAbilities"
+{
+    
+}

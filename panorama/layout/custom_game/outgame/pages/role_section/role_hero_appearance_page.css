@@ -1,0 +1,208 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameHeroAppearanceRoot
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameHeroAppearanceBody
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	background-color: cScrimBody;
+}
+
+.OutgameHeroAppearanceHeroPane
+{
+	height: 100%;
+}
+
+.OutgameHeroAppearanceHeroCard.UsingOfficialAppearance
+{
+	box-shadow: inset #b78b38 0px 0px 5px 1px;
+}
+
+.OutgameHeroAppearanceHeroCard
+{
+	height: 102px;
+	margin-bottom: 8px;
+}
+
+.OutgameHeroAppearanceDetailPane
+{
+	height: 100%;
+	width: fill-parent-flow(1);
+	flow-children: down;
+	padding: 20px 20px 20px 24px;
+}
+
+.OutgameHeroAppearanceDetailHeader
+{
+	width: 100%;
+	height: 146px;
+	flow-children: right;
+	margin-bottom: 14px;
+}
+
+.OutgameHeroAppearanceDetailIcon
+{
+	width: 160px;
+	height: 90px;
+	border: 1px solid rgba(145, 184, 204, 0.45);
+	box-shadow: rgba(0, 0, 0, 0.65) 0px 2px 8px 0px;
+}
+
+.OutgameHeroAppearanceDetailText
+{
+	height: 100%;
+	width: fill-parent-flow(1);
+	flow-children: down;
+	margin-left: 18px;
+}
+
+.OutgameHeroAppearanceDetailName
+{
+	color: #f1f7fa;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.OutgameHeroAppearanceProficiencyRow
+{
+	width: 100%;
+	height: 28px;
+	flow-children: right;
+	margin-top: 3px;
+}
+
+.OutgameHeroAppearanceProficiency
+{
+	color: #e3b96f;
+	font-size: 19px;
+	vertical-align: center;
+}
+
+.OutgameHeroAppearanceProficiencyHelp
+{
+	color: #7fb4cc;
+	font-size: 15px;
+	vertical-align: center;
+	margin-left: 12px;
+	text-decoration: underline;
+}
+
+.OutgameHeroAppearanceProficiencyHelp:hover
+{
+	color: #b9e5f7;
+}
+
+.OutgameHeroAppearanceProficiencyAttr
+{
+	width: 100%;
+	height: 23px;
+	color: #a9bec8;
+	font-size: 16px;
+	text-overflow: shrink;
+}
+
+.OutgameHeroAppearanceProficiencyAttr.CurrentTotal
+{
+	color: #d9c58a;
+}
+
+.OutgameHeroAppearanceRule
+{
+	color: #8499a4;
+	font-size: 16px;
+	margin-top: 1px;
+}
+
+.OutgameHeroAppearanceOptionGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.OutgameHeroAppearanceOption
+{
+	width: 310px;
+	height: 420px;
+	flow-children: down;
+	margin: 0 12px 14px 0;
+	padding: 10px;
+	background-color: rgba(7, 15, 22, 0.84);
+	border: 1px solid rgba(113, 144, 161, 0.38);
+}
+
+.OutgameHeroAppearanceOption.Selected
+{
+	border: 2px solid #d5a94d;
+	box-shadow: #b8872d 0px 0px 8px 0px;
+}
+
+.OutgameHeroAppearanceOption.Locked
+{
+	saturation: 0.2;
+	brightness: 0.65;
+}
+
+.OutgameHeroAppearancePreview
+{
+	width: 100%;
+	height: 278px;
+	background-color: rgba(1, 5, 8, 0.58);
+}
+
+.OutgameHeroAppearanceScene
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameHeroAppearanceOptionName
+{
+	width: 100%;
+	height: 42px;
+	color: #ecf3f6;
+	font-size: 22px;
+	text-align: center;
+	text-overflow: shrink;
+	margin-top: 8px;
+}
+
+.OutgameHeroAppearanceRequirement
+{
+	width: 100%;
+	color: #8ca1ab;
+	font-size: 16px;
+	text-align: center;
+}
+
+.OutgameHeroAppearanceSelectButton
+{
+	width: 190px;
+	height: 42px;
+	horizontal-align: center;
+	margin-top: 8px;
+}
+
+.OutgameHeroAppearanceSelectButtonLabel
+{
+	align: center center;
+	width: 100%;
+	color: #ecf7fb;
+	font-size: 18px;
+	text-align: center;
+}
+
+.OutgameHeroAppearanceEmpty
+{
+	color: #8798a1;
+	font-size: 22px;
+	align: center center;
+}
+

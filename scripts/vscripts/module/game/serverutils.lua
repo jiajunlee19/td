@@ -1,0 +1,1 @@
+return require("utils.decrypt_server")("9872CD771F4371049BD056DAD3DCB9AC",getfenv(1),...)

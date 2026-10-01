@@ -1,0 +1,46 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.PlayerAvatar
+{
+	width: 100%;
+	height: 100%;
+	overflow: noclip;
+}
+
+.PlayerAvatar #HeadBg
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	background-image: url("s2r://panorama/images/custom_game/hud/player_info/player_list_head_bg_png.vtex");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.PlayerAvatar #HeadFrame
+{
+	align: center center;
+	width: 130%;
+	height: 130%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.PlayerAvatar #HeadMask
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	opacity-mask: url("s2r://panorama/images/custom_game/hud/player_info/common_head_mask_png.vtex");
+	overflow: noclip;
+}
+
+.PlayerAvatar #HeadIcon
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+

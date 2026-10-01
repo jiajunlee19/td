@@ -1,0 +1,40 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/hud/dota_hud_hero_healthbars.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/hud/style/overhead.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="HeroHealthBar">
+			<Panel class="HeroHealthBar">
+				<Panel id="TowerHealthBarLabel" class="TowerHealthBarLabel" require-composition-layer="true">
+					<Label id="NameLabel" class="TowerHealthBarNameLabel" text="" />
+					<Label id="StatusLabel" class="TowerHealthBarPlayerLabel" text="" />
+				</Panel>
+				<ProgressBar id="StatusProgress" />
+				<Label id="HealthText" text="10000" />
+				<Panel id="HealthBarBG" />
+				<Panel id="HPBarContainer">
+					<ProgressBar id="HPDamageBar" />
+					<ProgressBar id="HPBar" />
+				</Panel>
+				<Panel id="BarIconArea">
+					<Image id="BarIcon" />
+				</Panel>
+				<Panel id="HealthBarFG" />
+				<Panel id="HeroTitleEffect" />
+			</Panel>
+		</snippet>
+		<snippet name="UnitLabelCommon">
+			<Panel class="UnitLabel">
+				<Label id="UnitLabelText" text="UnitLabelSample" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="OverheadRoot" hittest="false" hittestchildren="false">
+		<Panel id="OverlayMapLabelCanvas" class="OverheadContainer" hittest="false" />
+		<Panel id="OverheadHealthBarContainer" class="OverheadContainer" hittest="false" />
+		<Panel id="FullScreenWarning" />
+	</Panel>
+</root>

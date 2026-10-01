@@ -1,0 +1,55 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/login_loading/login_loading.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/login_loading/login_loading.vjs_c" />
+	</scripts>
+	<Panel class="LoginLoadingRoot panel-hidden" hittest="false" hittestchildren="false">
+		<Label id="RoundParticipationNotice" class="RoundParticipationNotice panel-hidden" hittest="false" />
+		<Panel class="LoginLoadingBackdrop" hittest="false" />
+		<Panel class="LoginLoadingVignette" hittest="false" />
+		<Panel id="LoginLoadingPanel" class="LoginLoadingPanel" hittest="false">
+			<Label id="LoginLoadingTitle" class="LoginLoadingTitle" text="#login_loading_title" />
+			<Label id="LoginLoadingSubtitle" class="LoginLoadingSubtitle" text="#login_loading_subtitle" />
+			<Panel id="LoginLoadingProgressBlock" class="LoginLoadingProgressBlock">
+				<Label id="LoginLoadingProgressText" class="LoginLoadingProgressText" />
+				<Panel class="LoginLoadingProgressTrack">
+					<Panel id="LoginLoadingProgressFill" class="LoginLoadingProgressFill" />
+					<Panel class="LoginLoadingProgressPulse" hittest="false" />
+				</Panel>
+			</Panel>
+			<Panel id="LoginLoadingPlayerList" class="LoginLoadingPlayerList" />
+			<Label id="LoginLoadingDetail" class="LoginLoadingDetail" />
+			<Panel id="LoginAuthPanel" class="LoginAuthPanel panel-hidden" hittest="false" hittestchildren="true">
+				<Label class="LoginAuthTitle" text="#login_auth_title" />
+				<Label class="LoginAuthDescription" text="#login_auth_description" html="true" />
+				<TextEntry id="LoginAuthPassword" class="LoginAuthPassword" textmode="password" maxchars="128" placeholder="#login_auth_password_placeholder" />
+				<Label id="LoginAuthStatus" class="LoginAuthStatus" />
+				<Panel class="LoginAuthActions" hittest="false" hittestchildren="true">
+					<Button id="LoginAuthSubmitButton" class="LoginAuthButton LoginAuthSubmitButton" hittest="true" hittestchildren="false">
+						<Label class="LoginAuthButtonLabel" text="#login_auth_submit" />
+					</Button>
+					<Button id="LoginAuthWebsiteButton" class="LoginAuthButton LoginAuthWebsiteButton" hittest="true" hittestchildren="false">
+						<Label class="LoginAuthButtonLabel" text="#login_auth_set_password" />
+					</Button>
+				</Panel>
+				<Button id="LoginAuthExternalBrowserLink" class="LoginAuthExternalBrowserLink" hittest="true" hittestchildren="false">
+					<Label text="#login_auth_external_browser_hint" />
+				</Button>
+			</Panel>
+			<Panel class="LoginLoadingActionList">
+				<Button id="LoginLoadingExitButton" class="LoginLoadingActionButton LoginLoadingExitButton panel-hidden" hittest="true">
+					<Label class="LoginLoadingActionLabel" text="#login_loading_exit_button" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

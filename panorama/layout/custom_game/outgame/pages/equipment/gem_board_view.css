@@ -1,0 +1,1553 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameGemBoard
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	overflow: clip;
+	background-color: cScrim40;
+}
+
+.OutgameGemWorkPane
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	padding: 16px 18px 18px 18px;
+	overflow: clip;
+}
+
+.OutgameGemSlotActionPanel
+{
+	width: 462px;
+	ignore-parent-flow: true;
+	horizontal-align: left;
+	vertical-align: bottom;
+	margin-left: 22px;
+	margin-bottom: 22px;
+	flow-children: down;
+	background-color: cPanelFill;
+	border: 1px solid #4e5d6899;
+	box-shadow: 0px 0px 22px 2px cScrim60;
+	transition-property: opacity, transform;
+	transition-duration: 0.12s;
+	transition-timing-function: ease-out;
+}
+
+.OutgameGemSlotActionPanel.Hidden
+{
+	visibility: collapse;
+	opacity: 0;
+	transform: translateX(-24px);
+}
+
+.OutgameGemSlotActionPanel.FilledSlotMode
+{
+	height: fit-children;
+}
+
+.OutgameGemSlotActionPanel.InlayOptionsMode
+{
+	height: fit-children;
+}
+
+.OutgameGemSlotActionHeader
+{
+	width: 100%;
+	height: 52px;
+	flow-children: right;
+	padding: 12px 14px 0px 16px;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameGemSlotActionHeader.Filled
+{
+	height: 64px;
+	padding: 11px 14px 11px 16px;
+}
+
+.OutgameGemSlotActionTitleBox
+{
+	width: fill-parent-flow(1);
+	height: fit-children;
+	flow-children: down;
+	vertical-align: center;
+}
+
+.OutgameGemSlotActionTitle
+{
+	width: 100%;
+	color: cCream;
+	font-size: 19px;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameGemSlotActionType
+{
+	width: 100%;
+	color: #8fb0c4;
+	font-size: 13px;
+	text-overflow: shrink;
+}
+
+.OutgameGemSlotActionType.Solo
+{
+	color: cCream;
+	font-size: 19px;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameGemSlotActionTier
+{
+	min-width: 34px;
+	height: 24px;
+	padding: 2px 6px 0px 6px;
+	color: #f3deb3;
+	background-color: #15191eee;
+	border: 1px solid #f1d58a55;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 1px 1px 2px 1.0 #000000;
+	vertical-align: center;
+}
+
+.OutgameGemSlotActionClose
+{
+	width: 26px;
+	height: 26px;
+	vertical-align: center;
+	margin-left: 8px;
+	background-color: cHairlineLo;
+	border: 1px solid cHairlineHi;
+	border-radius: 4px;
+	transition-property: background-color, border;
+	transition-duration: 0.1s;
+}
+
+.OutgameGemSlotActionClose:hover
+{
+	background-color: #b5392fdd;
+	border: 1px solid #ff9384;
+}
+
+.OutgameGemSlotActionCloseIcon
+{
+	width: 14px;
+	height: 14px;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.OutgameGemSlotActionCloseLine
+{
+	width: 14px;
+	height: 2px;
+	horizontal-align: center;
+	vertical-align: center;
+	background-color: cTan;
+	border-radius: 1px;
+}
+
+.OutgameGemSlotActionCloseLine.LineA
+{
+	transform: rotateZ(45deg);
+}
+
+.OutgameGemSlotActionCloseLine.LineB
+{
+	transform: rotateZ(-45deg);
+}
+
+.OutgameGemSlotActionClose:hover .OutgameGemSlotActionCloseLine
+{
+	background-color: #ffffff;
+}
+
+.OutgameGemActionWarehouseTitle
+{
+	width: 100%;
+	color: #9fb5c3;
+	font-size: 14px;
+	padding: 10px 14px 2px 14px;
+	text-overflow: shrink;
+}
+
+.OutgameGemPaneHeader
+{
+	width: 100%;
+	height: 52px;
+	padding: 13px 16px 0px 18px;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameGemPaneTitle
+{
+	color: cCream;
+	font-size: 21px;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameGemBoardHint
+{
+	width: fill-parent-flow(1);
+	color: cSlate;
+	font-size: 14px;
+	text-align: right;
+	vertical-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameGemSection
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	margin-bottom: 0px;
+}
+
+.OutgameGemBoardHeader
+{
+	width: 100%;
+	height: 30px;
+	flow-children: right;
+	margin-bottom: 6px;
+}
+
+.OutgameGemSectionTitle
+{
+	width: fit-children;
+	min-width: 82px;
+	color: cTan;
+	font-size: 20px;
+	font-weight: bold;
+	text-overflow: shrink;
+	vertical-align: center;
+	margin-right: 18px;
+}
+
+.OutgameGemTreeViewport
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	min-height: 0px;
+	overflow: clip;
+	background-color: #05080cd9;
+	border: 1px solid cHairline;
+}
+
+.OutgameGemTreeCanvas
+{
+	overflow: noclip;
+	transition-property: transform;
+	transition-duration: 0.04s;
+	transition-timing-function: ease-out;
+}
+
+.OutgameGemTreeViewport.Panning .OutgameGemTreeCanvas
+{
+	transition-duration: 0s;
+}
+
+.OutgameGemTreeLines,.OutgameGemTreeNodes
+{
+	width: 100%;
+	height: 100%;
+	position: 0px 0px 0px;
+	overflow: noclip;
+}
+
+.OutgameGemTreeEdgeSegment
+{
+	background-color: #9a8b6d44;
+}
+
+.OutgameGemSlotCell
+{
+	width: 104px;
+	height: 124px;
+	flow-children: down;
+	margin-bottom: 8px;
+}
+
+.OutgameGemSlotCell.TreeNode
+{
+	position: 0px 0px 0px;
+	margin-bottom: 0px;
+	padding-top: 6px;
+}
+
+.OutgameGemSlotIconFrame
+{
+	width: 72px;
+	height: 72px;
+	horizontal-align: center;
+	background-color: #05080cf0;
+	border-radius: 6px;
+	border: 1px solid cHairlineHi;
+	transition-property: border, background-color, box-shadow, brightness;
+	transition-duration: 0.1s;
+}
+
+.OutgameGemSlotLimitWashStack
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	overflow: clip;
+	opacity: 0.48;
+	z-index: 1;
+}
+
+.OutgameGemSlotLimitWashStack.GridWash
+{
+	border-radius: 6px;
+}
+
+.OutgameGemSlotLimitWashStack.StarWash
+{
+	border-radius: 50% 50% 50% 50%;
+	opacity: 0.46;
+}
+
+.OutgameGemSlotLimitWashStack.MultiWash
+{
+	opacity: 0.42;
+}
+
+.OutgameGemSlotLimitWashStack.WideWash
+{
+	opacity: 0.36;
+}
+
+.OutgameGemSlotLimitWash
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	background-color: #ffffff88;
+	wash-color: #ffffff88;
+}
+
+.GemAffinity_str
+{
+	background-color: #ff8a7a99;
+	wash-color: #ff8a7a99;
+}
+
+.GemAffinity_agi
+{
+	background-color: #79d89099;
+	wash-color: #79d89099;
+}
+
+.GemAffinity_int
+{
+	background-color: #78aee899;
+	wash-color: #78aee899;
+}
+
+.GemAffinity_all
+{
+	background-color: #f2ead299;
+	wash-color: #f2ead299;
+}
+
+.GemAffinity_prismatic
+{
+	background-color: #d9c8ff99;
+	wash-color: #d9c8ff99;
+}
+
+.GemAffinity_physical
+{
+	background-color: #c7ced699;
+	wash-color: #c7ced699;
+}
+
+.GemAffinity_arcane
+{
+	background-color: #b784ff99;
+	wash-color: #b784ff99;
+}
+
+.GemAffinity_fire
+{
+	background-color: #ff7b4a99;
+	wash-color: #ff7b4a99;
+}
+
+.GemAffinity_frost
+{
+	background-color: #81d9ff99;
+	wash-color: #81d9ff99;
+}
+
+.GemAffinity_lightning
+{
+	background-color: #f5dc6b99;
+	wash-color: #f5dc6b99;
+}
+
+.GemAffinity_earth
+{
+	background-color: #c7a06699;
+	wash-color: #c7a06699;
+}
+
+.GemAffinity_shadow
+{
+	background-color: #9b79d699;
+	wash-color: #9b79d699;
+}
+
+.GemAffinity_poison
+{
+	background-color: #78cf5a99;
+	wash-color: #78cf5a99;
+}
+
+.GemAffinity_holy
+{
+	background-color: #ffe38a99;
+	wash-color: #ffe38a99;
+}
+
+.GemAffinity_void
+{
+	background-color: #8b8eff99;
+	wash-color: #8b8eff99;
+}
+
+.GemAffinity_attack_damage
+{
+	background-color: #ffb35c99;
+	wash-color: #ffb35c99;
+}
+
+.GemAffinity_attack_speed
+{
+	background-color: #8ee6a899;
+	wash-color: #8ee6a899;
+}
+
+.GemAffinity_skill_damage
+{
+	background-color: #8dc8ff99;
+	wash-color: #8dc8ff99;
+}
+
+.GemAffinity_cooldown
+{
+	background-color: #a7c0ff99;
+	wash-color: #a7c0ff99;
+}
+
+.GemAffinity_final_damage
+{
+	background-color: #ffe08a99;
+	wash-color: #ffe08a99;
+}
+
+.GemAffinity_gold_gain,.GemAffinity_kill_gold
+{
+	background-color: #ffd05d99;
+	wash-color: #ffd05d99;
+}
+
+.GemAffinity_wood_gain
+{
+	background-color: #8bcf6a99;
+	wash-color: #8bcf6a99;
+}
+
+.GemAffinity_glory_gain
+{
+	background-color: #d9b6ff99;
+	wash-color: #d9b6ff99;
+}
+
+.OutgameGemSlotIconFrame .OutgameGemIconHost,.OutgameGemStarDot .OutgameGemIconHost
+{
+	z-index: 3;
+}
+
+.OutgameGemSlotEffectBadge,.OutgameGemSlotEffectCenterIcon
+{
+	ignore-parent-flow: true;
+	overflow: noclip;
+	z-index: 7;
+}
+
+.OutgameGemSlotEffectBadge
+{
+	horizontal-align: right;
+	vertical-align: top;
+}
+
+.OutgameGemSlotEffectBadge.GridIcon
+{
+	width: 28px;
+	height: 28px;
+	margin-top: 2px;
+	margin-right: 2px;
+}
+
+.OutgameGemSlotEffectBadge.StarIcon
+{
+	width: 10px;
+	height: 10px;
+	margin-top: -3px;
+	margin-right: -3px;
+}
+
+.OutgameGemStarNode.Kind_core .OutgameGemSlotEffectBadge.StarIcon,.OutgameGemStarNode.Kind_keystone .OutgameGemSlotEffectBadge.StarIcon
+{
+	width: 12px;
+	height: 12px;
+	margin-top: -4px;
+	margin-right: -4px;
+}
+
+.OutgameGemStarNode.Kind_nexus .OutgameGemSlotEffectBadge.StarIcon
+{
+	width: 15px;
+	height: 15px;
+	margin-top: -5px;
+	margin-right: -5px;
+}
+
+.OutgameGemSlotEffectCenterIcon
+{
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.OutgameGemSlotEffectCenterIcon.GridIcon
+{
+	width: 34px;
+	height: 34px;
+}
+
+.OutgameGemSlotEffectCenterIcon.StarIcon
+{
+	width: 42%;
+	height: 42%;
+}
+
+.OutgameGemSlotEffectBaseIcon,.OutgameGemSlotEffectModIcon
+{
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.OutgameGemSlotEffectBaseIcon
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.OutgameGemSlotEffectBadge.MultiBase .OutgameGemSlotEffectBaseIcon.BasePrimary
+{
+	width: 72%;
+	height: 72%;
+	horizontal-align: left;
+	vertical-align: top;
+}
+
+.OutgameGemSlotEffectCenterIcon.MultiBase .OutgameGemSlotEffectBaseIcon.BasePrimary
+{
+	width: 72%;
+	height: 72%;
+	horizontal-align: left;
+	vertical-align: top;
+}
+
+.OutgameGemSlotEffectBadge.MultiBase .OutgameGemSlotEffectBaseIcon.BaseSecondary
+{
+	width: 72%;
+	height: 72%;
+	horizontal-align: right;
+	vertical-align: bottom;
+}
+
+.OutgameGemSlotEffectCenterIcon.MultiBase .OutgameGemSlotEffectBaseIcon.BaseSecondary
+{
+	width: 72%;
+	height: 72%;
+	horizontal-align: right;
+	vertical-align: bottom;
+}
+
+.OutgameGemSlotEffectModIcon
+{
+	ignore-parent-flow: true;
+	width: 44%;
+	height: 44%;
+	horizontal-align: right;
+	vertical-align: bottom;
+	background-color: #05080cdd;
+	border-radius: 50% 50% 50% 50%;
+	box-shadow: 0px 0px 2px 1px cScrim60;
+	z-index: 8;
+}
+
+.OutgameGemSlotEffectBadge.MultiBase .OutgameGemSlotEffectModIcon
+{
+	width: 34%;
+	height: 34%;
+	vertical-align: top;
+}
+
+.OutgameGemSlotEffectCenterIcon.MultiBase .OutgameGemSlotEffectModIcon
+{
+	width: 34%;
+	height: 34%;
+	vertical-align: top;
+}
+
+.GemAttrIcon_attr_str
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_strength_psd.vtex");
+}
+
+.GemAttrIcon_attr_agi
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_agility_psd.vtex");
+}
+
+.GemAttrIcon_attr_int
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_intelligence_psd.vtex");
+}
+
+.GemAttrIcon_attr_all
+{
+	background-image: url("s2r://panorama/images/primary_attribute_icons/primary_attribute_icon_all_psd.vtex");
+}
+
+.GemAttrIcon_elem_physical
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_physical_png.vtex");
+}
+
+.GemAttrIcon_elem_arcane
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_arcane_png.vtex");
+}
+
+.GemAttrIcon_elem_fire
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_fire_png.vtex");
+}
+
+.GemAttrIcon_elem_frost
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_frost_png.vtex");
+}
+
+.GemAttrIcon_elem_lightning
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_lightning_png.vtex");
+}
+
+.GemAttrIcon_elem_earth
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_earth_png.vtex");
+}
+
+.GemAttrIcon_elem_shadow
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_shadow_png.vtex");
+}
+
+.GemAttrIcon_elem_poison
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_poison_png.vtex");
+}
+
+.GemAttrIcon_elem_holy
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_holy_png.vtex");
+}
+
+.GemAttrIcon_elem_void
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/elem_void_png.vtex");
+}
+
+.GemAttrIcon_generic_attack_damage
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_attack_damage_png.vtex");
+}
+
+.GemAttrIcon_generic_attack_speed
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_attack_speed_png.vtex");
+}
+
+.GemAttrIcon_generic_skill_damage
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_skill_damage_png.vtex");
+}
+
+.GemAttrIcon_generic_cooldown
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_cooldown_png.vtex");
+}
+
+.GemAttrIcon_generic_final_damage
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_final_damage_png.vtex");
+}
+
+.GemAttrIcon_generic_gold_gain
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_gold_gain_png.vtex");
+}
+
+.GemAttrIcon_generic_kill_gold
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_kill_gold_png.vtex");
+}
+
+.GemAttrIcon_generic_wood_gain
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_wood_gain_png.vtex");
+}
+
+.GemAttrIcon_generic_glory_gain
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/generic_glory_gain_png.vtex");
+}
+
+.GemAttrIcon_mod_growth
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/mod_growth_png.vtex");
+}
+
+.GemAttrIcon_mod_percent
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/mod_percent_png.vtex");
+}
+
+.GemAttrIcon_mod_amp
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/mod_amp_png.vtex");
+}
+
+.GemAttrIcon_mod_crit
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/mod_crit_png.vtex");
+}
+
+.GemAttrIcon_mod_crit_damage
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/mod_crit_damage_png.vtex");
+}
+
+.GemAttrIcon_mod_pierce
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_attr/mod_pierce_png.vtex");
+}
+
+.OutgameGemSlotCell.Series_0 .OutgameGemSlotIconFrame
+{
+	border-color: #f1d58a99;
+}
+
+.OutgameGemSlotCell.Series_1 .OutgameGemSlotIconFrame
+{
+	border-color: #d96f5f99;
+}
+
+.OutgameGemSlotCell.Series_2 .OutgameGemSlotIconFrame
+{
+	border-color: #7ed19f99;
+}
+
+.OutgameGemSlotCell.Series_3 .OutgameGemSlotIconFrame
+{
+	border-color: #78aee899;
+}
+
+.OutgameGemSlotCell.Series_4 .OutgameGemSlotIconFrame
+{
+	border-color: #caa7f299;
+}
+
+.OutgameGemSlotCell.Series_5 .OutgameGemSlotIconFrame
+{
+	border-color: #e5c15caa;
+}
+
+.OutgameGemSlotCell.MissingRequire
+{
+	saturation: 0.35;
+	brightness: 0.52;
+}
+
+.OutgameGemSlotCell.MissingRequire.Filled
+{
+	brightness: 0.72;
+}
+
+.OutgameGemIconHost
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameGemIconTier
+{
+	ignore-parent-flow: true;
+	horizontal-align: left;
+	vertical-align: top;
+	min-width: 26px;
+	height: 20px;
+	padding: 1px 4px 0px 4px;
+	color: #f3deb3;
+	background-color: #15191eee;
+	border: 1px solid #f1d58a55;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 1px 1px 2px 1.0 #000000;
+	z-index: 4;
+}
+
+.OutgameGemEnhanceMaterialIcon .OutgameGemIconTier
+{
+	min-width: 20px;
+	height: 16px;
+	padding: 0px 2px 0px 2px;
+	font-size: 10px;
+}
+
+.OutgameGemSlotCell.Empty .OutgameGemSlotIconFrame
+{
+	background-color: #05080cf4;
+	border: 1px solid cHairlineHi;
+}
+
+.OutgameGemSlotCell.Empty:hover .OutgameGemSlotIconFrame,.OutgameGemSlotCell.Filled:hover .OutgameGemSlotIconFrame,.OutgameGemSlotCell.PreviewHover .OutgameGemSlotIconFrame
+{
+	border: 1px solid cGoldBright;
+	background-color: #221e13ee;
+}
+
+.OutgameGemSlotCell.AvailableNow .OutgameGemSlotIconFrame
+{
+	border: 1px solid #79d06aaa;
+	background-color: #102214ee;
+	box-shadow: 0px 0px 5px 1px #79d06a44;
+	animation-name: OutgameGemAvailablePulse;
+	animation-duration: 1.8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.OutgameGemSlotCell.PreviewAvailable .OutgameGemSlotIconFrame
+{
+	border: 1px solid #67c950aa;
+	box-shadow: 0px 0px 6px 1px #67c95055;
+}
+
+.OutgameGemSlotCell.PreviewSelected .OutgameGemSlotIconFrame
+{
+	border: 1px solid cGoldBright;
+	background-color: #4a351266;
+	box-shadow: 0px 0px 10px 2px #ffd98a88;
+	brightness: 1.35;
+}
+
+.OutgameGemSlotCell.AvailableNow.PreviewSelected .OutgameGemSlotIconFrame
+{
+	animation-name: none;
+}
+
+.OutgameGemSlotCell.MissingRequire.Empty:hover .OutgameGemSlotIconFrame
+{
+	border: 1px solid cHairlineHi;
+	background-color: #05080cf4;
+	box-shadow: none;
+}
+
+.OutgameGemSlotEmptyMark
+{
+	color: #ffffff45;
+	font-size: 30px;
+	horizontal-align: center;
+	vertical-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	z-index: 3;
+}
+
+.OutgameGemSlotCell.PreviewAvailable .OutgameGemSlotEmptyMark,.OutgameGemSlotCell.PreviewSelected .OutgameGemSlotEmptyMark
+{
+	color: cGoldBright;
+}
+
+@keyframes 'OutgameGemAvailablePulse'
+{
+	0%
+	{
+		box-shadow: 0px 0px 3px 0px #79d06a33;
+		brightness: 1.00;
+	}
+	
+	50%
+	{
+		box-shadow: 0px 0px 9px 2px #79d06a66;
+		brightness: 1.14;
+	}
+	
+	100%
+	{
+		box-shadow: 0px 0px 3px 0px #79d06a33;
+		brightness: 1.00;
+	}
+	
+}
+
+.OutgameGemSlotTier
+{
+	horizontal-align: left;
+	vertical-align: top;
+	min-width: 26px;
+	height: 20px;
+	padding: 1px 4px 0px 4px;
+	color: #f3deb3;
+	background-color: #15191eee;
+	border: 1px solid #f1d58a55;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 1px 1px 2px 1.0 #000000;
+	z-index: 4;
+}
+
+.OutgameGemSlotStrength
+{
+	horizontal-align: right;
+	vertical-align: bottom;
+	color: cGoldBright;
+	font-size: 14px;
+	text-shadow: 1px 1px 2px 1.0 #000000;
+	z-index: 4;
+}
+
+.OutgameGemSlotName
+{
+	width: 96px;
+	height: 20px;
+	horizontal-align: center;
+	text-align: center;
+	color: #cfcfcf;
+	background-color: #05080cf0;
+	border: 1px solid cHairline;
+	border-radius: 4px;
+	font-size: 14px;
+	margin-top: 4px;
+	padding: 1px 4px 0px 4px;
+	text-shadow: 1px 1px 2px 1.0 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameGemSlotCell.PreviewSelected .OutgameGemSlotName
+{
+	color: #ffe3a6;
+}
+
+.OutgameGemInlayPreview
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.OutgameGemInlayPreview.InlayMode,.OutgameGemInlayPreview.LockedMode
+{
+	height: fit-children;
+}
+
+.OutgameGemInlayPreview.FilledMode
+{
+	height: fit-children;
+}
+
+.OutgameGemSlotActionGem
+{
+	width: 42px;
+	height: 42px;
+	margin-right: 12px;
+	vertical-align: center;
+}
+
+.OutgameGemStatusStrip
+{
+	width: 100%;
+	padding: 11px 16px 11px 16px;
+	flow-children: right;
+	border-bottom: 1px solid cHairline;
+	background-color: #8a94a012;
+}
+
+.OutgameGemStatusStrip.Potential
+{
+	background-color: #d2b97614;
+}
+
+.OutgameGemStatusMsg
+{
+	width: fill-parent-flow(1);
+	flow-children: right;
+	vertical-align: center;
+}
+
+.OutgameGemStatusFx
+{
+	width: 9px;
+	height: 9px;
+	margin-right: 9px;
+	vertical-align: center;
+	background-color: cTan;
+	border-radius: 1px;
+}
+
+.OutgameGemStatusStrip.Potential .OutgameGemStatusFx
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGoldBright), to(#a98a4e));
+	box-shadow: #d2b97688 0px 0px 7px 0px;
+}
+
+.OutgameGemStatusText
+{
+	color: cTan;
+	font-size: 13px;
+	letter-spacing: 1.5px;
+	vertical-align: center;
+}
+
+.OutgameGemStatusStrip.Potential .OutgameGemStatusText
+{
+	color: cGold;
+}
+
+.OutgameGemStatusRight
+{
+	color: cSlate;
+	font-size: 13px;
+	letter-spacing: 1px;
+	horizontal-align: right;
+	vertical-align: center;
+}
+
+.OutgameGemStatusStrip.Potential .OutgameGemStatusRight
+{
+	color: cTan;
+}
+
+.OutgameGemLevelBlock
+{
+	width: 100%;
+	flow-children: down;
+	padding: 16px 16px 17px 16px;
+	border-bottom: 1px solid cHairline;
+}
+
+.OutgameGemLevelTop
+{
+	width: 100%;
+	flow-children: right;
+}
+
+.OutgameGemLevelEyebrow
+{
+	width: fill-parent-flow(1);
+	color: cGold;
+	font-size: 12px;
+	letter-spacing: 3px;
+	vertical-align: center;
+}
+
+.OutgameGemLevelNumWrap
+{
+	flow-children: right;
+	horizontal-align: right;
+	vertical-align: center;
+}
+
+.OutgameGemLevelNum
+{
+	color: #e8d29a;
+	font-size: 23px;
+	font-weight: bold;
+	text-shadow: 0px 1px 4px 2 #000000;
+	vertical-align: center;
+}
+
+.OutgameGemLevelPill
+{
+	margin-left: 9px;
+	vertical-align: center;
+	color: #241a06;
+	font-size: 11px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 3px 8px 3px 8px;
+	border-radius: 2px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cGoldBright), to(#a98a4e));
+	box-shadow: #d2b97655 0px 0px 9px 0px;
+}
+
+.OutgameGemPips
+{
+	width: 100%;
+	flow-children: right;
+	margin-top: 13px;
+}
+
+.OutgameGemPip
+{
+	width: fill-parent-flow(1);
+	height: 13px;
+	margin-left: 2px;
+	margin-right: 2px;
+	background-color: #0a1017;
+	border: 1px solid #2a3742;
+}
+
+.OutgameGemPip.On
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#dcc487), color-stop(0.55, #c3a869), to(#90764a));
+	border: 1px solid #c9af71;
+}
+
+.OutgameGemAttrSection
+{
+	width: 100%;
+	flow-children: down;
+	padding: 13px 16px 14px 16px;
+}
+
+.OutgameGemAttrSection.Gain,.OutgameGemMaxNote
+{
+	border-top: 1px solid cHairline;
+}
+
+.OutgameGemAttrLabel
+{
+	color: cSlate;
+	font-size: 12px;
+	letter-spacing: 2.5px;
+	margin-bottom: 9px;
+}
+
+.OutgameGemAttrSection.Gain .OutgameGemAttrLabel
+{
+	color: #93a19b;
+}
+
+.OutgameGemAttrList
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.OutgameGemAttrList .OutgameGemPreviewAttrRow
+{
+	color: cTan;
+	font-size: 14px;
+	margin-bottom: 3px;
+}
+
+.OutgameGemMaxNote
+{
+	width: 100%;
+	padding: 14px 16px 14px 16px;
+	flow-children: right;
+}
+
+.OutgameGemMaxNoteText
+{
+	horizontal-align: center;
+	color: cGold;
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+
+.OutgameGemPreviewActions
+{
+	width: 100%;
+	flow-children: right;
+	padding: 14px 16px 16px 16px;
+	border-top: 1px solid cHairline;
+}
+
+.OutgameGemMaterialLockHint
+{
+	width: 100%;
+	padding: 9px 16px 0px 16px;
+	color: cRed;
+	font-size: 12px;
+	letter-spacing: 0.5px;
+}
+
+.OutgameGemMaterialList
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	padding: 12px 14px 12px 14px;
+}
+
+.OutgameGemMaterialListLabel
+{
+	width: 100%;
+	color: cSlate;
+	font-size: 12px;
+	letter-spacing: 2.5px;
+	margin-bottom: 10px;
+}
+
+.OutgameGemMaterialCard
+{
+	width: 100%;
+	flow-children: right;
+	padding: 9px 9px 9px 10px;
+	margin-bottom: 7px;
+	border-radius: 4px;
+	background-color: #0d1721;
+	border: 1px solid #2a3742;
+}
+
+.OutgameGemMaterialActionHost
+{
+	width: fit-children;
+	height: fit-children;
+	vertical-align: center;
+}
+
+.OutgameGemMaterialCard.Unavailable
+{
+	opacity: 0.55;
+}
+
+.OutgameGemMaterialIcon
+{
+	width: 34px;
+	height: 34px;
+	vertical-align: center;
+	margin-right: 11px;
+}
+
+.OutgameGemMaterialId
+{
+	width: fill-parent-flow(1);
+	flow-children: down;
+	vertical-align: center;
+}
+
+.OutgameGemMaterialName
+{
+	color: cCream;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+}
+
+.OutgameGemMaterialAttrs
+{
+	width: 100%;
+	flow-children: down;
+	margin-top: 2px;
+}
+
+.OutgameGemMaterialAttrs .OutgameGemPreviewAttrRow
+{
+	color: cTan;
+	font-size: 12px;
+}
+
+.OutgameGemMaterialOwn
+{
+	color: cSteel;
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	vertical-align: center;
+	margin-right: 10px;
+}
+
+.OutgameGemMaterialOwn.Zero
+{
+	color: #c06b6b;
+}
+
+.OutgameGemMaterialCard .OutgameGemPreviewActionButton
+{
+	width: fit-children;
+	min-width: 58px;
+	height: 30px;
+	margin-right: 0px;
+	padding: 0px 13px 0px 13px;
+	vertical-align: center;
+}
+
+.OutgameGemPreviewAttrRow
+{
+	width: 100%;
+	color: cTan;
+	font-size: 14px;
+	text-overflow: shrink;
+}
+
+.OutgameGemPreviewEmptyText
+{
+	width: 100%;
+	color: cSlate;
+	font-size: 14px;
+	text-overflow: shrink;
+}
+
+.OutgameGemPreviewActionButton
+{
+	width: fill-parent-flow(1);
+	height: 40px;
+	margin-right: 8px;
+}
+
+.OutgameGemPreviewActionText
+{
+	width: 100%;
+	text-align: center;
+	vertical-align: center;
+	font-size: 15px;
+	text-overflow: shrink;
+}
+
+.OutgameGemEmpty
+{
+	color: #888888;
+	font-size: 16px;
+	margin: 12px;
+}
+
+.OutgameHeaderExtraItem.Type_gem_resource
+{
+	height: 40px;
+	min-width: 108px;
+	width: fit-children;
+	margin-left: 6px;
+	padding: 0px 12px 0px 6px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2a33e8), color-stop(0.68, #101820e8), to(#070b0fee));
+	border: 1px solid cHairline;
+	border-radius: 4px;
+	box-shadow: cScrim60 0px 3px 8px 0px;
+}
+
+.OutgameHeaderExtraItem.Type_gem_resource:hover
+{
+	brightness: 1.12;
+	border: 1px solid #f1d58a88;
+}
+
+.OutgameHeaderExtraItem.Type_gem_resource .OutgameHeaderExtraIcon
+{
+	width: 30px;
+	height: 30px;
+	margin-right: 6px;
+	vertical-align: center;
+}
+
+.OutgameHeaderExtraItem.Type_gem_resource .OutgameHeaderExtraText
+{
+	width: fit-children;
+	min-width: 56px;
+	margin-left: 0px;
+	color: cGoldBright;
+	font-size: 18px;
+	text-align: right;
+	vertical-align: center;
+}
+
+.OutgameGemStarDragHost,.OutgameGemStarDragRoot,.OutgameGemStarDragZoom
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameGemStarDragZoom,.OutgameGemStarCanvas
+{
+	transition-property: transform, pre-transform-scale2d;
+	transition-duration: 0.14s;
+	transition-timing-function: ease-out;
+}
+
+.OutgameGemTreeEdgeLine
+{
+	background-color: #9a8b6d4d;
+}
+
+.OutgameGemStarNode
+{
+	width: 80px;
+	height: 80px;
+	overflow: noclip;
+}
+
+.OutgameGemStarNode .OutgameGemIconTier
+{
+	visibility: collapse;
+}
+
+.OutgameGemStarDot
+{
+	width: 18px;
+	height: 18px;
+	horizontal-align: center;
+	vertical-align: center;
+	border-radius: 50% 50% 50% 50%;
+	border: 1px solid #00000000;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: noclip;
+	transition-property: width, height, box-shadow, border, brightness;
+	transition-duration: 0.1s;
+}
+
+.OutgameGemStarNode.NodeType_origin .OutgameGemStarDot
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_node/type_origin_png.vtex");
+}
+
+.OutgameGemStarNode.NodeType_road .OutgameGemStarDot
+{
+	width: 20px;
+	height: 20px;
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_node/type_road_png.vtex");
+}
+
+.OutgameGemStarNode.NodeType_cluster .OutgameGemStarDot
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_node/type_cluster_png.vtex");
+}
+
+.OutgameGemStarNode.NodeType_mastery .OutgameGemStarDot
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_node/type_mastery_png.vtex");
+}
+
+.OutgameGemStarNode.NodeType_keystone .OutgameGemStarDot
+{
+	background-image: url("s2r://panorama/images/custom_game/icon/gem_node/type_keystone_png.vtex");
+}
+
+.OutgameGemStarNode .OutgameGemIconHost,.OutgameGemStarNode .OutgameGemStarIcon
+{
+	width: 58%;
+	height: 58%;
+	horizontal-align: center;
+	vertical-align: center;
+}
+
+.OutgameGemStarNode.Kind_entry .OutgameGemStarDot
+{
+	width: 20px;
+	height: 20px;
+}
+
+.OutgameGemStarNode.Kind_notable .OutgameGemStarDot
+{
+	width: 24px;
+	height: 24px;
+}
+
+.OutgameGemStarNode.Kind_core .OutgameGemStarDot
+{
+	width: 30px;
+	height: 30px;
+	box-shadow: 0px 0px 6px 1px #ffe9a866;
+}
+
+.OutgameGemStarNode.Kind_keystone .OutgameGemStarDot
+{
+	width: 32px;
+	height: 32px;
+	border-radius: 50% 50% 50% 50%;
+	box-shadow: 0px 0px 8px 2px #ff8a3d55;
+}
+
+.OutgameGemStarNode.Kind_nexus .OutgameGemStarDot
+{
+	width: 48px;
+	height: 48px;
+	box-shadow: 0px 0px 12px 3px #ffcf5a77;
+}
+
+.OutgameGemStarNode.MissingRequire
+{
+	saturation: 0.5;
+	brightness: 0.58;
+}
+
+.OutgameGemStarNode.MissingRequire .OutgameGemStarDot
+{
+	box-shadow: none;
+}
+
+.OutgameGemStarNode:hover .OutgameGemStarDot,.OutgameGemStarNode.PreviewHover .OutgameGemStarDot
+{
+	brightness: 1.4;
+	box-shadow: 0px 0px 8px 2px #ffd98a99;
+}
+
+.OutgameGemStarNode.MissingRequire:hover .OutgameGemStarDot,.OutgameGemStarNode.MissingRequire.PreviewHover .OutgameGemStarDot
+{
+	brightness: 1;
+	box-shadow: none;
+}
+
+.OutgameGemStarNode.AvailableNow .OutgameGemStarDot
+{
+	border: 1px solid cGreen;
+	box-shadow: 0px 0px 7px 2px #79d06a66;
+	animation-name: OutgameGemStarAvailablePulse;
+	animation-duration: 1.8s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.OutgameGemStarNode.PreviewSelected .OutgameGemStarDot,.OutgameGemStarNode.PreviewSelected:hover .OutgameGemStarDot,.OutgameGemStarNode.PreviewSelected.PreviewHover .OutgameGemStarDot
+{
+	border: 2px solid cGoldBright;
+	box-shadow: 0px 0px 7px 1px #ffd98abb;
+	brightness: 1.45;
+	animation-name: none;
+}
+
+@keyframes 'OutgameGemStarAvailablePulse'
+{
+	0%
+	{
+		box-shadow: 0px 0px 4px 1px #79d06a33;
+		brightness: 1.00;
+	}
+	
+	50%
+	{
+		box-shadow: 0px 0px 10px 3px #79d06a77;
+		brightness: 1.16;
+	}
+	
+	100%
+	{
+		box-shadow: 0px 0px 4px 1px #79d06a33;
+		brightness: 1.00;
+	}
+	
+}
+

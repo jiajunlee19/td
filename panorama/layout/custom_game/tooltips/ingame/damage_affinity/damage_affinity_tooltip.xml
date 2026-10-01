@@ -1,0 +1,28 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/damage_affinity/damage_affinity_tooltip.vcss_c" />
+	</styles>
+	<Panel class="DamageAffinityTooltip" hittest="false" hittestchildren="false">
+		<Label class="DamageRulesTitle" text="#hud_damage_rules_title" />
+		<Label class="DamageRulesLead" text="#hud_damage_rules_lead" />
+		<Panel class="DamageRulesColumns">
+			<Panel class="DamageRulesExplanation">
+				<Label class="DamageRulesHeading" text="#hud_damage_rules_attribute_title" />
+				<Label class="DamageRulesBody" text="#hud_damage_rules_attribute" />
+				<Label class="DamageRulesHeading" text="#hud_damage_rules_multiplier_title" />
+				<Label class="DamageRulesBody" text="#hud_damage_rules_multiplier" />
+				<Label class="DamageRulesHeading" text="#hud_damage_rules_critical_title" />
+				<Label class="DamageRulesBody" text="#hud_damage_rules_critical" />
+				<Label class="DamageRulesHeading" text="#hud_damage_rules_defense_title" />
+				<Label class="DamageRulesBody" text="#hud_damage_rules_defense" />
+			</Panel>
+			<Panel class="DamageRulesExample">
+				<Label class="DamageRulesExampleTitle" text="#hud_damage_rules_example_title" />
+				<Label class="DamageRulesBody" text="#hud_damage_rules_example" />
+			</Panel>
+		</Panel>
+		<Label class="DamageRulesFootnote" text="#hud_damage_rules_note" />
+	</Panel>
+</root>

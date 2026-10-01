@@ -1,0 +1,435 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameStoneBoard .OutgameStoneSlotCell.DropHint
+{
+	border: 1px solid #f0d48daa;
+	box-shadow: cGoldGlow 0px 0px 9px 0px;
+	animation-name: OutgameEquipmentSlotDropHint;
+	animation-duration: 1.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.OutgameStoneBoard .OutgameStoneSlotCell.DropCompatible
+{
+	border: 1px solid cGreen;
+	box-shadow: cGreen 0px 0px 13px 0px;
+	animation-name: none;
+}
+
+.OutgameStoneBoard .OutgameStoneSlotCell.DropBlocked
+{
+	border: 1px solid cRed;
+	box-shadow: cRed 0px 0px 13px 0px;
+	animation-name: none;
+}
+
+.OutgameStoneDragDisplay
+{
+	width: 48px;
+	height: 48px;
+}
+
+.OutgameStoneInventoryPane.DropHint
+{
+	box-shadow: inset cGoldGlow 0px 0px 0px 2px;
+}
+
+.OutgameStoneInventoryPane.DropCompatible
+{
+	box-shadow: inset cGreen 0px 0px 0px 2px;
+	background-color: #12321e88;
+}
+
+.OutgameStoneBoard
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	background-color: cScrim40;
+}
+
+.OutgameStoneWorkPane
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+	padding: 16px 18px 18px 18px;
+	overflow: squish scroll;
+}
+
+.OutgameStoneInventoryPane
+{
+	width: 680px;
+	height: 100%;
+	horizontal-align: right;
+	flow-children: down;
+	background-color: cPanelFill;
+	border-left: 1px solid #34404a99;
+}
+
+.OutgameStonePaneHeader
+{
+	width: 100%;
+	height: 52px;
+	padding: 13px 16px 0px 18px;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameStonePaneTitle
+{
+	color: cCream;
+	font-size: 21px;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameStoneWorkBody
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.OutgameStoneSection
+{
+	width: 100%;
+	flow-children: down;
+	margin-bottom: 18px;
+}
+
+.OutgameStoneSection.Summary
+{
+	margin-top: 2px;
+	padding-top: 12px;
+	border-top: 1px solid cHairline;
+}
+
+.OutgameStoneSectionTitle
+{
+	color: cTan;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 8px;
+}
+
+.OutgameStoneBoardHint
+{
+	width: 100%;
+	color: cSlate;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.OutgameStoneIconHost
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameStoneTypeList
+{
+	width: 100%;
+	flow-children: down;
+}
+
+.OutgameStoneTypeGroup
+{
+	width: 100%;
+	min-height: 126px;
+	flow-children: down;
+	margin-bottom: 10px;
+	padding: 10px 12px 12px 12px;
+	background-color: #0b1219cc;
+	border: 1px solid #2c3944aa;
+	border-radius: 6px;
+}
+
+.OutgameStoneTypeGroup.Complete
+{
+	border: 1px solid #d8b86c66;
+}
+
+.OutgameStoneTypeHead
+{
+	width: 100%;
+	height: 25px;
+	flow-children: right;
+}
+
+.OutgameStoneTypeTitle
+{
+	width: fill-parent-flow(1);
+	color: cCream;
+	font-size: 17px;
+	font-weight: bold;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameStoneTypeCount
+{
+	width: 56px;
+	horizontal-align: right;
+	color: cSlate;
+	font-size: 14px;
+	text-align: right;
+}
+
+.OutgameStoneSlotGrid
+{
+	width: 100%;
+	flow-children: right-wrap;
+}
+
+.OutgameStoneSlotCell
+{
+	width: 96px;
+	height: 92px;
+	flow-children: down;
+	margin: 4px;
+	padding: 5px;
+	background-color: #05090fcc;
+	border: 1px solid #2c3944aa;
+	border-radius: 6px;
+}
+
+.OutgameStoneSlotCell:hover
+{
+	brightness: 1.18;
+}
+
+.OutgameStoneSlotCell.Filled
+{
+	border: 1px solid #596d89;
+}
+
+.OutgameStoneSlotCell.CanInlay
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+.OutgameStoneSlotCell.Mismatch
+{
+	saturation: 0.72;
+}
+
+.OutgameStoneSlotCell.Locked
+{
+	saturation: 0.15;
+	brightness: 0.62;
+}
+
+.OutgameStoneSlotHead
+{
+	width: 100%;
+	height: 18px;
+	flow-children: right;
+}
+
+.OutgameStoneSlotLabel
+{
+	width: fill-parent-flow(1);
+	color: cSlate;
+	font-size: 12px;
+	text-overflow: shrink;
+}
+
+.OutgameStoneSlotLock
+{
+	width: 52px;
+	color: #b99772;
+	font-size: 11px;
+	text-align: right;
+	text-overflow: shrink;
+}
+
+.OutgameStoneSlotBody
+{
+	width: 64px;
+	height: 64px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	overflow: noclip;
+}
+
+.OutgameStoneSlotEmptyMark
+{
+	align: center center;
+	color: #6c7787;
+	font-size: 23px;
+	text-align: center;
+}
+
+.OutgameStoneSlotTier
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 16px;
+	vertical-align: bottom;
+	color: cCream;
+	font-size: 11px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameStoneSummaryList
+{
+	width: 100%;
+	flow-children: right-wrap;
+}
+
+.OutgameStoneSummaryAttr
+{
+	min-width: 210px;
+	height: 24px;
+	margin: 2px 10px 2px 0px;
+	color: cSteel;
+	font-size: 15px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameStoneInventoryGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: right-wrap;
+	padding: 12px;
+	overflow: squish scroll;
+}
+
+.OutgameStoneCard
+{
+	width: 104px;
+	height: 104px;
+	margin: 2px;
+	padding: 4px;
+	flow-children: down;
+	overflow: noclip;
+}
+
+.OutgameStoneCard:hover
+{
+	brightness: 1.18;
+}
+
+.OutgameStoneCard.Selected
+{
+	brightness: 1.08;
+}
+
+.OutgameStoneCard.Selected .OutgameStoneCardIcon
+{
+	box-shadow: #d6aa5d90 0px 0px 9px 0px;
+}
+
+.OutgameStoneCard.Upgradeable .OutgameStoneCardIcon
+{
+	box-shadow: #70d89055 0px 0px 8px 0px;
+}
+
+.OutgameStoneCardIcon
+{
+	width: 96px;
+	height: 96px;
+	horizontal-align: center;
+	vertical-align: center;
+	overflow: noclip;
+}
+
+.OutgameStoneCardIcon .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameStoneInventoryActionBar
+{
+	width: 100%;
+	height: 54px;
+	padding: 7px 12px 0px 14px;
+	flow-children: right-wrap;
+	border-top: 1px solid cHairlineSteel;
+}
+
+.OutgameStoneActionButton
+{
+	min-width: 128px;
+	height: 38px;
+	margin-right: 8px;
+	padding: 4px 14px 0px 14px;
+}
+
+.OutgameStoneActionButton.Disabled
+{
+	saturation: 0.25;
+	brightness: 0.65;
+}
+
+.OutgameStoneActionLabel
+{
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameStoneUpgradeRow
+{
+	width: 100%;
+	flow-children: right;
+	margin: 10px 0px 8px 0px;
+}
+
+.OutgameStoneUpgradeMaterials
+{
+	flow-children: right;
+	vertical-align: center;
+}
+
+.OutgameStoneUpgradeMatCell,.OutgameStoneUpgradeResultCell
+{
+	width: 84px;
+	height: 84px;
+	margin: 4px;
+	overflow: noclip;
+}
+
+.OutgameStoneUpgradeMatCell.Empty,.OutgameStoneUpgradeResultCell.Empty
+{
+	background-color: cScrim40;
+	border: 1px dashed cHairlineHi;
+	border-radius: 6px;
+}
+
+.OutgameStoneUpgradeArrow
+{
+	color: cTan;
+	font-size: 30px;
+	margin: 0px 14px;
+	vertical-align: center;
+}
+
+.OutgameStoneUpgradeMeta
+{
+	color: cSlate;
+	font-size: 15px;
+	margin: 4px 0px 8px 0px;
+}
+
+.OutgameStoneUpgradeActions
+{
+	width: 100%;
+	flow-children: right-wrap;
+	margin-top: 10px;
+}
+
+.OutgameStoneEmpty
+{
+	color: #888888;
+	font-size: 16px;
+	margin: 12px;
+}
+

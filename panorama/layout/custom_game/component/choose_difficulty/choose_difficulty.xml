@@ -1,0 +1,105 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/choose_difficulty/choose_difficulty.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/config_store.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan_data.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/resistance_recommendation_data.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/choose_difficulty/choose_difficulty.vjs_c" />
+	</scripts>
+	<Panel class="ChooseDifficultyRoot panelAnimation panel-hidden" hittest="false" hittestchildren="false" onactivate="()=&gt;{}">
+		<Panel class="DifficultySceneBackdrop" />
+		<Panel class="DifficultySceneVignette" />
+		<Panel class="DifficultyHeader">
+			<Label class="DifficultyTitle" text="#difficulty_select_title" />
+			<Label id="DifficultyCountdown" class="DifficultyCountdown" html="true" text="#difficulty_select_loading_config" />
+		</Panel>
+		<Panel class="DifficultyBody">
+			<Panel class="DifficultyColumn DifficultyLeftColumn">
+				<Label class="DifficultyPanelTitle" text="#difficulty_select_group_title" />
+				<Panel id="DifficultyGroupList" class="DifficultyGroupList" />
+				<Panel class="DifficultyMoreHint">
+					<Label text="#difficulty_select_more_coming" />
+				</Panel>
+				<Panel class="DifficultyNoticePanel">
+					<Label class="DifficultyPanelTitle" text="#difficulty_select_notice_title" />
+					<Panel class="DifficultyNoticeBody">
+						<Label id="DifficultyNoticeText" class="DifficultyNoticeText DifficultyNoticeEmpty" html="true" text="#difficulty_select_notice_empty" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel class="DifficultyColumn DifficultyCenterColumn">
+				<Panel class="DifficultyCenterHeader">
+					<Label class="DifficultyPanelTitle" text="#difficulty_select_stage_title" />
+					<Label id="DifficultyCurrentGroup" class="DifficultyCurrentGroup" />
+				</Panel>
+				<Panel id="DifficultyStageList" class="DifficultyStageList" />
+				<Panel id="DifficultyActionBar" class="DifficultyActionBar">
+					<Panel id="DifficultyConfirmButton" class="DifficultyPrimaryButton button" hittest="true">
+						<Label text="#difficulty_select_confirm" />
+					</Panel>
+					<Panel id="DifficultyAfkButton" class="DifficultySecondaryButton button disabled" hittest="true">
+						<Label text="#difficulty_select_afk_mode" />
+					</Panel>
+				</Panel>
+				<Label class="DifficultyTimeoutHint" text="#difficulty_select_timeout_hint" />
+			</Panel>
+			<Panel class="DifficultyColumn DifficultyRightColumn">
+				<Label class="DifficultyPanelTitle" text="#difficulty_select_detail_title" />
+				<Panel class="DifficultyDetailHeader">
+					<Label id="DifficultyDetailCode" class="DifficultyDetailCode" />
+					<Label id="DifficultyDetailName" class="DifficultyDetailName" />
+				</Panel>
+				<Panel class="DifficultyInfoSection">
+					<Label class="DifficultyInfoTitle" text="#difficulty_select_wave_info" />
+					<Panel class="DifficultyWaveStats">
+						<Panel class="DifficultyWaveStat">
+							<Panel class="DifficultyWaveIcon DifficultyWaveIconNormal" />
+							<Label class="DifficultyWaveValue" id="DifficultyTotalWaves" />
+							<Label class="DifficultyWaveLabel" text="#difficulty_select_total_waves" />
+						</Panel>
+						<Panel class="DifficultyWaveStat">
+							<Panel class="DifficultyWaveIcon DifficultyWaveIconElite" />
+							<Label class="DifficultyWaveValue" id="DifficultyEliteWaves" />
+							<Label class="DifficultyWaveLabel" text="#difficulty_select_elite_waves" />
+						</Panel>
+						<Panel class="DifficultyWaveStat">
+							<Panel class="DifficultyWaveIcon DifficultyWaveIconBoss" />
+							<Label class="DifficultyWaveValue" id="DifficultyBossWaves" />
+							<Label class="DifficultyWaveLabel" text="#difficulty_select_boss_waves" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="DifficultyInfoSection">
+					<Panel class="DifficultyRewardTitleRow">
+						<Label class="DifficultyInfoTitle" text="#difficulty_select_reward_once" />
+						<Label id="DifficultyOnceClaimedBadge" class="DifficultyClaimedBadge claimed-hidden" text="#difficulty_select_reward_claimed" />
+					</Panel>
+					<Panel id="DifficultyOnceRewardList" class="DifficultyRewardList" />
+					<Label class="DifficultyRewardSoloHint" text="#difficulty_select_reward_once_solo_hint" />
+				</Panel>
+				<Panel class="DifficultyInfoSection">
+					<Label class="DifficultyInfoTitle" text="#difficulty_select_reward_repeat" />
+					<Panel id="DifficultyRepeatRewardList" class="DifficultyRewardList" />
+				</Panel>
+				<Panel id="DifficultyHeroUnlockSection" class="DifficultyInfoSection DifficultyHeroUnlockSection hero-unlock-hidden">
+					<Panel class="DifficultyHeroUnlockTitleRow">
+						<Label class="DifficultyInfoTitle" text="#difficulty_select_hero_unlock_title" />
+						<Label id="DifficultyHeroUnlockCount" class="DifficultyHeroUnlockCount" />
+					</Panel>
+					<Panel id="DifficultyHeroUnlockScroll" class="DifficultyHeroUnlockScroll" />
+					<Label id="DifficultyHeroUnlockEmpty" class="DifficultyHeroUnlockEmpty" text="#difficulty_select_hero_unlock_empty" />
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

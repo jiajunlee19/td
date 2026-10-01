@@ -1,0 +1,43 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/cdkey/cdkey.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/cdkey/cdkey.vjs_c" />
+	</scripts>
+	<Panel class="CDKeyRoot fill panelAnimation panel-hidden" hittest="false" hittestchildren="false" onactivate="()=&gt;{}">
+		<Panel id="CDKeyBackdrop" hittest="false" />
+		<Panel id="CDKeyPanel">
+			<Button id="CDKeyClose" class="CDKeyCloseButton tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#DOTA_Close&apos;)" onmouseout="DOTAHideTextTooltip()">
+				<Panel class="CDKeyCloseIcon">
+					<Panel class="CDKeyCloseLine CDKeyCloseLineA" />
+					<Panel class="CDKeyCloseLine CDKeyCloseLineB" />
+				</Panel>
+			</Button>
+			<Panel id="CDKeyHeader">
+				<Label id="CDKeyTitle" text="#cdkey_panel_title" />
+				<Label id="CDKeySubtitle" text="#cdkey_panel_subtitle" />
+			</Panel>
+			<Panel id="CDKeyBody">
+				<Label id="CDKeyInputLabel" text="#cdkey_input_label" />
+				<Panel id="CDKeyInput">
+					<TextEntry id="CDKeyInputEntry" placeholder="#cdkey_input_placeholder" maxchars="32" />
+				</Panel>
+			</Panel>
+			<Panel id="CDKeyActions">
+				<Button id="CDKeySubmit" class="CDKeyActionButton Submit">
+					<Label text="#cdkey_action_submit" />
+				</Button>
+				<Button id="CDKeyCancel" class="CDKeyActionButton Cancel">
+					<Label text="#DOTA_Cancel" />
+				</Button>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

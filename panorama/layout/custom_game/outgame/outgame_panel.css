@@ -1,0 +1,800 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgamePanelHost
+{
+	z-index: 50;
+	transition-property: opacity;
+	transition-duration: 0.18s;
+}
+
+.OutgamePanelHost.panel-hidden
+{
+	opacity: 0;
+	transform: none;
+	visibility: collapse;
+}
+
+#OutgamePanel
+{
+	width: 100%;
+	height: 100%;
+}
+
+#OutgamePageHost
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRoutePanel
+{
+	z-index: 0;
+}
+
+.OutgameRoutePanel.OutgameRouteActive
+{
+	z-index: 2;
+}
+
+.OutgameRoutePanel.panel-hidden,.OutgameDataGate.panel-hidden
+{
+	opacity: 0;
+	transform: none;
+}
+
+.OutgameCloseButton
+{
+	ignore-parent-flow: true;
+	width: 34px;
+	height: 34px;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 12px;
+	margin-right: 12px;
+	z-index: 5;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a3137ee), color-stop(0.45, #151b20f4), to(#06090cf8));
+	border-radius: 4px;
+	border: 1px solid #6f7f89a8;
+	box-shadow: cScrim80 0px 3px 10px 0px;
+	transition-property: brightness, border, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+.OutgameCloseButton:hover
+{
+	brightness: 1.22;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#39434cf2), color-stop(0.45, #1b242bf4), to(#080d11f8));
+	border: 1px solid #c7d9e3c8;
+}
+
+.OutgameCloseButton:active
+{
+	transform: translateY(1px);
+	brightness: 0.78;
+}
+
+.OutgameCloseIcon
+{
+	width: 18px;
+	height: 18px;
+	align: center center;
+}
+
+.OutgameCloseLine
+{
+	width: 18px;
+	height: 2px;
+	align: center center;
+	background-color: #e3edf3;
+	box-shadow: cScrim80 0px 1px 2px 0px;
+}
+
+.OutgameCloseLineA
+{
+	transform: rotateZ(45deg);
+}
+
+.OutgameCloseLineB
+{
+	transform: rotateZ(-45deg);
+}
+
+.OutgamePageFrame
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	background-color: gradient(radial, 0% 0%, 0% 0%, 100% 84%, from(#26343f55), color-stop(0.42, #121820ec), to(#05070af8));
+}
+
+.OutgamePageBody
+{
+	width: 1728px;
+	height: 922px;
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 86px;
+	flow-children: right;
+}
+
+.OutgameSidebar
+{
+	width: 330px;
+	height: 922px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#121618), to(#0c1011));
+	border: 0px solid #00000000;
+	box-shadow: none;
+}
+
+.OutgameSidebarBackgroundContainer
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameSidebarBackgroundImage
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("s2r://panorama/images/settings/settings_rock_texture_png.vtex");
+	background-size: cover;
+	opacity-brush: gradient(linear, 0% 0%, 160% 20%, from(#ffffff), to(#ffffff00));
+	opacity: 0.3;
+}
+
+.OutgameSidebarShadow
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	width: 32px;
+	height: 100%;
+	background-color: gradient(linear, 100% 0%, 0% 0%, from(#000000), to(#00000000));
+	opacity: 0.2;
+}
+
+.OutgameSidebarButtonsContainer
+{
+	width: 100%;
+	height: 100%;
+	padding: 20px 0px 48px 0px;
+	flow-children: down;
+	overflow: squish scroll;
+	opacity-mask: url("s2r://panorama/images/masks/soft_top_bottom_vscroll_psd.vtex");
+}
+
+.OutgameSidebarButtonsContainer VerticalScrollBar
+{
+	width: 6px;
+	margin-top: 20px;
+}
+
+.OutgameSidebarGroup
+{
+	width: 100%;
+	flow-children: down;
+	margin-bottom: 0px;
+}
+
+.OutgameSidebarGroup.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameSidebarGroupHeader
+{
+	width: 100%;
+	height: 48px;
+	padding: 0px 16px 0px 15px;
+	flow-children: right;
+	background-color: #00000000;
+	border: 1px solid #ffffff00;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(cBlue), to(#4588e400));
+	transition-property: border, background-color;
+	transition-duration: 0.05s;
+}
+
+.OutgameSidebarGroupHeader.Unopened .OutgameSidebarGroupTitle
+{
+	color: cSlate;
+}
+
+.OutgameSidebarGroupHeader.Unopened .OutgameSidebarGroupIcon
+{
+	opacity: 0.4;
+}
+
+.OutgameSidebarGroupUnopenedBadge
+{
+	height: 18px;
+	padding: 1px 7px 0px 7px;
+	vertical-align: center;
+	margin-right: 8px;
+	border-radius: 9px;
+	background-color: #6b4a12cc;
+	border: 1px solid #ffb85277;
+	color: cGoldBright;
+	font-size: 14px;
+	font-weight: semi-bold;
+	letter-spacing: 1px;
+	text-transform: none;
+}
+
+.OutgameSidebarGroupIcon
+{
+	width: 22px;
+	height: 22px;
+	vertical-align: center;
+	margin-right: 10px;
+	wash-color: #b6c0c3;
+	opacity: 0.58;
+	transition-property: wash-color, opacity, transform;
+	transition-duration: 0.1s;
+}
+
+.OutgameSidebarGroupIcon.Hidden
+{
+	visibility: collapse;
+	margin-right: 0px;
+}
+
+.OutgameSidebarGroupHeader:hover
+{
+	background-color: gradient(linear, 0% 0%, 95% 0%, from(#c8e9ff09), to(#ffffff00));
+	transition-duration: 0.1s;
+}
+
+.OutgameSidebarGroupHeader.Expanded
+{
+	background-color: #00000000;
+}
+
+.OutgameSidebarGroupHeader.Selected
+{
+	background-color: gradient(linear, 30% 0%, 100% 0%, from(#63a4ff11), to(#63a4ff00));
+	border: 1px solid cHairlineHi;
+}
+
+.OutgameSidebarGroupHeader.Selected:hover
+{
+	background-color: gradient(linear, 30% 0%, 100% 0%, from(#63a4ff22), to(#63a4ff00));
+	border: 1px solid #ffffff4d;
+}
+
+.OutgameSidebarGroupHeader:hover .OutgameSidebarGroupIcon
+{
+	wash-color: #f2f8f7;
+	opacity: 0.86;
+}
+
+.OutgameSidebarGroupHeader.Expanded .OutgameSidebarGroupIcon,.OutgameSidebarGroupHeader.Selected .OutgameSidebarGroupIcon
+{
+	wash-color: cBlue;
+	opacity: 0.95;
+}
+
+.OutgameSidebarGroupHeader.Selected:hover .OutgameSidebarGroupIcon
+{
+	wash-color: white;
+	opacity: 1;
+}
+
+.OutgameSidebarGroupHeader:active .OutgameSidebarGroupIcon
+{
+	transform: translateY(1px);
+}
+
+.OutgameSidebarGroupTitle
+{
+	vertical-align: center;
+	width: fill-parent-flow(1);
+	color: cSteel;
+	font-size: 17px;
+	font-weight: semi-bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-overflow: shrink;
+	text-shadow: 0px 2px 6px cScrim40;
+	transition-property: color;
+	transition-duration: 0.1s;
+}
+
+.OutgameSidebarGroupHeader:hover .OutgameSidebarGroupTitle
+{
+	color: #f2f8f7;
+}
+
+.OutgameSidebarGroupHeader.Expanded .OutgameSidebarGroupTitle,.OutgameSidebarGroupHeader.Selected .OutgameSidebarGroupTitle
+{
+	color: #9fc9ff;
+}
+
+.OutgameSidebarGroupHeader.Selected:hover .OutgameSidebarGroupTitle
+{
+	color: #ffffff;
+}
+
+.OutgameSidebarPageList
+{
+	width: 100%;
+	flow-children: down;
+	padding: 0px;
+	overflow: clip;
+	opacity: 1;
+	transition-property: height, opacity;
+	transition-duration: 0.16s;
+	transition-timing-function: ease-out;
+}
+
+.OutgameSidebarPage
+{
+	width: 100%;
+	height: 38px;
+	horizontal-align: left;
+	margin-bottom: 0px;
+	padding: 0px 14px 0px 44px;
+	flow-children: right;
+	background-color: #00000000;
+	border-left: 1px solid #00000000;
+	border-right: 0px solid #00000000;
+	transition-property: background-color, border;
+	transition-duration: 0.1s;
+}
+
+.OutgameSidebarPageAccent
+{
+	width: 0px;
+	height: 12px;
+	vertical-align: center;
+	margin-right: 0px;
+	background-color: #00000000;
+	opacity: 0;
+}
+
+.OutgameSidebarPageAccent.Visible
+{
+	width: 3px;
+	margin-right: 8px;
+	opacity: 0.86;
+}
+
+.OutgameSidebarPage.Quality1 .OutgameSidebarPageAccent
+{
+	background-color: #9ca7b2;
+}
+
+.OutgameSidebarPage.Quality2 .OutgameSidebarPageAccent
+{
+	background-color: #6bbd80;
+}
+
+.OutgameSidebarPage.Quality3 .OutgameSidebarPageAccent
+{
+	background-color: #63a8e8;
+}
+
+.OutgameSidebarPage.Quality4 .OutgameSidebarPageAccent
+{
+	background-color: #d9a557;
+}
+
+.OutgameSidebarPage:hover
+{
+	background-color: gradient(linear, 0% 0%, 95% 0%, from(#c8e9ff09), to(#ffffff00));
+}
+
+.OutgameSidebarPage.Selected
+{
+	background-color: gradient(linear, 0% 0%, 95% 0%, from(cCyanWellHair), to(#ffffff00));
+	border-left: 1px solid #63a4ff99;
+	border-right: 0px solid #00000000;
+}
+
+.OutgameSidebarPageList.PageCount0
+{
+	height: 0px;
+}
+
+.OutgameSidebarPageList.PageCount1
+{
+	height: 38px;
+}
+
+.OutgameSidebarPageList.PageCount2
+{
+	height: 76px;
+}
+
+.OutgameSidebarPageList.PageCount3
+{
+	height: 114px;
+}
+
+.OutgameSidebarPageList.PageCount4
+{
+	height: 152px;
+}
+
+.OutgameSidebarPageList.PageCount5
+{
+	height: 190px;
+}
+
+.OutgameSidebarPageList.PageCount6
+{
+	height: 228px;
+}
+
+.OutgameSidebarPageList.PageCount7
+{
+	height: 266px;
+}
+
+.OutgameSidebarPageList.PageCount8
+{
+	height: 304px;
+}
+
+.OutgameSidebarPageList.PageCount9
+{
+	height: 342px;
+}
+
+.OutgameSidebarPageList.PageCount10
+{
+	height: 380px;
+}
+
+.OutgameSidebarPageList.PageCount11
+{
+	height: 418px;
+}
+
+.OutgameSidebarPageList.PageCount12
+{
+	height: 456px;
+}
+
+.OutgameSidebarPageList.PageCount13
+{
+	height: 494px;
+}
+
+.OutgameSidebarPageList.Collapsed
+{
+	height: 0px;
+	padding: 0px;
+	opacity: 0;
+}
+
+.OutgameSidebarPage.Locked
+{
+	saturation: 0.15;
+	brightness: 0.45;
+}
+
+.OutgameSidebarPage.Unopened
+{
+	saturation: 0.45;
+	brightness: 0.72;
+}
+
+.OutgameSidebarPage.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameSidebarPageLabel
+{
+	vertical-align: center;
+	width: fill-parent-flow(1);
+	color: #a8b7bc;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-shadow: 0px 0px 0px 0 #00000000;
+	text-overflow: shrink;
+}
+
+.OutgameSidebarPageAccessory
+{
+	vertical-align: center;
+	width: 0px;
+	height: 22px;
+	color: #a8b7bc;
+	font-size: 14px;
+	text-align: right;
+	text-shadow: 0px 0px 0px 0 #00000000;
+	text-overflow: shrink;
+	opacity: 0;
+}
+
+.OutgameSidebarPageAccessory.Visible
+{
+	width: 66px;
+	opacity: 1;
+}
+
+.OutgameSidebarPageUnopenedBadge
+{
+	height: 18px;
+	padding: 1px 7px 0px 7px;
+	vertical-align: center;
+	margin-right: 8px;
+	border-radius: 9px;
+	background-color: #6b4a12cc;
+	border: 1px solid #ffb85277;
+	color: cGoldBright;
+	font-size: 13px;
+	font-weight: semi-bold;
+	text-transform: none;
+	text-overflow: shrink;
+}
+
+.OutgameSidebarPage:hover .OutgameSidebarPageLabel,.OutgameSidebarPage:hover .OutgameSidebarPageAccessory
+{
+	color: #f2f8f7;
+}
+
+.OutgameSidebarPage.Selected .OutgameSidebarPageLabel
+{
+	color: #ffffff;
+}
+
+.OutgameSidebarPage.Selected .OutgameSidebarPageAccessory
+{
+	color: #ffffff;
+}
+
+.OutgameSidebarPage.Selected:hover .OutgameSidebarPageLabel,.OutgameSidebarPage.Selected:hover .OutgameSidebarPageAccessory
+{
+	color: #ffffff;
+}
+
+.OutgameSidebarRedTip
+{
+	width: 9px;
+	height: 9px;
+	vertical-align: center;
+	border-radius: 50%;
+	background-color: #c83c2e;
+	box-shadow: cScrim80 0px 0px 3px 1px;
+	visibility: collapse;
+}
+
+.OutgameSidebarRedTip.RedTipActive
+{
+	visibility: visible;
+}
+
+.OutgameContent
+{
+	height: 922px;
+	width: 1398px;
+	margin-left: 0px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1f2123f6), color-stop(0.62, #14191cf8), to(#0c1012fa));
+	border: 1px solid white;
+	border-left: 0px;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairline), to(cHairlineLo));
+	box-shadow: cScrim80 0px 8px 24px 0px;
+	overflow: clip;
+}
+
+.OutgameContentHeader
+{
+	width: 100%;
+	height: 62px;
+	padding: 0px 62px 0px 18px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#202932ef), color-stop(0.58, #131a20e8), to(#0a0f1300));
+	border-bottom: 1px solid cHairline;
+}
+
+.OutgameContentTitle
+{
+	margin-top: 9px;
+	color: #f2f8f7;
+	font-size: 24px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameContentSubtitle
+{
+	margin-top: -2px;
+	color: #9facb3;
+	font-size: 15px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameContentHeaderExtra
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 0px;
+	height: 46px;
+	width: fit-children;
+	flow-children: right;
+}
+
+.OutgameHeaderExtraItem
+{
+	vertical-align: center;
+	height: 42px;
+	min-width: 138px;
+	margin-left: 8px;
+	padding: 4px 10px 4px 6px;
+	flow-children: right;
+	background-color: #0c1217dd;
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameHeaderExtraItem.Type_resource_item
+{
+	height: 40px;
+	min-width: 158px;
+	margin-left: 6px;
+	padding: 0px 10px 0px 0px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2a33e8), color-stop(0.68, #101820e8), to(#070b0fee));
+	border: 1px solid cHairlineLo;
+	box-shadow: #0000008c 0px 3px 8px 0px;
+	transition-property: brightness, border, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+.OutgameHeaderExtraItem.Type_resource_item:hover
+{
+	brightness: 1.14;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#2b3e4bef), color-stop(0.72, #14202aef), to(#091014ee));
+	border: 1px solid #8cc8e7aa;
+}
+
+.OutgameHeaderExtraItem.Type_item_count
+{
+	width: 258px;
+}
+
+.OutgameHeaderExtraItem.Type_action_button
+{
+	height: 40px;
+	min-width: 104px;
+	margin-left: 6px;
+	padding: 0px 12px;
+}
+
+.OutgameHeaderActionText
+{
+	align: center center;
+	width: 96px;
+	font-size: 18px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameHeaderExtraItem.Type_option_button
+{
+	height: 36px;
+	min-width: 66px;
+	width: 66px;
+	margin-left: 4px;
+	padding: 0px 4px;
+}
+
+.Type_option_button .OutgameHeaderActionText
+{
+	width: 56px;
+	font-size: 16px;
+}
+
+.OutgameHeaderResourceIconFrame
+{
+	width: 32px;
+	height: 32px;
+	vertical-align: center;
+	margin-left: 4px;
+}
+
+.OutgameHeaderResourceIcon
+{
+	width: 100%;
+	height: 100%;
+	horizontal-align: left;
+	vertical-align: center;
+}
+
+.OutgameHeaderResourceAmount
+{
+	min-width: 96px;
+	vertical-align: center;
+	margin-left: 4px;
+	color: cCream;
+	font-size: 20px;
+	text-align: right;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameHeaderExtraIcon
+{
+	width: 32px;
+	height: 32px;
+	vertical-align: center;
+}
+
+.OutgameHeaderExtraText
+{
+	vertical-align: center;
+	margin-left: 9px;
+	width: fill-parent-flow(1);
+	color: #e5d9ac;
+	font-size: 17px;
+	text-align: left;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameSubPageHost
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+}
+
+.OutgameEmptyPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	background-color: cScrimBody;
+}
+
+.OutgameEmptyPageLabel
+{
+	horizontal-align: center;
+	margin-top: 28%;
+}
+
+.OutgameStandardPageLabel
+{
+	horizontal-align: center;
+	margin-top: 8px;
+	color: #7f9690;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameStandardPage
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrimBody;
+}
+
+.OutgameDataGate
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(radial, 50% 42%, 0% 0%, 70% 70%, from(#142431ee), color-stop(0.58, #080d12f2), to(#030506f8));
+	z-index: 55;
+}
+
+.OutgameDataGateLabel
+{
+	horizontal-align: center;
+	vertical-align: center;
+	color: #d8e8e4;
+	font-size: 24px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+#PopMenus.pop
+{
+	z-index: 10;
+}
+
+#PopMenus.close
+{
+	z-index: 0;
+}
+

@@ -1,0 +1,45 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tower_skill_tooltip_modules.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/ability/ingame_ability_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/tower_evolution_state.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/hero_ability_feature_view.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ability/tower_skill_tooltip_modules.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/ingame/ability/ingame_ability_tooltip.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="line">
+			<Panel />
+		</snippet>
+		<snippet name="AbilityCosts">
+			<Panel class="AbilityCosts">
+				<Label id="AbilityHealthCost" class="HealthCost" text="#DOTA_AbilityTooltip_HealthCost" html="true" />
+				<Label id="AbilityManaCost" class="ManaCost" text="#DOTA_AbilityTooltip_ManaCost" html="true" />
+				<Label id="AbilityCooldown" class="Cooldown" text="#DOTA_AbilityTooltip_Cooldown" html="true" />
+				<Label id="AbilityCastRange" class="CastRange" text="#DOTA_AbilityTooltip_CastRange" html="true" />
+			</Panel>
+		</snippet>
+		<snippet name="TextPanel">
+			<Label html="true" />
+		</snippet>
+	</snippets>
+	<Panel class="tips_new">
+		<Panel id="main_frame">
+			<Panel id="title_block">
+				<Image id="equipItemQuality">
+					<Image id="equipItemIcon" />
+					<Image id="equipItemTag" />
+				</Image>
+				<Label id="equipName" html="true" />
+				<Label id="extraName" html="true" />
+				<Panel id="tipsTypeIcon" />
+			</Panel>
+			<Panel id="info_block" />
+		</Panel>
+	</Panel>
+</root>

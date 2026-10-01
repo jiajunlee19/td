@@ -1,0 +1,346 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OverheadRoot
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OverheadContainer
+{
+	width: 100%;
+	height: 100%;
+	overflow: noclip;
+}
+
+.hide
+{
+	visibility: collapse;
+}
+
+.Highlighted #HPBar .ProgressBarLeft
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( rgb(185, 255, 109) ), to( #689339FF ) );
+}
+
+.Highlighted.EnemyTeam #HPBar .ProgressBarLeft
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( rgb(255, 64, 0) ), to( #921a00FF ) );
+}
+
+.Highlighted #ManaBar .ProgressBarLeft
+{
+	background-color: gradient( linear, 0% 0%, 0% 100%, from( rgb(99, 135, 255) ), to( #444455FF ) );
+}
+
+.HeroHealthBar
+{
+	margin-left: -1px;
+	margin-top: -1px;
+	width: 2px;
+	height: 2px;
+	overflow: noclip;
+	z-index: 3;
+	background-color: blue;
+}
+
+.HeroHealthBar.Highlighted
+{
+	z-index: 5;
+}
+
+.HeroHealthBar.EnemyTeam
+{
+	z-index: 1;
+}
+
+.HeroHealthBar.EnemyTeam.Elite
+{
+	z-index: 2;
+}
+
+.HeroHealthBar.EnemyTeam.Boss
+{
+	z-index: 4;
+}
+
+.HeroHealthBar #HealthBarBG,.HeroHealthBar #HealthBarFG,.HeroHealthBar #HPBarContainer
+{
+	align: center center;
+	margin: 0px;
+}
+
+.HeroHealthBar.EnemyTeam #HealthBarBG,.HeroHealthBar.EnemyTeam #HealthBarFG,.HeroHealthBar.EnemyTeam #HPBarContainer
+{
+	width: 66px;
+	height: 8px;
+}
+
+.HeroHealthBar.EnemyTeam.Elite #HealthBarFG,.HeroHealthBar.EnemyTeam.Elite #HPBarContainer
+{
+	width: 80px;
+	height: 10px;
+}
+
+.HeroHealthBar.EnemyTeam.Elite #HealthBarBG
+{
+	width: 86px;
+	height: 20px;
+}
+
+.HeroHealthBar.EnemyTeam.Boss #HealthBarFG,.HeroHealthBar.EnemyTeam.Boss #HPBarContainer
+{
+	width: 108px;
+	height: 12px;
+}
+
+.HeroHealthBar.EnemyTeam.Boss #HealthBarBG
+{
+	width: 128px;
+	height: 22px;
+}
+
+.HeroHealthBar.FriendlyTeam #HPBarContainer
+{
+	border: 1px solid black;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#001100FF), to(#004400FF));
+}
+
+.HeroHealthBar.EnemyTeam #HPBarContainer
+{
+	border: 1px solid black;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#110000FF), to(#440000FF));
+}
+
+.FriendlyTeam #HealthBarFG,.EnemyTeam #HealthBarFG
+{
+	border: 0px none black;
+	background-color: none;
+}
+
+.HeroHealthBar.EnemyTeam.Elite #HealthBarBG
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/hp_bar/51_png.hud.img_huda0073_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.HeroHealthBar.EnemyTeam.Boss #HealthBarBG
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/hp_bar/elite_bg_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.HeroHealthBar.EnemyTeam.Elite #BarIcon
+{
+	width: 35px;
+	height: 33px;
+	align: left center;
+	margin-left: 20px;
+	background-image: url("s2r://panorama/images/custom_game/hud/hp_bar/jingying_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	visibility: visible;
+}
+
+.HeroHealthBar.EnemyTeam.Boss #BarIcon
+{
+	width: 32px;
+	height: 30px;
+	align: left center;
+	background-image: url("s2r://panorama/images/custom_game/hud/hp_bar/boss1_png.vtex");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	visibility: visible;
+}
+
+.HeroHealthBar #BarIcon
+{
+	visibility: collapse;
+}
+
+.HeroHealthBar #BarIconArea
+{
+	align: left center;
+	margin-left: -95px;
+	margin-bottom: 5px;
+	width: 170px;
+	height: 30px;
+}
+
+.HeroHealthBar #HeroTitleEffect
+{
+	align: center center;
+	margin-bottom: 125px;
+	width: 500px;
+	height: 500px;
+	visibility: collapse;
+}
+
+.HeroHealthBar .TowerHealthBarLabel
+{
+	align: center center;
+	width: 640px;
+	height: 40px;
+	margin-bottom: 39px;
+	flow-children: down;
+	opacity: 1;
+	visibility: visible;
+	overflow: noclip;
+}
+
+.HeroHealthBar.ShowTowerLabel .TowerHealthBarLabel
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+.HeroHealthBar .TowerHealthBarLabel #NameLabel,.HeroHealthBar .TowerHealthBarLabel #StatusLabel
+{
+	horizontal-align: center;
+	width: 640px;
+	text-align: center;
+	text-overflow: shrink;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	text-shadow: 1px 1px 2px 2.0 #000000;
+	opacity: 1;
+	visibility: visible;
+}
+
+.HeroHealthBar .TowerHealthBarLabel #NameLabel
+{
+	height: 19px;
+	font-size: 15px;
+	color: #f4f4f1;
+}
+
+.HeroHealthBar .TowerHealthBarLabel #StatusLabel
+{
+	height: 15px;
+	font-size: 11px;
+	color: #b7d7ff;
+}
+
+.HeroHealthBar.EnemyTeam #HeroTitleEffect
+{
+	visibility: collapse;
+}
+
+.HeroHealthBar.FriendlyTeam #HeroTitleEffect
+{
+	visibility: visible;
+}
+
+.UnitLabel
+{
+	margin-left: -82px;
+	margin-top: -44px;
+	width: 184px;
+	height: 49px;
+	background-image: none;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#06111500), color-stop(0.15, #0b1d22dd), color-stop(0.85, #0b1d22dd), to(#06111500));
+	border-top: 1px solid #65b8d955;
+	border-bottom: 1px solid #143542cc;
+	box-shadow: #000000cc 0px 0px 8px 0px;
+	z-index: -1;
+}
+
+#UnitLabelText
+{
+	align: center center;
+	font-size: 24px;
+	color: #fff;
+	font-family: Reaver, Goudy Trajan Medium, FZKai-Z03, TH Sarabun New, YDYGO 540;
+	margin-right: 12px;
+}
+
+.HeroHealthBar #HealthText
+{
+	align: center center;
+	margin-top: -25px;
+	width: 300px;
+	height: 30px;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 2px 2.0 #000;
+	visibility: collapse;
+}
+
+.HeroHealthBar.ShowText #HealthText
+{
+	visibility: visible;
+}
+
+.HeroHealthBar.EnemyTeam.Elite #HealthText
+{
+	align: center center;
+	height: 35px;
+	margin-top: -18px;
+	font-size: 20px;
+}
+
+.HeroHealthBar.EnemyTeam.Boss #HealthText
+{
+	align: center center;
+	height: 40px;
+	margin-top: -20px;
+	font-size: 22px;
+}
+
+.Transition .ProgressBarLeft,.Transition .ProgressBarRight
+{
+	transition-duration: 0.1s;
+	transition-property: width;
+	transition-timing-function: ease-in;
+}
+
+#FullScreenWarning
+{
+	width: 100%;
+	height: 100%;
+	background-image: url("s2r://panorama/images/custom_game/hud/full_screen_warning_png.vtex");
+	background-size: 100%;
+	transition: opacity 0.3s ease-out 0s;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.2s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+	opacity: 0;
+}
+
+.Warning #FullScreenWarning
+{
+	animation-name: flick;
+}
+
+@keyframes 'flick'
+{
+	0%
+	{
+		opacity: 0.1;
+		brightness: 1.0;
+	}
+	
+	50%
+	{
+		opacity: 1;
+		brightness: 1.0;
+	}
+	
+	100%
+	{
+		opacity: 0.1;
+		brightness: 1.0;
+	}
+	
+}
+
+.Overhead_Avatar_Title
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+}
+

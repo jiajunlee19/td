@@ -1,0 +1,2445 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameEquipmentLoading
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim40;
+}
+
+.OutgameEquipmentLoadingText
+{
+	align: center center;
+	width: 460px;
+	color: cTan;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameEquipmentBody
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	background-color: cScrimBody;
+}
+
+.OutgameEquipmentInventoryPane
+{
+	width: 680px;
+	height: 100%;
+	horizontal-align: right;
+	flow-children: down;
+	background-color: cPanelFill;
+	border-left: 1px solid cHairlineLo;
+}
+
+.OutgameEquipmentBody.ForgePage .OutgameEquipmentInventoryPane
+{
+	width: 680px;
+}
+
+.OutgameEquipmentInventoryPane.DropHint
+{
+	box-shadow: inset cGoldGlow 0px 0px 0px 2px;
+}
+
+.OutgameEquipmentInventoryPane.DropCompatible
+{
+	box-shadow: inset cGreen 0px 0px 0px 2px;
+	background-color: #12321e88;
+}
+
+.OutgameEquipmentWorkPane
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	padding: 16px 18px 18px 18px;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.OutgameEquipmentBody.WearPage .OutgameEquipmentWorkPane
+{
+	padding: 0px;
+	overflow: clip;
+}
+
+.OutgameEquipmentBody.SmeltPage .OutgameEquipmentWorkPane,.OutgameEquipmentBody.RefinePage .OutgameEquipmentWorkPane,.OutgameEquipmentBody.ForgePage .OutgameEquipmentWorkPane,.OutgameEquipmentBody.RecoinPage .OutgameEquipmentWorkPane,.OutgameEquipmentBody.InheritPage .OutgameEquipmentWorkPane
+{
+	padding: 12px;
+	overflow: clip;
+}
+
+.OutgameEquipmentBody.SinglePane .OutgameEquipmentWorkPane
+{
+	width: 100%;
+}
+
+.OutgameEquipmentBody.StrengthenPage .OutgameEquipmentWorkPane
+{
+	padding: 12px;
+	overflow: clip;
+}
+
+.OutgameEquipmentPaneHeader
+{
+	width: 100%;
+	height: 58px;
+	padding: 14px 16px 0px 18px;
+}
+
+.OutgameEquipmentPaneTitle
+{
+	color: cCream;
+	font-size: 23px;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentFilterBar,.OutgameEquipmentTypeFilterBar,.OutgameEquipmentTypePrimaryBar,.OutgameEquipmentTypeSecondaryBar,.OutgameEquipmentSettingBar,.OutgameEquipmentActionBar
+{
+	width: 100%;
+	flow-children: right-wrap;
+}
+
+.OutgameEquipmentFilterBar
+{
+	padding: 12px 12px 0px 14px;
+}
+
+.OutgameEquipmentTypeFilterBar
+{
+	padding: 8px 12px 8px 14px;
+	border-bottom: 1px solid #27323baa;
+}
+
+.OutgameEquipmentTypePrimaryBar
+{
+	height: 62px;
+	padding: 8px 12px 0px 14px;
+}
+
+.OutgameEquipmentTypeSecondaryBar
+{
+	height: 58px;
+	padding: 4px 12px 6px 14px;
+}
+
+.OutgameEquipmentTypeSecondaryBar.Empty
+{
+	opacity: 1;
+}
+
+.OutgameEquipmentFilterButton,.OutgameEquipmentTypeFilterButton,.OutgameEquipmentSettingButton
+{
+	height: 32px;
+	margin-right: 7px;
+	margin-bottom: 7px;
+	padding: 0px 12px;
+	flow-children: down;
+}
+
+.OutgameEquipmentTypePrimaryBar .OutgameEquipmentFilterButton,.OutgameEquipmentTypeSecondaryBar .OutgameEquipmentFilterButton
+{
+	width: fit-children;
+	min-width: 116px;
+	height: 48px;
+	padding: 4px 8px 2px 8px;
+}
+
+.OutgameEquipmentTypeSecondaryBar .OutgameEquipmentFilterButton
+{
+	min-width: 86px;
+}
+
+.OutgameEquipmentTypeFilterButton
+{
+	min-width: 64px;
+}
+
+.OutgameEquipmentSlot:hover
+{
+	brightness: 1.28;
+}
+
+.OutgameEquipmentCell:hover
+{
+	brightness: 1;
+}
+
+.OutgameEquipmentCell:hover .XItemIcon
+{
+	brightness: 1.18;
+}
+
+.OutgameEquipmentFilterLabel,.OutgameEquipmentTypeFilterLabel,.OutgameEquipmentSettingLabel
+{
+	align: center center;
+	font-size: 16px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentTypePrimaryBar .OutgameEquipmentFilterLabel,.OutgameEquipmentTypeSecondaryBar .OutgameEquipmentFilterLabel
+{
+	width: 100%;
+	height: 20px;
+	align: center top;
+	font-size: 16px;
+}
+
+.OutgameEquipmentTypeSecondaryBar .OutgameEquipmentFilterLabel
+{
+	font-size: 14px;
+}
+
+.OutgameEquipmentFilterCount
+{
+	width: 100%;
+	height: 20px;
+	font-size: 14px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentWarehouseSections
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	padding: 8px 0px 0px 0px;
+}
+
+.OutgameEquipmentWarehouseSection
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+}
+
+.OutgameEquipmentWarehouseSections.DualWarehouse .OutgameEquipmentWarehouseSection
+{
+	margin-bottom: 6px;
+}
+
+.OutgameEquipmentWarehouseSectionHeader
+{
+	width: 100%;
+	height: 30px;
+	padding: 3px 14px 0px 16px;
+	flow-children: right;
+	border-top: 1px solid cHairlineSteel;
+}
+
+.OutgameEquipmentWarehouseSectionTitle
+{
+	width: fill-parent-flow(1);
+	color: cCream;
+	font-size: 17px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentWarehouseSectionCount
+{
+	width: 88px;
+	color: cSlate;
+	font-size: 15px;
+	text-align: right;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentInventoryGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 12px;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.OutgameEquipmentEmpty
+{
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentInventoryGrid > .OutgameEquipmentEmpty
+{
+	ignore-parent-flow: true;
+	align: center center;
+	width: 260px;
+}
+
+.OutgameEquipmentCell
+{
+	width: 104px;
+	height: 104px;
+	margin: 2px;
+	padding: 4px;
+	overflow: noclip;
+}
+
+.OutgameEquipmentCell.Selected
+{
+	brightness: 1.08;
+}
+
+.OutgameEquipmentCell.Selected .XItemIcon
+{
+	brightness: 1.18;
+	border: 1px solid #f0cf87dd;
+	box-shadow: #d6aa5d90 0px 0px 9px 0px;
+}
+
+.OutgameEquipmentCell.Selected .XItemIcon #Bg
+{
+	brightness: 1.16;
+}
+
+.OutgameEquipmentCell.BatchMode.Selected
+{
+	brightness: 1;
+}
+
+.OutgameEquipmentCell.BatchMode.Selected .XItemIcon
+{
+	brightness: 1;
+	box-shadow: #00000000 0px 0px 0px 0px;
+}
+
+.OutgameEquipmentCell.BatchSelected
+{
+	brightness: 1.1;
+}
+
+.OutgameEquipmentCell.BatchSelected .XItemIcon
+{
+	box-shadow: #d7b96c88 0px 0px 8px 0px;
+}
+
+.OutgameEquipmentCell.BatchMode
+{
+	saturation: 0.75;
+}
+
+.OutgameEquipmentCell.BatchMode .XItemIcon #EquipStatusLayer
+{
+	visibility: collapse;
+}
+
+.OutgameEquipmentCell.BatchSelectable
+{
+	saturation: 1;
+}
+
+.OutgameEquipmentCell.BatchDisabled
+{
+	saturation: 0.25;
+	brightness: 0.65;
+}
+
+.OutgameEquipmentCell.Equipped
+{
+	brightness: 1.08;
+}
+
+.OutgameEquipmentCell.Locked
+{
+	saturation: 0.35;
+}
+
+.OutgameEquipmentCellSelectMark
+{
+	ignore-parent-flow: true;
+	width: 18px;
+	height: 18px;
+	margin: 5px 5px 0px 0px;
+	horizontal-align: right;
+	background-color: #05080bcc;
+	border: 1px solid #6d7d88aa;
+	opacity: 0;
+}
+
+.OutgameEquipmentCell.BatchMode .OutgameEquipmentCellSelectMark
+{
+	opacity: 1;
+}
+
+.OutgameEquipmentCell.BatchSelected .OutgameEquipmentCellSelectMark
+{
+	background-color: #d8b86bcc;
+	border: 1px solid #ffe1a0dd;
+}
+
+.OutgameEquipmentCellIcon
+{
+	width: 96px;
+	height: 96px;
+	horizontal-align: center;
+	vertical-align: center;
+	overflow: noclip;
+}
+
+.OutgameEquipmentCellIcon .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentCellName
+{
+	width: 90px;
+	height: 36px;
+	horizontal-align: center;
+	margin-top: 7px;
+	color: cCream;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+	visibility: collapse;
+}
+
+.OutgameEquipmentCellMeta
+{
+	width: 90px;
+	height: 26px;
+	horizontal-align: center;
+	margin-top: 2px;
+	color: cSlate;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+	visibility: collapse;
+}
+
+.OutgameEquipmentWarehouseBatchBar
+{
+	width: 100%;
+	height: 54px;
+	padding: 7px 12px 0px 14px;
+	flow-children: right-wrap;
+	border-top: 1px solid cHairlineSteel;
+}
+
+.OutgameEquipmentWarehouseToolButton
+{
+	min-width: 118px;
+	height: 38px;
+	margin-right: 8px;
+	padding: 3px 12px 0px 12px;
+	flow-children: down;
+}
+
+.OutgameEquipmentWarehouseToolLabel
+{
+	width: 100%;
+	height: 20px;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentWarehouseToolCount
+{
+	width: 100%;
+	height: 13px;
+	color: cSlate;
+	font-size: 11px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentWarehouseStatusBar
+{
+	width: 100%;
+	height: 38px;
+	padding: 8px 14px 0px 14px;
+	flow-children: right;
+	border-top: 1px solid cHairlineSteel;
+}
+
+.OutgameEquipmentWarehouseStatusText
+{
+	width: fill-parent-flow(1);
+	color: cSlate;
+	font-size: 14px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentWarehouseCapacityText
+{
+	width: 160px;
+	color: cTan;
+	font-size: 14px;
+	text-align: right;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentSettingBar
+{
+	margin-bottom: 10px;
+}
+
+.OutgameEquipmentWearPage
+{
+	width: 100%;
+	height: 100%;
+	overflow: clip;
+}
+
+.OutgameEquipmentSettingButton
+{
+	width: 92px;
+}
+
+.OutgameEquipmentWearStage
+{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	background-color: #03070cea;
+	border: 1px solid #2a3743c0;
+	box-shadow: cScrim60 0px 0px 18px 0px;
+}
+
+.OutgameEquipmentWearStageBackground
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/img_outgame_equipment_wear_scene_png.vtex");
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0.42;
+	blur: gaussian(2px);
+	saturation: 0.74;
+	z-index: 0;
+}
+
+.OutgameEquipmentWearBoard
+{
+	width: 800px;
+	height: 760px;
+	align: center center;
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/img_outgame_equipment_wear_scene_png.vtex");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	box-shadow: cScrimDeep 0px 0px 22px 0px;
+}
+
+.OutgameEquipmentWearShade,.OutgameEquipmentWearLineOverlay,.OutgameEquipmentWearSlotLayer
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentWearShade
+{
+	background-color: gradient(radial, 50% 42%, 0% 0%, 70% 74%, from(#08284a08), color-stop(0.55, #040b1240), to(#010407d8));
+	z-index: 1;
+}
+
+.OutgameEquipmentWearLineOverlay
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/img_outgame_equipment_wear_lines_png.vtex");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0.2;
+	z-index: 2;
+}
+
+.OutgameEquipmentWearSlotLayer
+{
+	z-index: 3;
+}
+
+.OutgameEquipmentWearSettingBar
+{
+	ignore-parent-flow: true;
+	width: 470px;
+	height: 42px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 14px;
+	padding: 4px 8px 0px 8px;
+	z-index: 4;
+}
+
+.OutgameEquipmentWearSettingBar .OutgameEquipmentSettingButton
+{
+	width: 104px;
+	height: 32px;
+	margin-right: 8px;
+	margin-bottom: 0px;
+}
+
+.OutgameEquipmentWearSummaryButton
+{
+	ignore-parent-flow: true;
+	margin-left: 20px;
+	margin-top: 20px;
+	z-index: 8;
+}
+
+.OutgameEquipmentWearSummaryButton.Selected
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 8px 0px;
+}
+
+.OutgameEquipmentWearSummary
+{
+	ignore-parent-flow: true;
+	width: fit-children;
+	height: 100%;
+	horizontal-align: left;
+	vertical-align: top;
+	padding: 16px 18px;
+	flow-children: down;
+	background-color: #050a10aa;
+	visibility: collapse;
+	z-index: 12;
+}
+
+.OutgameEquipmentWearSummary.Visible
+{
+	visibility: visible;
+}
+
+.OutgameEquipmentWearSummaryTitle
+{
+	width: 100%;
+	height: 30px;
+	color: cGold;
+	font-size: 19px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameEquipmentWearSummaryList
+{
+	width: fit-children;
+	height: 90%;
+	margin-top: 4px;
+	flow-children: down-wrap;
+	overflow: clip;
+}
+
+.OutgameEquipmentWearSummaryAttr
+{
+	width: 300px;
+	height: 22px;
+	margin-right: 10px;
+	color: cCream;
+	font-size: 15px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentWearSummaryAttr.Rarity_1
+{
+	color: #a9a291;
+}
+
+.OutgameEquipmentWearSummaryAttr.Rarity_2
+{
+	color: #66aa5b;
+}
+
+.OutgameEquipmentWearSummaryAttr.Rarity_3
+{
+	color: #5f9fd1;
+}
+
+.OutgameEquipmentWearSummaryAttr.Rarity_4
+{
+	color: #9e6cbc;
+}
+
+.OutgameEquipmentWearSummaryAttr.Rarity_5
+{
+	color: #bd833d;
+}
+
+.OutgameEquipmentWearSummaryAttr.Rarity_6
+{
+	color: #bb5a55;
+}
+
+.OutgameEquipmentWearSummaryEmpty
+{
+	width: 300px;
+	height: 22px;
+	color: cSlate;
+	font-size: 15px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentSlot
+{
+	width: 106px;
+	height: 106px;
+	padding: 6px 6px 5px 6px;
+	flow-children: down;
+}
+
+.OutgameEquipmentWearSlot
+{
+	ignore-parent-flow: true;
+	horizontal-align: center;
+	vertical-align: top;
+}
+
+.OutgameEquipmentWearSlot.Type_1
+{
+	margin-left: -520px;
+	margin-top: 160px;
+}
+
+.OutgameEquipmentWearSlot.Type_2
+{
+	margin-left: 520px;
+	margin-top: 160px;
+}
+
+.OutgameEquipmentWearSlot.Type_3
+{
+	margin-left: 0px;
+	margin-top: 25px;
+}
+
+.OutgameEquipmentWearSlot.Type_4
+{
+	margin-left: 0px;
+	margin-top: 200px;
+}
+
+.OutgameEquipmentWearSlot.Type_5
+{
+	margin-left: -556px;
+	margin-top: 290px;
+}
+
+.OutgameEquipmentWearSlot.Type_6
+{
+	margin-left: 0px;
+	margin-top: 575px;
+}
+
+.OutgameEquipmentWearSlot.Type_7
+{
+	margin-left: 0px;
+	margin-top: 330px;
+}
+
+.OutgameEquipmentWearSlot.Type_8
+{
+	margin-left: 556px;
+	margin-top: 290px;
+}
+
+.OutgameEquipmentWearSlot.Type_9
+{
+	margin-left: -520px;
+	margin-top: 558px;
+}
+
+.OutgameEquipmentWearSlot.Type_10
+{
+	margin-left: 520px;
+	margin-top: 558px;
+}
+
+.OutgameEquipmentWearSlot.Type_11
+{
+	margin-left: -556px;
+	margin-top: 425px;
+}
+
+.OutgameEquipmentWearSlot.Type_12
+{
+	margin-left: 556px;
+	margin-top: 425px;
+}
+
+.OutgameEquipmentSlot.Filled
+{
+	border: 1px solid #b5965dcc;
+	padding: 4px;
+	overflow: noclip;
+}
+
+.OutgameEquipmentSlot.Selected
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+.OutgameEquipmentSlot.DropCompatible,.OutgameEquipmentSlot.DropCompatible:hover
+{
+	border: 1px solid #f0d48dee;
+	box-shadow: #d6b96b99 0px 0px 12px 0px;
+	brightness: 1.25;
+}
+
+.OutgameEquipmentSlot.DropBlocked,.OutgameEquipmentSlot.DropBlocked:hover
+{
+	border: 1px solid #a54842ee;
+	box-shadow: #b9403080 0px 0px 10px 0px;
+	saturation: 0.45;
+	brightness: 0.78;
+}
+
+.OutgameEquipmentWearSlotIcon
+{
+	width: 50px;
+	height: 50px;
+	horizontal-align: center;
+}
+
+.OutgameEquipmentSlot.Filled .OutgameEquipmentWearSlotIcon
+{
+	ignore-parent-flow: true;
+	width: 96px;
+	height: 96px;
+	align: center center;
+	overflow: noclip;
+}
+
+.OutgameEquipmentWearSlotIcon .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentSlot.Filled .OutgameEquipmentSlotLabel,.OutgameEquipmentSlot.Filled .OutgameEquipmentSlotName
+{
+	visibility: collapse;
+}
+
+.OutgameEquipmentWearSlotSilhouette
+{
+	width: 50px;
+	height: 50px;
+	align: center center;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_1
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_01_main_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_2
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_02_offhand_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_3
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_03_helm_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_4
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_04_armor_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_5
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_05_gloves_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_6
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_06_boots_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_7
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_07_girdle_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_8
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_08_amulet_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_9
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_09_ring_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_10
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_10_sigil_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_11
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_11_bracer_png.vtex");
+}
+
+.OutgameEquipmentWearSlotSilhouette.Type_12
+{
+	background-image: url("s2r://panorama/images/custom_game/equipment/equip/wear_slot/img_wear_empty_12_armlet_png.vtex");
+}
+
+.OutgameEquipmentSlotLabel
+{
+	width: 100%;
+	height: 17px;
+	margin-top: 2px;
+	color: cSlate;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentSlotName
+{
+	width: 100%;
+	height: 19px;
+	margin-top: 1px;
+	color: cCream;
+	font-size: 12px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentSlot.Filled .OutgameEquipmentSlotName
+{
+	color: cCream;
+}
+
+.OutgameEquipmentCell.DraggingFrom,.OutgameEquipmentWearSlot.DraggingFrom
+{
+	brightness: 0.55;
+	saturation: 0.55;
+}
+
+.OutgameEquipmentWearDraggedItem
+{
+	width: 84px;
+	height: 84px;
+	padding: 6px;
+	background-color: #071017ee;
+	border: 1px solid #b5965dcc;
+	box-shadow: cScrim80 0px 0px 12px 0px;
+}
+
+.OutgameEquipmentWearDraggedIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentWearDraggedIcon .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentOperationPage
+{
+	width: 100%;
+	height: 100%;
+	padding: 14px;
+}
+
+.OutgameEquipmentOperationBackdrop
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+	background-color: gradient(radial, 50% 34%, 0% 0%, 80% 80%, from(#1736552a), color-stop(0.45, #07101970), to(#020407e5));
+	border: 1px solid #0f1a22cc;
+}
+
+.OutgameEquipmentOperationStage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+}
+
+.OutgameEquipmentComingSoon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentComingSoonText
+{
+	align: center center;
+	width: 420px;
+	color: cTan;
+	font-size: 30px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationSlot
+{
+	width: 194px;
+	height: 190px;
+	padding: 8px 10px 8px 10px;
+	flow-children: down;
+	overflow: noclip;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1b252dea), color-stop(0.70, #0c1218ee), to(#05080cf6));
+	border: 1px solid cGoldBorder;
+	box-shadow: cScrim80 0px 0px 9px 0px;
+}
+
+.OutgameEquipmentDragDisplay
+{
+	width: 52px;
+	height: 52px;
+}
+
+.OutgameEquipmentOperationSlot.Empty
+{
+	saturation: 0.55;
+}
+
+.OutgameEquipmentOperationSlotTitle
+{
+	width: 100%;
+	height: 22px;
+	color: cTan;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationSlotIcon
+{
+	width: 96px;
+	height: 96px;
+	horizontal-align: center;
+	margin-top: 3px;
+	overflow: noclip;
+}
+
+.OutgameEquipmentOperationSlotIcon .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentOperationSlotEmptyMark
+{
+	width: 82px;
+	height: 82px;
+	align: center center;
+	background-color: #8da0aa33;
+	border: 1px solid #9fb2bd77;
+}
+
+.OutgameEquipmentOperationSlotName
+{
+	width: 100%;
+	height: 25px;
+	margin-top: 4px;
+	color: cCream;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationSlotMeta
+{
+	width: 100%;
+	height: 17px;
+	color: cSlate;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationAttrCompare
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	min-height: 190px;
+	margin-top: 8px;
+	flow-children: right;
+}
+
+.OutgameEquipmentOperationAttrColumn
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	padding: 10px 14px;
+	flow-children: down;
+	border-radius: 5px;
+}
+
+.OutgameEquipmentOperationAttrArrow
+{
+	width: 44px;
+	color: cGold;
+	font-size: 42px;
+	text-align: center;
+	vertical-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameEquipmentOperationAttrTitle
+{
+	width: 100%;
+	height: 30px;
+	color: cCream;
+	font-size: 21px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationSlotWarning
+{
+	width: 100%;
+	height: 22px;
+	margin-top: 4px;
+	color: #ff6464;
+	font-size: 16px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.InheritPage .OutgameEquipmentConsoleBench
+{
+	height: 246px;
+}
+
+.InheritPage .SourceSlot
+{
+	height: 216px;
+}
+
+.OutgameEquipmentOperationAttrList
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.OutgameEquipmentInheritPreview
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	min-height: 160px;
+	margin-top: 8px;
+	padding: 14px 24px;
+	flow-children: down;
+	border-radius: 5px;
+}
+
+.OutgameEquipmentInheritPreviewTitle
+{
+	width: 100%;
+	height: 34px;
+	color: cCream;
+	font-size: 21px;
+	text-align: center;
+}
+
+.OutgameEquipmentInheritPreviewRow
+{
+	width: 100%;
+	height: 28px;
+	flow-children: right;
+}
+
+.OutgameEquipmentInheritPreviewCaption
+{
+	width: 70%;
+	color: cTan;
+	font-size: 20px;
+	vertical-align: center;
+}
+
+.OutgameEquipmentInheritPreviewValue
+{
+	width: 30%;
+	color: cGold;
+	font-size: 20px;
+	text-align: right;
+	vertical-align: center;
+}
+
+.OutgameEquipmentInheritAttrList
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 12px;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.OutgameEquipmentInheritAttrList .Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameEquipmentInheritAttrRow
+{
+	width: 100%;
+	min-height: 30px;
+	flow-children: right;
+}
+
+.OutgameEquipmentInheritAttrRow Label
+{
+	font-size: 17px;
+	color: cSteel;
+	vertical-align: center;
+	text-overflow: shrink;
+}
+
+.InheritAttrName
+{
+	width: 36%;
+}
+
+.InheritAttrValue
+{
+	width: 21%;
+	text-align: right;
+}
+
+.InheritAttrArrow
+{
+	width: 6%;
+	text-align: center;
+}
+
+.InheritAttrDelta
+{
+	width: 16%;
+	text-align: right;
+}
+
+.OutgameEquipmentInheritAttrRow.Random .InheritAttrName
+{
+	color: cGold;
+}
+
+.OutgameEquipmentInheritAttrRow .InheritAttrDelta
+{
+	color: cGreen;
+}
+
+.OutgameEquipmentInheritAttrRow.Decrease .InheritAttrDelta
+{
+	color: #ff6464;
+}
+
+.OutgameEquipmentOperationAttrRow
+{
+	width: 100%;
+	min-height: 26px;
+	flow-children: right;
+}
+
+.OutgameEquipmentOperationAttrName
+{
+	width: fill-parent-flow(1);
+	color: cSteel;
+	font-size: 16px;
+	vertical-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationAttrRow.Attr_random .OutgameEquipmentOperationAttrName,.OutgameEquipmentOperationAttrRow.Attr_random .OutgameEquipmentOperationAttrValue
+{
+	color: cPurple;
+}
+
+.OutgameEquipmentOperationAttrRow.Attr_candidate .OutgameEquipmentOperationAttrName,.OutgameEquipmentOperationAttrRow.Attr_candidate .OutgameEquipmentOperationAttrValue,.OutgameEquipmentOperationAttrDelta
+{
+	color: cGreen;
+}
+
+.OutgameEquipmentOperationAttrValue
+{
+	width: 92px;
+	color: cSteel;
+	font-size: 16px;
+	text-align: right;
+	vertical-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationAttrDelta
+{
+	width: 68px;
+	margin-left: 8px;
+	font-size: 15px;
+	text-align: right;
+	vertical-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationAttrEmpty
+{
+	width: 100%;
+	height: 42px;
+	margin-top: 28px;
+	color: cSlate;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOperationHintPanel
+{
+	width: 100%;
+	min-height: 54px;
+	margin-top: 8px;
+	padding: 8px 14px;
+}
+
+.OutgameEquipmentOperationHintText
+{
+	width: 100%;
+	color: cSlate;
+	font-size: 15px;
+	line-height: 18px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentConsoleBench
+{
+	width: 100%;
+	height: 220px;
+	padding: 14px 18px;
+	overflow: noclip;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#0c141ce8), to(#070d13f2));
+	border: 1px solid #33414d;
+	border-radius: 6px;
+}
+
+.OutgameEquipmentConsoleBenchRow
+{
+	width: fit-children;
+	height: 100%;
+	flow-children: right;
+	align: center center;
+	overflow: noclip;
+}
+
+.OutgameEquipmentConsoleBench .OutgameEquipmentOperationSlot
+{
+	vertical-align: center;
+	margin: 0px;
+	box-shadow: cGoldGlow 0px 0px 16px 0px;
+}
+
+.OutgameEquipmentConsoleBench .OutgameEquipmentOperationSlot.Empty
+{
+	box-shadow: #00000000 0px 0px 0px 0px;
+}
+
+.OutgameEquipmentConsoleBench .OutgameEquipmentOperationSlot.DropHint
+{
+	border: 1px solid #f0d48daa;
+	box-shadow: cGoldGlow 0px 0px 9px 0px;
+	animation-name: OutgameEquipmentSlotDropHint;
+	animation-duration: 1.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.OutgameEquipmentConsoleBench .OutgameEquipmentOperationSlot.DropCompatible
+{
+	border: 1px solid cGreen;
+	box-shadow: cGreen 0px 0px 16px 0px;
+	animation-name: none;
+}
+
+.OutgameEquipmentConsoleBench .OutgameEquipmentOperationSlot.DropBlocked
+{
+	border: 1px solid cRed;
+	box-shadow: cRed 0px 0px 16px 0px;
+	animation-name: none;
+}
+
+.OutgameEquipmentConsoleArrow
+{
+	width: 60px;
+	height: fit-children;
+	color: cGold;
+	font-size: 38px;
+	text-align: center;
+	vertical-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameEquipmentConsoleSlotChip
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: -9px;
+	margin-right: -9px;
+	padding: 2px 10px 3px 10px;
+	color: cGoldBright;
+	font-size: 18px;
+	background-color: #14110a;
+	border: 1px solid cGold;
+	border-radius: 12px;
+	box-shadow: cScrim60 0px 0px 10px 0px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameEquipmentStatStrip
+{
+	width: 100%;
+	margin-top: 10px;
+	flow-children: right;
+}
+
+.OutgameEquipmentStat
+{
+	width: fill-parent-flow(1);
+	height: 66px;
+	margin-right: 8px;
+	padding: 8px 12px 7px 12px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#131c25f0), to(#0a1119f2));
+	border: 1px solid #33434f;
+	border-radius: 4px;
+}
+
+.OutgameEquipmentStat.Wide
+{
+	width: fill-parent-flow(2);
+}
+
+.OutgameEquipmentStatLabel
+{
+	width: 100%;
+	height: 18px;
+	color: cSlate;
+	font-size: 13px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentStatValue
+{
+	width: 100%;
+	height: 26px;
+	color: #e7edf0;
+	font-size: 20px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentStatValue.Good
+{
+	color: cGreen;
+}
+
+.OutgameEquipmentStatValue.Warn
+{
+	color: #f0c06d;
+}
+
+.OutgameEquipmentStatValue.Bad
+{
+	color: cRed;
+}
+
+.OutgameEquipmentStatValue.Gold
+{
+	color: cCream;
+}
+
+.OutgameEquipmentStatTrack
+{
+	width: 100%;
+	height: 8px;
+	margin-top: 6px;
+	background-color: #05090dcc;
+	border: 1px solid #38495a;
+	border-radius: 4px;
+}
+
+.OutgameEquipmentStatFill
+{
+	width: 0%;
+	height: 100%;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#8a6f3c), to(cGold));
+	box-shadow: cGoldGlow 0px 0px 8px 0px;
+}
+
+.OutgameEquipmentStatProgressValue
+{
+	width: 100%;
+	height: 16px;
+	margin-top: 3px;
+	color: cSlate;
+	font-size: 12px;
+	text-align: right;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentForgeOutput
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	min-height: 190px;
+	margin-top: 10px;
+	padding: 26px 20px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#141c25f2), to(#0a1119f6));
+	border: 1px solid #33434f;
+	border-radius: 6px;
+}
+
+.OutgameEquipmentForgeOutput.Empty
+{
+	saturation: 0.45;
+}
+
+.OutgameEquipmentForgeOutputEmpty
+{
+	align: center center;
+	width: 300px;
+	color: cSlate;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentForgeOutputTitle
+{
+	width: 100%;
+	horizontal-align: center;
+	margin-top: 8px;
+	color: cCream;
+	font-size: 26px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentForgeOutputMeta
+{
+	width: 100%;
+	margin-top: 8px;
+	color: cSlate;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentForgeOutputRoll
+{
+	horizontal-align: center;
+	margin-top: 18px;
+	padding: 5px 14px;
+	color: cGold;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #8a6f3c;
+	background-color: #b6975b12;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentConsoleFooter
+{
+	width: 100%;
+	height: 88px;
+	margin-top: 10px;
+	padding: 10px 14px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#0c141ce8), to(#080d13f2));
+	border: 1px solid #33414d;
+	border-radius: 6px;
+}
+
+.OutgameEquipmentConsoleFooterInfo
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: right;
+}
+
+.OutgameEquipmentConsoleFooterCaption
+{
+	width: 34px;
+	height: 100%;
+	margin-right: 10px;
+	color: #8a6f3c;
+	font-size: 15px;
+	vertical-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentConsoleFooterNote
+{
+	width: fill-parent-flow(1);
+	color: cSlate;
+	font-size: 14px;
+	vertical-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentFooterMaterial
+{
+	height: 64px;
+	margin-right: 8px;
+	padding: 0px 13px 0px 8px;
+	flow-children: right;
+	vertical-align: center;
+	background-color: cPanel;
+	border: 1px solid #2c3b47;
+	border-radius: 4px;
+}
+
+.OutgameEquipmentFooterMaterialIcon
+{
+	width: 42px;
+	height: 42px;
+	vertical-align: center;
+}
+
+.OutgameEquipmentFooterMaterialIcon .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentFooterMaterialName
+{
+	vertical-align: center;
+	margin-left: 9px;
+	color: cSteel;
+	font-size: 15px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentFooterMaterialCount
+{
+	vertical-align: center;
+	margin-left: 12px;
+	color: cRed;
+	font-size: 17px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentFooterMaterial.Enough .OutgameEquipmentFooterMaterialCount
+{
+	color: cGreen;
+}
+
+.OutgameEquipmentConsoleFooterActions
+{
+	width: fit-children;
+	height: 100%;
+	horizontal-align: right;
+	flow-children: right;
+}
+
+.OutgameEquipmentConsoleFooterActions .OutgameEquipmentActionBar
+{
+	width: fit-children;
+	padding: 0px;
+	flow-children: right;
+	vertical-align: center;
+	horizontal-align: right;
+}
+
+.OutgameEquipmentConsoleFooter .OutgameEquipmentActionButton
+{
+	height: 56px;
+	min-width: 148px;
+	margin: 0px 0px 0px 10px;
+	padding: 0px 24px;
+}
+
+.OutgameEquipmentConsoleFooter .OutgameEquipmentActionLabel
+{
+	font-size: 21px;
+}
+
+.OutgameEquipmentOperationStage.OutgameEquipmentWorkspace
+{
+	flow-children: none;
+}
+
+.OutgameEquipmentWorkspaceHeader
+{
+	width: 100%;
+	height: 196px;
+}
+
+.OutgameEquipmentWorkspaceTarget
+{
+	width: 208px;
+	height: 100%;
+}
+
+.OutgameEquipmentWorkspaceSummaryInset
+{
+	width: 100%;
+	height: 100%;
+	padding-left: 220px;
+}
+
+.OutgameEquipmentWorkspaceSummary,.OutgameEquipmentWorkspaceContent
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentWorkspaceContentInset
+{
+	width: 100%;
+	height: 100%;
+	padding-top: 208px;
+	padding-bottom: 100px;
+}
+
+.OutgameEquipmentWorkspaceFooter
+{
+	width: 100%;
+	height: 88px;
+	vertical-align: bottom;
+}
+
+.RecoinOperation .OutgameEquipmentWorkspaceContentInset
+{
+	padding-bottom: 216px;
+}
+
+.RecoinOperation .OutgameEquipmentWorkspaceFooter
+{
+	height: 204px;
+}
+
+.RecoinOperation.HasCandidate .OutgameEquipmentWorkspaceContentInset
+{
+	padding-bottom: 100px;
+}
+
+.RecoinOperation.HasCandidate .OutgameEquipmentWorkspaceFooter
+{
+	height: 88px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentConsoleBench
+{
+	height: 100%;
+	padding: 8px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentOperationSlot
+{
+	width: 190px;
+	height: 178px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentOperationSlotIcon
+{
+	width: 84px;
+	height: 84px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentForgeOutput
+{
+	height: 100%;
+	min-height: 0px;
+	margin-top: 0px;
+	padding: 18px 16px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentForgeOutputTitle
+{
+	font-size: 24px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentForgeOutputEmpty
+{
+	width: 100%;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentStatStrip
+{
+	height: 100%;
+	margin-top: 0px;
+	flow-children: down;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentStat
+{
+	width: 100%;
+	height: 60px;
+	margin: 0px 0px 8px 0px;
+	padding: 6px 12px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentOperationAttrCompare
+{
+	height: 100%;
+	min-height: 0px;
+	margin-top: 0px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentOperationAttrColumn
+{
+	width: 47%;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentOperationAttrArrow
+{
+	width: 6%;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentOperationAttrList
+{
+	height: 100%;
+	padding-top: 30px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentOperationAttrTitle
+{
+	ignore-parent-flow: true;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentConsoleFooter
+{
+	height: 100%;
+	margin-top: 0px;
+	flow-children: none;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentConsoleFooterInfo
+{
+	visibility: collapse;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentConsoleFooterActions
+{
+	width: 100%;
+	flow-children: none;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentActionBar
+{
+	width: 100%;
+	height: 56px;
+	flow-children: none;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentActionButton
+{
+	width: 100%;
+	margin: 0px;
+	padding: 0px 12px;
+}
+
+.OutgameEquipmentWorkspace .OutgameEquipmentActionLabel
+{
+	width: 100%;
+}
+
+.OutgameEquipmentWorkspace .CandidateActions .OutgameEquipmentActionButton
+{
+	width: 49%;
+}
+
+.OutgameEquipmentWorkspace .CandidateActions #OutgameEquipmentAction_1
+{
+	horizontal-align: right;
+}
+
+.OutgameEquipmentForgeMaterials
+{
+	padding: 12px;
+	border: 1px solid #33434f;
+	border-radius: 6px;
+	background-color: cPanel;
+}
+
+.OutgameEquipmentForgeMaterialsTitle
+{
+	width: 100%;
+	height: 30px;
+	color: cCream;
+	font-size: 21px;
+}
+
+.OutgameEquipmentForgeMaterialsInset
+{
+	width: 100%;
+	height: 100%;
+	padding-top: 38px;
+}
+
+.OutgameEquipmentForgeMaterialsList
+{
+	width: 100%;
+	height: 100%;
+	padding-right: 12px;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.OutgameEquipmentForgeMaterialsEmpty
+{
+	width: 100%;
+	align: center center;
+	text-align: center;
+	color: cSlate;
+	font-size: 18px;
+}
+
+.OutgameEquipmentForgeMaterials .Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameEquipmentForgeMaterial
+{
+	width: 100%;
+	height: 66px;
+	min-height: 66px;
+	margin-bottom: 8px;
+	padding: 8px 12px;
+	background-color: cPanelRaised;
+	border: 1px solid #2c3b47;
+	border-radius: 4px;
+}
+
+.OutgameEquipmentForgeMaterialIcon
+{
+	width: 46px;
+	height: 46px;
+	vertical-align: center;
+}
+
+.OutgameEquipmentForgeMaterialNameInset
+{
+	width: 100%;
+	height: 100%;
+	padding-left: 60px;
+	padding-right: 130px;
+}
+
+.OutgameEquipmentForgeMaterialName
+{
+	width: 100%;
+	vertical-align: center;
+	font-size: 17px;
+	color: cSteel;
+	white-space: normal;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentForgeMaterialCount
+{
+	width: 120px;
+	align: right center;
+	text-align: right;
+	font-size: 19px;
+	color: cRed;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentForgeMaterial.Enough .OutgameEquipmentForgeMaterialCount
+{
+	color: cGreen;
+}
+
+.OutgameEquipmentConsoleFooter.RecoinFooter
+{
+	padding: 10px;
+}
+
+.OutgameEquipmentOpChips
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+}
+
+.OutgameEquipmentOpChipRow
+{
+	width: 100%;
+	height: 86px;
+	flow-children: none;
+	margin-bottom: 8px;
+}
+
+.OutgameEquipmentOpChipRow.Last
+{
+	margin-bottom: 0px;
+}
+
+.OutgameEquipmentOpChip
+{
+	width: 49%;
+	height: 100%;
+	padding: 10px;
+	flow-children: none;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(cPanelRaised), to(cPanel));
+	border: 1px solid #3a4b58;
+	border-radius: 4px;
+	box-shadow: cScrim40 0px 2px 6px 0px;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.1s;
+}
+
+.OutgameEquipmentOpChip.Second
+{
+	horizontal-align: right;
+}
+
+.OutgameEquipmentOpChip:hover
+{
+	brightness: 1.16;
+	border: 1px solid cGoldBorder;
+}
+
+.OutgameEquipmentOpChip.Disabled
+{
+	saturation: 0.35;
+	brightness: 0.62;
+}
+
+.OutgameEquipmentOpChipIcon
+{
+	width: 42px;
+	height: 42px;
+	vertical-align: center;
+}
+
+.OutgameEquipmentOpChipIcon .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameEquipmentOpChipBody
+{
+	width: 100%;
+	height: 100%;
+	padding-left: 54px;
+	flow-children: down;
+	vertical-align: center;
+}
+
+.OutgameEquipmentOpChipName
+{
+	width: 100%;
+	height: 27px;
+	margin-top: 0px;
+	color: cCream;
+	font-size: 18px;
+	vertical-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOpChipMaterial
+{
+	width: 100%;
+	padding-right: 78px;
+	height: 34px;
+	color: cSlate;
+	font-size: 14px;
+	white-space: normal;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOpChipCost
+{
+	width: 76px;
+	height: 30px;
+	align: right bottom;
+	text-align: right;
+	color: cRed;
+	font-size: 17px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentOpChipCost.Enough
+{
+	color: cGreen;
+}
+
+.OutgameEquipmentActionBar
+{
+	padding-top: 2px;
+}
+
+.OutgameEquipmentActionButton
+{
+	min-width: 132px;
+	height: 42px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 0px 18px;
+}
+
+.OutgameEquipmentActionLabel
+{
+	align: center center;
+	font-size: 18px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameEquipmentPaneHeader,.OutgameEquipmentTypePrimaryBar,.OutgameEquipmentTypeSecondaryBar,.OutgameEquipmentWarehouseSectionHeader,.OutgameEquipmentWarehouseBatchBar,.OutgameEquipmentWarehouseStatusBar
+{
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameEquipmentSlot.DropHint
+{
+	border: 1px solid #f0d48daa;
+	box-shadow: cGoldGlow 0px 0px 9px 0px;
+	animation-name: OutgameEquipmentSlotDropHint;
+	animation-duration: 1.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.OutgameEquipmentSlot.DropHint.DropCompatible
+{
+	border: 1px solid #f0d48dee;
+	box-shadow: #d6b96b99 0px 0px 12px 0px;
+	brightness: 1.25;
+	animation-name: none;
+}
+
+.OutgameEquipmentSlot.DropHint.DropBlocked
+{
+	border: 1px solid #a54842ee;
+	box-shadow: #b9403080 0px 0px 10px 0px;
+	saturation: 0.45;
+	brightness: 0.78;
+	animation-name: none;
+}
+
+@keyframes 'OutgameEquipmentSlotDropHint'
+{
+	0%
+	{
+		box-shadow: 0px 0px 4px 0px #d6b96b33;
+		brightness: 1.00;
+	}
+	
+	50%
+	{
+		box-shadow: 0px 0px 13px 2px #f0d48d99;
+		brightness: 1.20;
+	}
+	
+	100%
+	{
+		box-shadow: 0px 0px 4px 0px #d6b96b33;
+		brightness: 1.00;
+	}
+	
+}
+
+.OutgameEquipmentUnequipDropZone
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+	align: center center;
+	background-color: #05090eaa;
+	visibility: collapse;
+	opacity: 0;
+	z-index: 40;
+	transition: opacity 0.12s ease-in-out 0.0s;
+}
+
+.OutgameEquipmentUnequipDropZone.Hint
+{
+	visibility: visible;
+	opacity: 1;
+}
+
+.OutgameEquipmentUnequipDropFrame
+{
+	width: 78%;
+	height: 210px;
+	align: center center;
+	flow-children: down;
+	padding: 24px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#141d16f2), color-stop(0.70, #0c1410f4), to(#070b09f8));
+	border: 2px dashed cGoldBorder;
+	box-shadow: cScrim60 0px 6px 18px 0px;
+}
+
+.OutgameEquipmentUnequipDropZone.Hint .OutgameEquipmentUnequipDropFrame
+{
+	animation-name: OutgameEquipmentUnequipDropPulse;
+	animation-duration: 1.4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.OutgameEquipmentUnequipDropZone.Hint.Active .OutgameEquipmentUnequipDropFrame
+{
+	border: 2px solid cGoldBright;
+	box-shadow: #d6b96baa 0px 0px 22px 0px;
+	brightness: 1.18;
+	animation-name: none;
+}
+
+.OutgameEquipmentUnequipDropLabel
+{
+	width: 100%;
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	color: cCream;
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	text-shadow: 0px 2px 5px 3 #000000;
+}
+
+@keyframes 'OutgameEquipmentUnequipDropPulse'
+{
+	0%
+	{
+		box-shadow: 0px 0px 6px 0px #c8a86033;
+		brightness: 1.00;
+	}
+	
+	50%
+	{
+		box-shadow: 0px 0px 20px 3px #f0d48d88;
+		brightness: 1.16;
+	}
+	
+	100%
+	{
+		box-shadow: 0px 0px 6px 0px #c8a86033;
+		brightness: 1.00;
+	}
+	
+}
+
+.OutgameEquipmentCell.BatchDisabled:hover
+{
+	saturation: 0.25;
+	brightness: 0.65;
+}
+
+#OutgameEquipmentFilter_rarity_1
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#252522e5), color-stop(0.68, #111312ee), to(#050607f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#b8b2a0aa), to(#6e6b6188));
+	box-shadow: #b8b2a020 0px 0px 6px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_2
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#183019e5), color-stop(0.68, #0b1510ee), to(#050807f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#67bd50aa), to(#2f7e3488));
+	box-shadow: #67bd5024 0px 0px 6px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_3
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#14283be5), color-stop(0.68, #08131eee), to(#04070bf6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#57a8f0aa), to(#2e6fac88));
+	box-shadow: #57a8f026 0px 0px 6px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_4
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#28193be5), color-stop(0.68, #130b1fee), to(#07040bf6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#b36ae0aa), to(#763a9f88));
+	box-shadow: #b36ae026 0px 0px 6px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_5
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#372515e5), color-stop(0.68, #171009ee), to(#080604f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#e49b36b0), to(#9f5e1e88));
+	box-shadow: #e49b362a 0px 0px 7px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_6
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#351817e5), color-stop(0.68, #170a0aee), to(#080404f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#df5b52aa), to(#96302d88));
+	box-shadow: #df5b5228 0px 0px 7px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_1 Label
+{
+	color: cTan;
+}
+
+#OutgameEquipmentFilter_rarity_2 Label
+{
+	color: cGreen;
+}
+
+#OutgameEquipmentFilter_rarity_3 Label
+{
+	color: cBlue;
+}
+
+#OutgameEquipmentFilter_rarity_4 Label
+{
+	color: cPurple;
+}
+
+#OutgameEquipmentFilter_rarity_5 Label
+{
+	color: cGold;
+}
+
+#OutgameEquipmentFilter_rarity_6 Label
+{
+	color: cRed;
+}
+
+#OutgameEquipmentFilter_rarity_1 .OutgameOptionButtonCount
+{
+	color: #a9a291;
+}
+
+#OutgameEquipmentFilter_rarity_2 .OutgameOptionButtonCount
+{
+	color: #66aa5b;
+}
+
+#OutgameEquipmentFilter_rarity_3 .OutgameOptionButtonCount
+{
+	color: #5f9fd1;
+}
+
+#OutgameEquipmentFilter_rarity_4 .OutgameOptionButtonCount
+{
+	color: #9e6cbc;
+}
+
+#OutgameEquipmentFilter_rarity_5 .OutgameOptionButtonCount
+{
+	color: #bd833d;
+}
+
+#OutgameEquipmentFilter_rarity_6 .OutgameOptionButtonCount
+{
+	color: #bb5a55;
+}
+
+#OutgameEquipmentFilter_rarity_1.Selected,#OutgameEquipmentFilter_rarity_1:selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#f0e4c6), to(#9f9884));
+	box-shadow: #cfc1a84f 0px 0px 10px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_2.Selected,#OutgameEquipmentFilter_rarity_2:selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#9cf487), to(#45aa48));
+	box-shadow: #73d85b55 0px 0px 10px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_3.Selected,#OutgameEquipmentFilter_rarity_3:selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#8fd1ff), to(#3a8bd8));
+	box-shadow: #64b5f05a 0px 0px 10px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_4.Selected,#OutgameEquipmentFilter_rarity_4:selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#d59aff), to(#8f4ec1));
+	box-shadow: #bd71ee58 0px 0px 10px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_5.Selected,#OutgameEquipmentFilter_rarity_5:selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffd27a), to(#c77724));
+	box-shadow: #e7a1455c 0px 0px 11px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_6.Selected,#OutgameEquipmentFilter_rarity_6:selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ff9a90), to(#c24038));
+	box-shadow: #dd5b5358 0px 0px 11px 0px;
+}
+
+#OutgameEquipmentFilter_rarity_1.Selected Label,#OutgameEquipmentFilter_rarity_1:selected Label
+{
+	color: cCream;
+	opacity: 1;
+}
+
+#OutgameEquipmentFilter_rarity_2.Selected Label,#OutgameEquipmentFilter_rarity_2:selected Label
+{
+	color: #a7f394;
+	opacity: 1;
+}
+
+#OutgameEquipmentFilter_rarity_3.Selected Label,#OutgameEquipmentFilter_rarity_3:selected Label
+{
+	color: #9bd8ff;
+	opacity: 1;
+}
+
+#OutgameEquipmentFilter_rarity_4.Selected Label,#OutgameEquipmentFilter_rarity_4:selected Label
+{
+	color: #dda7ff;
+	opacity: 1;
+}
+
+#OutgameEquipmentFilter_rarity_5.Selected Label,#OutgameEquipmentFilter_rarity_5:selected Label
+{
+	color: cGoldBright;
+	opacity: 1;
+}
+
+#OutgameEquipmentFilter_rarity_6.Selected Label,#OutgameEquipmentFilter_rarity_6:selected Label
+{
+	color: #ffa097;
+	opacity: 1;
+}
+

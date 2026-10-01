@@ -1,0 +1,187 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/view/utils/playeravatar/playeravatar.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/balance/balance.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan_data.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/config/wave_plan.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/playeravatar/playeravatar.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/balance/balance.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="PlayerAvatar">
+			<Panel class="PlayerAvatar" hittest="false">
+				<Image id="HeadBg" />
+				<Image id="HeadMask">
+					<DOTAAvatarImage id="HeadIcon" />
+				</Image>
+				<Image id="HeadFrame" />
+			</Panel>
+		</snippet>
+		<snippet name="BalancePlayerRow">
+			<Panel class="BalancePlayerRow">
+				<Panel id="BalanceRankBadge" class="BalanceRankBadge" />
+				<Panel id="BalancePlayerAvatar" class="BalancePlayerAvatarMount" />
+				<Label id="BalancePlayerName" class="BalancePlayerName" />
+				<Label id="BalancePowerValue" class="BalanceTableValue BalancePowerValue" />
+				<Label id="BalanceDamageValue" class="BalanceTableValue BalanceDamageValue" />
+				<Panel class="BalanceShareCell">
+					<Label id="BalanceShareText" class="BalanceShareText" />
+					<Panel class="BalanceShareBar">
+						<Panel id="BalanceShareFill" class="BalanceShareFill" />
+					</Panel>
+				</Panel>
+				<Label id="BalanceKillsValue" class="BalanceTableValue BalanceKillsValue" />
+				<Panel id="BalanceRowMedal" class="BalanceRowMedal">
+					<Label id="BalanceRowMedalText" class="BalanceRowMedalText" text="#balance_badge_mvp" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="BalanceRootPanel fill panelAnimation panel-hidden" hittest="false" hittestchildren="false">
+		<Panel id="ClickEmpty" hittest="true" onactivate="()=&gt;{}" />
+		<Panel id="BalanceMainPanel" class="BalanceMainPanel Animation Show" hittest="false" hittestchildren="true">
+			<Panel class="BalanceBackdrop" />
+			<Panel class="BalanceEdgeVignette" />
+			<Panel id="BalanceTitleArea" class="BalanceTitleArea Animation ShowTitle">
+				<Panel class="BalanceTitleLine left" />
+				<Label id="BalanceTitleText" class="BalanceTitleText" />
+				<Panel class="BalanceTitleLine right" />
+				<Label id="BalanceDifficultyLine" class="BalanceDifficultyLine" />
+				<Panel class="BalanceTimeLine">
+					<Label id="BalanceTimeCaption" class="BalanceTimeCaption" />
+					<Label id="BalanceTimeValue" class="BalanceTimeValue" />
+				</Panel>
+				<Panel class="BalanceGradeTextBlock">
+					<Label id="BalanceGradeTitle" class="BalanceGradeTitle" />
+					<Label id="BalanceGradeDesc" class="BalanceGradeDesc" />
+				</Panel>
+			</Panel>
+			<Panel class="BalanceContent">
+				<Panel class="BalancePanel BalanceOverviewPanel">
+					<Label class="BalanceSectionTitle" text="#balance_section_overview" />
+					<Panel class="BalanceOverviewEmblem">
+						<Panel class="BalanceOverviewResultStack">
+							<Label class="BalanceOverviewResultText victory-only" text="#balance_result_victory" />
+							<Label class="BalanceOverviewResultText failure-only" text="#balance_result_defeat" />
+						</Panel>
+					</Panel>
+					<Panel class="BalanceOverviewStats">
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon total-wave" />
+							<Label class="BalanceStatName" text="#balance_stat_reached_wave" />
+							<Label id="BalanceReachedWave" class="BalanceStatValue" />
+						</Panel>
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon elite-wave" />
+							<Label class="BalanceStatName" text="#balance_stat_elite_waves" />
+							<Label id="BalanceEliteWaves" class="BalanceStatValue" />
+						</Panel>
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon boss-wave" />
+							<Label class="BalanceStatName" text="#balance_stat_boss_waves" />
+							<Label id="BalanceBossWaves" class="BalanceStatValue" />
+						</Panel>
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon current-monster" />
+							<Label id="BalanceStockLabel" class="BalanceStatName" text="#balance_stat_monster_stock" />
+							<Label id="BalanceStockValue" class="BalanceStatValue" />
+						</Panel>
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon total-kill" />
+							<Label class="BalanceStatName" text="#balance_stat_total_kills" />
+							<Label id="BalanceTotalKills" class="BalanceStatValue" />
+						</Panel>
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon gold" />
+							<Label class="BalanceStatName" text="#balance_stat_gold_gained" />
+							<Label id="BalanceGoldGained" class="BalanceStatValue" />
+						</Panel>
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon tower" />
+							<Label class="BalanceStatName" text="#balance_stat_tower_count" />
+							<Label id="BalanceTowerCount" class="BalanceStatValue" />
+						</Panel>
+						<Panel class="BalanceStatRow">
+							<Panel class="BalanceStatIcon devour" />
+							<Label class="BalanceStatName" text="#balance_stat_devour_count" />
+							<Label id="BalanceDevourCount" class="BalanceStatValue" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="BalanceCenterColumn">
+					<Panel class="BalancePanel BalanceTeamPanel">
+						<Label class="BalanceSectionTitle" text="#balance_section_team" />
+						<Panel class="BalanceTeamHeader">
+							<Label class="BalanceHeaderRank" text="#balance_team_index" />
+							<Label class="BalanceHeaderName" text="#balance_team_name" />
+							<Label class="BalanceHeaderPower" text="#balance_team_power" />
+							<Label class="BalanceHeaderDamage" text="#balance_team_damage" />
+							<Label class="BalanceHeaderShare" text="#balance_team_share" />
+							<Label class="BalanceHeaderKills" text="#balance_team_kills" />
+						</Panel>
+						<Panel id="BalanceGrid" class="BalanceGrid" />
+						<Label class="BalanceTeamNote" text="#balance_note_stats_reference" />
+					</Panel>
+					<Panel class="BalancePanel BalanceHighlightPanel">
+						<Label class="BalanceSectionTitle" text="#balance_section_highlight" />
+						<Panel class="BalanceHighlightBody">
+							<Panel id="BalanceHighlightPortrait" class="BalanceHighlightPortrait" />
+							<Panel class="BalanceHighlightInfo">
+								<Panel class="BalanceHighlightTitleLine">
+									<Label id="BalanceHighlightName" class="BalanceHighlightName" />
+									<Label id="BalanceHighlightTag" class="BalanceHighlightTag" />
+								</Panel>
+								<Panel class="BalanceHighlightMetrics">
+									<Panel class="BalanceHighlightMetric">
+										<Label class="BalanceHighlightMetricName" text="#balance_highlight_max_damage" />
+										<Label id="BalanceHighlightDamage" class="BalanceHighlightMetricValue" />
+									</Panel>
+									<Panel class="BalanceHighlightMetric">
+										<Label class="BalanceHighlightMetricName" text="#balance_highlight_max_level" />
+										<Label id="BalanceHighlightLevel" class="BalanceHighlightMetricValue" />
+									</Panel>
+									<Panel class="BalanceHighlightMetric">
+										<Label class="BalanceHighlightMetricName" text="#balance_highlight_main_attr" />
+										<Label id="BalanceHighlightMainAttr" class="BalanceHighlightMetricValue" />
+									</Panel>
+									<Panel class="BalanceHighlightMetric">
+										<Label class="BalanceHighlightMetricName" text="#balance_highlight_tower_attr" />
+										<Label id="BalanceHighlightTowerAttr" class="BalanceHighlightMetricValue" />
+									</Panel>
+									<Panel class="BalanceHighlightMetric">
+										<Label class="BalanceHighlightMetricName" text="#balance_highlight_enhanced_to" />
+										<Label id="BalanceHighlightEnhanced" class="BalanceHighlightMetricValue" />
+									</Panel>
+								</Panel>
+							</Panel>
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="BalancePanel BalanceRewardsPanel">
+					<Label class="BalanceSectionTitle" text="#balance_section_rewards" />
+					<Panel class="BalanceRewardSection victory-only">
+						<Label class="BalanceRewardSectionTitle" text="#balance_reward_clear" />
+						<Panel id="BalanceClearRewards" class="BalanceRewardList" />
+					</Panel>
+					<Panel id="BalanceFirstClearSection" class="BalanceRewardSection second victory-only">
+						<Label class="BalanceRewardSectionTitle" text="#balance_reward_first_clear" />
+						<Panel id="BalanceFirstClearRewards" class="BalanceRewardList" />
+					</Panel>
+				</Panel>
+			</Panel>
+			<Panel class="BalanceActions">
+				<Panel id="BalanceCloseButton" class="BalanceActionButton secondary">
+					<Label id="BalanceCloseLabel" text="#balance_action_collapse" />
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

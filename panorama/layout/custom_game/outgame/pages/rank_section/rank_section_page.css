@@ -1,0 +1,502 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.RankSectionPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	padding: 12px 24px 24px 24px;
+}
+
+.RankStatusLabel
+{
+	width: 360px;
+	height: 34px;
+	vertical-align: center;
+	padding-top: 7px;
+	color: cSteel;
+	font-size: 16px;
+	letter-spacing: 0px;
+	text-shadow: 0px 2px 5px cScrim80;
+}
+
+.RankStatusLabel.Error
+{
+	color: #e8957d;
+}
+
+.RankTableStatusLabel
+{
+	ignore-parent-flow: true;
+	horizontal-align: center;
+	vertical-align: center;
+	text-align: center;
+	visibility: collapse;
+	z-index: 2;
+}
+
+.RankTableStatusLabel.Visible
+{
+	visibility: visible;
+}
+
+.RankTable
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	flow-children: down;
+	padding: 12px;
+	overflow: clip;
+}
+
+.RankTable.OutgameBlock
+{
+	background-color: gradient(radial, 50% 0%, 0% 0%, 88% 150%, from(#63a4ff10), color-stop(0.46, #101920e8), to(#05080cf5));
+	border: 1px solid cHairline;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairlineHi), to(cHairlineLo));
+	box-shadow: cScrim60 0px 5px 14px 0px;
+}
+
+.RankHeader
+{
+	width: 100%;
+	height: 38px;
+	flow-children: right;
+	padding: 0px 12px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1a252ded), color-stop(0.70, #0e151bed), to(#05080cf0));
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.RankHeaderCell
+{
+	height: 38px;
+	vertical-align: center;
+	padding-top: 10px;
+	color: #aebcc0;
+	font-size: 15px;
+	font-weight: semi-bold;
+	text-align: center;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 4px cScrim80;
+}
+
+.RankListArea
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+}
+
+.RankList
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	overflow: squish scroll;
+	padding: 8px 0px 2px 0px;
+}
+
+.RankTable.HasPinnedSelf .RankList
+{
+	padding-bottom: 88px;
+}
+
+.RankEquipmentScore .RankTable.HasPinnedSelf .RankList
+{
+	padding-bottom: 104px;
+}
+
+.RankTeamSpeed .RankTable.HasPinnedSelf .RankList
+{
+	padding-bottom: 124px;
+}
+
+.RankList VerticalScrollBar
+{
+	width: 6px;
+}
+
+.RankRow
+{
+	width: 100%;
+	height: 76px;
+	flow-children: right;
+	margin-bottom: 6px;
+	padding: 8px 12px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2a33d8), color-stop(0.52, #101820e8), to(#05080cf0));
+	border: 1px solid cHairlineLo;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(#c8e9ff16), color-stop(0.48, cHairline), to(cHairlineLo));
+	box-shadow: cScrim60 0px 4px 10px 0px;
+	brightness: 1;
+}
+
+.RankRow.OutgameSurface,.RankRow.OutgameCard
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2a33d8), color-stop(0.52, #101820e8), to(#05080cf0));
+	border: 1px solid cHairlineLo;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(#c8e9ff16), color-stop(0.48, cHairline), to(cHairlineLo));
+	box-shadow: cScrim60 0px 4px 10px 0px;
+	transition-property: brightness, box-shadow;
+	transition-duration: 0.12s;
+	transition-timing-function: ease;
+}
+
+.RankEquipmentScore .RankRow
+{
+	height: 92px;
+}
+
+.RankTeamSpeed .RankRow
+{
+	height: 112px;
+}
+
+.RankRow.Even
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#0f1a21e0), color-stop(0.52, #070d12f0), to(#030508f5));
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(#c8e9ff0d), color-stop(0.48, cHairlineLo), to(#00000000));
+}
+
+.RankRow:hover
+{
+	brightness: 1.12;
+}
+
+.RankRow.Self
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#302916e8), color-stop(0.48, #172027ee), to(#071014f3));
+	border: 1px solid cGoldBorder;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(#d9be7778), color-stop(0.58, #63a4ff18), to(cHairlineLo));
+	box-shadow: cScrim60 0px 4px 10px 0px;
+}
+
+.RankRow.Self:hover
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#302916e8), color-stop(0.48, #172027ee), to(#071014f3));
+	border: 1px solid cGoldBorder;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(#d9be7778), color-stop(0.58, #63a4ff18), to(cHairlineLo));
+	box-shadow: cScrim60 0px 4px 10px 0px;
+	brightness: 1;
+}
+
+.RankPinnedSelfRow
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	align: center bottom;
+	margin-bottom: 0px;
+	z-index: 4;
+	opacity: 0;
+	visibility: collapse;
+	transition-property: opacity, brightness, box-shadow;
+	transition-duration: 0.12s;
+	transition-timing-function: ease;
+}
+
+.RankPinnedSelfRow.Visible
+{
+	opacity: 1;
+	visibility: visible;
+}
+
+.RankPinnedSelfRow.RankRow
+{
+	margin-bottom: 0px;
+}
+
+.RankPinnedSelfRow.Self,.RankPinnedSelfRow.Self:hover
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#392f18f0), color-stop(0.48, #1a2630f5), to(#071014fa));
+	border: 1px solid cGoldBorder;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(#d9be77a0), color-stop(0.58, #63a4ff24), to(cHairlineLo));
+	box-shadow: cScrim80 0px -4px 14px 0px;
+	brightness: 1;
+}
+
+.RankCell
+{
+	height: 100%;
+}
+
+.Column_rank
+{
+	width: 86px;
+}
+
+.Column_player
+{
+	width: 370px;
+}
+
+.Column_team
+{
+	width: 560px;
+}
+
+.Column_difficulty
+{
+	width: 230px;
+}
+
+.Column_time
+{
+	width: 190px;
+}
+
+.RankSpeed .Column_player,.RankTeamSpeed .Column_team
+{
+	width: fill-parent-flow(1);
+}
+
+.RankSpeed .Column_difficulty,.RankTeamSpeed .Column_difficulty
+{
+	width: 220px;
+}
+
+.RankSpeed .Column_time,.RankTeamSpeed .Column_time
+{
+	width: 180px;
+}
+
+.Column_score
+{
+	width: 180px;
+}
+
+.Column_equipment
+{
+	width: fill-parent-flow(1);
+}
+
+.RankBadge
+{
+	width: 48px;
+	height: 48px;
+	align: center center;
+	border-radius: 4px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#26343c), color-stop(0.58, #111a21), to(cInkDeep));
+	border: 1px solid cHairline;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairlineHi), to(cHairlineLo));
+	box-shadow: cScrim60 0px 3px 8px 0px;
+}
+
+.RankMedalIcon
+{
+	width: 56px;
+	height: 64px;
+	align: center center;
+}
+
+.RankMedalIcon.Hidden,.RankBadge.Hidden,.RankPlayerBadge.Hidden,.RankTeamMembers.Hidden,.RankTeamMember.Hidden,.RankUnknownPlayer.Hidden
+{
+	visibility: collapse;
+}
+
+.RankBadgeText
+{
+	align: center center;
+	width: 100%;
+	color: cCream;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 0px;
+	text-shadow: 0px 2px 5px cScrim80;
+}
+
+.RankPlayerBadge
+{
+	width: 330px;
+	height: 52px;
+	align: center center;
+	flow-children: right;
+}
+
+.RankPlayerAvatarHost
+{
+	width: 44px;
+	height: 44px;
+	vertical-align: center;
+	border-radius: 3px;
+	border: 1px solid cHairline;
+	background-color: #030609e0;
+	box-shadow: cScrim60 0px 2px 7px 0px;
+	overflow: clip;
+}
+
+.RankPlayerAvatar,.RankPlayerAvatarHost #rankPlayerIcon,.RankPlayerAvatarHost DOTAAvatarImage
+{
+	width: 44px;
+	height: 44px;
+	align: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	visibility: visible;
+}
+
+.RankPlayerBadge DOTAUserName.RankPlayerName,.RankPlayerBadge #rankPlayerName
+{
+	width: 250px;
+	height: 44px;
+	vertical-align: center;
+	margin-left: 10px;
+	padding-top: 12px;
+	color: cCream;
+	font-size: 18px;
+	letter-spacing: 0px;
+	text-overflow: shrink;
+	text-shadow: 0px 2px 5px cScrim80;
+}
+
+.RankTeamMembers
+{
+	width: 530px;
+	height: 56px;
+	align: center center;
+	flow-children: right;
+}
+
+.RankTeamSpeed .RankTeamMembers
+{
+	width: 820px;
+	height: 84px;
+	horizontal-align: left;
+	flow-children: down;
+}
+
+.RankTeamMemberRow
+{
+	width: 100%;
+	height: 36px;
+	flow-children: right;
+	margin-bottom: 6px;
+}
+
+.RankTeamMember
+{
+	width: 100px;
+	height: 36px;
+	vertical-align: center;
+	margin-right: 6px;
+	flow-children: right;
+}
+
+.RankTeamSpeed .RankTeamMember
+{
+	width: 400px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+.RankTeamAvatarHost
+{
+	width: 32px;
+	height: 32px;
+	vertical-align: center;
+	border-radius: 3px;
+	border: 1px solid cHairline;
+	background-color: #030609e0;
+	box-shadow: cScrim60 0px 2px 5px 0px;
+	overflow: clip;
+}
+
+.RankTeamAvatar,.RankTeamAvatarHost #rankTeamPlayerIcon,.RankTeamAvatarHost DOTAAvatarImage
+{
+	width: 32px;
+	height: 32px;
+	align: center center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	visibility: visible;
+}
+
+.RankTeamMember DOTAUserName.RankTeamName,.RankTeamMember #rankTeamPlayerName
+{
+	width: 62px;
+	height: 32px;
+	vertical-align: center;
+	margin-left: 5px;
+	padding-top: 8px;
+	color: cSteel;
+	font-size: 12px;
+	text-align: left;
+	letter-spacing: 0px;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 3px cScrim80;
+}
+
+.RankTeamSpeed .RankTeamMember DOTAUserName.RankTeamName,.RankTeamSpeed .RankTeamMember #rankTeamPlayerName
+{
+	width: 358px;
+	color: #d7e4e1;
+	font-size: 14px;
+}
+
+.RankUnknownPlayer
+{
+	align: center center;
+	color: cSlate;
+	font-size: 16px;
+	text-align: center;
+	letter-spacing: 0px;
+}
+
+.RankCellText
+{
+	align: center center;
+	width: 100%;
+	color: cSteel;
+	font-size: 18px;
+	text-align: center;
+	letter-spacing: 0px;
+	text-overflow: shrink;
+	text-shadow: 0px 2px 5px cScrim80;
+}
+
+.Column_time .RankCellText,.Column_score .RankCellText
+{
+	color: cGoldBright;
+	font-size: 20px;
+	font-weight: semi-bold;
+}
+
+.RankEquipmentList
+{
+	width: 100%;
+	height: 60px;
+	align: center center;
+	flow-children: right;
+}
+
+.RankEquipmentSlotFrame
+{
+	width: fill-parent-flow(1);
+	height: 60px;
+}
+
+.RankEquipmentSlot
+{
+	width: 56px;
+	height: 56px;
+	align: center center;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1d2a33e8), to(cInkDeep));
+	border: 1px solid cHairline;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairlineHi), to(cHairlineLo));
+	border-radius: 2px;
+	box-shadow: cScrim60 0px 2px 5px 0px;
+}
+
+.RankEquipmentSlot.Filled
+{
+	background-color: #00000000;
+	border: 0px solid #00000000;
+}
+
+.RankEquipmentSlot .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+

@@ -1,0 +1,201 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.TowerChoiceRoot
+{
+	width: 100%;
+	height: 100%;
+	z-index: 120;
+	background-color: #070c14e8;
+}
+
+.TowerChoiceHidden
+{
+	visibility: collapse;
+}
+
+.TowerChoiceWindow
+{
+	width: 1000px;
+	height: 730px;
+	horizontal-align: center;
+	vertical-align: center;
+	background-color: gradient(linear, 0% 0%, 100% 100%, from(#182736), to(#0c141e));
+	border: 1px solid #597086;
+	padding: 24px;
+	flow-children: down;
+	box-shadow: #000b 0px 8px 28px 0px;
+}
+
+.TowerChoiceTitle
+{
+	font-size: 30px;
+	color: #f2ddb0;
+	font-weight: bold;
+}
+
+.TowerChoiceHint
+{
+	color: #a7b8c8;
+	font-size: 17px;
+	margin-top: 8px;
+}
+
+.TowerChoiceToolbar
+{
+	flow-children: right;
+	height: 42px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.TowerChoiceSearch
+{
+	width: 270px;
+	height: 38px;
+	margin-right: 18px;
+}
+
+.TowerChoiceTab
+{
+	height: 38px;
+	min-width: 100px;
+	margin-right: 8px;
+	background-color: #233645;
+	border: 1px solid #3b5265;
+}
+
+.TowerChoiceTab Label
+{
+	align: center center;
+	color: #c5d3df;
+	font-size: 18px;
+}
+
+.TowerChoiceBody
+{
+	width: 100%;
+	height: 450px;
+	flow-children: right;
+	margin-top: 16px;
+}
+
+.TowerChoiceGrid
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.TowerChoiceHeroCard
+{
+	width: 142px;
+	height: 116px;
+	margin: 0px 10px 12px 0px;
+	flow-children: down;
+	background-color: #12212e;
+	border: 1px solid #344f66;
+}
+
+.TowerChoiceHeroImage
+{
+	width: 140px;
+	height: 79px;
+}
+
+.TowerChoiceHeroName
+{
+	width: 100%;
+	height: 32px;
+	text-align: center;
+	vertical-align: center;
+	color: #dce6ee;
+	font-size: 17px;
+	margin-top: 4px;
+	text-overflow: shrink;
+}
+
+.TowerChoiceHeroCard:hover,.TowerChoiceTab:hover
+{
+	brightness: 1.4;
+}
+
+.TowerChoiceSelected
+{
+	border: 1px solid #e0bb72;
+	background-color: #51432b;
+}
+
+.TowerChoiceName
+{
+	width: 280px;
+	margin-right: 16px;
+	vertical-align: center;
+	color: #f2ddb0;
+	font-size: 25px;
+	text-overflow: shrink;
+}
+
+.TowerChoiceEmpty
+{
+	color: #aebdcb;
+	font-size: 18px;
+	width: 100%;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.TowerChoiceActions
+{
+	width: 100%;
+	height: 48px;
+	margin-top: 22px;
+	flow-children: right;
+}
+
+.TowerChoiceAction
+{
+	width: 200px;
+	height: 46px;
+	margin-right: 16px;
+	border: 1px solid #63798c;
+	background-color: #263b4b;
+}
+
+.TowerChoiceAction Label
+{
+	align: center center;
+	color: #e4edf4;
+	font-size: 20px;
+}
+
+.TowerChoiceConfirm
+{
+	background-color: #5f4a25;
+	border-color: #bf9a55;
+}
+
+.TowerChoiceAction:hover
+{
+	brightness: 1.5;
+}
+
+.TowerChoiceAction:disabled,.TowerChoiceSending .TowerChoiceHeroCard,.TowerChoiceSending .TowerChoiceTab
+{
+	saturation: 0.2;
+	brightness: 0.5;
+}
+
+.TowerChoiceSendingLabel
+{
+	visibility: collapse;
+	color: #d5bc88;
+	font-size: 18px;
+	vertical-align: center;
+}
+
+.TowerChoiceSending .TowerChoiceSendingLabel
+{
+	visibility: visible;
+}
+

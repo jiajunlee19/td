@@ -1,0 +1,21 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/custom_loading_screen.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/precache/image_precache.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/custom_loading_screen.vjs_c" />
+	</scripts>
+	<Panel class="LoadingRoot hide">
+		<Panel id="Loading" hittest="true">
+			<Panel id="TipContainer">
+				<Panel id="TipText">
+					<Label id="TipLabel" text="#LoadingTip_1" />
+				</Panel>
+				<Panel id="NextTip" class="TipButton" onactivate="ClickNextTip()" />
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

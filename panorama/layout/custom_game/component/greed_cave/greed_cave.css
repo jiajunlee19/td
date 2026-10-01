@@ -1,0 +1,723 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.GreedCaveRoot
+{
+	width: 100%;
+	height: 100%;
+	z-index: 165;
+	opacity: 1;
+	transition-property: opacity;
+	transition-duration: 0.14s;
+	transition-timing-function: ease-out;
+}
+
+.GreedCaveRoot.Hidden
+{
+	visibility: collapse;
+	opacity: 0;
+}
+
+#GreedCaveRootContent
+{
+	width: 100%;
+	height: 100%;
+}
+
+#GreedCaveBackdrop
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000aa;
+}
+
+#GreedCaveMain
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 1200px;
+	height: 690px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#101b22fb), color-stop(0.62, #091118fb), to(#05080cfb));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 100% 100%, from(cGoldBorder), color-stop(0.38, cHairlineHi), to(cHairlineLo));
+	box-shadow: cScrimDeep 0px 16px 42px 0px;
+}
+
+#GreedCaveTopBar
+{
+	width: 100%;
+	height: 56px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2b33f8), color-stop(0.52, #0f181ff8), to(#071015f8));
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+#GreedCaveTitleAccent
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: -1px;
+	width: 420px;
+	height: 2px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.5, cGoldSel), to(#00000000));
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+#GreedCaveTitle
+{
+	align: center center;
+	width: 560px;
+	font-size: 24px;
+	color: cCream;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.GreedCaveIconButton
+{
+	horizontal-align: right;
+	vertical-align: center;
+	margin-right: 14px;
+	width: 34px;
+	height: 34px;
+	border-radius: 3px;
+	border: 1px solid cHairline;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a343bee), to(#10161cee));
+	transition-property: brightness, border, transform;
+	transition-duration: 0.12s;
+}
+
+.GreedCaveIconButton.Hidden
+{
+	visibility: collapse;
+}
+
+.GreedCaveIconButton:hover
+{
+	brightness: 1.28;
+	border: 1px solid #c8e9ff90;
+}
+
+.GreedCaveIconButton:active
+{
+	transform: translateY(1px);
+	brightness: 0.82;
+}
+
+.GreedCaveCloseLine
+{
+	align: center center;
+	width: 18px;
+	height: 2px;
+	background-color: #d7e6df;
+}
+
+.GreedCaveCloseLineA
+{
+	transform: rotateZ(45deg);
+}
+
+.GreedCaveCloseLineB
+{
+	transform: rotateZ(-45deg);
+}
+
+#GreedCaveDepthLadder
+{
+	width: 1164px;
+	height: 52px;
+	margin-left: 18px;
+	flow-children: right;
+}
+
+.GreedCaveLadderChip
+{
+	width: fill-parent-flow(1);
+	height: 36px;
+	margin-right: 5px;
+	vertical-align: center;
+	border-radius: 2px;
+	border: 1px solid #2b3a45;
+}
+
+.GreedCaveLadderChipText
+{
+	align: center center;
+	font-size: 16px;
+	font-weight: bold;
+	color: cSlate;
+	text-align: center;
+}
+
+.GreedCaveLadderChip.Done .GreedCaveLadderChipText
+{
+	color: cSteel;
+}
+
+.GreedCaveLadderChip.Done
+{
+	border: 1px solid #3a4c58;
+}
+
+.GreedCaveLadderChip.Cur
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#ffcf7a), to(#ffbf5c)) !important;
+	border: 1px solid #ffcf7a;
+	box-shadow: #ffbf5c88 0px 0px 12px 0px;
+}
+
+.GreedCaveLadderChip.Cur .GreedCaveLadderChipText
+{
+	color: #12181f;
+}
+
+#GreedCaveBody
+{
+	width: 100%;
+	height: 582px;
+	padding: 14px 18px 16px 18px;
+	flow-children: right;
+}
+
+#GreedCaveLeftCol
+{
+	width: 856px;
+	height: 100%;
+	flow-children: down;
+}
+
+#GreedCaveCompareScroller
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	overflow: clip clip;
+}
+
+#GreedCaveCompareGrid
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+}
+
+.GreedCaveCompareCard
+{
+	width: 422px;
+	height: 100%;
+	margin-right: 12px;
+	flow-children: none;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#152129ed), color-stop(0.68, #0c1319ed), to(#06090ded));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairlineHi), to(cHairlineLo));
+	box-shadow: cScrim40 0px 4px 10px 0px;
+}
+
+.GreedCaveCardContent
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+}
+
+.GreedCaveCompareCard:hover
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#74c7d688), to(cHairline));
+}
+
+.GreedCaveCompareCard.Candidate
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cGoldBorder), to(cHairlineLo));
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+.GreedCaveCompareCard.Equipped
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#77bf8f99), to(cHairlineLo));
+}
+
+.GreedCaveCompareCard.SelectedHistory
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#638994aa), to(cHairlineLo));
+}
+
+.GreedCaveCardBadge
+{
+	horizontal-align: right;
+	vertical-align: top;
+	padding: 3px 10px 3px 10px;
+	border-bottom-left-radius: 4px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #cfe0ea;
+	background-color: #33454f;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.GreedCaveCompareCard.Candidate .GreedCaveCardBadge
+{
+	background-color: #b98a2e;
+	color: #17120a;
+}
+
+.GreedCaveCompareCard.Equipped .GreedCaveCardBadge
+{
+	background-color: #2c4a3a;
+	color: #b7f0cf;
+}
+
+.GreedCaveCardSummary
+{
+	margin-top: 14px;
+	margin-left: 14px;
+	margin-right: 14px;
+	height: 82px;
+	flow-children: none;
+}
+
+.GreedCaveCardIconMount
+{
+	vertical-align: center;
+	width: 82px;
+	height: 82px;
+}
+
+.GreedCaveCardText
+{
+	margin-left: 94px;
+	vertical-align: center;
+	width: 300px;
+	height: fit-children;
+	flow-children: down;
+}
+
+.GreedCaveCardName
+{
+	width: 100%;
+	height: 30px;
+	font-size: 22px;
+	color: cGoldBright;
+	text-align: left;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.GreedCaveCardMeta
+{
+	width: 100%;
+	height: 22px;
+	margin-top: 3px;
+	font-size: 15px;
+	color: cSteel;
+	text-align: left;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.GreedCaveAttrGrid
+{
+	horizontal-align: center;
+	width: 394px;
+	height: fill-parent-flow(1);
+	margin-top: 8px;
+	padding-bottom: 8px;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.GreedCaveTooltipSectionTitle
+{
+	width: 100%;
+	min-height: 28px;
+	margin-top: 8px;
+	flow-children: right;
+}
+
+.GreedCaveTooltipSectionTitleLine
+{
+	vertical-align: center;
+	width: fill-parent-flow(1);
+	height: 1px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#456b7800), color-stop(0.5, #456b78aa), to(#456b7800));
+}
+
+.GreedCaveTooltipSectionTitleText
+{
+	vertical-align: center;
+	padding: 0px 12px 0px 12px;
+	font-size: 17px;
+	color: #8fd9e9;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.GreedCaveTooltipAttrLabel
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 4px;
+	font-size: 16px;
+	color: #d6e3e4;
+	text-align: left;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_1
+{
+	color: white;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_2
+{
+	color: greenyellow;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_3
+{
+	color: cyan;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_4
+{
+	color: fuchsia;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_5
+{
+	color: orange;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_6
+{
+	color: red;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_7
+{
+	color: yellow;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_8
+{
+	color: pink;
+}
+
+.GreedCaveTooltipAttrLabel.Affix_Rarity_9
+{
+	color: lightskyblue;
+}
+
+.GreedCaveTooltipAttrLabel.Empty
+{
+	color: cSlate;
+}
+
+#GreedCaveSidebar
+{
+	width: 290px;
+	height: 100%;
+	margin-left: 18px;
+	flow-children: down;
+	padding: 10px 14px 10px 14px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#111b22ea), color-stop(0.70, #0a1117ef), to(#05080cef));
+	border: 1px solid white;
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(cHairlineHi), to(cHairlineLo));
+	box-shadow: cScrim40 0px 3px 10px 0px;
+}
+
+.GreedCaveCountdownCap
+{
+	width: 100%;
+	font-size: 14px;
+	color: cSlate;
+	letter-spacing: 3px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+#GreedCaveCountdown
+{
+	width: 100%;
+	height: 54px;
+	margin-top: 2px;
+	font-size: 48px;
+	font-weight: bold;
+	color: cGoldBright;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+#GreedCaveStatus
+{
+	width: 100%;
+	height: 24px;
+	margin-top: 2px;
+	font-size: 16px;
+	color: cSteel;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+#GreedCaveSidebarSpacerTop
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+}
+
+#GreedCaveClaimBox
+{
+	width: 100%;
+	padding: 10px 12px 10px 12px;
+	flow-children: down;
+	border-radius: 3px;
+	border: 1px solid #2a3d49;
+	background-color: #0c1319aa;
+}
+
+#GreedCaveClaimBoxTitle
+{
+	width: 100%;
+	font-size: 14px;
+	color: cSteel;
+	letter-spacing: 1px;
+	text-overflow: shrink;
+}
+
+#GreedCaveProgressRow
+{
+	width: 100%;
+	height: 26px;
+	margin-top: 8px;
+	flow-children: right;
+}
+
+#GreedCaveDepthLabel
+{
+	width: fill-parent-flow(1);
+	height: 24px;
+	font-size: 17px;
+	font-weight: bold;
+	color: cGoldBright;
+	text-align: left;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+#GreedCaveChooseCount
+{
+	width: fill-parent-flow(1);
+	height: 24px;
+	font-size: 17px;
+	color: #b7f0cf;
+	text-align: right;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+#GreedCavePips
+{
+	width: 100%;
+	height: 20px;
+	margin-top: 10px;
+	flow-children: right;
+}
+
+.GreedCavePip
+{
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	vertical-align: center;
+	border-radius: 3px;
+	border: 1px solid #2b4150;
+	background-color: #14222c;
+}
+
+.GreedCavePip.Used
+{
+	border: 1px solid #4a7690;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2a4a5e), to(#14222c));
+}
+
+.GreedCavePip.Bonus
+{
+	border-style: dashed;
+	border-color: #4a6a3f;
+}
+
+.GreedCavePip.Used.Bonus
+{
+	border-color: #7fbf6a;
+}
+
+#GreedCaveMaxClaims
+{
+	width: 100%;
+	margin-top: 10px;
+	font-size: 15px;
+	color: cSteel;
+	text-overflow: shrink;
+}
+
+#GreedCaveTips
+{
+	width: 100%;
+	margin-top: 12px;
+	padding: 10px 12px 10px 12px;
+	font-size: 14px;
+	color: cSlate;
+	border-left: 2px solid cAmber;
+	background-color: #0c1319;
+}
+
+#GreedCaveKeptRow
+{
+	width: 100%;
+	height: 130px;
+	margin-top: 12px;
+	flow-children: down;
+}
+
+#GreedCaveSelectedTitle
+{
+	width: 100%;
+	height: 22px;
+	font-size: 16px;
+	color: cCream;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+#GreedCaveSelectedScroller
+{
+	width: 100%;
+	height: 100px;
+	margin-top: 6px;
+	overflow: scroll squish;
+}
+
+#GreedCaveSelectedGrid
+{
+	width: fit-children;
+	height: 100%;
+	flow-children: right;
+}
+
+#GreedCaveSelectedGrid .GreedCaveEquipSlot
+{
+	vertical-align: center;
+	width: 96px;
+	height: 96px;
+	margin-right: 8px;
+}
+
+#GreedCaveSidebarSpacer
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+}
+
+#GreedCaveActions
+{
+	width: 100%;
+	margin-top: 8px;
+	flow-children: down;
+}
+
+.GreedCaveActionButton
+{
+	width: 100%;
+	height: 56px;
+	margin-top: 8px;
+	flow-children: down;
+	padding: 0px 8px 0px 8px;
+}
+
+#GreedCaveClaimButton
+{
+	margin-top: 0px;
+}
+
+.GreedCaveActionTitle
+{
+	horizontal-align: center;
+	margin-top: 8px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #f2f7f0;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.GreedCaveActionSub
+{
+	horizontal-align: center;
+	margin-top: 2px;
+	font-size: 12px;
+	color: #c3cfd4;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.GreedCaveActionButton.Disabled .GreedCaveActionSub
+{
+	color: #7d8a90;
+}
+
+.GreedCaveEquipSlot
+{
+	width: 52px;
+	height: 52px;
+	margin-right: 8px;
+	border-radius: 3px;
+	border: 1px solid cHairline;
+	background-color: #030609e0;
+	box-shadow: cScrim60 0px 0px 7px 0px;
+}
+
+.GreedCaveEquipSlot.Compare
+{
+	width: 82px;
+	height: 82px;
+	margin-right: 0px;
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+.GreedCaveCompareCard.Equipped .GreedCaveEquipSlot.Compare
+{
+	border: 1px solid #77bf8fcc;
+	box-shadow: #5fac7580 0px 0px 8px 0px;
+}
+
+.GreedCaveCompareCard.SelectedHistory .GreedCaveEquipSlot.Compare
+{
+	border: 1px solid #638994cc;
+	box-shadow: #4d819080 0px 0px 8px 0px;
+}
+
+.GreedCaveEquipSlot.Filled
+{
+	border: 1px solid #638994aa;
+}
+
+.GreedCaveEquipSlot.Filled:hover
+{
+	brightness: 1.25;
+	border: 1px solid #c8e9ff90;
+}
+
+.GreedCaveEquipSlot.Empty
+{
+	wash-color: #657276cc;
+	brightness: 0.68;
+}
+
+.GreedCaveEquipIcon
+{
+	width: 100%;
+	height: 100%;
+}
+

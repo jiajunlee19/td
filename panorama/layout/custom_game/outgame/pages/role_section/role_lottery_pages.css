@@ -1,0 +1,275 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameLegacyTreasurePage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	background-color: cScrim60;
+}
+
+.OutgameLegacyTreasureLoading
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim40;
+}
+
+.OutgameLegacyTreasureLoadingText
+{
+	align: center center;
+	width: 460px;
+	color: cTan;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameLegacyTreasureList
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 14px 0px 18px 0px;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.OutgameLegacyTreasureSection
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	margin-bottom: 14px;
+}
+
+.OutgameLegacyTreasureSectionHeader
+{
+	width: 100%;
+	height: 42px;
+	flow-children: right;
+	padding: 0px 12px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2a33e8), color-stop(0.72, #0e151bdc), to(#03060900));
+	border-left: 4px solid #8f9aa2aa;
+	border-top: 1px solid cHairlineLo;
+	border-bottom: 1px solid cScrim60;
+}
+
+.OutgameLegacyTreasureSectionTitle
+{
+	vertical-align: center;
+	width: 180px;
+	color: cCream;
+	font-size: 19px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLegacyTreasureSectionHint
+{
+	vertical-align: center;
+	width: fill-parent-flow(1);
+	color: cGold;
+	font-size: 15px;
+	text-align: right;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLegacyTreasureSectionGrid
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 6px;
+	padding: 18px 8px 4px 8px;
+	flow-children: right-wrap;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#141e26e8), color-stop(0.78, #0a1016e8), to(#05080cf0));
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameLegacyTreasureSlot
+{
+	width: 132px;
+	height: fit-children;
+	margin: 0px 4px 14px 0px;
+	flow-children: down;
+}
+
+.OutgameLegacyTreasureCell
+{
+	width: 132px;
+	height: 152px;
+	padding-top: 9px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#1a2229e8), color-stop(0.7, #0c1218ed), to(#05070af2));
+	border: 1px solid cHairlineLo;
+	box-shadow: cScrim60 0px 4px 10px 0px;
+	transition-property: brightness, border, wash-color, box-shadow, background-color, transform;
+	transition-duration: 0.12s;
+}
+
+.OutgameLegacyTreasureCell:hover
+{
+	brightness: 1.12;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#24313af0), color-stop(0.7, #101922ed), to(#070b0ef2));
+	border: 1px solid #8cc8e788;
+}
+
+.OutgameLegacyTreasureCell.Locked
+{
+	wash-color: #8b8b8b;
+	brightness: 0.72;
+}
+
+.OutgameLegacyTreasureCell.Exchangeable
+{
+	brightness: 1.05;
+}
+
+.OutgameLegacyTreasureSlot.CanExchange .OutgameLegacyTreasureCell
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+.OutgameLegacyTreasureSlot.NotEnough .OutgameLegacyTreasureCell
+{
+	border: 1px solid #a65f5fcc;
+}
+
+.OutgameLegacyTreasureCell.CanExchange .OutgameLegacyTreasureCellIconFrame
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+.OutgameLegacyTreasureCell.NotEnough .OutgameLegacyTreasureCellIconFrame
+{
+	border: 1px solid #a65f5fcc;
+}
+
+.OutgameLegacyTreasureCellIconFrame
+{
+	horizontal-align: center;
+	width: 84px;
+	height: 84px;
+	background-color: cScrim80;
+	border: 1px solid cHairline;
+}
+
+.OutgameLegacyTreasureCellIcon
+{
+	align: center center;
+	width: 72px;
+	height: 72px;
+}
+
+.OutgameLegacyTreasureCellName
+{
+	horizontal-align: center;
+	margin-top: 7px;
+	width: 118px;
+	height: 42px;
+	color: cCream;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLegacyTreasureCellCount
+{
+	align: right bottom;
+	margin-right: 4px;
+	margin-bottom: 3px;
+	min-width: 22px;
+	height: 20px;
+	padding: 0px 5px;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameLegacyTreasureExchangeButton
+{
+	horizontal-align: center;
+	width: 104px;
+	height: 32px;
+	margin-top: 6px;
+	visibility: collapse;
+}
+
+.OutgameLegacyTreasureSlot.Exchangeable .OutgameLegacyTreasureExchangeButton
+{
+	visibility: visible;
+}
+
+.OutgameLegacyTreasureExchangeButtonLabel
+{
+	align: center center;
+	width: 84px;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameLegacyTreasureSlot.Locked .OutgameLegacyTreasureCellCount
+{
+	visibility: collapse;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity1,.OutgameLegacyTreasureCellIconFrame.Rarity1
+{
+	border-color: #8f9aa2aa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity2,.OutgameLegacyTreasureCellIconFrame.Rarity2
+{
+	border-color: #69b77aaa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity3,.OutgameLegacyTreasureCellIconFrame.Rarity3
+{
+	border-color: #62a6ddaa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity4,.OutgameLegacyTreasureCellIconFrame.Rarity4
+{
+	border-color: #8d74d4aa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity5,.OutgameLegacyTreasureCellIconFrame.Rarity5
+{
+	border-color: #d8a45aaa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity6,.OutgameLegacyTreasureCellIconFrame.Rarity6
+{
+	border-color: #d9655faa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity7,.OutgameLegacyTreasureCellIconFrame.Rarity7
+{
+	border-color: #55c7c2aa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity8,.OutgameLegacyTreasureCellIconFrame.Rarity8
+{
+	border-color: #c4d86daa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity9,.OutgameLegacyTreasureCellIconFrame.Rarity9
+{
+	border-color: #d277cbaa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity10,.OutgameLegacyTreasureCellIconFrame.Rarity10
+{
+	border-color: #f0d58baa;
+}
+
+.OutgameLegacyTreasureSectionHeader.Rarity11,.OutgameLegacyTreasureCellIconFrame.Rarity11
+{
+	border-color: #ffffffcc;
+}
+

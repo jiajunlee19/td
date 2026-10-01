@@ -1,0 +1,15 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/equipment/gem_board_view.vcss_c" />
+	</styles>
+	<Panel class="OutgameGemStarDragRoot">
+		<DragZoom id="StarDragZoom" class="OutgameGemStarDragZoom" mousewheeltickcount="2" minscale="0.22" maxscale="1.30" startingscale="1.30" startzoomed="1" strictclamptranslation="1" dragclickzone="18" disabledoubleclick="1">
+			<Panel id="OutgameGemTreeCanvas" class="OutgameGemTreeCanvas OutgameGemStarCanvas" hittest="false" hittestchildren="true" />
+		</DragZoom>
+	</Panel>
+</root>

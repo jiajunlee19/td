@@ -1,0 +1,482 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+@define tooltipBodyFont: Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gulim,MingLiU;
+@define tooltipTitleFont: Reaver,Goudy Trajan Medium,FZKai-Z03,TH Sarabun New,YDYGO 540;
+@define tooltipMonoNumbersFont: RadianceM,Radiance,FZLanTingHei-R-GBK,TH Sarabun New,YDYGO 540,Gulim,MingLiU;
+Label,TextEntry
+{
+	font-family: tooltipBodyFont;
+}
+
+.tips_new,.outgame_equipment,.outgame_rune,.outgame_item,.outgame_multi_item,.outgame_save,.outgame_preview,.outgame_raid
+{
+	width: 360px;
+	height: fit-children;
+	flow-children: down;
+}
+
+#mainBG,#main_frame,#MainPanel,#BG,#BasePanel
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#071116f6), color-stop(0.55, #050a0df8), to(#020506fb));
+	border: 1px solid #2c4b57aa;
+	box-shadow: #000000cc 0px 0px 14px 0px;
+	border-radius: 4px;
+}
+
+#mainBG
+{
+	padding-bottom: 10px;
+	overflow: clip scroll;
+}
+
+#topBg,#title_block
+{
+	width: 100%;
+	min-height: 76px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#122734f0), to(#07111600));
+	border-bottom: 1px solid #365e6c88;
+}
+
+#equipInfoPanel
+{
+	width: 100%;
+	min-height: 76px;
+	height: fit-children;
+	flow-children: none;
+}
+
+#equipItemQuality
+{
+	margin-top: 11px;
+	margin-left: 11px;
+	width: 54px;
+	height: 54px;
+	background-color: #05090dcc;
+	border: 1px solid #426270aa;
+	border-radius: 3px;
+}
+
+#equipItemIcon,#equipItemBg
+{
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.NativeDotaItemIcon #equipItemIcon
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+}
+
+.NativeDotaItemIcon #equipItemQuality
+{
+	margin-top: 14px;
+	width: 66px;
+	height: 48px;
+	overflow: clip;
+}
+
+.NativeDotaItemIcon #equipItemTag,.NativeDotaItemIcon #equipItemFrame
+{
+	margin-top: 12px;
+	width: 70px;
+	height: 52px;
+}
+
+.NativeDotaItemIcon #equipName,.NativeDotaItemIcon #extraName
+{
+	margin-left: 90px;
+}
+
+#equipItemTag,#equipItemFrame
+{
+	margin-top: 9px;
+	margin-left: 9px;
+	width: 58px;
+	height: 58px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	ignore-parent-flow: true;
+	z-index: 10;
+}
+
+#rankIcon,#tipsTypeIcon,#bgDecorate
+{
+	visibility: collapse;
+}
+
+#equipName
+{
+	margin-top: 12px;
+	margin-left: 78px;
+	margin-right: 14px;
+	height: 27px;
+	font-family: tooltipTitleFont;
+	font-size: 22px;
+	color: #e8f3f3;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#extraName,#equipType,#equipSubType
+{
+	margin-top: 40px;
+	margin-left: 78px;
+	margin-right: 14px;
+	height: 22px;
+	font-size: 16px;
+	color: #96b8bd;
+	text-overflow: shrink;
+}
+
+.Title,#basicsTitleName,#extraTitleName,.tooltip_section_title
+{
+	margin-top: 10px;
+	margin-left: 14px;
+	margin-right: 14px;
+	min-height: 24px;
+	flow-children: right;
+	font-family: tooltipTitleFont;
+	color: #8fd9e9;
+	font-size: 18px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+#basicsTitleName
+{
+	visibility: collapse;
+}
+
+#extraTitleName
+{
+	color: #d9b56d;
+}
+
+#line,.line,#tooltip_section_title_line
+{
+	width: 100%;
+	height: 1px;
+	margin: 8px 14px 4px 14px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.2, #456b78aa), color-stop(0.8, #456b78aa), to(#00000000));
+}
+
+#tooltip_section_title_line
+{
+	width: fill-parent-flow(1);
+	margin: 11px 8px 0px 0px;
+}
+
+#tooltip_section_title_text
+{
+	font-family: tooltipTitleFont;
+	font-size: 18px;
+	color: #8fd9e9;
+}
+
+.TooltipCenteredSectionTitle
+{
+	margin-left: 0px;
+	margin-right: 0px;
+	flow-children: right;
+}
+
+.TooltipCenteredSectionTitle .tooltip_section_title_line
+{
+	width: fill-parent-flow(1);
+	height: 1px;
+	margin-top: 12px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#456b7800), color-stop(0.5, #456b78aa), to(#456b7800));
+}
+
+.TooltipCenteredSectionTitle #tooltip_section_title_text
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	vertical-align: center;
+}
+
+#basicsDescGrid,#effectDescGrid,#info_block
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	padding: 4px 14px 0px 14px;
+}
+
+.tips_des,.tips_effect,.tips_basic,.skillDes1,.skillDes2,.skillDes3,.skillDes4,.skillDes5,.skillDes6,#extraDes,#AbilityExtraAttributes1
+{
+	width: 100%;
+	height: fit-children;
+	margin: 4px 14px 0px 14px;
+	font-family: tooltipBodyFont;
+	font-size: 17px;
+	color: #d6e3e4;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+#extraTitleName
+{
+	margin-top: 8px;
+}
+
+#extraDes
+{
+	width: 332px;
+	margin-bottom: 10px;
+}
+
+#AbilityInfo,#AbilityCoreDetails,#AbilityDescriptionOuterContainer,#relicGrid
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+.IngameItemTooltipBody
+{
+	width: 100%;
+	height: fit-children;
+	padding-top: 8px;
+	flow-children: down;
+}
+
+.IngameItemTooltipBody .TooltipFlatSection,.OutgameItemTooltipBody .TooltipFlatSection
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+.IngameItemTooltipBody .TooltipFlatDivider
+{
+	width: 332px;
+	height: 1px;
+	margin: 7px 14px 7px 14px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.2, #456b78aa), color-stop(0.8, #456b78aa), to(#00000000));
+}
+
+.IngameItemTooltipBody .TooltipFlatTitle
+{
+	width: 332px;
+	height: fit-children;
+	margin: 0px 14px 3px 14px;
+	font-family: tooltipTitleFont;
+	color: #d9b56d;
+	font-size: 18px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.IngameItemTooltipBody .TooltipFlatSectionContent
+{
+	width: 332px;
+	height: fit-children;
+	margin: 0px 14px;
+	flow-children: down;
+}
+
+.IngameItemTooltipBody .TooltipFlatText,.OutgameItemTooltipBody .TooltipFlatText
+{
+	width: 100%;
+	height: fit-children;
+	margin: 0px 0px 3px 0px;
+	font-family: tooltipBodyFont;
+	font-size: 17px;
+	color: #d6e3e4;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.EquipmentTooltipPriceRow
+{
+	width: 100%;
+	height: 30px;
+	margin: 0px;
+	flow-children: right;
+}
+
+.EquipmentTooltipPriceTitle
+{
+	vertical-align: center;
+	margin-right: 5px;
+	font-size: 17px;
+	color: #d6e3e4;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.EquipmentTooltipPriceIcon
+{
+	vertical-align: center;
+	width: 22px;
+	height: 22px;
+	margin-right: 5px;
+}
+
+.EquipmentTooltipPriceValue
+{
+	vertical-align: center;
+	font-family: tooltipMonoNumbersFont;
+	font-size: 18px;
+	color: #f0d995;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.attrLabel
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 2px;
+	font-size: 16px;
+	color: #d6e3e4;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.attrLabel.EffectTooltipInvalid,.TooltipFlatText.EffectTooltipInvalid
+{
+	color: #ef7b68;
+}
+
+.attrLabel.EffectTooltipDormant,.TooltipFlatText.EffectTooltipDormant
+{
+	color: #8d9aa0;
+}
+
+.gray_text,#extraName.gray_text,#extraDes.gray_text
+{
+	color: #789197;
+}
+
+.inline_img_attr
+{
+	width: 20px;
+	height: 20px;
+}
+
+.highlight_number
+{
+	color: #ffd36a;
+	font-size: 20px;
+}
+
+.kw-buff
+{
+	text-decoration: underline;
+}
+
+.kw-buff-fire
+{
+	color: #ff7a3c;
+}
+
+.kw-buff-cold
+{
+	color: #86d9ff;
+}
+
+.kw-buff-physical
+{
+	color: #e2574f;
+}
+
+.kw-buff-arcane
+{
+	color: #c79bff;
+}
+
+.kw-buff-poison
+{
+	color: #9bd34e;
+}
+
+.kw-buff-lightning
+{
+	color: #ffd95e;
+}
+
+.kw-buff-holy
+{
+	color: #f4ead0;
+}
+
+.kw-buff-void
+{
+	color: #a679d8;
+}
+
+.kw-buff-earth
+{
+	color: #caa15c;
+}
+
+.kw-buff-water
+{
+	color: #5fb6e8;
+}
+
+.kw-buff-curse
+{
+	color: #d062b0;
+}
+
+.kw-buff-acid
+{
+	color: #c3d24a;
+}
+
+.kw-buff-shadow
+{
+	color: #9d8fb5;
+}
+
+.kw-buff-control
+{
+	color: #e8d27a;
+}
+
+.kw-buff-weaken
+{
+	color: #9fc4d6;
+}
+
+.rarity_1 #topBg,.Rarity_1 #title_block
+{
+	border-bottom: 1px solid #6b747688;
+}
+
+.rarity_2 #topBg,.Rarity_2 #title_block
+{
+	border-bottom: 1px solid #4f8f5aaa;
+}
+
+.rarity_3 #topBg,.Rarity_3 #title_block
+{
+	border-bottom: 1px solid #4383c3aa;
+}
+
+.rarity_4 #topBg,.Rarity_4 #title_block
+{
+	border-bottom: 1px solid #9c5bc9aa;
+}
+
+.rarity_5 #topBg,.Rarity_5 #title_block
+{
+	border-bottom: 1px solid #d28b3faa;
+}
+
+.rarity_6 #topBg,.Rarity_6 #title_block
+{
+	border-bottom: 1px solid #e0c96aaa;
+}
+
+.GlowingTitle
+{
+	font-family: tooltipTitleFont;
+	color: gradient(linear, 0% 0%, 100% 0%, from(#ffffff), color-stop(0.2, #ffd7a3), color-stop(0.5, #8fd9e9), color-stop(0.8, #d6b5ff), to(#ffffff));
+}
+

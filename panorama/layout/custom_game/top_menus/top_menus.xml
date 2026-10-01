@@ -1,0 +1,61 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/top_menus/top_menus.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/redtipmanager/redtipmanager.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/top_menus/top_menus.vjs_c" />
+	</scripts>
+	<Panel class="TopMenus TopMenusMain" hittest="false" hittestchildren="true">
+		<Panel id="MenuRole" class="MenuBtn TDMenuIcon tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_account&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_role_png.vtex" />
+			<Panel id="MenuRole_RedTip" class="RedTip" />
+		</Panel>
+		<Panel id="MenuDepot" class="MenuBtn TDMenuIcon tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_equipment&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_depot_png.vtex" />
+			<Panel id="MenuDepot_RedTip" class="RedTip" />
+		</Panel>
+		<Panel id="MenuCodex" class="MenuBtn TDMenuIcon tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_codex&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_codex_png.vtex" />
+		</Panel>
+		<Panel id="MenuActivity" class="MenuBtn TDMenuIcon tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_activity&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_activity_png.vtex" />
+			<Panel id="MenuActivity_RedTip" class="RedTip" />
+		</Panel>
+		<Panel id="MenuRank" class="MenuBtn TDMenuIcon tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_rank&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_rank_png.vtex" />
+		</Panel>
+		<Panel id="MenuMail" class="MenuBtn TDMenuIcon tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_mail&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_mail_png.vtex" />
+			<Panel id="MenuMail_RedTip" class="RedTip" />
+		</Panel>
+		<Panel id="MenuAuction" class="MenuBtn TDMenuIcon tooltip-bottom Hidden" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_auction&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_trophy_png.vtex" />
+		</Panel>
+		<Panel id="MenuShop" class="MenuBtn TDMenuIcon tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_shop&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_shop_png.vtex" />
+		</Panel>
+		<Panel id="MenuLottery" class="MenuBtn TDMenuIcon TDMenuLottery tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_lottery&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_lottery_png.vtex" />
+		</Panel>
+		<Panel id="TDToolCDKey" class="MenuBtn TDMenuIcon TDMenuCDKey tooltip-bottom" onmouseover="DOTAShowTextTooltip(&apos;#topmenu_tool_cdkey&apos;)" onmouseout="DOTAHideTextTooltip()">
+			<Panel id="Bg" />
+			<Image class="MenuButtonIcon" src="s2r://panorama/images/custom_game/top_menus/top_menu_cdkey_png.vtex" />
+		</Panel>
+	</Panel>
+</root>

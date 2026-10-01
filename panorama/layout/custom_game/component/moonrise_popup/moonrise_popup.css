@@ -1,0 +1,730 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.MoonrisePopupRoot
+{
+	width: 100%;
+	height: 100%;
+	z-index: 90;
+}
+
+.MoonrisePopupBackdrop
+{
+	width: 100%;
+	height: 100%;
+	background-color: #000000cc;
+}
+
+.MoonrisePopupShell
+{
+	width: 1408px;
+	height: 848px;
+	align: center center;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_window_shell_png.vtex");
+	background-size: 100% 100%;
+	background-color: transparent;
+	box-shadow: #000000ef 0px 12px 38px 0px;
+}
+
+.MoonrisePopupWindow
+{
+	width: 1280px;
+	height: 720px;
+	align: center center;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_bg_png.vtex");
+	background-size: 100% 100%;
+	background-color: #0b1529;
+	box-shadow: none;
+	overflow: clip;
+	z-index: 1;
+}
+
+.MoonrisePopupBg
+{
+	width: 100%;
+	height: 100%;
+	align: center center;
+	background-color: transparent;
+	z-index: 0;
+	border: 1px solid #a4c3df88;
+}
+
+.MoonrisePopupTitle
+{
+	width: 480px;
+	align: center top;
+	margin-top: 14px;
+	color: #e9f0ff;
+	font-size: 46px;
+	font-weight: normal;
+	text-align: center;
+	text-shadow: 0px 2px 4px 2 #000000;
+	z-index: 2;
+	font-family: Reaver, Goudy Trajan Medium, FZKai-Z03, TH Sarabun New, YDYGO 540;
+	letter-spacing: 4px;
+}
+
+.MoonrisePopupDuration
+{
+	align: center top;
+	margin-left: 0px;
+	margin-top: 674px;
+	width: 886px;
+	height: 26px;
+	padding: 0px;
+	background-color: #031126b0;
+	border: 0px solid transparent;
+	border-radius: 4px;
+	box-shadow: none;
+	z-index: 3;
+}
+
+.MoonrisePopupDuration.Hidden
+{
+	visibility: collapse;
+}
+
+.MoonrisePopupDurationText
+{
+	width: 100%;
+	vertical-align: center;
+	color: #bac8df;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.MoonrisePopupResources
+{
+	align: center top;
+	margin-top: 140px;
+	margin-right: 0px;
+	width: 860px;
+	height: 44px;
+	flow-children: right;
+	z-index: 3;
+	border-bottom: 1px solid #7d8fa657;
+}
+
+.MoonrisePopupResource
+{
+	width: 286px;
+	min-width: 0px;
+	height: 44px;
+	margin-left: 0px;
+	padding: 0px 14px;
+	flow-children: right;
+	background-color: transparent;
+	border: 0px solid transparent;
+	border-radius: 0px;
+	box-shadow: none;
+	transition-property: brightness;
+	transition-duration: 0.12s;
+	border-right: 1px solid #7d8fa629;
+}
+
+.MoonrisePopupResource:hover
+{
+	brightness: 1.14;
+}
+
+.MoonrisePopupResourceIconFrame
+{
+	width: 32px;
+	height: 32px;
+	vertical-align: center;
+}
+
+.MoonrisePopupResourceIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.MoonrisePopupResourceAmount
+{
+	min-width: 0px;
+	vertical-align: center;
+	margin-left: 8px;
+	color: cCream;
+	font-size: 18px;
+	text-align: right;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+	width: 96px;
+}
+
+.MoonrisePopupTabs
+{
+	align: center top;
+	margin-top: 84px;
+	width: fit-children;
+	height: 44px;
+	flow-children: right;
+	z-index: 2;
+}
+
+.MoonrisePopupTab
+{
+	width: 192px;
+	height: 44px;
+	margin: 0px 6px;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_button_idle_png.vtex");
+	background-size: 100% 100%;
+	background-color: transparent;
+	border: 0px solid transparent;
+	brightness: 0.88;
+	saturation: 1;
+	transition-property: brightness, saturation, transform;
+	transition-duration: 0.12s;
+}
+
+.MoonrisePopupTab.Active
+{
+	brightness: 1;
+	saturation: 1;
+	box-shadow: #5b91ff70 0px 0px 9px 0px;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_button_png.vtex");
+}
+
+.MoonrisePopupTab:hover
+{
+	brightness: 1.25;
+}
+
+.MoonrisePopupTab:active
+{
+	brightness: 0.85;
+	transform: translateY(1px);
+}
+
+.MoonrisePopupTabLabel
+{
+	align: center center;
+	color: #e7eef2;
+	font-size: 21px;
+	text-shadow: 0px 1px 2px 1 #000000;
+	font-family: Reaver, Goudy Trajan Medium, FZKai-Z03, TH Sarabun New, YDYGO 540;
+}
+
+.MoonrisePopupTab.RedTipActive .RedTip
+{
+	visibility: visible;
+}
+
+.MoonrisePopupBody
+{
+	width: 886px;
+	height: 482px;
+	align: center top;
+	margin-top: 184px;
+	padding: 12px;
+	background-color: transparent;
+	border: 0px solid transparent;
+	border-radius: 0px;
+	box-shadow: none;
+	z-index: 2;
+}
+
+.MoonrisePopupClose
+{
+	width: 46px;
+	height: 46px;
+	align: right top;
+	margin-top: 20px;
+	margin-right: 20px;
+	background-color: #081a38ed;
+	border: 1px solid #bed4f0b0;
+	border-radius: 4px;
+	z-index: 3;
+	transition-property: brightness;
+	transition-duration: 0.12s;
+}
+
+.MoonrisePopupClose:hover
+{
+	brightness: 1.5;
+}
+
+.MoonrisePopupCloseIcon
+{
+	width: 24px;
+	height: 24px;
+	align: center center;
+}
+
+.MoonrisePopupCloseLine
+{
+	width: 26px;
+	height: 2px;
+	align: center center;
+	background-color: #e7eef2;
+}
+
+.MoonrisePopupCloseLineA
+{
+	transform: rotateZ(45deg);
+}
+
+.MoonrisePopupCloseLineB
+{
+	transform: rotateZ(-45deg);
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskPage,.MoonrisePopupRoot .OutgameShopCatalogPage
+{
+	background-image: none;
+	background-color: transparent;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskList
+{
+	width: 100%;
+	vertical-align: top;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskCell
+{
+	height: 70px;
+	padding: 0px;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_task_row_png.vtex");
+	background-size: 100% 100%;
+	background-color: transparent;
+	border: 0px solid transparent;
+	box-shadow: none;
+	margin-bottom: 8px;
+	flow-children: none;
+	border-radius: 0px;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskCell.Claimable
+{
+	brightness: 1;
+	box-shadow: none;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskCell.Claimed
+{
+	saturation: 1;
+	brightness: 1;
+}
+
+.MoonrisePopupRoot .OutgameShopCard
+{
+	width: 200px;
+	height: 190px;
+	margin: 0px 10px 8px 0px;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_product_png.vtex");
+	background-size: 100% 100%;
+	background-color: transparent;
+	border: 0px solid transparent;
+	box-shadow: none;
+}
+
+.MoonrisePopupRoot .OutgameShopCardVisual
+{
+	height: 92px;
+	background-color: transparent;
+	border-bottom: 0px solid transparent;
+}
+
+.MoonrisePopupRoot .OutgameShopPurchaseDialog,.MoonrisePopupRoot .OutgameShopPaymentDialog
+{
+	background-color: cPanelGlass;
+	border: 1px solid cHairline;
+	box-shadow: cScrimDeep 0px 12px 36px 0px;
+}
+
+.MoonrisePopupRoot .OutgameShopPurchaseOverlay,.MoonrisePopupRoot .OutgameShopPaymentOverlay
+{
+	background-color: cScrim60;
+}
+
+.MoonrisePopupRoot .OutgameShopCatalogGroup
+{
+	height: 26px;
+	margin: 0px 0px 4px 0px;
+	border-bottom: 1px solid #738bae33;
+}
+
+.MoonrisePopupRoot .OutgameShopCatalogGroupTitle
+{
+	color: #bac8df;
+	font-size: 15px;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskRefreshNote
+{
+	color: #b0b8ce;
+	width: 100%;
+	height: 32px;
+	align: center bottom;
+	margin: 0px;
+	font-size: 16px;
+	text-align: center;
+}
+
+.MoonrisePopupRoot .OutgameActionButton
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_button_png.vtex");
+	background-size: 100% 100%;
+	background-color: transparent;
+	border: 0px solid transparent;
+	transition-property: brightness, saturation, transform;
+	transition-duration: 0.12s;
+}
+
+.MoonrisePopupRoot .OutgameActionButton:hover
+{
+	brightness: 1.4;
+}
+
+.MoonrisePopupRoot .OutgameActionButton:active
+{
+	brightness: 0.85;
+	transform: translateY(1px);
+}
+
+.MoonrisePopupRoot .OutgameActionButton.Disabled,.MoonrisePopupRoot .OutgameActionButton.Locked,.MoonrisePopupRoot .OutgameActionButton.Claimed,.MoonrisePopupRoot .OutgameActionButton.Maxed,.MoonrisePopupRoot .OutgameActionButton:disabled
+{
+	saturation: 0.1;
+	brightness: 0.55;
+	transform: translateY(0px);
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskScroll
+{
+	height: 390px;
+	padding: 0px;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskDesc
+{
+	width: 232px;
+	vertical-align: center;
+	font-size: 20px;
+	margin-left: 74px;
+	font-family: Reaver, Goudy Trajan Medium, FZKai-Z03, TH Sarabun New, YDYGO 540;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskProgress
+{
+	width: 112px;
+	font-size: 18px;
+	color: #d8e5f4;
+	text-align: left;
+	margin-left: 310px;
+	vertical-align: center;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskState
+{
+	visibility: collapse;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskReward
+{
+	width: 258px;
+	height: 60px;
+	margin-left: 428px;
+	horizontal-align: left;
+	padding-left: 10px;
+	border-left: 1px solid #a3b2c52e;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskRewardSlot
+{
+	width: 246px;
+	height: 60px;
+	margin-left: 0px;
+}
+
+.MoonriseRewardDetails
+{
+	flow-children: right;
+}
+
+.MoonriseRewardIcon
+{
+	width: 48px;
+	height: 48px;
+	vertical-align: center;
+}
+
+.MoonriseRewardText
+{
+	width: 188px;
+	margin-left: 8px;
+	vertical-align: center;
+	flow-children: right;
+}
+
+.MoonriseRewardName
+{
+	width: fit-children;
+	max-height: 40px;
+	color: #e7eef8;
+	font-size: 18px;
+	text-overflow: shrink;
+	max-width: 128px;
+	vertical-align: center;
+}
+
+.MoonriseRewardCount
+{
+	color: #e7eef8;
+	font-size: 18px;
+	margin-left: 4px;
+	vertical-align: center;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskAction
+{
+	width: 144px;
+	height: 40px;
+	margin-left: 0px;
+	margin-right: 12px;
+	align: right center;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskAction .OutgameActionButtonText
+{
+	font-size: 20px;
+	color: #e7eef8;
+	font-family: Reaver, Goudy Trajan Medium, FZKai-Z03, TH Sarabun New, YDYGO 540;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskCell.Locked
+{
+	brightness: 1;
+	saturation: 1;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskCell.Claimed .OutgameDailyTaskAction
+{
+	background-img-opacity: 1;
+	background-color: transparent;
+	opacity: 1;
+	saturation: 1;
+	brightness: 1;
+	box-shadow: none;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_button_claimed_png.vtex");
+}
+
+.MoonrisePopupRoot .OutgameShopCatalogGrid
+{
+	height: 426px;
+	padding: 0px 10px 0px 0px;
+}
+
+.MoonrisePopupRoot .OutgameShopCatalogGrid VerticalScrollBar
+{
+	width: 8px;
+}
+
+.MoonrisePopupRoot .OutgameShopProductItemIcon,.MoonrisePopupRoot .OutgameShopProductIcon
+{
+	width: 76px;
+	height: 76px;
+}
+
+.MoonrisePopupRoot .OutgameShopCardBody
+{
+	height: 98px;
+	padding: 4px 8px 2px;
+}
+
+.MoonrisePopupRoot .OutgameShopCardName
+{
+	height: 32px;
+	font-size: 17px;
+}
+
+.MoonrisePopupRoot .OutgameShopCardBuy
+{
+	width: 176px;
+	height: 36px;
+}
+
+.MoonrisePopupRoot .OutgameShopCardLimit
+{
+	margin-top: 4px;
+	height: 20px;
+	font-size: 14px;
+}
+
+.MoonrisePopupRoot .OutgameShopFooter
+{
+	height: 30px;
+	background-color: #041021cc;
+	border-top: 1px solid #a9c7e54c;
+}
+
+.MoonrisePopupRoot .OutgameShopPurchaseDialog
+{
+	width: 560px;
+	height: 450px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogHeader
+{
+	height: 44px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogBody
+{
+	height: 350px;
+	padding: 8px 16px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogProductName
+{
+	height: 30px;
+	font-size: 21px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogRewardTitle
+{
+	height: 22px;
+	margin-top: 4px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogRewardGrid
+{
+	height: 82px;
+	margin-top: 4px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogRewardRow
+{
+	height: 78px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogRewardIcon
+{
+	width: 74px;
+	height: 74px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogQuantityRow,.MoonrisePopupRoot .OutgameShopDialogTotalRow
+{
+	height: 40px;
+	margin-top: 8px;
+}
+
+.MoonrisePopupRoot .OutgameShopDialogActions
+{
+	height: 54px;
+	padding: 5px 16px;
+}
+
+.MoonrisePopupRoot .OutgameShopPurchaseDialog .OutgameShopDialogActionButton
+{
+	width: 258px;
+	margin-left: 10px;
+}
+
+.MoonrisePopupRoot .OutgameShopPurchaseDialog .OutgameShopDialogActionButton.Confirm
+{
+	margin-left: 0px;
+}
+
+.MoonrisePopupFrame
+{
+	width: 886px;
+	height: 528px;
+	align: center top;
+	margin-top: 138px;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_frame_png.vtex");
+	background-size: 100% 100%;
+	z-index: 1;
+}
+
+.MoonriseTitleOrnament
+{
+	width: 220px;
+	height: 17px;
+	align: center top;
+	margin-top: 66px;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_title_ornament_png.vtex");
+	background-size: 23px 17px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.MoonrisePopupResourceName
+{
+	width: 112px;
+	margin-left: 8px;
+	vertical-align: center;
+	color: #d8dfef;
+	font-size: 17px;
+	text-overflow: shrink;
+}
+
+.MoonriseTaskOrdinal
+{
+	width: 50px;
+	height: 51px;
+	margin-left: 12px;
+	vertical-align: center;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_ordinal_png.vtex");
+	background-size: 100% 100%;
+}
+
+.MoonriseTaskOrdinalText
+{
+	align: center center;
+	font-family: Goudy Trajan Medium, Reaver;
+	font-size: 28px;
+	color: #eef1fa;
+}
+
+.MoonrisePopupRoot .MultipleRewards .OutgameDailyTaskRewardSlot
+{
+	width: 123px;
+	border-right: 1px solid #a3b2c52e;
+}
+
+.MoonrisePopupRoot .MultipleRewards .MoonriseRewardIcon
+{
+	width: 38px;
+	height: 44px;
+}
+
+.MoonrisePopupRoot .MultipleRewards .MoonriseRewardText
+{
+	width: 72px;
+	margin-left: 6px;
+	flow-children: down;
+}
+
+.MoonrisePopupRoot .MultipleRewards .MoonriseRewardName,.MoonrisePopupRoot .MultipleRewards .MoonriseRewardCount
+{
+	font-size: 15px;
+	margin-left: 0px;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskCell.Locked .OutgameDailyTaskAction
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/moonrise_button_idle_png.vtex");
+	saturation: 1;
+	brightness: 1;
+}
+
+.MoonrisePopupRoot .OutgameShopCardBuyText
+{
+	font-size: 16px;
+}
+
+.MoonrisePopupRoot .OutgameShopCatalogGroupIcon
+{
+	width: 22px;
+	height: 22px;
+}
+
+.MoonrisePopupRoot .OutgameDailyTaskCell.Locked .OutgameActionButtonText,.MoonrisePopupRoot .OutgameDailyTaskCell.Claimed .OutgameActionButtonText
+{
+	color: #dce3f2;
+}
+

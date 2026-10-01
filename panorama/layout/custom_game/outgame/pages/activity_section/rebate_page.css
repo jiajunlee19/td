@@ -1,0 +1,291 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameRebatePage
+{
+	width: 100%;
+	height: 100%;
+	padding: 16px;
+	flow-children: down;
+	background-color: cScrim60;
+	overflow: clip;
+}
+
+.OutgameRebateHero
+{
+	width: 100%;
+	height: 176px;
+	padding: 20px 24px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#192934f5), color-stop(0.60, #101a23f2), to(#081117f5));
+	border: 1px solid cCyanWellHair;
+	border-radius: 5px;
+}
+
+.OutgameRebateCopy
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+}
+
+.OutgameRebateTitle
+{
+	width: 100%;
+	color: cGoldBright;
+	font-size: 32px;
+	font-weight: bold;
+	text-shadow: 0px 2px 4px 3 cInkDeep;
+}
+
+.OutgameRebateDesc
+{
+	width: 100%;
+	margin-top: 7px;
+	color: cSteel;
+	font-size: 18px;
+	line-height: 22px;
+	text-overflow: shrink;
+}
+
+.OutgameRebatePeriod
+{
+	width: 100%;
+	margin-top: 13px;
+	color: cCream;
+	font-size: 17px;
+}
+
+.OutgameRebateUnopened
+{
+	horizontal-align: right;
+	margin: 2px 18px 0px 18px;
+	padding: 6px 12px;
+	color: cGoldBright;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.OutgameRebateUnopened.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRebateSummary
+{
+	width: 340px;
+	height: 132px;
+	padding: 14px 18px;
+	flow-children: down;
+	background-color: #071017dc;
+	border: 1px solid cHairlineLo;
+	border-radius: 4px;
+}
+
+.OutgameRebateSummaryLabel
+{
+	width: 100%;
+	color: cSlate;
+	font-size: 15px;
+}
+
+.OutgameRebateCurrentValue
+{
+	width: 100%;
+	margin-top: 2px;
+	color: cGoldBright;
+	font-size: 29px;
+	font-weight: bold;
+}
+
+.OutgameRebateProgressText
+{
+	width: 100%;
+	margin-top: 5px;
+	color: cSteel;
+	font-size: 14px;
+	text-overflow: shrink;
+}
+
+.OutgameRebateProgress
+{
+	width: 100%;
+	height: 7px;
+	margin-top: 7px;
+	background-color: #020609df;
+	border: 1px solid #263740;
+	border-radius: 3px;
+	overflow: clip;
+}
+
+.OutgameRebateProgressFill
+{
+	width: 0%;
+	height: 100%;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(cBlue), to(cGoldBright));
+	transition-property: width;
+	transition-duration: 0.18s;
+}
+
+.OutgameRebateBody
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	margin-top: 14px;
+}
+
+.OutgameRebateGrid
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right-wrap;
+	horizontal-align: center;
+	overflow: squish scroll;
+}
+
+.OutgameRebateGrid.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRebateCard
+{
+	width: 246px;
+	height: 236px;
+	margin: 0px 12px 12px 0px;
+	padding: 13px;
+	flow-children: down;
+	background-color: #0a131aec;
+	border: 1px solid cHairline;
+	border-radius: 5px;
+	transition-property: brightness, border, box-shadow, background-color;
+	transition-duration: 0.14s;
+}
+
+.OutgameRebateCard.Claimable
+{
+	background-color: #102129f2;
+	border: 1px solid cGoldBorder;
+	box-shadow: 0px 0px 14px cGoldGlow;
+}
+
+.OutgameRebateCard.Claimed
+{
+	brightness: 0.62;
+	saturation: 0.72;
+}
+
+.OutgameRebateCard.Locked
+{
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameRebateCardTop
+{
+	width: 100%;
+	height: 31px;
+}
+
+.OutgameRebateThreshold
+{
+	max-width: 150px;
+	vertical-align: center;
+	color: cCream;
+	font-size: 16px;
+	font-weight: bold;
+	text-overflow: shrink;
+}
+
+.OutgameRebateState
+{
+	horizontal-align: right;
+	vertical-align: center;
+	padding: 3px 7px;
+	color: cSlate;
+	font-size: 12px;
+}
+
+.OutgameRebateCard.Claimable .OutgameRebateState
+{
+	color: cGoldBright;
+}
+
+.OutgameRebateCard.Claimed .OutgameRebateState
+{
+	color: #bce8c5;
+}
+
+.OutgameRebateRewardIcon
+{
+	width: 72px;
+	height: 72px;
+	margin-top: 9px;
+	horizontal-align: center;
+}
+
+.OutgameRebateRewardLine
+{
+	width: fit-children;
+	max-width: 100%;
+	height: 27px;
+	margin-top: 5px;
+	flow-children: right;
+	horizontal-align: center;
+}
+
+.OutgameRebateRewardName
+{
+	max-width: 150px;
+	vertical-align: center;
+	color: cSteel;
+	font-size: 16px;
+	text-overflow: shrink;
+}
+
+.OutgameRebateRewardCount
+{
+	margin-left: 5px;
+	vertical-align: center;
+	color: cGoldBright;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.OutgameRebateAction
+{
+	width: 148px;
+	height: 35px;
+	margin-top: 8px;
+	horizontal-align: center;
+}
+
+.OutgameRebateActionText
+{
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.OutgameRebateEmpty
+{
+	visibility: collapse;
+	align: center center;
+	color: cSlate;
+	font-size: 22px;
+}
+
+.OutgameRebateEmpty.Visible
+{
+	visibility: visible;
+}
+
+.OutgameRebatePage.Ended .OutgameRebatePeriod
+{
+	color: #cf8580;
+}
+
+.OutgameRebatePage.Upcoming .OutgameRebatePeriod
+{
+	color: cCyanWell;
+}
+

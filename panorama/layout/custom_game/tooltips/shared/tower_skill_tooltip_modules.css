@@ -1,0 +1,336 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.TowerSkillModuleDivider
+{
+	width: 100%;
+	height: 1px;
+	margin: 0px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.2, #456b78aa), color-stop(0.8, #456b78aa), to(#00000000));
+}
+
+.TowerSkillModuleSection
+{
+	width: 100%;
+	height: fit-children;
+	padding: 8px 0px;
+	flow-children: down;
+}
+
+.TowerSkillModuleSection.AtContainerStart
+{
+	padding-top: 0px;
+}
+
+.TowerSkillModuleSection.Meta
+{
+	padding-bottom: 8px;
+}
+
+.TowerSkillDamageSummary
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+.TowerSkillDamageRow
+{
+	width: 100%;
+	height: 30px;
+	flow-children: right;
+}
+
+.TowerSkillDamageGroup
+{
+	width: fill-parent-flow(1);
+	height: 30px;
+	flow-children: right;
+}
+
+.TowerSkillDamageSpacer
+{
+	width: fill-parent-flow(1);
+	height: 30px;
+}
+
+.TowerSkillDamageLabel,.TowerSkillDamageName,.TowerSkillDamageEmpty,.TowerSkillModuleTraitLabel,.TowerSkillTraitChip
+{
+	font-family: tooltipBodyFont;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+Label.TowerSkillDamageLabel,Label.TowerSkillDamageName,Label.TowerSkillDamageEmpty,Label.TowerSkillModuleTraitLabel,Label.TowerSkillTraitChip,Label.TowerSkillCompactLabel,Label.TowerSkillCompactValue,Label.TowerSkillCompactTraitLabel
+{
+	font-family: tooltipBodyFont;
+	font-size: 16px;
+}
+
+.TowerSkillDamageLabel
+{
+	vertical-align: center;
+	width: 50px;
+	color: #78878e;
+	text-overflow: shrink;
+}
+
+.TowerSkillDamageValue
+{
+	vertical-align: center;
+	width: fill-parent-flow(1);
+	height: 30px;
+	flow-children: right;
+}
+
+.TowerSkillDamageValue.Empty
+{
+	padding-left: 30px;
+}
+
+.TowerSkillDamageIcon
+{
+	vertical-align: center;
+	width: 24px;
+	height: 24px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.TowerSkillDamageName
+{
+	vertical-align: center;
+	margin-left: 5px;
+	width: fill-parent-flow(1);
+	color: #c8d0d0;
+	text-overflow: shrink;
+}
+
+.TowerSkillDamageEmpty
+{
+	vertical-align: center;
+	color: #7f8d8d;
+}
+
+.TowerSkillDamageIcon.Physical
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_physical_png.vtex");
+}
+
+.TowerSkillDamageIcon.Arcane
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_arcane_png.vtex");
+}
+
+.TowerSkillDamageIcon.Fire
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_fire_png.vtex");
+}
+
+.TowerSkillDamageIcon.Cold
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_cold_png.vtex");
+}
+
+.TowerSkillDamageIcon.Lightning
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_lightning_png.vtex");
+}
+
+.TowerSkillDamageIcon.Earth
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_earth_png.vtex");
+}
+
+.TowerSkillDamageIcon.Shadow
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_shadow_png.vtex");
+}
+
+.TowerSkillDamageIcon.Poison
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_poison_png.vtex");
+}
+
+.TowerSkillDamageIcon.Holy
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_holy_png.vtex");
+}
+
+.TowerSkillDamageIcon.Void
+{
+	background-image: url("s2r://panorama/images/custom_game/hud/damage_attribute/attack_void_png.vtex");
+}
+
+.TowerSkillCompactModuleStack
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 2px;
+	flow-children: right-wrap;
+}
+
+.TowerSkillCompactDamagePill
+{
+	height: 22px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	padding: 1px 6px 0px 6px;
+	flow-children: right;
+	border: 1px solid #53615fcc;
+	border-radius: 2px;
+	background-color: #071112cc;
+}
+
+.TowerSkillCompactLabel,.TowerSkillCompactValue,.TowerSkillCompactTraitLabel
+{
+	vertical-align: center;
+	font-size: 14px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+Label.TowerSkillCompactLabel,Label.TowerSkillCompactValue,Label.TowerSkillCompactTraitLabel
+{
+	font-size: 14px;
+}
+
+.TowerSkillCompactLabel
+{
+	color: #899ba0;
+}
+
+.TowerSkillCompactValue
+{
+	margin-left: 3px;
+	color: #c8d0d0;
+}
+
+.TowerSkillCompactTraitLabel
+{
+	height: 22px;
+	margin-right: 4px;
+	margin-bottom: 3px;
+	color: #d9b56d;
+}
+
+.TowerSkillCompactDamageIcon
+{
+	width: 18px;
+	height: 18px;
+	margin-left: 4px;
+}
+
+.TowerSkillModuleTraitLine
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+.TowerSkillModuleTraitLabel
+{
+	width: 100%;
+	height: fit-children;
+	margin-bottom: 3px;
+	color: #d9b56d;
+}
+
+.TowerSkillModuleTraitList
+{
+	width: 100%;
+	height: fit-children;
+	min-height: 24px;
+	flow-children: right-wrap;
+}
+
+.TowerSkillTraitChip
+{
+	height: 24px;
+	min-width: 42px;
+	margin-right: 6px;
+	margin-bottom: 5px;
+	padding: 1px 8px 0px 8px;
+	border-radius: 2px;
+	border: 1px solid #53615fcc;
+	background-color: #0b1516cc;
+	color: #bfcfc8;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.TowerSkillModuleTraitList .TowerSkillTraitChip
+{
+	margin-bottom: 0px;
+}
+
+Label.TowerSkillTraitChip.Compact
+{
+	font-size: 14px;
+}
+
+.TowerSkillTraitChip.Compact
+{
+	height: 22px;
+	min-width: 32px;
+	margin-right: 5px;
+	margin-bottom: 3px;
+	padding: 1px 6px 0px 6px;
+}
+
+.TowerSkillTraitChip.Trait_skill_area
+{
+	border-color: #3fae79cc;
+	background-color: #10251dcc;
+	color: #bff6d8;
+}
+
+.TowerSkillTraitChip.Trait_skill_duration
+{
+	border-color: #4f87d7cc;
+	background-color: #12223acc;
+	color: #c7ddff;
+}
+
+.TowerSkillTraitChip.Trait_skill_pulse_frequency
+{
+	border-color: #50c8d5cc;
+	background-color: #112f35cc;
+	color: #c7fbff;
+}
+
+.TowerSkillTraitChip.Trait_skill_echo_count
+{
+	border-color: #9c72e8cc;
+	background-color: #251a3ccc;
+	color: #e4d6ff;
+}
+
+.TowerSkillTraitChip.Trait_skill_projectile_count
+{
+	border-color: #d5a04ecc;
+	background-color: #352813cc;
+	color: #ffe3ae;
+}
+
+.TowerSkillTraitChip.Trait_skill_projectile_pierce
+{
+	border-color: #e36d57cc;
+	background-color: #3b1b16cc;
+	color: #ffd0c4;
+}
+
+.TowerSkillTraitChip.Trait_skill_projectile_fork
+{
+	border-color: #d86ad8cc;
+	background-color: #331733cc;
+	color: #ffd0ff;
+}
+
+.TowerSkillTraitChip.Trait_skill_chain
+{
+	border-color: #d4ca57cc;
+	background-color: #302d14cc;
+	color: #fff5a8;
+}
+

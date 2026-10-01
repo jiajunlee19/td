@@ -1,0 +1,125 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameLegacyTreasureTooltip
+{
+	width: 380px;
+	height: fit-children;
+	flow-children: down;
+}
+
+#LegacyTreasureTooltipHeader
+{
+	width: 100%;
+	min-height: 82px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#122734f0), to(#07111600));
+	border-bottom: 1px solid #365e6c88;
+}
+
+#LegacyTreasureTooltipIconFrame
+{
+	width: 62px;
+	height: 62px;
+	margin-left: 12px;
+	vertical-align: center;
+	background-color: #05090dcc;
+	border: 1px solid #426270aa;
+}
+
+#LegacyTreasureTooltipIcon
+{
+	align: center center;
+	width: 52px;
+	height: 52px;
+}
+
+#LegacyTreasureTooltipTitleBox
+{
+	vertical-align: center;
+	width: fill-parent-flow(1);
+	height: fit-children;
+	margin-left: 12px;
+	margin-right: 14px;
+	flow-children: down;
+}
+
+#LegacyTreasureTooltipName
+{
+	width: 100%;
+	height: 28px;
+	font-family: tooltipTitleFont;
+	color: #e8f3f3;
+	font-size: 22px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#LegacyTreasureTooltipMeta
+{
+	width: 100%;
+	margin-top: 4px;
+	height: 22px;
+	color: #96b8bd;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#LegacyTreasureTooltipBody
+{
+	width: 100%;
+	padding: 8px 14px 12px 14px;
+	flow-children: down;
+}
+
+.LegacyTreasureTooltipSection
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+.LegacyTreasureTooltipDivider
+{
+	width: 100%;
+	height: 1px;
+	margin: 7px 0px 7px 0px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.2, #456b78aa), color-stop(0.8, #456b78aa), to(#00000000));
+}
+
+.LegacyTreasureTooltipTitle
+{
+	width: 100%;
+	height: fit-children;
+	margin-bottom: 4px;
+	font-family: tooltipTitleFont;
+	color: #d9b56d;
+	font-size: 18px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.LegacyTreasureTooltipText
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 2px;
+	color: #d6e3e4;
+	font-size: 17px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.LegacyTreasureTooltipLockedText
+{
+	color: #7f898d;
+}
+
+.LegacyTreasureTooltipExchangeReady
+{
+	color: #d8c36f;
+}
+
+.LegacyTreasureTooltipExchangeNotEnough
+{
+	color: #e08a78;
+}
+

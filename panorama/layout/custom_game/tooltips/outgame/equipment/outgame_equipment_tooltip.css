@@ -1,0 +1,353 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.Container
+{
+	flow-children: left;
+	overflow: noclip;
+}
+
+#MainPanel
+{
+	min-width: 360px;
+	max-width: 520px;
+	flow-children: down;
+	padding-bottom: 10px;
+}
+
+.outgame_equipment
+{
+	margin-left: 2px;
+}
+
+.decorator,.decorator_RT,.decorator_LB,.title_block_bg
+{
+	visibility: collapse;
+}
+
+#title_block
+{
+	height: 106px;
+	padding: 12px;
+	flow-children: none;
+}
+
+#InSlot
+{
+	horizontal-align: right;
+	margin-top: 8px;
+	margin-right: 8px;
+	width: 28px;
+	height: 20px;
+	border: 1px solid #b8944dcc;
+	background-color: #2a210dcc;
+	border-radius: 2px;
+	visibility: collapse;
+	z-index: 2;
+}
+
+#EquipItem,.EquipItem
+{
+	margin-top: 2px;
+	margin-left: 2px;
+	width: 82px;
+	height: 82px;
+	border: 1px solid #3a5f6baa;
+	background-color: #05090dcc;
+	border-radius: 4px;
+}
+
+#EquipItemBg,#EquipItemQuality,#EquipTypeBg
+{
+	width: 100%;
+	height: 100%;
+	background-image: none;
+}
+
+#EquipItemQuality
+{
+	border: 1px solid #58676aaa;
+	border-radius: 4px;
+}
+
+#EquipItemIcon
+{
+	width: 72%;
+	height: 72%;
+	vertical-align: center;
+	horizontal-align: center;
+	img-shadow: 0px 0px 8px 2 #000000cc;
+}
+
+#equipName
+{
+	margin-top: 5px;
+	margin-left: 100px;
+	margin-right: 12px;
+	height: 28px;
+	color: #e8f3f3;
+	font-size: 23px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#equipType
+{
+	margin-top: 38px;
+	margin-left: 100px;
+	margin-right: 12px;
+	height: 22px;
+	color: #9ebbc0;
+	font-size: 17px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#equipSubType
+{
+	margin-top: 63px;
+	margin-left: 100px;
+	margin-right: 12px;
+	height: 22px;
+	color: #d6b875;
+	font-size: 17px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#info_block
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	padding: 8px 14px 4px 14px;
+}
+
+.tooltip_section_title
+{
+	width: 100%;
+	min-height: 28px;
+	flow-children: right;
+}
+
+#tooltip_section_title_text
+{
+	font-size: 18px;
+	color: #8fd9e9;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+#tooltip_section_title_line
+{
+	width: fill-parent-flow(1);
+	height: 1px;
+	margin-top: 12px;
+	margin-right: 8px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#00000000), color-stop(0.25, #456b78aa), to(#456b7800));
+}
+
+.attrLabel
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 4px;
+	font-size: 16px;
+	color: #d6e3e4;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_1
+{
+	color: white;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_2
+{
+	color: greenyellow;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_3
+{
+	color: cyan;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_4
+{
+	color: fuchsia;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_5
+{
+	color: orange;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_6
+{
+	color: red;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_7
+{
+	color: yellow;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_8
+{
+	color: pink;
+}
+
+.outgame_equipment .attrLabel.Affix_Rarity_9
+{
+	color: lightskyblue;
+}
+
+.attrTitle
+{
+	margin-top: 4px;
+	margin-bottom: 2px;
+	font-family: tooltipTitleFont;
+	color: #9ebbc0;
+	font-size: 17px;
+}
+
+#equipDesc,#abilityLore
+{
+	width: 100%;
+	height: fit-children;
+	font-size: 16px;
+	color: #d6e3e4;
+}
+
+#extra_tips_text
+{
+	horizontal-align: right;
+	margin-top: 6px;
+	font-size: 15px;
+	color: #8fa7ac;
+}
+
+#corrupted_tips_text
+{
+	horizontal-align: center;
+	text-align: center;
+	font-size: 17px;
+	color: #ff6b6b;
+	text-shadow: 0px 0px 2px 2 #3d0000;
+}
+
+.outgame_equipment.Corrupted #MainPanel
+{
+	border: 1px solid #7a2b2bcc;
+}
+
+#alternative_equip #MainPanel
+{
+	border-color: #c7a04caa;
+}
+
+.Rarity_1 #EquipItemQuality
+{
+	border-color: #6b7476aa;
+}
+
+.Rarity_2 #EquipItemQuality
+{
+	border-color: #4f8f5acc;
+}
+
+.Rarity_3 #EquipItemQuality
+{
+	border-color: #4383c3cc;
+}
+
+.Rarity_4 #EquipItemQuality
+{
+	border-color: #9c5bc9cc;
+}
+
+.Rarity_5 #EquipItemQuality
+{
+	border-color: #d28b3fcc;
+}
+
+.Rarity_6 #EquipItemQuality
+{
+	border-color: #e0c96acc;
+}
+
+.Rarity_1 #equipName
+{
+	color: #d6e3e4;
+}
+
+.Rarity_2 #equipName
+{
+	color: #8ce196;
+}
+
+.Rarity_3 #equipName
+{
+	color: #86c5ff;
+}
+
+.Rarity_4 #equipName
+{
+	color: #d99bff;
+}
+
+.Rarity_5 #equipName
+{
+	color: #ffbf6b;
+}
+
+.Rarity_6 #equipName
+{
+	color: #ffe78f;
+}
+
+.Proto #EquipItemQuality
+{
+	border-color: #d19a53;
+}
+
+.Core #EquipItemQuality
+{
+	border-color: #ffd06f;
+}
+
+.Proto #EquipItemIcon
+{
+	wash-color: #ffc77f;
+	transform: rotateZ(-18deg) rotateY(-30deg) translateX(2px) translateY(1px) scaleY(0.8);
+}
+
+.Core #EquipItemIcon
+{
+	width: 52%;
+	height: 52%;
+}
+
+.outgame_rune
+{
+	max-width: 500px;
+}
+
+#rune_name,#rune_attr,#runeword_name,#fragmentTagSet_name,#fragmentTag_name,#fragmentTag_tag_lock,#fragmentTag_attr_lock,#runeword_word
+{
+	width: 100%;
+	text-align: center;
+	horizontal-align: center;
+	font-size: 17px;
+	color: #d6e3e4;
+}
+
+#runeword_name,#fragmentTagSet_name,#fragmentTag_name
+{
+	color: #d6b875;
+	font-size: 22px;
+}
+
+#fragmentTag_tag_lock,#fragmentTag_attr_lock,#runeword_word
+{
+	color: #7c9094;
+}
+

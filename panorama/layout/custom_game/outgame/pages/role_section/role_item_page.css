@@ -1,0 +1,223 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameRoleInventoryBody
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	background-color: cScrimBody;
+}
+
+.OutgameRoleInventoryLoading
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim40;
+}
+
+.OutgameRoleInventoryLoadingText
+{
+	align: center center;
+	width: 420px;
+	color: cTan;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameRoleInventoryHeader
+{
+	width: 100%;
+	height: 88px;
+	padding: 12px 18px 10px 18px;
+	flow-children: right;
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameRoleInventoryTitleBox
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+}
+
+.OutgameRoleInventoryTitle
+{
+	color: cCream;
+	font-size: 22px;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameRoleInventorySubtitle
+{
+	margin-top: 5px;
+	color: cSlate;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleInventoryTabs
+{
+	width: fit-children;
+	height: 42px;
+	vertical-align: center;
+	flow-children: right;
+}
+
+.OutgameRoleInventoryTab
+{
+	height: 38px;
+	min-width: 90px;
+	margin-left: 6px;
+	flow-children: right;
+}
+
+.OutgameRoleInventoryTabLabel
+{
+	ignore-parent-flow: true;
+	horizontal-align: center;
+	vertical-align: center;
+	width: fit-children;
+	font-size: 17px;
+	text-align: center;
+}
+
+.OutgameRoleInventoryRedTip
+{
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	background-color: #c83c2e;
+	box-shadow: cScrim80 0px 0px 3px 1px;
+	visibility: collapse;
+}
+
+.OutgameRoleInventoryRedTip.RedTipActive
+{
+	visibility: visible;
+}
+
+.OutgameRoleInventoryTab > .OutgameRoleInventoryRedTip
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 4px;
+	margin-right: 4px;
+}
+
+.OutgameRoleInventoryGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 18px 18px 24px 18px;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.OutgameRoleInventoryItem
+{
+	width: 132px;
+	height: 152px;
+	margin: 0px 12px 14px 0px;
+	padding-top: 9px;
+	flow-children: down;
+}
+
+.OutgameRoleInventoryItem.Equipped
+{
+	border: 1px solid cGoldBorder;
+	box-shadow: cGoldGlow 0px 0px 8px 0px;
+}
+
+.OutgameRoleInventoryItem.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleInventoryItemIconHost
+{
+	width: 86px;
+	height: 86px;
+	horizontal-align: center;
+}
+
+.OutgameRoleInventoryItemIconHost .XItemIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRoleInventoryItemIcon
+{
+	width: 72px;
+	height: 72px;
+	align: center center;
+}
+
+.OutgameRoleInventoryItemName
+{
+	width: 118px;
+	height: 42px;
+	horizontal-align: center;
+	margin-top: 7px;
+	color: cCream;
+	font-size: 16px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRoleInventoryItem > .OutgameRoleInventoryRedTip
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 0px;
+	margin-right: 8px;
+}
+
+.OutgameRoleInventoryEquippedBadge
+{
+	ignore-parent-flow: true;
+	horizontal-align: center;
+	vertical-align: top;
+	margin-top: 72px;
+	width: 104px;
+	height: 22px;
+	padding: 2px 8px 0px 8px;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#b58636ee), to(#ecd282ee));
+	border: 1px solid #fff3bb66;
+	box-shadow: cScrim60 0px 1px 4px 0px;
+	visibility: collapse;
+}
+
+.OutgameRoleInventoryEquippedBadge.Visible
+{
+	visibility: visible;
+}
+
+.OutgameRoleInventoryEquippedText
+{
+	width: 100%;
+	height: 18px;
+	color: #1a1510;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameRoleInventoryEmpty
+{
+	ignore-parent-flow: true;
+	horizontal-align: center;
+	vertical-align: center;
+	opacity: 0;
+}
+
+.OutgameRoleInventoryEmpty.Visible
+{
+	opacity: 1;
+}
+

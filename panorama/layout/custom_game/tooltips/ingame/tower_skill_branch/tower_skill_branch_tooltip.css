@@ -1,0 +1,149 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.tower_skill_branch_tooltip
+{
+	width: 410px;
+}
+
+#title_block
+{
+	width: 100%;
+	height: fit-children;
+	min-height: 78px;
+	flow-children: right;
+	padding: 11px 12px 10px 11px;
+	overflow: noclip;
+}
+
+#branchIconFrame
+{
+	width: 54px;
+	height: 54px;
+	background-color: #05090dcc;
+	border: 1px solid #426270aa;
+	border-radius: 3px;
+}
+
+#branchIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+#branchTitleTextBlock
+{
+	width: fill-parent-flow(1);
+	height: 54px;
+	margin-left: 12px;
+	margin-right: 8px;
+	flow-children: down;
+}
+
+#branchName
+{
+	width: 100%;
+	height: 27px;
+	font-family: tooltipTitleFont;
+	font-size: 22px;
+	color: #e8f3f3;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+#branchSubtitle
+{
+	width: 100%;
+	height: 22px;
+	margin-top: 2px;
+	font-family: tooltipBodyFont;
+	font-size: 16px;
+	color: #96b8bd;
+	text-overflow: shrink;
+}
+
+#branchStatus
+{
+	vertical-align: top;
+	margin-top: 2px;
+	width: 82px;
+	height: 22px;
+	padding: 1px 7px;
+	color: #7fb6c7;
+	font-family: tooltipBodyFont;
+	font-size: 14px;
+	text-align: center;
+	text-overflow: shrink;
+	background-color: #020506dd;
+	border: 1px solid #365e6c88;
+	border-radius: 3px;
+	text-shadow: 1px 1px 1px 2 #000000;
+}
+
+#branchStatus.Selected
+{
+	color: #f0d26d;
+	border: 1px solid #d1a739cc;
+}
+
+#branchStatus.Available
+{
+	color: #91dff0;
+	border: 1px solid #4d8797cc;
+}
+
+#branchStatus.Pending
+{
+	color: #9fd8ff;
+	border: 1px solid #9fd8ffcc;
+}
+
+#branchStatus.Rejected,#branchStatus.Locked
+{
+	color: #789197;
+}
+
+#branchBody
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	padding: 8px 14px 12px 14px;
+}
+
+#branchModules
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+}
+
+#branchDesc
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 8px;
+	font-family: tooltipBodyFont;
+	font-size: 17px;
+	color: #d6e3e4;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+#branchMeta
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: down;
+	margin-top: 8px;
+}
+
+.BranchMetaLine
+{
+	width: 100%;
+	height: fit-children;
+	margin-top: 3px;
+	font-family: tooltipBodyFont;
+	font-size: 15px;
+	color: #9ebbc0;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+

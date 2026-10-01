@@ -1,0 +1,9 @@
+"AddonInfo"
+{
+    "maps"          "solo"
+    "solo"
+    {
+	    "MaxPlayers"		"1"
+    }
+    "IsPlayable"	"1"
+}

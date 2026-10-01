@@ -1,0 +1,47 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/relic_choice/relic_choice.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/ui_event_bridge.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/relic_choice/relic_choice.vjs_c" />
+	</scripts>
+	<snippets>
+		<snippet name="RelicChoiceCard">
+			<Panel class="RelicDrawCardMain" hittest="false" hittestchildren="false">
+				<Panel class="RelicDrawPreview" hittest="false">
+					<Image id="RelicChoiceCardIcon" class="RelicDrawIcon" hittest="false" />
+					<Panel class="RelicDrawPreviewVignette" hittest="false" />
+					<Label id="RelicChoiceCardQuality" class="RelicDrawQuality" text="" hittest="false" />
+				</Panel>
+				<Panel class="RelicDrawTitleRow" hittest="false">
+					<Label id="RelicChoiceCardName" class="RelicDrawName" html="true" text="" hittest="false" />
+				</Panel>
+				<Panel class="RelicDrawDivider" hittest="false" />
+				<Label id="RelicChoiceCardDescription" class="RelicDrawDesc" html="true" text="" hittest="false" />
+				<Label id="RelicChoiceCardStatus" class="RelicDrawStatus" text="#relic_choice_config_error" hittest="false" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="RelicChoiceRoot fill Hidden">
+		<Panel id="RelicChoiceRootContent" class="RelicChoiceRootContent" hittest="true">
+			<Panel id="RelicChoiceBackdrop" hittest="true" />
+			<Label id="RelicChoiceTitle" class="RelicChoiceTitle" text="#relic_choice_title" hittest="false" />
+			<Panel id="RelicChoiceGrid" class="RelicChoiceGrid" hittest="true" hittestchildren="true" />
+			<Panel id="RelicChoiceActions" class="RelicChoiceActions" hittest="false" hittestchildren="true">
+				<Panel id="RelicChoiceRerollButton" class="RelicChoiceRerollButton Hidden" hittest="true" hittestchildren="false">
+					<Label id="RelicChoiceRerollLabel" class="RelicChoiceRerollLabel" text="#relic_choice_reroll" hittest="false" />
+				</Panel>
+				<Panel id="RelicChoiceCloseButton" class="RelicChoiceCloseButton" hittest="true" hittestchildren="false">
+					<Label class="RelicChoiceCloseLabel" text="#balance_action_collapse" hittest="false" />
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

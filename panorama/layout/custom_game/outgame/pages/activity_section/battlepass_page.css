@@ -1,0 +1,352 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameBattlePassPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	background-color: #05080c99;
+	overflow: clip;
+}
+
+.OutgameBattlePassLoading
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim40;
+}
+
+.OutgameBattlePassLoadingText
+{
+	align: center center;
+	width: 420px;
+	color: cTan;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameBattlePassTop
+{
+	width: 100%;
+	height: 132px;
+	padding: 14px 16px 12px 16px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2a33ef), color-stop(0.56, #111820ec), to(#071013ee));
+	border-bottom: 1px solid cCyanWellHair;
+}
+
+.OutgameBattlePassSummary
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: right;
+}
+
+.OutgameBattlePassLevelBlock
+{
+	width: 132px;
+	height: 100%;
+	background-color: #081017d8;
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameBattlePassLevelTitle
+{
+	horizontal-align: center;
+	margin-top: 12px;
+	width: 112px;
+	color: cSlate;
+	font-size: 16px;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameBattlePassCurrentLevelValue
+{
+	horizontal-align: center;
+	margin-top: 35px;
+	width: 112px;
+	color: cGoldBright;
+	font-size: 42px;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 0px 2px 4px 3 #000000;
+}
+
+.OutgameBattlePassProgressBlock
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	margin-left: 12px;
+	padding: 16px 16px 14px 16px;
+	flow-children: down;
+	background-color: #081017d8;
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameBattlePassProgressHeader
+{
+	width: 100%;
+	height: 30px;
+	flow-children: right;
+}
+
+.OutgameBattlePassExpText
+{
+	width: fill-parent-flow(1);
+	height: 30px;
+	color: cCream;
+	font-size: 18px;
+	text-align: left;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameBattlePassProgressLine
+{
+	width: 100%;
+	height: 58px;
+	margin-top: 10px;
+	flow-children: right;
+}
+
+.OutgameBattlePassProgressBar
+{
+	width: fill-parent-flow(1);
+	height: 22px;
+	vertical-align: center;
+	background-color: #04070bdc;
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameBattlePassProgressFill
+{
+	width: 0%;
+	height: 100%;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#5f9d86), color-stop(0.55, #c0b66f), to(#e4c56f));
+}
+
+.OutgameBattlePassActions
+{
+	width: 100%;
+	height: 88px;
+	padding: 15px 16px 16px 16px;
+	background-color: #091017ee;
+	border-top: 1px solid cCyanWellHair;
+}
+
+.OutgameBattlePassActionGroup
+{
+	width: fit-children;
+	height: 58px;
+	horizontal-align: center;
+	flow-children: right;
+}
+
+.OutgameBattlePassActionButton
+{
+	width: 238px;
+	height: 54px;
+	margin: 0px 7px;
+}
+
+.OutgameBattlePassActionButton.Inline
+{
+	width: 156px;
+	height: 48px;
+	vertical-align: center;
+	margin: 0px 0px 0px 12px;
+}
+
+.OutgameBattlePassActionText
+{
+	align: center center;
+	width: 218px;
+	font-size: 20px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameBattlePassActionButton.Inline .OutgameBattlePassActionText
+{
+	width: 134px;
+	font-size: 16px;
+}
+
+.OutgameBattlePassRewardBoard
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 14px 16px 16px 16px;
+	flow-children: right;
+	background-color: #05090ee8;
+}
+
+.OutgameBattlePassLaneLabels
+{
+	width: 116px;
+	height: 100%;
+	flow-children: down;
+	background-color: #081017d8;
+	border: 1px solid cHairlineLo;
+}
+
+.OutgameBattlePassLaneLabel
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	color: cSteel;
+	font-size: 18px;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 3px 2 #000000;
+	border-bottom: 1px solid #2f3b4388;
+	padding-top: 58px;
+}
+
+.OutgameBattlePassLaneLabel.Level
+{
+	height: 42px;
+	padding-top: 10px;
+	color: cSlate;
+	font-size: 15px;
+}
+
+.OutgameBattlePassLaneLabel.Premium
+{
+	color: cGoldBright;
+	border-bottom: 0px;
+}
+
+.OutgameBattlePassRewardScroll
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	margin-left: 10px;
+	overflow: scroll squish;
+}
+
+.OutgameBattlePassRewardList
+{
+	width: fit-children;
+	height: 100%;
+	flow-children: right;
+}
+
+.OutgameBattlePassRewardColumn
+{
+	width: 142px;
+	height: 100%;
+	margin-right: 8px;
+	flow-children: down;
+	background-color: #0a1218e8;
+	border: 1px solid cHairlineLo;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.12s;
+}
+
+.OutgameBattlePassRewardColumn.Odd
+{
+	background-color: #0e171ee8;
+}
+
+.OutgameBattlePassRewardColumn.Current
+{
+	border: 1px solid cGoldBorder;
+}
+
+.OutgameBattlePassRewardColumn.Unlocked
+{
+	brightness: 1.05;
+}
+
+.OutgameBattlePassRewardLevel
+{
+	width: 100%;
+	height: 42px;
+	background-color: #05090dd8;
+	border-bottom: 1px solid cHairlineLo;
+}
+
+.OutgameBattlePassRewardLevelText
+{
+	align: center center;
+	width: 128px;
+	color: cCream;
+	font-size: 17px;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameBattlePassRewardCell
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 9px 8px 8px 8px;
+	flow-children: down;
+	border-bottom: 1px solid #2d394266;
+}
+
+.OutgameBattlePassRewardCell.Premium
+{
+	background-color: gradient(linear, 0% 0%, 100% 100%, from(#18150b99), to(#0b1214cc));
+	border-bottom: 0px;
+}
+
+.OutgameBattlePassRewardIcon
+{
+	width: 96px;
+	height: 96px;
+	horizontal-align: center;
+}
+
+.OutgameBattlePassRewardIcon .XItemIcon
+{
+	width: 96px;
+	height: 96px;
+}
+
+.OutgameBattlePassRewardIcon.Empty
+{
+	background-color: #05090dcc;
+	border: 1px solid #2d3942aa;
+}
+
+.OutgameBattlePassRewardClaim
+{
+	width: 106px;
+	height: 32px;
+	horizontal-align: center;
+	margin-top: 8px;
+}
+
+.OutgameBattlePassRewardClaimText
+{
+	align: center center;
+	width: 96px;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameBattlePassEmpty
+{
+	ignore-parent-flow: true;
+	align: center center;
+	width: 460px;
+	opacity: 0;
+}
+
+.OutgameBattlePassEmpty.Visible
+{
+	opacity: 1;
+}
+
+.OutgameBattlePassSummary.Hidden,.OutgameBattlePassActions.Hidden,.OutgameBattlePassActionButton.Hidden
+{
+	visibility: collapse;
+}
+

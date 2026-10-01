@@ -1,0 +1,93 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.DamageAffinityTooltip
+{
+	width: 960px;
+	height: fit-children;
+	padding: 18px 22px;
+	flow-children: down;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#142b36fa), to(#070e14fc));
+	border: 1px solid #416474;
+	border-top: 3px solid #8bc5da;
+	border-radius: 4px;
+	box-shadow: #000000aa 0px 0px 12px 0px;
+}
+
+.DamageAffinityTooltip Label
+{
+	width: 100%;
+	height: fit-children;
+	white-space: normal;
+}
+
+.DamageRulesTitle
+{
+	font-size: 23px;
+	color: #f2e1bc;
+	font-weight: bold;
+}
+
+.DamageRulesLead
+{
+	font-size: 15px;
+	color: #92b3c2;
+	margin-top: 5px;
+}
+
+.DamageRulesHeading
+{
+	font-size: 17px;
+	color: #9dd9e6;
+	font-weight: bold;
+	margin-top: 13px;
+	margin-bottom: 4px;
+}
+
+.DamageRulesBody
+{
+	font-size: 16px;
+	color: #d5dfe5;
+	line-height: 21px;
+}
+
+.DamageRulesColumns
+{
+	width: 100%;
+	height: fit-children;
+	flow-children: right;
+}
+
+.DamageRulesExplanation
+{
+	width: 440px;
+	height: fit-children;
+	flow-children: down;
+}
+
+.DamageRulesExample
+{
+	width: 450px;
+	height: fit-children;
+	flow-children: down;
+	background-color: #39596536;
+	padding: 10px 12px;
+	margin-left: 20px;
+	margin-top: 14px;
+	border-left: 2px solid #bfa267;
+}
+
+.DamageRulesExampleTitle
+{
+	font-size: 16px;
+	font-weight: bold;
+	color: #ead3a1;
+	margin-bottom: 5px;
+}
+
+.DamageRulesFootnote
+{
+	font-size: 13px;
+	color: #91a2ac;
+	margin-top: 10px;
+}
+

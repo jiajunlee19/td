@@ -1,0 +1,170 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.TopMenus
+{
+	align: left top;
+	width: fit-children;
+	height: 46px;
+	flow-children: right;
+	z-index: 80;
+	margin-top: 0px;
+}
+
+.TopMenusMain
+{
+	margin-left: 102px;
+}
+
+.TopMenusSystem
+{
+	margin-left: 6px;
+}
+
+.MenuBtn
+{
+	vertical-align: center;
+	width: 40px;
+	height: 40px;
+	margin-right: 8px;
+	tooltip-position: bottom;
+	border-radius: 4px;
+	border: 1px solid #ffffff0d;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#252f35ef), color-stop(0.46, #10171cef), to(#04080bf8));
+	box-shadow: #000000cc 0px 3px 10px 0px;
+	transition-property: brightness, border, background-color;
+	transition-duration: 0.12s;
+}
+
+.MenuBtn.TDMenuPrimary
+{
+	width: 40px;
+}
+
+.MenuBtn.Hidden
+{
+	visibility: collapse;
+}
+
+.MenuBtn.Selected
+{
+	border: 1px solid #d9be77cc;
+	brightness: 1.16;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#32414af2), color-stop(0.48, #17222af2), to(#070c10f8));
+}
+
+.MenuButtonIcon
+{
+	align: center center;
+	width: 80%;
+	height: 80%;
+	opacity: 0.58;
+	img-shadow: 0px 2px 5px 2 #000000;
+	transition-property: opacity, wash-color;
+	transition-duration: 0.12s;
+	z-index: 2;
+}
+
+.MenuBtn:hover
+{
+	brightness: 1.18;
+	border: 1px solid #8cc8e7aa;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#33424bf2), color-stop(0.46, #17232bf2), to(#060c10f8));
+}
+
+.MenuBtn.Selected:hover
+{
+	brightness: 1.18;
+	border: 1px solid #d9be77dd;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#3c4d57f2), color-stop(0.48, #1b2a33f2), to(#070c10f8));
+}
+
+.MenuBtn.RedTipActive
+{
+	border: 1px solid #8fb8c9c0;
+	box-shadow: #7fa9ba44 0px 0px 6px 0px;
+	transition-property: brightness, border, background-color, box-shadow;
+	animation-name: TDMenuRedTipBreath;
+	animation-duration: 1.9s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.MenuBtn.RedTipActive:hover
+{
+	border: 1px solid #aee0f7c0;
+	box-shadow: #8cc8e766 0px 0px 8px 0px;
+	animation-name: none;
+}
+
+.MenuBtn.RedTipActive.Selected
+{
+	border: 1px solid #e2c57fdf;
+	box-shadow: #d9be7766 0px 0px 8px 0px;
+	animation-name: none;
+}
+
+.MenuBtn.RedTipActive.Selected:hover
+{
+	border: 1px solid #f0d68aef;
+	box-shadow: #d9be7788 0px 0px 9px 0px;
+	animation-name: none;
+}
+
+.MenuBtn.RedTipActive:active
+{
+	animation-name: none;
+}
+
+@keyframes 'TDMenuRedTipBreath'
+{
+	0%
+	{
+		border: 1px solid #7fa9bac0;
+		box-shadow: #7fa9ba38 0px 0px 4px 0px;
+		brightness: 1.00;
+	}
+	
+	50%
+	{
+		border: 1px solid #bddde8f2;
+		box-shadow: #9fd1e466 0px 0px 9px 0px;
+		brightness: 1.08;
+	}
+	
+	100%
+	{
+		border: 1px solid #7fa9bac0;
+		box-shadow: #7fa9ba38 0px 0px 4px 0px;
+		brightness: 1.00;
+	}
+	
+}
+
+.MenuBtn:hover .MenuButtonIcon
+{
+	opacity: 0.78;
+	wash-color: #d8eef7;
+}
+
+.MenuBtn:active
+{
+	transform: none;
+	brightness: 0.82;
+}
+
+.MenuBtn.Selected .MenuButtonIcon
+{
+	opacity: 0.92;
+	wash-color: #fff1cb;
+}
+
+.MenuBtn #Bg
+{
+	align: center top;
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	border-radius: 4px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#d1edff0b), color-stop(0.42, #0b111380), to(#030607b0));
+}
+

@@ -1,0 +1,712 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/hoard_visuals.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/activity_section/activity_one_page.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="HoardRareReward">
+			<Panel class="OutgameActivityOnePreview" hittest="false" hittestchildren="true">
+				<Panel id="RewardIcon" class="OutgameActivityOnePreviewIcon" hittest="true" hittestchildren="true" />
+				<Label id="RewardName" class="OutgameActivityOnePreviewName" hittest="false" hittestchildren="false" text="" />
+				<Label id="RewardCount" class="OutgameActivityOnePreviewCount" hittest="false" hittestchildren="false" text="" />
+				<Panel id="RewardBorderHost" class="HoardPrizeBorderHost" hittest="false" hittestchildren="false" />
+				<Label id="RewardState" class="OutgameActivityOnePreviewState" hittest="false" hittestchildren="false" text="#outgame_activity_treasure_opened_state" />
+			</Panel>
+		</snippet>
+		<snippet name="HoardPrizeBorder">
+			<Panel class="HoardPrizeBorderHost" hittest="false" hittestchildren="false">
+				<DOTAScenePanel class="HoardPrizeBorderScene" map="scenes/hud/autocasting_test" particleonly="true" hittest="false" hittestchildren="false" />
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="OutgameActivityOnePage HoardPage" hittest="true" hittestchildren="true">
+		<Panel class="HoardDim" hittest="false" hittestchildren="false" />
+		<Panel class="HoardHeading" hittest="false" hittestchildren="false">
+			<Label class="HoardKicker" hittest="false" hittestchildren="false" text="#outgame_hoard_kicker" />
+			<Label class="HoardTitle" hittest="false" hittestchildren="false" text="#outgame_activity_relic_treasure_title" />
+			<Label class="HoardDesc" hittest="false" hittestchildren="false" text="#outgame_hoard_one_desc" />
+			<Panel class="HoardSummary" hittest="false" hittestchildren="false">
+				<Panel class="HoardMetric" hittest="false" hittestchildren="false">
+					<Label class="HoardMetricLabel" hittest="false" hittestchildren="false" text="#outgame_hoard_current_phase" />
+					<Label id="OutgameActivityOnePhase" class="HoardMetricValue" hittest="false" hittestchildren="false" text="" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="OutgameActivityOnePrizeRibbon" class="OutgameActivityOnePrizeRibbon" hittest="false" hittestchildren="true">
+			<Panel id="OutgameActivityOneRewardList" class="OutgameActivityOneRewardList" hittest="false" hittestchildren="true" />
+			<Label id="OutgameActivityOneRewardProgress" class="OutgameActivityOneRewardProgress" hittest="false" hittestchildren="false" text="" />
+		</Panel>
+		<Panel id="OutgameActivityOneBody" class="OutgameActivityOneBody" hittest="false" hittestchildren="true">
+			<Panel class="OutgameActivityOneBoardHeader" hittest="false" hittestchildren="false">
+				<Label class="OutgameActivityOneBoardTitle" hittest="false" hittestchildren="false" text="#outgame_hoard_pool" />
+				<Label id="OutgameActivityOneBoardProgress" class="OutgameActivityOneBoardProgress" hittest="false" hittestchildren="false" text="" />
+				<Label id="OutgameActivityOneBoardHint" class="OutgameActivityOneBoardHint" hittest="false" hittestchildren="false" text="" />
+			</Panel>
+			<Panel id="OutgameActivityOneCardGrid" class="OutgameActivityOneCardGrid" hittest="false" hittestchildren="true">
+				<Panel class="OutgameActivityOneCardRow" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityOneCard_0" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_0IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_0Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_0Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_0Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_0Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="01" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_1" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_1IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_1Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_1Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_1Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_1Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="02" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_2" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_2IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_2Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_2Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_2Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_2Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="03" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_3" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_3IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_3Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_3Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_3Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_3Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="04" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_4" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_4IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_4Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_4Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_4Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_4Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="05" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+				<Panel class="OutgameActivityOneCardRow" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityOneCard_5" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_5IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_5Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_5Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_5Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_5Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="06" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_6" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_6IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_6Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_6Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_6Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_6Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="07" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_7" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_7IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_7Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_7Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_7Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_7Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="08" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_8" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_8IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_8Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_8Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_8Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_8Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="09" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_9" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_9IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_9Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_9Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_9Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_9Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="10" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+				<Panel class="OutgameActivityOneCardRow" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityOneCard_10" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_10IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_10Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_10Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_10Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_10Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="11" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_11" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_11IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_11Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_11Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_11Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_11Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="12" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_12" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_12IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_12Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_12Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_12Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_12Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="13" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_13" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_13IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_13Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_13Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_13Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_13Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="14" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_14" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_14IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_14Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_14Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_14Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_14Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="15" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+				<Panel class="OutgameActivityOneCardRow" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityOneCard_15" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_15IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_15Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_15Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_15Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_15Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="16" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_16" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_16IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_16Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_16Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_16Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_16Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="17" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_17" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_17IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_17Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_17Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_17Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_17Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="18" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_18" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_18IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_18Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_18Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_18Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_18Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="19" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_19" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_19IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_19Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_19Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_19Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_19Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="20" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+				<Panel class="OutgameActivityOneCardRow" hittest="false" hittestchildren="true">
+					<Panel id="OutgameActivityOneCard_20" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_20IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_20Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_20Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_20Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_20Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="21" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_21" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_21IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_21Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_21Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_21Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_21Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="22" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_22" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_22IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_22Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_22Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_22Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_22Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="23" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_23" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_23IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_23Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_23Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_23Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_23Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="24" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+					<Panel id="OutgameActivityOneCard_24" class="OutgameActivityOneCard" hittest="true" hittestchildren="true">
+						<Panel id="OutgameActivityOneCard_24IconFrame" class="OutgameActivityOneCardIconFrame" hittest="false" hittestchildren="true">
+							<Panel id="OutgameActivityOneCard_24Seal" class="OutgameActivityOneSealVisual" hittest="false" hittestchildren="false">
+								<Panel class="OutgameActivityOneSealImage" hittest="false" hittestchildren="false" />
+							</Panel>
+							<Panel id="OutgameActivityOneCard_24Reward" class="OutgameActivityOneCardRewardIcon" hittest="true" hittestchildren="true" />
+						</Panel>
+						<Label id="OutgameActivityOneCard_24Name" class="OutgameActivityOneCardName" hittest="false" hittestchildren="false" text="" />
+						<Label id="OutgameActivityOneCard_24Footer" class="OutgameActivityOneCardFooter" hittest="false" hittestchildren="false" text="" />
+						<Label class="OutgameActivityOneCardIndex" hittest="false" hittestchildren="false" text="25" />
+						<Panel class="HoardOpenMotion" hittest="false" hittestchildren="false">
+							<Panel class="HoardFrame HoardFrame0" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame1" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame2" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame3" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame4" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame5" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame6" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame7" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame8" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame9" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame10" hittest="false" hittestchildren="false" />
+							<Panel class="HoardFrame HoardFrame11" hittest="false" hittestchildren="false" />
+						</Panel>
+						<Panel class="HoardPendingRing" hittest="false" hittestchildren="false" />
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Label id="OutgameActivityOneEmpty" class="HoardEmpty" hittest="false" hittestchildren="false" text="" />
+	</Panel>
+</root>

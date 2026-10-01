@@ -1,0 +1,27 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.EntryBar
+{
+	align: left top;
+	margin-top: 55px;
+	margin-left: 390px;
+	width: fit-children;
+	height: 40px;
+	z-index: 70;
+}
+
+.EntryBarButtons
+{
+	width: fit-children;
+	height: fit-children;
+	horizontal-align: left;
+	vertical-align: top;
+	flow-children: right;
+}
+
+.EntryBar .MoonriseEntryButton .MenuButtonIcon,.EntryBar .HoardEntryButton .MenuButtonIcon
+{
+	opacity: 1;
+	wash-color: white;
+}
+

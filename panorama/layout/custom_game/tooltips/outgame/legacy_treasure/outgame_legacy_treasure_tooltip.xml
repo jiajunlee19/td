@@ -1,0 +1,25 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/layout/custom_game/tooltips/shared/tooltip_base.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/legacy_treasure/outgame_legacy_treasure_tooltip.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/tooltips/outgame/legacy_treasure/outgame_legacy_treasure_tooltip.vjs_c" />
+	</scripts>
+	<Panel class="OutgameLegacyTreasureTooltip">
+		<Panel id="MainPanel">
+			<Panel id="LegacyTreasureTooltipHeader">
+				<Panel id="LegacyTreasureTooltipIconFrame">
+					<Image id="LegacyTreasureTooltipIcon" />
+				</Panel>
+				<Panel id="LegacyTreasureTooltipTitleBox">
+					<Label id="LegacyTreasureTooltipName" />
+					<Label id="LegacyTreasureTooltipMeta" />
+				</Panel>
+			</Panel>
+			<Panel id="LegacyTreasureTooltipBody" />
+		</Panel>
+	</Panel>
+</root>

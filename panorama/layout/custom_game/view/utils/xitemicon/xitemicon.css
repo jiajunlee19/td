@@ -1,0 +1,625 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+Label
+{
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+}
+
+.XItemIcon #Bg
+{
+	align: center center;
+	width: 97%;
+	height: 97%;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.XItemIcon #TypeBg
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	visibility: collapse;
+}
+
+.XItemIcon #PfxIconContainer
+{
+	width: 100%;
+	height: 100%;
+	visibility: collapse;
+}
+
+.XItemIcon #PfxIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.XItemIcon #Icon
+{
+	align: center center;
+	width: 75%;
+	height: 75%;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.XItemIcon #Frame
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.XItemIcon #Tag
+{
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	visibility: collapse;
+}
+
+.XItemIcon #Num
+{
+	align: right bottom;
+	max-width: 100%;
+	height: 25%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+	font-weight: bold;
+	font-size: 64px;
+	text-align: right;
+	text-overflow: shrink;
+	color: aliceblue;
+	text-shadow: 1px 1px 1px 1 black;
+}
+
+#InventoryItemIcon #Num
+{
+	height: 35%;
+}
+
+.XItemIcon.Rune #Num
+{
+	align: right top;
+	margin-top: 5%;
+	text-align: right;
+	color: rgb(193, 193, 193);
+}
+
+.XItemIcon #EquipTier
+{
+	align: left bottom;
+	max-width: 100%;
+	height: 25%;
+	margin: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: bold;
+	font-size: 64px;
+	text-overflow: shrink;
+	color: aliceblue;
+	visibility: collapse;
+	text-shadow: 1px 1px 1px 1 black;
+}
+
+.XItemIcon.Equip.Corrupted #EquipTier
+{
+	color: rgb(255, 0, 0);
+}
+
+.XItemIcon #EquipStrength
+{
+	align: left top;
+	max-width: 100%;
+	height: 25%;
+	margin: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-weight: bold;
+	font-size: 64px;
+	text-overflow: shrink;
+	color: aliceblue;
+	visibility: collapse;
+	text-shadow: 1px 1px 1px 1 black;
+}
+
+.XItemIcon #EquipStatusLayer
+{
+	width: 100%;
+	height: 100%;
+	visibility: collapse;
+}
+
+.HasEquipStatus #EquipStatusLayer
+{
+	visibility: visible;
+}
+
+.XItemIcon .EquipStatusBadge
+{
+	ignore-parent-flow: true;
+	width: 26%;
+	height: 26%;
+	background-size: contain;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	visibility: collapse;
+}
+
+.XItemIcon #StatusSystemLock,.XItemIcon #StatusFavorite
+{
+	align: right top;
+	margin-top: 3%;
+	margin-right: 3%;
+}
+
+.XItemIcon #StatusSystemLock
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/equipment_status/status_system_lock_png.vtex");
+}
+
+.XItemIcon #StatusFavorite
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/equipment_status/status_favorite_png.vtex");
+}
+
+.XItemIcon #StatusCurrentPreset,.XItemIcon #StatusOtherPreset
+{
+	align: right bottom;
+	margin-right: 3%;
+	margin-bottom: 3%;
+}
+
+.XItemIcon #StatusCurrentPreset
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/equipment_status/status_current_preset_png.vtex");
+}
+
+.XItemIcon #StatusOtherPreset
+{
+	background-image: url("s2r://panorama/images/custom_game/outgame/equipment_status/status_other_preset_png.vtex");
+}
+
+.SystemLocked #StatusSystemLock,.FavoriteLocked #StatusFavorite,.CurrentPresetEquipped #StatusCurrentPreset,.OtherPresetEquipped #StatusOtherPreset
+{
+	visibility: visible;
+}
+
+.SystemLocked.FavoriteLocked #StatusFavorite
+{
+	visibility: collapse;
+}
+
+.XItemIcon #StatusClaimed
+{
+	ignore-parent-flow: true;
+	width: 82%;
+	height: 82%;
+	align: center center;
+	background-image: url("s2r://panorama/images/custom_game/outgame/equipment_status/status_claimed_png.vtex");
+	background-size: contain;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	visibility: collapse;
+}
+
+.XItemIcon.Claimed #StatusClaimed
+{
+	visibility: visible;
+}
+
+.XItemIcon.Claimed #Icon
+{
+	brightness: 0.58;
+	saturation: 0.68;
+}
+
+.XItemIcon.Claimed #PfxIconContainer
+{
+	brightness: 0.58;
+	saturation: 0.68;
+}
+
+.XItemIcon.Empty #Bg,.XItemIcon.Empty #TypeBg,.XItemIcon.Empty #Icon,.XItemIcon.Empty #Frame,.XItemIcon.Empty #Num,.XItemIcon.Empty #Tag,.XItemIcon.Empty #StatusClaimed,.XItemIcon.Empty #EquipStatusLayer
+{
+	visibility: collapse;
+}
+
+.storeItemBuyCoin #Bg
+{
+	visibility: collapse;
+}
+
+#storeItemIcon #Bg
+{
+	visibility: collapse;
+}
+
+.Avatar #Icon,.Avatar #Frame,.Avatar #Num,.Courier #Icon,.Courier #Frame,.Courier #Num
+{
+	visibility: collapse;
+}
+
+.Avatar #PfxIconContainer,.Courier #PfxIconContainer
+{
+	visibility: visible;
+}
+
+.CourierShard #Icon
+{
+	visibility: collapse;
+}
+
+.CourierShard #PfxIconContainer
+{
+	visibility: visible;
+}
+
+.CourierShard #PfxIcon
+{
+	width: 116%;
+	height: 108%;
+	align: center center;
+	margin-bottom: -7%;
+}
+
+.CourierShard #CourierShardMask
+{
+	width: 100%;
+	height: 100%;
+	background-color: gradient(linear, 0% 100%, 100% 0%, from(#ffffff00), color-stop(0.50, #ffffff00), color-stop(0.56, #a9e4ff42), color-stop(0.63, #ffffff8c), color-stop(0.70, #2d465fad), to(#00000000));
+	opacity: 0.82;
+}
+
+.Equip.Rarity_1 #Bg,.EquipCore.Rarity_1 #Bg,.EquipProto.Rarity_1 #Bg,.Gem.Rarity_1 #Bg,.Rune.Rarity_1 #Bg,.Stone.Rarity_1 #Bg,.Courier.Rarity_1 #Bg,.CourierShard.Rarity_1 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_01_png.vtex");
+}
+
+.Equip.Rarity_2 #Bg,.EquipCore.Rarity_2 #Bg,.EquipProto.Rarity_2 #Bg,.Gem.Rarity_2 #Bg,.Rune.Rarity_2 #Bg,.Stone.Rarity_2 #Bg,.Courier.Rarity_2 #Bg,.CourierShard.Rarity_2 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_02_png.vtex");
+}
+
+.Equip.Rarity_3 #Bg,.EquipCore.Rarity_3 #Bg,.EquipProto.Rarity_3 #Bg,.Gem.Rarity_3 #Bg,.Rune.Rarity_3 #Bg,.Stone.Rarity_3 #Bg,.Courier.Rarity_3 #Bg,.CourierShard.Rarity_3 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_03_png.vtex");
+}
+
+.Equip.Rarity_4 #Bg,.EquipCore.Rarity_4 #Bg,.EquipProto.Rarity_4 #Bg,.Gem.Rarity_4 #Bg,.Rune.Rarity_4 #Bg,.Stone.Rarity_4 #Bg,.Courier.Rarity_4 #Bg,.CourierShard.Rarity_4 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_04_png.vtex");
+}
+
+.Equip.Rarity_5 #Bg,.EquipCore.Rarity_5 #Bg,.EquipProto.Rarity_5 #Bg,.Gem.Rarity_5 #Bg,.Rune.Rarity_5 #Bg,.Stone.Rarity_5 #Bg,.Courier.Rarity_5 #Bg,.CourierShard.Rarity_5 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_05_png.vtex");
+}
+
+.Equip.Rarity_6 #Bg,.EquipCore.Rarity_6 #Bg,.EquipProto.Rarity_6 #Bg,.Gem.Rarity_6 #Bg,.Rune.Rarity_6 #Bg,.Stone.Rarity_6 #Bg,.Courier.Rarity_6 #Bg,.CourierShard.Rarity_6 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_06_png.vtex");
+}
+
+.Equip.Rarity_7 #Bg,.EquipCore.Rarity_7 #Bg,.EquipProto.Rarity_7 #Bg,.Gem.Rarity_7 #Bg,.Rune.Rarity_7 #Bg,.Stone.Rarity_7 #Bg,.Courier.Rarity_7 #Bg,.CourierShard.Rarity_7 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_07_png.vtex");
+}
+
+.Equip.Rarity_8 #Bg,.EquipCore.Rarity_8 #Bg,.EquipProto.Rarity_8 #Bg,.Gem.Rarity_8 #Bg,.Rune.Rarity_8 #Bg,.Stone.Rarity_8 #Bg,.Courier.Rarity_8 #Bg,.CourierShard.Rarity_8 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_08_png.vtex");
+}
+
+.Equip.Rarity_9 #Bg,.EquipCore.Rarity_9 #Bg,.EquipProto.Rarity_9 #Bg,.Gem.Rarity_9 #Bg,.Rune.Rarity_9 #Bg,.Stone.Rarity_9 #Bg,.Courier.Rarity_9 #Bg,.CourierShard.Rarity_9 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_09_png.vtex");
+}
+
+.Equip.Rarity_10 #Bg,.EquipCore.Rarity_10 #Bg,.EquipProto.Rarity_10 #Bg,.Gem.Rarity_10 #Bg,.Rune.Rarity_10 #Bg,.Stone.Rarity_10 #Bg,.Courier.Rarity_10 #Bg,.CourierShard.Rarity_10 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_10_png.vtex");
+}
+
+.Equip.Rarity_11 #Bg,.EquipCore.Rarity_11 #Bg,.EquipProto.Rarity_11 #Bg,.Gem.Rarity_11 #Bg,.Rune.Rarity_11 #Bg,.Stone.Rarity_11 #Bg,.Courier.Rarity_11 #Bg,.CourierShard.Rarity_11 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_11_png.vtex");
+}
+
+.Equip.Rarity_12 #Bg,.EquipCore.Rarity_12 #Bg,.EquipProto.Rarity_12 #Bg,.Gem.Rarity_12 #Bg,.Rune.Rarity_12 #Bg,.Stone.Rarity_12 #Bg,.Courier.Rarity_12 #Bg,.CourierShard.Rarity_12 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_12_png.vtex");
+}
+
+.Equip.Rarity_1 #Frame,.EquipCore.Rarity_1 #Frame,.EquipProto.Rarity_1 #Frame,.Gem.Rarity_1 #Frame,.Rune.Rarity_1 #Frame,.Stone.Rarity_1 #Frame,.Equip.Rarity_2 #Frame,.EquipCore.Rarity_2 #Frame,.EquipProto.Rarity_2 #Frame,.Gem.Rarity_2 #Frame,.Rune.Rarity_2 #Frame,.Stone.Rarity_2 #Frame,.Equip.Rarity_3 #Frame,.EquipCore.Rarity_3 #Frame,.EquipProto.Rarity_3 #Frame,.Gem.Rarity_3 #Frame,.Rune.Rarity_3 #Frame,.Stone.Rarity_3 #Frame,.Equip.Rarity_4 #Frame,.EquipCore.Rarity_4 #Frame,.EquipProto.Rarity_4 #Frame,.Gem.Rarity_4 #Frame,.Rune.Rarity_4 #Frame,.Stone.Rarity_4 #Frame,.Equip.Rarity_5 #Frame,.EquipCore.Rarity_5 #Frame,.EquipProto.Rarity_5 #Frame,.Gem.Rarity_5 #Frame,.Rune.Rarity_5 #Frame,.Stone.Rarity_5 #Frame,.Equip.Rarity_6 #Frame,.EquipCore.Rarity_6 #Frame,.EquipProto.Rarity_6 #Frame,.Gem.Rarity_6 #Frame,.Rune.Rarity_6 #Frame,.Stone.Rarity_6 #Frame,.Equip.Rarity_7 #Frame,.EquipCore.Rarity_7 #Frame,.EquipProto.Rarity_7 #Frame,.Gem.Rarity_7 #Frame,.Rune.Rarity_7 #Frame,.Stone.Rarity_7 #Frame,.Equip.Rarity_8 #Frame,.EquipCore.Rarity_8 #Frame,.EquipProto.Rarity_8 #Frame,.Gem.Rarity_8 #Frame,.Rune.Rarity_8 #Frame,.Stone.Rarity_8 #Frame,.Equip.Rarity_9 #Frame,.EquipCore.Rarity_9 #Frame,.EquipProto.Rarity_9 #Frame,.Gem.Rarity_9 #Frame,.Rune.Rarity_9 #Frame,.Stone.Rarity_9 #Frame,.Equip.Rarity_10 #Frame,.EquipCore.Rarity_10 #Frame,.EquipProto.Rarity_10 #Frame,.Gem.Rarity_10 #Frame,.Rune.Rarity_10 #Frame,.Stone.Rarity_10 #Frame,.Equip.Rarity_11 #Frame,.EquipCore.Rarity_11 #Frame,.EquipProto.Rarity_11 #Frame,.Gem.Rarity_11 #Frame,.Rune.Rarity_11 #Frame,.Stone.Rarity_11 #Frame,.Equip.Rarity_12 #Frame,.EquipCore.Rarity_12 #Frame,.EquipProto.Rarity_12 #Frame,.Gem.Rarity_12 #Frame,.Rune.Rarity_12 #Frame,.Stone.Rarity_12 #Frame
+{
+	visibility: collapse;
+}
+
+.Avatar.Rarity_0 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/role/img_role_warehouse_itembg_png.vtex");
+}
+
+.Avatar.Rarity_1 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/role/quality_01_png.vtex");
+}
+
+.Avatar.Rarity_2 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/role/quality_02_png.vtex");
+}
+
+.Avatar.Rarity_3 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/role/quality_03_png.vtex");
+}
+
+.Avatar.Rarity_4 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/role/quality_04_png.vtex");
+}
+
+.Avatar.Rarity_5 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/role/quality_05_png.vtex");
+}
+
+.Avatar.Rarity_6 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/role/quality_06_png.vtex");
+}
+
+.Avatar.Rarity_7 #Bg
+{
+	background-image:url("s2r://");
+}
+
+.Avatar.Rarity_8 #Bg
+{
+	background-image:url("s2r://");
+}
+
+.Avatar.Rarity_9 #Bg
+{
+	background-image:url("s2r://");
+}
+
+.Avatar.Rarity_10 #Bg
+{
+	background-image:url("s2r://");
+}
+
+.Avatar.Rarity_11 #Bg
+{
+	background-image:url("s2r://");
+}
+
+.Item.Rarity_0 #Bg,.GenericOutgameItem.Rarity_0 #Bg,.Item.Rarity_1 #Bg,.GenericOutgameItem.Rarity_1 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_01_png.vtex");
+}
+
+.Item.Rarity_2 #Bg,.GenericOutgameItem.Rarity_2 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_02_png.vtex");
+}
+
+.Item.Rarity_3 #Bg,.GenericOutgameItem.Rarity_3 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_03_png.vtex");
+}
+
+.Item.Rarity_4 #Bg,.GenericOutgameItem.Rarity_4 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_04_png.vtex");
+}
+
+.Item.Rarity_5 #Bg,.GenericOutgameItem.Rarity_5 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_05_png.vtex");
+}
+
+.Item.Rarity_6 #Bg,.GenericOutgameItem.Rarity_6 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_06_png.vtex");
+}
+
+.Item.Rarity_7 #Bg,.GenericOutgameItem.Rarity_7 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_07_png.vtex");
+}
+
+.Item.Rarity_8 #Bg,.GenericOutgameItem.Rarity_8 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_08_png.vtex");
+}
+
+.Item.Rarity_9 #Bg,.GenericOutgameItem.Rarity_9 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_09_png.vtex");
+}
+
+.Item.Rarity_10 #Bg,.GenericOutgameItem.Rarity_10 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_10_png.vtex");
+}
+
+.Item.Rarity_11 #Bg,.GenericOutgameItem.Rarity_11 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_11_png.vtex");
+}
+
+.Item.Rarity_12 #Bg,.GenericOutgameItem.Rarity_12 #Bg
+{
+	background-image:url("s2r://panorama/images/custom_game/outgame/equipment_rarity/outgame_equip_rarity_bg_12_png.vtex");
+}
+
+.Item #Frame
+{
+	visibility: collapse;
+}
+
+.Courier #Frame
+{
+	visibility: collapse;
+}
+
+.CourierShard #Frame
+{
+	visibility: collapse;
+}
+
+.Equip #EquipTier
+{
+	visibility: visible;
+}
+
+.Equip #EquipStrength
+{
+	visibility: visible;
+}
+
+.StoneTierBadge #EquipTier
+{
+	visibility: visible;
+	align: left top;
+	height: 30%;
+	font-size: 28px;
+}
+
+.HeroShard #Frame
+{
+	visibility: collapse;
+}
+
+.HeroShard.Rarity_3 #Frame
+{
+	background-image:url("s2r://panorama/images/custom_game/icon/hero_shard/hero_shard_frame_blue_png.vtex");
+	visibility: visible;
+}
+
+.HeroShard.Rarity_4 #Frame
+{
+	background-image:url("s2r://panorama/images/custom_game/icon/hero_shard/hero_shard_frame_purple_png.vtex");
+	visibility: visible;
+}
+
+.HeroShard.Rarity_5 #Frame
+{
+	background-image:url("s2r://panorama/images/custom_game/icon/hero_shard/hero_shard_frame_gold_png.vtex");
+	visibility: visible;
+}
+
+.XItemIcon.EquipProto #TypeBg,.XItemIcon.EquipCore #TypeBg
+{
+	visibility: visible;
+}
+
+.XItemIcon.EquipProto #Icon,.XItemIcon.EquipCore #Icon
+{
+	width: 50%;
+	height: 50%;
+}
+
+.XItemIcon.EquipProto #Icon
+{
+	wash-color: rgb(255, 183, 94);
+	contrast: 0.9;
+	margin: 25%;
+	transform: rotateZ(-18deg) rotateY(-30deg) translateX(2px) translateY(1px) scaleY(0.8);
+	img-shadow: 2px 2px 8px 2.0 #333333b0;
+}
+
+.XItemIcon.EquipProto #TypeBg
+{
+	background-size: 100%;
+	background-image:url("s2r://panorama/images/custom_game/equipment/proto_png.vtex");
+	visibility: visible;
+	wash-color: rgb(208, 159, 98);
+	contrast: 1.1;
+}
+
+.XItemIcon.EquipCore #Icon
+{
+	margin-top: 40%;
+	margin-left: 40%;
+	img-shadow: 2px 2px 8px 2.0 #333333b0;
+}
+
+.XItemIcon.EquipCore #TypeBg
+{
+	background-size: 110%;
+	background-image:url("s2r://panorama/images/custom_game/equipment/core_png.vtex");
+	visibility: visible;
+	wash-color: rgb(255, 199, 130);
+	brightness: 1.1;
+}
+
+.XItemIcon.HeroShard #TypeBg
+{
+	visibility: collapse;
+}
+
+.XItemIcon.HeroShard #Icon
+{
+	align: center center;
+	width: 95%;
+	height: width-percentage(56.25%);
+	transform: translateY(1%);
+	visibility: visible;
+}
+
+.XItemIcon.HeroShard #Bg
+{
+	visibility: collapse;
+}
+
+.SaveData #Bg,.SaveData #TypeBg,.SaveData #Frame,.SaveData #Tag,.SaveData #Num,.SaveData #EquipTier,.SaveData #EquipStrength,.SaveData #EquipStatusLayer
+{
+	visibility: collapse;
+}
+
+.SaveData #Icon
+{
+	align: center center;
+	width: 100%;
+	height: 100%;
+	visibility: visible;
+}
+
+.storeItemBuyCoin #Icon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.InGame_Equip #Icon,.InGame_Skill #Icon,.InGame_Item #Icon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.TowerHeroLandscape #Icon
+{
+	width: 129.292929%;
+	height: 100%;
+}
+
+.InGame_Equip #Bg,.InGame_Skill #Bg,.InGame_Item #Bg,.InGame_Equip #Frame,.InGame_Skill #Frame,.InGame_Item #Frame,.InGame_Equip #Tag,.InGame_Skill #Tag,.InGame_Item #Tag
+{
+	visibility: collapse;
+}
+

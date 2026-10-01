@@ -1,0 +1,126 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.DevourTooltipRoot
+{
+	flow-children: down;
+	width: 100%;
+	padding: 12px 14px 10px 14px;
+}
+
+.DevourTipRatioDetail
+{
+	font-size: 13px;
+	color: #8fb8a8;
+	margin-bottom: 6px;
+}
+
+.DevourTipHidden
+{
+	visibility: collapse;
+}
+
+.DevourTipTitle
+{
+	font-size: 20px;
+	font-weight: semi-bold;
+	color: #eafff7;
+	margin: 12px 14px 2px 14px;
+}
+
+.DevourTipIntro
+{
+	font-size: 15px;
+	color: #b8c6d0;
+	margin: 0px 14px 8px 14px;
+}
+
+.DevourTipRatioRow
+{
+	flow-children: right;
+	margin-bottom: 6px;
+}
+
+.DevourTipRatioLabel
+{
+	font-size: 16px;
+	color: #d8e2ea;
+	vertical-align: center;
+	margin-right: 8px;
+}
+
+.DevourTipRatioValue
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: #9ff1d0;
+}
+
+.DevourTipLine
+{
+	font-size: 14px;
+	color: #b8c6d0;
+	margin-bottom: 3px;
+}
+
+.DevourTipAttrGrid
+{
+	width: 100%;
+	flow-children: down;
+	margin-top: 2px;
+	margin-bottom: 6px;
+}
+
+.DevourTipAttrCell
+{
+	width: 100%;
+	font-size: 14px;
+	color: #e5d9ac;
+	margin-bottom: 2px;
+}
+
+.DevourTipCost
+{
+	font-size: 15px;
+	color: #f1d89f;
+	margin-top: 6px;
+	margin-bottom: 2px;
+}
+
+.DevourTipDivider
+{
+	width: 100%;
+	height: 1px;
+	background-color: #6f7f8955;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.DevourTipLimitsTitle
+{
+	font-size: 14px;
+	font-weight: semi-bold;
+	color: #d8e2ea;
+	margin-bottom: 3px;
+}
+
+.DevourTipLimitLine
+{
+	font-size: 13px;
+	color: #93a3b8;
+	margin-bottom: 2px;
+}
+
+.DevourTipNote
+{
+	font-size: 13px;
+	color: #7d8b96;
+	margin-top: 6px;
+}
+
+.DevourTipBlockReason
+{
+	font-size: 15px;
+	color: #ef7b68;
+	margin-top: 4px;
+}
+

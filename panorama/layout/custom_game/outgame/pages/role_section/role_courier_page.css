@@ -1,0 +1,955 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameRoleCourierPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: right;
+	background-color: #05080c99;
+}
+
+.OutgameRoleCourierLoading
+{
+	width: 100%;
+	height: 100%;
+	background-color: cScrim40;
+}
+
+.OutgameRoleCourierLoadingText
+{
+	align: center center;
+	width: 460px;
+	color: cTan;
+	font-size: 24px;
+	text-align: center;
+	text-shadow: 0px 1px 4px 2 #000000;
+}
+
+.OutgameRoleCourierPreviewPane
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	padding: 18px;
+	flow-children: down;
+}
+
+.OutgameRoleCourierPreviewFrame
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	min-height: 300px;
+	background-color: #05080dcc;
+	border: 1px solid cHairlineLo;
+	box-shadow: cScrim80 0px 8px 22px 0px;
+	overflow: clip;
+}
+
+.OutgameRoleCourierPreviewBackdrop,.OutgameRoleCourierPreviewRays
+{
+	ignore-parent-flow: true;
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRoleCourierPreviewBackdrop
+{
+	background-color: gradient(linear, 0% 50%, 0% 100%, from(#13171f), to(#2B415A));
+	background-size: cover;
+	background-position: center;
+	wash-color: rgba(0, 0, 0, 0.85);
+	blur: gaussian(4px);
+	z-index: 0;
+}
+
+.OutgameRoleCourierPreviewRays
+{
+	horizontal-align: left;
+	vertical-align: top;
+	width: 118%;
+	height: 104%;
+	margin-left: -9%;
+	margin-top: -6%;
+	opacity: 1;
+	opacity-mask: url("s2r://panorama/images/masks/hero_model_opacity_mask_png.vtex");
+	transition-property: opacity;
+	transition-duration: 1s;
+	z-index: 1;
+}
+
+.OutgameRoleCourierPreviewRays.Front
+{
+	width: 84%;
+	height: 90%;
+	margin-left: 8%;
+	margin-top: -3%;
+	opacity: 0.6;
+	z-index: 3;
+}
+
+.OutgameRoleCourierPreviewHost
+{
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+.OutgameRoleCourierPreviewHost DOTAUIEconSetPreview
+{
+	width: 100%;
+	height: 100%;
+	padding: 20px 40px 8px 40px;
+}
+
+.OutgameRoleCourierDetail
+{
+	width: 100%;
+	height: 268px;
+	margin-top: 12px;
+	padding: 12px 16px;
+	flow-children: down;
+}
+
+.OutgameRoleCourierDetailHeader
+{
+	width: 100%;
+	height: 36px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierDetailName
+{
+	max-width: 200px;
+	vertical-align: center;
+	margin-right: 10px;
+	color: cCream;
+	font-size: 22px;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRoleCourierStars
+{
+	vertical-align: center;
+	height: 36px;
+	margin-left: 2px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierStars.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleCourierStarPip
+{
+	vertical-align: center;
+	width: 18px;
+	color: #5d666c;
+	font-size: 18px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierStarPip.Filled
+{
+	color: #ffcf52;
+}
+
+.OutgameRoleCourierStarModule
+{
+	width: 100%;
+	height: 136px;
+	margin-top: 8px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierStarContent
+{
+	width: 462px;
+	height: 136px;
+	vertical-align: center;
+	flow-children: down;
+}
+
+.OutgameRoleCourierDetailSkill
+{
+	width: 72px;
+	height: 72px;
+	vertical-align: center;
+	margin-left: 14px;
+	margin-right: 16px;
+	background-color: #0a0f15ee;
+	border: 1px solid #5a6b78aa;
+}
+
+.OutgameRoleCourierDetailSkill.HasSkill
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 8px 0px;
+}
+
+.OutgameRoleCourierDetailSkill.NoSkill
+{
+	opacity: 0;
+}
+
+.OutgameRoleCourierDetailSkillIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameRoleCourierDetailSkillMark
+{
+	align: center center;
+	color: cTan;
+	font-size: 28px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierDetailMeta
+{
+	width: 100%;
+	height: 26px;
+	margin-top: 4px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierDetailRarity,.OutgameRoleCourierDetailStatus,.OutgameRoleCourierDetailLevel
+{
+	height: 26px;
+	margin-right: 8px;
+	padding: 2px 9px;
+	vertical-align: center;
+	color: cSteel;
+	font-size: 16px;
+	text-align: center;
+	background-color: #070b10dd;
+	border: 1px solid #3e4a54aa;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRoleCourierDetailLevel.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleCourierDetailStatus.Mounted
+{
+	color: cGoldBright;
+	border: 1px solid cGoldBorder;
+}
+
+.OutgameRoleCourierDetailStatus.Locked
+{
+	color: cSlate;
+	border: 1px solid #4d5963aa;
+}
+
+.OutgameRoleCourierDetailDescription
+{
+	width: 100%;
+	height: 36px;
+	margin-top: 7px;
+	color: #aebec2;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRoleCourierDetailAttributes
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	color: cTan;
+	font-size: 16px;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRoleCourierListPane
+{
+	width: 556px;
+	height: 100%;
+	padding: 14px 12px 14px 12px;
+	flow-children: down;
+}
+
+.OutgameRoleCourierFilterBar
+{
+	width: 100%;
+	height: 52px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierRarityFilterBar
+{
+	width: 100%;
+	height: 52px;
+	margin-top: 2px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierFilter
+{
+	width: fill-parent-flow(1);
+	height: 46px;
+	margin-right: 6px;
+	flow-children: down;
+}
+
+.OutgameRoleCourierFilterLabel
+{
+	horizontal-align: center;
+	margin-top: 5px;
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+}
+
+.OutgameRoleCourierFilterCount
+{
+	horizontal-align: center;
+	margin-top: -1px;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity1.OutgameOptionButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#252522e5), color-stop(0.68, #111312ee), to(#050607f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#b8b2a0aa), to(#6e6b6188));
+	box-shadow: #b8b2a020 0px 0px 6px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity2.OutgameOptionButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#183019e5), color-stop(0.68, #0b1510ee), to(#050807f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#67bd50aa), to(#2f7e3488));
+	box-shadow: #67bd5024 0px 0px 6px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity3.OutgameOptionButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#14283be5), color-stop(0.68, #08131eee), to(#04070bf6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#57a8f0aa), to(#2e6fac88));
+	box-shadow: #57a8f026 0px 0px 6px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity4.OutgameOptionButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#28193be5), color-stop(0.68, #130b1fee), to(#07040bf6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#b36ae0aa), to(#763a9f88));
+	box-shadow: #b36ae026 0px 0px 6px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity5.OutgameOptionButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#372515e5), color-stop(0.68, #171009ee), to(#080604f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#e49b36b0), to(#9f5e1e88));
+	box-shadow: #e49b362a 0px 0px 7px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity6.OutgameOptionButton
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#351817e5), color-stop(0.68, #170a0aee), to(#080404f6));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#df5b52aa), to(#96302d88));
+	box-shadow: #df5b5228 0px 0px 7px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity1 Label
+{
+	color: #c8c1ae;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity2 Label
+{
+	color: #86cf75;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity3 Label
+{
+	color: #78bdf4;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity4 Label
+{
+	color: #c28be5;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity5 Label
+{
+	color: #e6b15e;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity6 Label
+{
+	color: #e37b72;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity1 .OutgameOptionButtonCount
+{
+	color: #a9a291;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity2 .OutgameOptionButtonCount
+{
+	color: #66aa5b;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity3 .OutgameOptionButtonCount
+{
+	color: #5f9fd1;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity4 .OutgameOptionButtonCount
+{
+	color: #9e6cbc;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity5 .OutgameOptionButtonCount
+{
+	color: #bd833d;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity6 .OutgameOptionButtonCount
+{
+	color: #bb5a55;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity1.Selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#f0e4c6), to(#9f9884));
+	box-shadow: #cfc1a84f 0px 0px 10px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity2.Selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#9cf487), to(#45aa48));
+	box-shadow: #73d85b55 0px 0px 10px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity3.Selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#8fd1ff), to(#3a8bd8));
+	box-shadow: #64b5f05a 0px 0px 10px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity4.Selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#d59aff), to(#8f4ec1));
+	box-shadow: #bd71ee58 0px 0px 10px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity5.Selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ffd27a), to(#c77724));
+	box-shadow: #e7a1455c 0px 0px 11px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity6.Selected
+{
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#ff9a90), to(#c24038));
+	box-shadow: #dd5b5358 0px 0px 11px 0px;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity1.Selected Label
+{
+	color: #f1e8d0;
+	opacity: 1;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity2.Selected Label
+{
+	color: #a7f394;
+	opacity: 1;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity3.Selected Label
+{
+	color: #9bd8ff;
+	opacity: 1;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity4.Selected Label
+{
+	color: #dda7ff;
+	opacity: 1;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity5.Selected Label
+{
+	color: #ffd48a;
+	opacity: 1;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity6.Selected Label
+{
+	color: #ffa097;
+	opacity: 1;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity1.Selected .OutgameOptionButtonCount
+{
+	color: #d6cdb9;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity2.Selected .OutgameOptionButtonCount
+{
+	color: #84cf72;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity3.Selected .OutgameOptionButtonCount
+{
+	color: #74b9ed;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity4.Selected .OutgameOptionButtonCount
+{
+	color: #bd7be4;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity5.Selected .OutgameOptionButtonCount
+{
+	color: #d99b4a;
+}
+
+.OutgameRoleCourierRarityFilter.Rarity6.Selected .OutgameOptionButtonCount
+{
+	color: #d76b65;
+}
+
+.OutgameRoleCourierGrid
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 10px 0px 8px 2px;
+	flow-children: right-wrap;
+	overflow: squish scroll;
+}
+
+.OutgameRoleCourierCell
+{
+	width: 124px;
+	height: 166px;
+	margin: 0px 8px 10px 0px;
+	padding-top: 6px;
+	flow-children: down;
+	transition-property: brightness, box-shadow;
+	transition-duration: 0.1s;
+}
+
+.OutgameRoleCourierCell.Rarity1
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#20211dea), color-stop(0.72, #0f1214ef), to(#05070af6));
+}
+
+.OutgameRoleCourierCell.Rarity2
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#132415ea), color-stop(0.72, #0b1410ef), to(#050807f6));
+}
+
+.OutgameRoleCourierCell.Rarity3
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#112133ea), color-stop(0.72, #08131eef), to(#04070bf6));
+}
+
+.OutgameRoleCourierCell.Rarity4
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#211530ea), color-stop(0.72, #120a1def), to(#07040bf6));
+}
+
+.OutgameRoleCourierCell.Rarity5
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2d2013ea), color-stop(0.72, #160f09ef), to(#080604f6));
+}
+
+.OutgameRoleCourierCell.Rarity6
+{
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#2b1414ea), color-stop(0.72, #160908ef), to(#080404f6));
+}
+
+.OutgameRoleCourierCell:hover
+{
+	brightness: 1.12;
+}
+
+.OutgameRoleCourierGrid .OutgameRoleCourierCell.Selected
+{
+	border: 1px solid cGoldSel;
+	box-shadow: cGoldGlow 0px 0px 10px 0px;
+}
+
+.OutgameRoleCourierCell.Locked
+{
+	saturation: 0.9;
+	brightness: 0.9;
+}
+
+.OutgameRoleCourierCell.Locked .OutgameRoleCourierCellPreviewFrame DOTAUIEconSetPreview
+{
+	saturation: 0.35;
+	brightness: 0.68;
+	wash-color: #7f858840;
+}
+
+.OutgameRoleCourierCell.Locked .OutgameRoleCourierCellName
+{
+	color: cSlate;
+}
+
+.OutgameRoleCourierCell.Mounted
+{
+	border: 1px solid cGoldBorder;
+}
+
+.OutgameRoleCourierCell.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleCourierCellPreviewFrame
+{
+	horizontal-align: center;
+	width: 112px;
+	height: 98px;
+	background-color: #05070acc;
+	border: 1px solid cHairline;
+	overflow: noclip;
+}
+
+.OutgameRoleCourierCellPreviewFrame DOTAUIEconSetPreview
+{
+	width: 126px;
+	height: 116px;
+	align: center center;
+	margin-bottom: -8px;
+}
+
+.OutgameRoleCourierCellName
+{
+	horizontal-align: center;
+	width: 112px;
+	height: 36px;
+	margin-top: 6px;
+	color: cCream;
+	font-size: 15px;
+	text-align: center;
+	text-shadow: 0px 1px 3px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRoleCourierCellStatus
+{
+	horizontal-align: center;
+	width: 104px;
+	height: 20px;
+	margin-top: 0px;
+	color: cSlate;
+	font-size: 13px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	text-overflow: shrink;
+}
+
+.OutgameRoleCourierCell.Owned .OutgameRoleCourierCellStatus
+{
+	color: cSteel;
+}
+
+.OutgameRoleCourierCell.Mounted .OutgameRoleCourierCellStatus
+{
+	color: cGoldBright;
+}
+
+.OutgameRoleCourierCellCount
+{
+	ignore-parent-flow: true;
+	horizontal-align: right;
+	vertical-align: top;
+	min-width: 24px;
+	height: 20px;
+	margin-top: 5px;
+	margin-right: 6px;
+	padding: 0px 5px;
+	font-size: 14px;
+	text-align: center;
+	text-shadow: 0px 1px 2px 2 #000000;
+	visibility: collapse;
+}
+
+.OutgameRoleCourierCellCount.Visible
+{
+	visibility: visible;
+}
+
+.OutgameRoleCourierEmpty
+{
+	ignore-parent-flow: true;
+	align: center center;
+	opacity: 0;
+}
+
+.OutgameRoleCourierEmpty.Visible
+{
+	opacity: 1;
+}
+
+.OutgameRoleCourierCell.Rarity1,.OutgameRoleCourierDetailRarity.Rarity1
+{
+	border-color: #b8b2a0aa;
+}
+
+.OutgameRoleCourierCell.Rarity2,.OutgameRoleCourierDetailRarity.Rarity2
+{
+	border-color: #67bd50aa;
+}
+
+.OutgameRoleCourierCell.Rarity3,.OutgameRoleCourierDetailRarity.Rarity3
+{
+	border-color: #57a8f0aa;
+}
+
+.OutgameRoleCourierCell.Rarity4,.OutgameRoleCourierDetailRarity.Rarity4
+{
+	border-color: #b36ae0aa;
+}
+
+.OutgameRoleCourierCell.Rarity5,.OutgameRoleCourierDetailRarity.Rarity5
+{
+	border-color: #e49b36b0;
+}
+
+.OutgameRoleCourierCell.Rarity6,.OutgameRoleCourierDetailRarity.Rarity6
+{
+	border-color: #df5b52aa;
+}
+
+.OutgameRoleCourierStarTitleRow
+{
+	width: 100%;
+	height: 30px;
+	margin-top: 6px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierStarTitle
+{
+	width: 140px;
+	height: 30px;
+	vertical-align: center;
+	color: #c8b88f;
+	font-size: 19px;
+	text-align: right;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierStarHeader
+{
+	width: 322px;
+	height: 30px;
+	vertical-align: center;
+	flow-children: right;
+}
+
+.OutgameRoleCourierStarHeader.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleCourierStarHeaderCell
+{
+	width: 46px;
+	height: 30px;
+	color: #7e8a90;
+	font-size: 17px;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierStarHeaderCell.Obtained
+{
+	color: #c8b88f;
+}
+
+.OutgameRoleCourierStarHeaderCell.Current
+{
+	color: #ffe8a8;
+}
+
+.OutgameRoleCourierStarRows
+{
+	width: 100%;
+	height: 98px;
+	margin-top: 2px;
+	flow-children: down;
+	overflow: clip clip;
+}
+
+.OutgameRoleCourierStarRows.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleCourierStarEmpty
+{
+	width: 100%;
+	height: 98px;
+	margin-top: 2px;
+	color: cSlate;
+	font-size: 17px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierStarEmpty.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleCourierStarRow
+{
+	width: 100%;
+	height: 32px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierStarRowName
+{
+	width: 140px;
+	height: 32px;
+	vertical-align: center;
+	color: cSteel;
+	font-size: 20px;
+	text-align: right;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierStarRowValues
+{
+	width: 322px;
+	height: 32px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierStarValue
+{
+	width: 46px;
+	height: 32px;
+	color: #5f6b70;
+	font-size: 20px;
+	text-align: center;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierStarValue.Obtained
+{
+	color: cTan;
+}
+
+.OutgameRoleCourierStarValue.Current
+{
+	color: #ffe8a8;
+}
+
+.OutgameRoleCourierActions
+{
+	width: 100%;
+	height: 56px;
+	margin-top: 8px;
+	flow-children: down;
+}
+
+.OutgameRoleCourierCostModule
+{
+	width: fill-parent-flow(1);
+	height: 136px;
+	min-width: 116px;
+	flow-children: down;
+}
+
+.OutgameRoleCourierCostModule.Hidden
+{
+	visibility: collapse;
+}
+
+.OutgameRoleCourierCostIcon
+{
+	horizontal-align: center;
+	margin-top: 14px;
+	width: 62px;
+	height: 62px;
+	background-color: #0a0f15ee;
+	border: 1px solid #5a6b78aa;
+	border-radius: 3px;
+	box-shadow: #00000080 0px 0px 6px 0px;
+}
+
+.OutgameRoleCourierCostIconImage
+{
+	align: center center;
+	width: 92%;
+	height: 92%;
+}
+
+.OutgameRoleCourierCostName,.OutgameRoleCourierCostLabel
+{
+	width: 100%;
+	height: 20px;
+	horizontal-align: center;
+	margin-top: 5px;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+	color: cTan;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameRoleCourierCostLabel
+{
+	margin-top: 1px;
+	font-size: 14px;
+	color: cSteel;
+}
+
+.OutgameRoleCourierCostModule.Insufficient .OutgameRoleCourierCostLabel
+{
+	color: #e0786a;
+}
+
+.OutgameRoleCourierButtonRow
+{
+	width: 100%;
+	height: 50px;
+	margin-top: 6px;
+	flow-children: right;
+}
+
+.OutgameRoleCourierActionButton
+{
+	width: fill-parent-flow(1);
+	height: 50px;
+	margin-right: 10px;
+	flow-children: down;
+}
+
+.OutgameRoleCourierMountLabel,.OutgameRoleCourierUpstarLabel
+{
+	align: center center;
+	font-size: 19px;
+	color: cCream;
+	text-shadow: 0px 1px 3px 2 #000000;
+}
+
+.OutgameRoleCourierActionButton.Disabled
+{
+	saturation: 0.25;
+	brightness: 0.7;
+}
+

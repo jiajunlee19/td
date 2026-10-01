@@ -1,0 +1,75 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_surfaces.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/greed_cave/greed_cave.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/outgame_event_bus.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/view/utils/xitemicon/xitemicon.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/greed_cave/greed_cave.vjs_c" />
+	</scripts>
+	<Panel class="GreedCaveRoot fill Hidden">
+		<Panel id="GreedCaveRootContent" hittest="true">
+			<Panel id="GreedCaveBackdrop" hittest="true" />
+			<Panel id="GreedCaveMain">
+				<Panel id="GreedCaveTopBar">
+					<Panel id="GreedCaveTitleAccent" hittest="false" />
+					<Label id="GreedCaveTitle" text="#save_battle_greed_cave_reward_preview" />
+					<Panel id="GreedCaveCloseButton" class="GreedCaveIconButton" hittest="true" hittestchildren="false">
+						<Panel class="GreedCaveCloseLine GreedCaveCloseLineA" hittest="false" />
+						<Panel class="GreedCaveCloseLine GreedCaveCloseLineB" hittest="false" />
+					</Panel>
+				</Panel>
+				<Panel id="GreedCaveDepthLadder" hittest="false" />
+				<Panel id="GreedCaveBody">
+					<Panel id="GreedCaveLeftCol">
+						<Panel id="GreedCaveCompareScroller">
+							<Panel id="GreedCaveCompareGrid" />
+						</Panel>
+						<Panel id="GreedCaveKeptRow">
+							<Label id="GreedCaveSelectedTitle" text="#save_battle_reward_claimed" />
+							<Panel id="GreedCaveSelectedScroller">
+								<Panel id="GreedCaveSelectedGrid" />
+							</Panel>
+						</Panel>
+					</Panel>
+					<Panel id="GreedCaveSidebar">
+						<Label class="GreedCaveCountdownCap" text="#save_battle_greed_cave_time_left" />
+						<Label id="GreedCaveCountdown" text="" />
+						<Label id="GreedCaveStatus" text="" />
+						<Panel id="GreedCaveSidebarSpacerTop" hittest="false" />
+						<Panel id="GreedCaveClaimBox">
+							<Label id="GreedCaveClaimBoxTitle" text="#save_battle_greed_cave_claim_times" />
+							<Panel id="GreedCaveProgressRow">
+								<Label id="GreedCaveDepthLabel" text="" />
+								<Label id="GreedCaveChooseCount" text="" />
+							</Panel>
+							<Panel id="GreedCavePips" hittest="false" />
+							<Label id="GreedCaveMaxClaims" text="" />
+						</Panel>
+						<Label id="GreedCaveTips" text="#save_battle_greed_cave_rule_tip" />
+						<Panel id="GreedCaveSidebarSpacer" hittest="false" />
+						<Panel id="GreedCaveActions">
+							<Button id="GreedCaveClaimButton" class="GreedCaveActionButton OutgameActionButton Confirm">
+								<Label class="GreedCaveActionTitle" text="#save_battle_select_reward" />
+								<Label class="GreedCaveActionSub" text="#save_battle_greed_cave_claim_hint" />
+							</Button>
+							<Button id="GreedCaveContinueButton" class="GreedCaveActionButton OutgameActionButton Secondary">
+								<Label id="GreedCaveContinueTitle" class="GreedCaveActionTitle" text="#save_battle_greed_cave_dive" />
+								<Label class="GreedCaveActionSub" text="#save_battle_greed_cave_continue_hint" />
+							</Button>
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

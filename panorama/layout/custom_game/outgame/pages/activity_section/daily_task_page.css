@@ -1,0 +1,244 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameDailyTaskPage
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	background-color: cInkDeep;
+	background-image: url("s2r://panorama/images/custom_game/outgame/activity/daily_task_bg_png.vtex");
+	background-size: 100% 100%;
+	background-position: 50% 50%;
+	background-img-opacity: 0.86;
+	overflow: clip;
+}
+
+.OutgameDailyTaskScroll
+{
+	width: 100%;
+	height: fill-parent-flow(1);
+	padding: 24px 24px 18px 24px;
+	overflow: squish scroll;
+}
+
+.OutgameDailyTaskScroll VerticalScrollBar
+{
+	width: 6px;
+}
+
+.OutgameDailyTaskRefreshNote
+{
+	ignore-parent-flow: true;
+	width: 560px;
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 18px;
+	margin-right: 28px;
+	color: cTan;
+	font-size: 17px;
+	text-align: right;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 3px 2 #000000;
+	opacity: 0.9;
+	z-index: 2;
+}
+
+.OutgameDailyTaskList
+{
+	width: 94%;
+	flow-children: down;
+	horizontal-align: center;
+	vertical-align: bottom;
+}
+
+.OutgameDailyTaskCell
+{
+	width: 100%;
+	height: 80px;
+	margin-bottom: 6px;
+	padding: 9px 18px;
+	flow-children: right;
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#1d2a33d8), color-stop(0.50, #101820e6), to(#05080cf0));
+	border: 1px solid cHairline;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(#d9be7728), color-stop(0.44, cHairline), to(cHairlineLo));
+	border-radius: 4px;
+	box-shadow: cScrim60 0px 4px 10px 0px;
+	transition-property: brightness, border, border-brush, box-shadow, saturation;
+	transition-duration: 0.12s;
+	transition-timing-function: ease;
+}
+
+.OutgameDailyTaskCell:hover
+{
+	brightness: 1.08;
+}
+
+.OutgameDailyTaskCell.Claimable
+{
+	border: 1px solid cGoldBorder;
+	border-brush: gradient(linear, 0% 0%, 100% 0%, from(cGoldSel), color-stop(0.54, cGoldGlow), to(#63a4ff16));
+	box-shadow: #d8b86a22 0px 0px 14px 0px;
+}
+
+.OutgameDailyTaskCell.Claimed
+{
+	background-color: gradient(linear, 0% 0%, 100% 0%, from(#172a24dc), color-stop(0.56, #101c19e8), to(#07110ff2));
+	border-color: #74b88a34;
+	box-shadow: inset 0px 0px 14px #76c79410;
+	brightness: 0.86;
+	saturation: 0.68;
+}
+
+.OutgameDailyTaskCell.Locked
+{
+	brightness: 0.74;
+	saturation: 0.48;
+}
+
+.OutgameDailyTaskInfo
+{
+	width: fill-parent-flow(1);
+	height: 100%;
+	flow-children: down;
+	vertical-align: center;
+}
+
+.OutgameDailyTaskDesc
+{
+	width: 100%;
+	color: #e7eef2;
+	font-size: 18px;
+	text-overflow: shrink;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameDailyTaskMeta
+{
+	width: 100%;
+	margin-top: 4px;
+	flow-children: right;
+}
+
+.OutgameDailyTaskProgress
+{
+	width: fill-parent-flow(1);
+	color: cSlate;
+	font-size: 15px;
+	text-shadow: 0px 1px 2px 2 #000000;
+}
+
+.OutgameDailyTaskState
+{
+	width: 98px;
+	height: 24px;
+	padding: 3px 7px 0px 7px;
+	color: cSlate;
+	font-size: 15px;
+	text-align: center;
+	horizontal-align: right;
+	border: 1px solid cHairline;
+	border-radius: 3px;
+	background-color: #00000028;
+}
+
+.OutgameDailyTaskCell.Claimable .OutgameDailyTaskState
+{
+	color: cGoldBright;
+	border-color: cGoldGlow;
+	background-color: #5f441c66;
+}
+
+.OutgameDailyTaskCell.Claimed .OutgameDailyTaskState
+{
+	color: #b7dfc4;
+	border-color: #86c39c66;
+	background-color: #173d2d80;
+	box-shadow: #1d5f3966 0px 0px 8px 0px;
+}
+
+.OutgameDailyTaskCell.Locked .OutgameDailyTaskState
+{
+	color: cSlate;
+	border-color: #7d9cad22;
+	background-color: #0b141a66;
+}
+
+.OutgameDailyTaskReward
+{
+	width: fit-children;
+	height: 54px;
+	margin-left: 14px;
+	flow-children: right;
+	vertical-align: center;
+	horizontal-align: right;
+}
+
+.OutgameDailyTaskReward.Empty
+{
+	visibility: collapse;
+}
+
+.OutgameDailyTaskRewardSlot
+{
+	width: 54px;
+	height: 54px;
+	margin-left: 6px;
+}
+
+.OutgameDailyTaskRewardSlot.Empty
+{
+	visibility: collapse;
+}
+
+.OutgameDailyTaskAction
+{
+	width: 108px;
+	height: 34px;
+	margin-left: 14px;
+	vertical-align: center;
+}
+
+.OutgameDailyTaskAction .OutgameActionButtonText
+{
+	width: 100%;
+	font-size: 15px;
+	text-align: center;
+	text-overflow: shrink;
+	vertical-align: center;
+}
+
+.OutgameDailyTaskCell.Claimed .OutgameDailyTaskAction,.OutgameDailyTaskCell.Claimed .OutgameDailyTaskAction:hover,.OutgameDailyTaskCell.Claimed .OutgameDailyTaskAction:active
+{
+	background-img-opacity: 0.18;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#345c45), color-stop(0.52, #244335), to(#14261f));
+	border-brush: gradient(linear, 0% 0%, 0% 100%, from(#c5f0d044), to(#6fb98512));
+	box-shadow: #102d1faa 0px 2px 8px 0px;
+	opacity: 0.68;
+	saturation: 0.72;
+	brightness: 0.86;
+}
+
+.OutgameDailyTaskCell.Claimed .OutgameDailyTaskAction .OutgameActionButtonText
+{
+	color: #c7efd1;
+	opacity: 0.95;
+}
+
+.OutgameDailyTaskCell.Locked .OutgameDailyTaskAction .OutgameActionButtonText
+{
+	color: cSlate;
+}
+
+.OutgameDailyTaskEmpty
+{
+	visibility: collapse;
+	width: 100%;
+	margin-top: 80px;
+	horizontal-align: center;
+}
+
+.OutgameDailyTaskEmpty.Visible
+{
+	visibility: visible;
+}
+

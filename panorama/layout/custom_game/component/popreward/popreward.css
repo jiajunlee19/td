@@ -1,0 +1,191 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.PopRewardRootPanel
+{
+	z-index: 145;
+	transition-property: opacity;
+	transition-duration: 0.12s;
+}
+
+.PopRewardRootPanel.Hidden
+{
+	opacity: 0;
+	visibility: collapse;
+}
+
+#poprewardFillBg
+{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.98;
+}
+
+.poprewardRoot
+{
+	horizontal-align: center;
+	vertical-align: center;
+	width: 1200px;
+	height: 700px;
+}
+
+#poprewardBg
+{
+	horizontal-align: center;
+	vertical-align: center;
+	margin-left: 80px;
+	width: 1143px;
+	height: 418px;
+	background-image:url("s2r://panorama/images/custom_game/common/get_reward_bg_png.vtex");
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+#poprewardListMain
+{
+	margin-left: 95px;
+	margin-bottom: 25px;
+	align: center center;
+	width: 822px;
+	height: 322px;
+}
+
+#poprewardListGird
+{
+	align: center center;
+	flow-children: down;
+	overflow: squish scroll;
+}
+
+.ItemRewardListGrid
+{
+	margin-top: 25px;
+	align: center center;
+	width: 768px;
+	flow-children: right;
+}
+
+.rewardItem
+{
+	margin-right: 20px;
+	height: 104px;
+	width: 104px;
+	background-image:url("s2r://");
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.rewardItem #Bg
+{
+	height: 104px;
+	width: 104px;
+}
+
+.rewardItem #Icon
+{
+	height: 104px;
+	width: 104px;
+	align: center center;
+}
+
+.rewardItem.Rune #Icon
+{
+	height: 55%;
+	width: 55%;
+	align: center center;
+}
+
+.rewardItem #Quality
+{
+	height: 104px;
+	width: 104px;
+	align: center center;
+}
+
+.rewardItem #ItemNumber
+{
+	align: right bottom;
+	margin-right: 8px;
+	margin-bottom: 2px;
+	font-size: 24px;
+	color: #E7DD84;
+	font-family: Radiance, FZLanTingHei-R-GBK, TH Sarabun New, YDYGO 540, Gulim, MingLiU;
+	text-align: right;
+	visibility: collapse;
+}
+
+.rewardItem #Type
+{
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	visibility: collapse;
+}
+
+.rewardItem.Proto #Type
+{
+	background-size: 110%;
+	background-position: 45%;
+	background-image:url("s2r://panorama/images/custom_game/equipment/proto_png.vtex");
+	visibility: visible;
+	wash-color: rgb(208, 159, 98);
+	contrast: 1.1;
+}
+
+.rewardItem.Proto #Icon
+{
+	wash-color: rgb(255, 183, 94);
+	contrast: 0.9;
+	margin: 25%;
+	width: 100%;
+	height: 100%;
+	transform: rotateZ(-18deg) rotateY(-30deg) translateX(2px) translateY(1px) scaleY(0.8);
+	img-shadow: 2px 2px 8px 2.0 #333333b0;
+}
+
+.rewardItem.Core #Type
+{
+	background-size: 110%;
+	background-position: 45%;
+	background-image:url("s2r://panorama/images/custom_game/equipment/core_png.vtex");
+	visibility: visible;
+	wash-color: rgb(255, 199, 130);
+	brightness: 1.1;
+}
+
+.rewardItem.Core #Icon
+{
+	margin-top: 40%;
+	margin-left: 40%;
+	img-shadow: 2px 2px 8px 2.0 #333333b0;
+}
+
+#CloseBtn2
+{
+	align: center bottom;
+	width: 337px;
+	height: 73px;
+	margin-bottom: 20px;
+	margin-left: 85px;
+	background-image:url("s2r://panorama/images/custom_game/common/get_reward_btn_png.vtex");
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+#poprewardTitle
+{
+	horizontal-align: center;
+	margin-left: 75px;
+	margin-top: 110px;
+	width: 1080px;
+	height: 306px;
+	background-image:url("s2r://panorama/images/custom_game/common/get_reward_title_png.vtex");
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+

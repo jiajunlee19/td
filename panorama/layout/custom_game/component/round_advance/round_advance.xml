@@ -1,0 +1,33 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/common.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/component/round_advance/round_advance.vcss_c" />
+	</styles>
+	<scripts>
+		<include src="s2r://panorama/scripts/custom_game/utils/helper.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/disposable_bag.vjs_c" />
+		<include src="s2r://panorama/scripts/custom_game/ui_framework/view_registry.vjs_c" />
+		<include src="s2r://panorama/layout/custom_game/component/round_advance/round_advance.vjs_c" />
+	</scripts>
+	<Panel class="RoundAdvanceRoot fill panel-hidden" hittest="false" hittestchildren="true">
+		<Button id="RoundAdvanceButton" class="RoundAdvanceButton">
+			<Label id="RoundAdvanceButtonLabel" text="#hud_next_game_button" />
+		</Button>
+		<Panel id="RoundAdvanceConfirmOverlay" class="RoundAdvanceConfirmOverlay panel-hidden" hittest="true" hittestchildren="true">
+			<Panel class="RoundAdvanceConfirmBackdrop" hittest="true" />
+			<Panel class="RoundAdvanceConfirmPanel">
+				<Label id="RoundAdvanceConfirmText" class="RoundAdvanceConfirmText" text="#hud_confirm_next_game" />
+				<Panel class="RoundAdvanceConfirmActions">
+					<Button id="RoundAdvanceConfirmButton" class="RoundAdvanceConfirmAction Confirm">
+						<Label text="#DOTA_OK" />
+					</Button>
+					<Button id="RoundAdvanceCancelButton" class="RoundAdvanceConfirmAction Cancel">
+						<Label text="#DOTA_Cancel" />
+					</Button>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

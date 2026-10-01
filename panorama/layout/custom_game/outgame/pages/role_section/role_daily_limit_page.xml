@@ -1,0 +1,36 @@
+<!-- xml reconstructed by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/dotastyles.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/outgame_tokens.vcss_c" />
+		<include src="s2r://panorama/layout/custom_game/outgame/pages/role_section/role_daily_limit_page.vcss_c" />
+	</styles>
+	<snippets>
+		<snippet name="RoleDailyLimitRow">
+			<Panel class="RoleDailyLimitRow" hittest="false">
+				<Panel class="RoleDailyLimitRowHeading" hittest="false">
+					<Label id="Name" class="RoleDailyLimitName" hittest="false" />
+					<Label id="State" class="RoleDailyLimitState" hittest="false" />
+				</Panel>
+				<Panel class="RoleDailyLimitNumbers" hittest="false">
+					<Label id="Usage" class="RoleDailyLimitUsage" hittest="false" />
+					<Label id="Remaining" class="RoleDailyLimitRemaining" hittest="false" />
+				</Panel>
+				<Panel class="RoleDailyLimitTrack" hittest="false">
+					<Panel id="Fill" class="RoleDailyLimitFill" hittest="false" />
+				</Panel>
+			</Panel>
+		</snippet>
+	</snippets>
+	<Panel class="RoleDailyLimitPage" hittest="false" hittestchildren="true">
+		<Label class="RoleDailyLimitIntro" text="#role_daily_limit_intro" hittest="false" />
+		<Label id="Status" class="RoleDailyLimitStatus" text="#outgame_loading_wait" hittest="false" />
+		<Panel id="Content" class="RoleDailyLimitContent Hidden" hittest="true" hittestchildren="true">
+			<Label class="RoleDailyLimitSectionTitle" text="#role_daily_limit_settlement_group" hittest="false" />
+			<Panel id="SettlementRows" class="RoleDailyLimitRows" hittest="false" />
+			<Label class="RoleDailyLimitSectionTitle" text="#role_daily_limit_progress_group" hittest="false" />
+			<Label class="RoleDailyLimitSectionHint" text="#role_daily_limit_progress_hint" hittest="false" />
+			<Panel id="ProgressRows" class="RoleDailyLimitRows" hittest="false" />
+		</Panel>
+	</Panel>
+</root>

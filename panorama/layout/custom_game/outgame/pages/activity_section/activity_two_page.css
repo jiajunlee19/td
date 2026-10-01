@@ -1,0 +1,509 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameActivityTwoPage
+{
+	width:1398px;
+	height:860px;
+}
+
+.OutgameActivityTwoBody
+{
+	width:1398px;
+	height:860px;
+}
+
+.OutgameActivityTwoPuzzle
+{
+	x:40px;
+	y:170px;
+	width:860px;
+	height:486px;
+	background-image:url("s2r://panorama/images/custom_game/outgame/activity/hoard_v2/puzzle-background_png.vtex");
+	background-size:100% 100%;
+}
+
+.HoardBoardRim
+{
+	x:36px;
+	y:166px;
+	width:868px;
+	height:494px;
+	border:3px solid #786543;
+	border-top-color:#b59a65;
+	border-left-color:#998354;
+	border-bottom-color:#473c29;
+	box-shadow:#00000088 0px 5px 12px 0px;
+}
+
+.HoardBoardRimInner
+{
+	width:100%;
+	height:100%;
+	border:1px solid #4e8280;
+}
+
+.HoardPuzzleCaption
+{
+	vertical-align:bottom;
+	width:100%;
+	height:60px;
+	padding-top:24px;
+	text-align:center;
+	color:#e5d2a6;
+	font-size:12px;
+	letter-spacing:7px;
+	opacity:0;
+	background-color:gradient(linear,0% 0%,0% 100%,from(#02111300),to(#021113d9));
+}
+
+.Complete .HoardPuzzleCaption
+{
+	opacity:1;
+}
+
+.OutgameActivityTwoPuzzle.Complete
+{
+	animation-name:HoardCompleteBreath;
+	animation-duration:3.6s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+}
+
+@keyframes 'HoardCompleteBreath'
+{
+	0%
+	{
+		brightness:1;
+	}
+	
+	50%
+	{
+		brightness:1.12;
+	}
+	
+	100%
+	{
+		brightness:1;
+	}
+	
+}
+
+.OutgameActivityTwoMatrix
+{
+	x:40px;
+	y:170px;
+	width:1038px;
+	height:654px;
+}
+
+.OutgameActivityTwoRow
+{
+	width:1038px;
+	height:162px;
+	flow-children:right;
+}
+
+.OutgameActivityTwoRow.Row2
+{
+	y:162px;
+}
+
+.OutgameActivityTwoRow.Row3
+{
+	y:324px;
+}
+
+.OutgameActivityTwoTask
+{
+	width:172px;
+	height:162px;
+}
+
+.HoardTaskFace
+{
+	width:172px;
+	height:162px;
+	margin:0px;
+	border-right:1px solid #527a75;
+	border-bottom:1px solid #527a75;
+	background-color:gradient(linear,0% 0%,0% 100%,from(#1a3b3f),to(#10292e));
+	background-image:url("s2r://panorama/images/custom_game/outgame/activity/hoard_v2/stone-texture_png.vtex");
+	background-size:100% 100%;
+	background-img-opacity:0.2;
+}
+
+.Claimable .HoardTaskFace
+{
+	background-color:gradient(linear,0% 0%,0% 100%,from(#40503a),to(#203d32));
+	border-right-color:#a79960;
+	border-bottom-color:#a79960;
+	animation-name:HoardClaimPulse;
+	animation-duration:1.8s;
+	animation-iteration-count:infinite;
+}
+
+.OutgameActivityTwoTask.Claimed .HoardTaskFace
+{
+	opacity:0;
+}
+
+.HoardTaskCompletionGlow
+{
+	width:100%;
+	height:100%;
+	visibility:collapse;
+	background-color:gradient(radial,50% 50%,0% 0%,50% 50%,from(#86dabf),color-stop(0.55,#86dabf50),to(#86dabf00));
+}
+
+.OutgameActivityTwoTask.Claimed .HoardTaskCompletionGlow
+{
+	visibility:visible;
+	animation-name:HoardRevealedBreath;
+	animation-duration:3.6s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in-out;
+}
+
+.OutgameActivityTwoMatrix.Complete .HoardTaskCompletionGlow
+{
+	visibility:collapse;
+}
+
+@keyframes 'HoardRevealedBreath'
+{
+	0%
+	{
+		opacity:0.025;
+	}
+	
+	50%
+	{
+		opacity:0.14;
+	}
+	
+	100%
+	{
+		opacity:0.025;
+	}
+	
+}
+
+.OutgameActivityTwoTask.Opening .HoardTaskFace
+{
+	animation-name:HoardGridReveal;
+	animation-duration:0.5s;
+	animation-iteration-count:1;
+	animation-timing-function:ease-out;
+}
+
+@keyframes 'HoardGridReveal'
+{
+	0%
+	{
+		opacity:1;
+		brightness:1;
+	}
+	
+	25%
+	{
+		opacity:1;
+		brightness:1.6;
+	}
+	
+	100%
+	{
+		opacity:0;
+		brightness:1;
+	}
+	
+}
+
+.OutgameActivityTwoTaskTypeIcon
+{
+	width:39px;
+	height:39px;
+	horizontal-align:center;
+	y:33px;
+	wash-color:#e9e4c5;
+}
+
+.OutgameActivityTwoTaskName
+{
+	width:140px;
+	height:40px;
+	horizontal-align:center;
+	y:72px;
+	text-align:center;
+	font-size:16px;
+	font-weight:bold;
+	color:#e9e6d9;
+	white-space:normal;
+	text-overflow:shrink;
+	text-shadow:0px 2px 3px 1.0 #000000;
+}
+
+.OutgameActivityTwoTaskProgress
+{
+	width:142px;
+	height:22px;
+	horizontal-align:center;
+	y:114px;
+	text-align:center;
+	color:#95b1b4;
+	font-size:14px;
+	text-overflow:shrink;
+}
+
+.Claimable .OutgameActivityTwoTaskProgress
+{
+	color:#ffe3a5;
+}
+
+.OutgameActivityTwoTaskMark
+{
+	visibility:collapse;
+}
+
+.OutgameActivityTwoTask.Claimable:hover
+{
+	brightness:1.18;
+}
+
+.OutgameActivityTwoTask.Pending:hover,.OutgameActivityTwoTask.Claimed:hover
+{
+	brightness:1;
+}
+
+.OutgameActivityTwoTask.Pending .HoardTaskFace
+{
+	saturation:0.35;
+}
+
+.OutgameActivityTwoColumnRewards
+{
+	y:512px;
+	width:860px;
+	height:142px;
+	flow-children:right;
+}
+
+.OutgameActivityTwoReward
+{
+	width:164px;
+	height:142px;
+	background-color:gradient(linear,0% 0%,0% 100%,from(#11272aee),to(#051115f5));
+	border:1px solid #766748;
+	box-shadow:#00000088 0px 7px 10px 0px;
+}
+
+.OutgameActivityTwoReward.Row
+{
+	width:160px;
+	height:154px;
+	margin-left:18px;
+}
+
+.OutgameActivityTwoReward.Column
+{
+	margin-right:10px;
+}
+
+.OutgameActivityTwoReward.Column:last-child
+{
+	margin-right:0px;
+}
+
+.OutgameActivityTwoReward.Row .HoardChestStill,.OutgameActivityTwoReward.Row .HoardOpenMotion
+{
+	y:13px;
+}
+
+.OutgameActivityTwoRewardTitle
+{
+	width:100%;
+	height:23px;
+	vertical-align:bottom;
+	margin-bottom:9px;
+	text-align:center;
+	color:#c4c7b6;
+	font-size:15px;
+	text-overflow:shrink;
+}
+
+.OutgameActivityTwoRewardState
+{
+	width:100%;
+	height:23px;
+	vertical-align:bottom;
+	margin-bottom:9px;
+	text-align:center;
+	color:#e6d394;
+	font-size:15px;
+	opacity:0;
+}
+
+.OutgameActivityTwoReward:hover .OutgameActivityTwoRewardState
+{
+	opacity:1;
+}
+
+.OutgameActivityTwoReward:hover .OutgameActivityTwoRewardTitle
+{
+	opacity:0;
+}
+
+.OutgameActivityTwoReward.Claimable
+{
+	border-color:#c9ad67;
+	box-shadow:#d3b16b38 0px 0px 18px 0px;
+}
+
+.OutgameActivityTwoReward.Claimable .HoardChestStill
+{
+	animation-name:HoardClaimPulse;
+	animation-duration:1.8s;
+	animation-iteration-count:infinite;
+}
+
+.OutgameActivityTwoFinalLink
+{
+	x:918px;
+	y:682px;
+	width:160px;
+	height:142px;
+	border-top:1px solid #617a6c;
+	border-bottom:1px solid #617a6c;
+}
+
+.HoardFinalArrow
+{
+	horizontal-align:center;
+	vertical-align:center;
+	font-size:42px;
+	color:#cfb57e;
+}
+
+.OutgameActivityTwoFinalLink.Claimable:hover
+{
+	brightness:1.3;
+}
+
+.OutgameActivityTwoFinalPanel
+{
+	x:1100px;
+	y:170px;
+	width:258px;
+	height:654px;
+	border:2px solid #a08753;
+	background-color:gradient(linear,0% 0%,100% 100%,from(#294342ed),color-stop(0.2,#0c2024),to(#07151b));
+	box-shadow:#00000088 0px 14px 24px 0px;
+}
+
+.OutgameActivityTwoFinalTitle
+{
+	x:18px;
+	y:21px;
+	width:218px;
+	text-align:center;
+	font-size:27px;
+	font-weight:bold;
+	letter-spacing:3px;
+	color:#e8c98e;
+}
+
+.OutgameActivityTwoFinalPanel .HoardChestStill,.OutgameActivityTwoFinalPanel .HoardOpenMotion
+{
+	width:150px;
+	height:150px;
+	y:69px;
+}
+
+.OutgameActivityTwoFinalHint
+{
+	x:18px;
+	y:226px;
+	width:218px;
+	height:40px;
+	text-align:center;
+	color:#aab8ad;
+	font-size:14px;
+	text-overflow:shrink;
+}
+
+.OutgameActivityTwoFinalPreviewList
+{
+	x:18px;
+	y:278px;
+	width:218px;
+	height:284px;
+	border-top:1px solid #657067;
+	padding-top:12px;
+	flow-children:down;
+}
+
+.OutgameActivityTwoFinalPreviewCell
+{
+	width:218px;
+	height:45px;
+	border-bottom:1px solid #53635954;
+}
+
+.OutgameActivityTwoFinalPreviewIcon
+{
+	y:6px;
+	width:32px;
+	height:32px;
+}
+
+.OutgameActivityTwoFinalPreviewName
+{
+	x:41px;
+	width:124px;
+	height:25px;
+	vertical-align:center;
+	font-size:14px;
+	color:#e9e6d9;
+	text-overflow:shrink;
+}
+
+.OutgameActivityTwoFinalPreviewCount
+{
+	horizontal-align:right;
+	vertical-align:center;
+	width:51px;
+	text-align:right;
+	font-size:15px;
+	color:#e8c78a;
+}
+
+.OutgameActivityTwoFinalState
+{
+	x:18px;
+	y:579px;
+	width:218px;
+	height:45px;
+	padding-top:12px;
+	text-align:center;
+	background-color:gradient(linear,0% 0%,0% 100%,from(#856235),to(#4c3926));
+	border:1px solid #b79c60;
+	color:#f6db9b;
+	font-size:15px;
+}
+
+.OutgameActivityTwoFinalPanel.Claimable .OutgameActivityTwoFinalState
+{
+	animation-name:HoardClaimPulse;
+	animation-duration:1.8s;
+	animation-iteration-count:infinite;
+}
+
+.OutgameActivityTwoFinalPanel.Claimed .OutgameActivityTwoFinalState
+{
+	saturation:0.1;
+}
+
+.OutgameActivityTwoPage.CommandPending .Claimable
+{
+	brightness:0.8;
+}
+

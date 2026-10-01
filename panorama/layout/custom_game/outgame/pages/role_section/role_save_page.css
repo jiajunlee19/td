@@ -1,0 +1,126 @@
+/* Prettified by Source 2 Viewer 20.0.0.0 - https://valveresourceformat.github.io */
+
+.OutgameRoleSavePage
+{
+	width: 100%;
+	height: 100%;
+	padding: 16px 18px 18px 18px;
+	background-color: gradient(linear, 0% 0%, 0% 100%, from(#172129f0), to(#10171df0));
+}
+
+.OutgameRoleSaveScroll
+{
+	width: 100%;
+	height: 100%;
+	flow-children: down;
+	overflow: squish scroll;
+	padding-right: 8px;
+}
+
+.OutgameSaveGroup
+{
+	width: 100%;
+	flow-children: down;
+	padding: 14px 16px 16px 16px;
+	margin-bottom: 14px;
+	border-top: 1px solid cHairline;
+}
+
+.OutgameSaveGroupHeader
+{
+	width: 100%;
+	height: 38px;
+	border-bottom: 1px solid cHairline;
+}
+
+.OutgameSaveGrid
+{
+	width: 100%;
+	flow-children: right-wrap;
+	padding-top: 12px;
+}
+
+.OutgameSaveCell
+{
+	width: 96px;
+	height: 126px;
+	margin: 0 12px 12px 0;
+	background-color: #111a20cc;
+	border: 1px solid cHairline;
+}
+
+.OutgameSaveCell.WideIcon
+{
+	width: 118px;
+}
+
+.OutgameSaveCell:hover
+{
+	brightness: 1.35;
+	border: 1px solid cGoldBorder;
+}
+
+.OutgameSaveCell.Locked
+{
+	wash-color: #8f8f8f;
+	saturation: 0.25;
+	opacity: 0.74;
+}
+
+.OutgameSaveIconFrame
+{
+	width: 72px;
+	height: 72px;
+	horizontal-align: center;
+	margin-top: 10px;
+}
+
+.OutgameSaveIconFrame.WideIcon
+{
+	width: 96px;
+	height: 54px;
+	margin-top: 18px;
+}
+
+.OutgameSaveIconFrame .XItemIcon,.OutgameSaveFallbackIcon
+{
+	width: 100%;
+	height: 100%;
+}
+
+.OutgameSaveFallbackIcon
+{
+	horizontal-align: center;
+	vertical-align: center;
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.OutgameSaveProgress
+{
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 8px;
+	min-width: 48px;
+	height: 24px;
+	padding: 1px 8px;
+	color: #ffffff;
+	text-align: center;
+	font-size: 18px;
+	background-color: cScrim60;
+}
+
+.OutgameSaveNewMark
+{
+	horizontal-align: right;
+	vertical-align: top;
+	margin-top: 4px;
+	margin-right: 4px;
+	padding: 1px 6px;
+	color: #10171d;
+	background-color: cGold;
+	font-size: 14px;
+	font-weight: bold;
+}
+
